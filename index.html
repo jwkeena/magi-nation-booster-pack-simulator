@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Linking CSS-->
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <title>Magi Nation Booster Pack Simulator</title>
+</head>
+<body onload="newPackUnlimited()">
+
+    <div id="topBar">
+        magi-nation booster pack simulator [version 1.1]
+    </div>  
+
+    <p>
+        press the button to generate a new set of cards,
+    </p>
+
+    <p>
+        then click each card to open your pack!
+    </p>
+
+    <button id="buttonNewPackUnlimited" onclick="newPackUnlimited()">Base Set</button>
+    <button id="buttonNewPackAwakening" onclick="newPackAwakening()">Awakening</button>
+    <button id="buttonNewPackDreamsEnd" onclick="newPackDreamsEnd()">Dream's End</button>
+    <button id="buttonNewPackNightmaresDawn" onclick="newPackNightmaresDawn()">Nightmare's Dawn</button>
+    <button id="buttonNewPackVoiceOfTheStorms" onclick="newPackVoiceOfTheStorms()">Voice of the Storms</button>
+    <button id="buttonNewPackTraitorsReach" onclick="newPackTraitorsReach()">Traitor's Reach</button>
+
+<div class = "row">
+
+    <div id = "myDiv" class = "pack" onclick="flip0()">
+        <div class = "front">
+            <img id = "boosterPackFront" src="base_pack1.JPG"></a>
+        </div>
+        <div class = "back">
+            <img id = "boosterPackBack" src="base_pack1.jpg">
+        </div>
+    </div>
+
+    <div id = "myDiv1" class = "card1" onclick="flip1()">
+        <div class = "front1">
+            <img src="mndcardback.jpg" height="455"></a>
+        </div>
+        <div class = "back1">
+            <img id="randomCard1" src="mndcardback.jpg" height="455"></a>
+        </div>
+    </div>
+
+    <div id = "myDiv2" class = "card2" onclick="flip2()">
+        <div class = "front2">
+            <img src="mndcardback.jpg" height="455"></a>
+        </div>
+        <div class = "back2">
+            <img id="randomCard2" src="mndcardback.jpg" height="455"></a>
+        </div>
+    </div> 
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div id = "myDiv3" class = "card3" onclick="flip3()">
+        <div class = "front3">
+            <img src="mndcardback.jpg" height="455"></a>
+        </div>
+        <div class = "back3">
+            <img id="randomCard3" src="mndcardback.jpg" height="455"></a>
+        </div>
+    </div> 
+
+    <div id = "myDiv4" class = "card4" onclick="flip4()">
+        <div class = "front4">
+            <img src="mndcardback.jpg" height="455"></a>
+        </div>
+        <div class = "back4">
+            <img id="randomCard4" src="mndcardback.jpg" height="455"></a>
+        </div>
+    </div> 
+
+    <div id = "myDiv5" class = "card5" onclick="flip5()">
+        <div class = "front5">
+            <img src="mndcardback.jpg" height="455"></a>
+        </div>
+        <div class = "back5">
+            <img id="randomCard5" src="mndcardback.jpg" height="455"></a>
+        </div>
+    </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+    <div id = "myDiv6" class = "card6" onclick="flip6()">
+        <div class = "front6">
+            <img src="mndcardback.jpg" height="455"></a>
+        </div>
+        <div class = "back6">
+            <img id="randomCard6" src="mndcardback.jpg" height="455"></a>
+        </div>
+    </div>
+
+    <div id = "myDiv7" class = "card7" onclick="flip7()">
+        <div class = "front7">
+            <img src="mndcardback.jpg" height="455"></a>
+        </div>
+        <div class = "back7">
+            <img id="randomCard7" src="mndcardback.jpg" height="455"></a>
+        </div>
+    </div>
+
+    <div id = "myDiv8" class = "card8" onclick="flip8()">
+        <div class = "front8">
+            <img src="mndcardback.jpg" height="455"></a>
+        </div>
+        <div class = "back8">
+            <img id="randomCard8" src="mndcardback.jpg" height="455"></a>
+        </div>
+    </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+    <div id = "myDiv9" class = "card9" onclick="flip9()">
+        <div class = "front9">
+            <img src="mndcardback.jpg" height="455"></a>
+        </div>
+        <div class = "back9">
+            <img id="randomCard9" src="mndcardback.jpg" height="455"></a>
+        </div>
+    </div>
+
+    <div id = "myDiv10" class = "card10" onclick="flip10()">
+        <div class = "front10">
+            <img src="mndcardback.jpg" height="455"></a>
+        </div>
+        <div class = "back10">
+            <img id="randomCard10" src="mndcardback.jpg" height="455"></a>
+        </div>
+    </div>
+
+    <div id = "myDiv11" class = "card11" onclick="flip11()">
+        <div class = "front11">
+            <img src="mndcardback.jpg" height="455"></a>
+        </div>
+        <div class = "back11">
+            <img id="randomCard11" src="mndcardback.jpg" height="455"></a>
+        </div>
+    </div>
+    
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<button id="flipAll" onclick="flipAll()">Flip All</button>
+<button id="resetAll" onclick="resetAll()">Reset</button>
+<button id="randomHolo" onclick="holographic()">Random Holo</button>
+
+<br>
+<br>
+
+<div id="bottomBar">
+    chance of holographic cards: 1/5 packs
+</div>  
+
+<!--linking Javascript-->
+<script type="text/javascript" src="javascript.js"></script>
+</body>
+</html>

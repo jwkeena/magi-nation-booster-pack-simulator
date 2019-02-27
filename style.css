@@ -1,0 +1,138 @@
+.pack img {
+    width: 315px;
+    height: 450px;
+}
+
+/*Rainbow effect, adapted from https://gist.github.com/ajaegers/52a82619cc191f898ec4*/
+@keyframes rainbow {
+    from {
+        filter: hue-rotate(0deg);
+        -webkit-filter: hue-rotate(0deg);
+        -moz-filter: hue-rotate(0deg);
+        -o-filter: hue-rotate(0deg);
+    }
+    to {
+        filter: hue-rotate(360deg);
+        -webkit-filter: hue-rotate(360deg);
+        -moz-filter: hue-rotate(360deg);
+        -o-filter: hue-rotate(360deg);
+    }
+}
+
+.holographic {
+    animation: rainbow 2s steps(36) infinite;
+    -webkit-animation: rainbow 2s steps(36) infinite;
+    -moz-animation: rainbow 2s steps(36) infinite;
+    -o-animation: rainbow 2s steps(36) infinite;
+}
+
+/* Style common to all cards, adapted from https://jsfiddle.net/pbnz43gf/ */
+    /* Ensures the back of the card is flipped to the front, not just inverted*/
+   .pack .back, .card1 .back1, .card2 .back2, .card3 .back3, .card4 .back4, .card5 .back5, .card6 .back6, .card7 .back7, .card8 .back8, .card9 .back9, .card10 .back10, .card11 .back11 {
+        -webkit-transform: rotateY( 180deg );
+        -moz-transform: rotateY( 180deg );
+        -o-transform: rotateY( 180deg );
+        transform: rotateY( 180deg );
+    }
+
+    .pack.flipped, .card1.flipped, .card2.flipped, .card3.flipped, .card4.flipped, .card5.flipped, .card6.flipped, .card7.flipped, .card8.flipped, .card9.flipped, .card10.flipped, .card11.flipped {
+        -webkit-transform: rotateY( 180deg );
+        -moz-transform: rotateY( 180deg );
+        -o-transform: rotateY( 180deg );
+        transform: rotateY( 180deg );
+    }
+
+    .pack, .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8, .card9, .card10, .card11, .card12 {
+        display: inline-block; /*puts all cards in a row. This is the big fix I was looking for, suggested by https://codepen.io/roppazvan/pen/EZVLEy*/
+        padding-left: 0px; /* prevents cards from being stacked on top of each other*/
+        padding-right: 315px; /*same*/
+        -webkit-transition: -webkit-transform 1s;
+        -moz-transition: -moz-transform 1s;
+        -o-transition: -o-transform 1s;
+        transition: transform 1s;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -o-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-transform-origin: 50% 50%;
+        -moz-transform-origin: 50% 50%; 
+        -o-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    }
+
+    .pack div, .card1 div, .card2 div, .card3 div, .card4 div, .card5 div, .card6 div, .card7 div, .card8 div, .card9 div, .card10 div, .card11 div {
+        position: absolute; /* This keeps the front behind the back*/
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -o-backface-visibility: hidden;
+        backface-visibility: hidden;
+ 
+    }
+/*End of style common to all cards*/
+
+#topBar {
+    background: aquamarine;
+    padding: 10px;
+    color: black;
+    overflow: auto;
+}
+
+#bottomBar {
+    background: aquamarine;
+    padding: 10px;
+    color: black;
+    overflow: auto;
+}
+
+body {
+    background-color: black;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    color:aquamarine;
+}
+
+.row img {
+    clip-path: inset(10px 10px 10px 10px);
+}
+
+#buttonNewPackUnlimited {    
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet); /* Standard syntax (must be last) */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+#buttonNewPackAwakening {
+    background-color: purple;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: yellow;
+}
+
+#buttonNewPackDreamsEnd {
+    background-color: rgb(33, 120, 146);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(201, 204, 39);
+}
+
+#buttonNewPackNightmaresDawn {
+    background-color:rgb(42, 116, 19);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: maroon;
+}
+
+ #buttonNewPackVoiceOfTheStorms {
+    background-color: navy;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(204, 53, 15);
+}
+
+#buttonNewPackTraitorsReach {
+    background-color: gold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: green;
+}

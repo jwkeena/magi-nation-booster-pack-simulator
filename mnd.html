@@ -1,0 +1,296 @@
+<!-- Feel free to use and repurpose my code, as long as you credit me and/or link to my github page
+   Written by justin keena, https://github.com/jwkeena/Magi-Nation-Booster-Pack-Simulator -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Linking CSS-->
+    <link type="text/css" rel="stylesheet" href="mndstyle.css">
+    <title>Magi Nation Booster Pack Simulator</title>
+</head>
+<body onload="newPackUnlimited()">
+
+    <div class ="topBar">
+        <span class = "topBarMiddle" id = "counter"></span>
+        <span class = "topBarMiddle" id = "packsOpened"> | packs opened: 0 ] </span>
+    </div>  
+
+    <br>
+    <br>
+    <img src = "mndlogo.jpg">
+    <br>
+    &nbsp;&nbsp;&nbsp;<img src = "mndlogoduel.jpg">
+    <br>
+    <img src = "mndlogotitle.png">
+    <br>
+    <br>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <button id="button1" onclick="resetAll();setTimeout(randomPack, 501)">RANDOM PACK</button>
+    <div class="dropdown">
+        <button id="button2">CHOOSE SET</button>
+        <div class="dropdown-content">
+            <a href="javascript:void();" onclick="resetAll();setTimeout(newPackUnlimited, 501)">BASE SET</a>
+            <a href="javascript:void();" onclick="resetAll();setTimeout(newPackAwakening, 501)">AWAKENING</a>
+            <a href="javascript:void();" onclick="resetAll();setTimeout(newPackDreamsEnd, 501)">DREAM'S END</a>
+            <a href="javascript:void();" onclick="resetAll();setTimeout(newPackNightmaresDawn, 501)">NIGHTMARE'S DAWN</a>
+            <a href="javascript:void();" onclick="resetAll();setTimeout(newPackVoiceOfTheStorms, 501)">VOICE OF THE STORMS</a>
+            <a href="javascript:void();" onclick="resetAll();setTimeout(newPackTraitorsReach, 501)">TRAITOR'S REACH</a>
+        </div>
+    </div>
+    <button id="button3" onclick="resetAll();setTimeout(sameSet, 501)">SAME SET</button>
+    <button id="button4" onclick="flipAll()">FLIP ALL</button>
+    <button id="button5" onclick="toggleShuffle()">SHUFFLE (OFF)</button>
+    <br>
+    <br>
+
+<div class = "boxed">
+<div class = "row">
+
+    <div id = "myDiv" class = "pack" onclick="flip0()">
+        <div class = "front">
+            <img id = "boosterPackFront" src="base_pack1.JPG"></a>
+        </div>
+        <div class = "back">
+            <img id = "boosterPackBack" src="base_pack1.jpg">
+        </div>
+    </div>
+
+    <div id = "myDiv1" class = "card1" onclick="flip1()">
+        <img id = "rarity1" src="rarity_uncommon.png">
+        <div class = "front1">
+            <img src="mndcardback.jpg"></a>
+        </div>
+        <div class = "back1">
+            <img id="randomCard1" src="mndcardback.jpg"></a>
+        </div>
+    </div>
+
+    <div id = "myDiv2" class = "card2" onclick="flip2()">
+        <img id = "rarity2" src="rarity_uncommon.png">
+        <div class = "front2">
+            <img src="mndcardback.jpg"></a>
+        </div>
+        <div class = "back2">
+            <img id="randomCard2" src="mndcardback.jpg"></a>
+        </div>
+    </div> 
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div id = "myDiv3" class = "card3" onclick="flip3()">
+        <img id = "rarity3" src="rarity_uncommon.png">
+        <div class = "front3">
+            <img src="mndcardback.jpg"></a>
+        </div>
+        <div class = "back3">
+            <img id="randomCard3" src="mndcardback.jpg"></a>
+        </div>
+    </div> 
+
+    <div id = "myDiv4" class = "card4" onclick="flip4()">
+        <img id = "rarity4" src="rarity_rare.png">
+        <div class = "front4">
+            <img src="mndcardback.jpg"></a>
+        </div>
+        <div class = "back4">
+            <img id="randomCard4" src="mndcardback.jpg"></a>
+        </div>
+    </div> 
+
+    <div id = "myDiv5" class = "card5" onclick="flip5()">
+        <img id = "rarity5" src="rarity_common.png">
+        <div class = "front5">
+            <img src="mndcardback.jpg"></a>
+        </div>
+        <div class = "back5">
+            <img id="randomCard5" src="mndcardback.jpg"></a>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <div id = "myDiv6" class = "card6" onclick="flip6()">
+        <img id = "rarity6" src="rarity_common.png">
+        <div class = "front6">
+            <img src="mndcardback.jpg"></a>
+        </div>
+        <div class = "back6">
+            <img id="randomCard6" src="mndcardback.jpg"></a>
+        </div>
+    </div>
+
+    <div id = "myDiv7" class = "card7" onclick="flip7()">
+        <img id = "rarity7" src="rarity_common.png">
+        <div class = "front7">
+            <img src="mndcardback.jpg"></a>
+        </div>
+        <div class = "back7">
+            <img id="randomCard7" src="mndcardback.jpg"></a>
+        </div>
+    </div>
+
+    <div id = "myDiv8" class = "card8" onclick="flip8()">
+        <img id = "rarity8" src="rarity_common.png">
+        <div class = "front8">
+            <img src="mndcardback.jpg"></a>
+        </div>
+        <div class = "back8">
+            <img id="randomCard8" src="mndcardback.jpg"></a>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div id = "myDiv9" class = "card9" onclick="flip9()">
+        <img id = "rarity9" src="rarity_common.png">
+        <div class = "front9">
+            <img src="mndcardback.jpg"></a>
+        </div>
+        <div class = "back9">
+            <img id="randomCard9" src="mndcardback.jpg"></a>
+        </div>
+    </div>
+
+    <div id = "myDiv10" class = "card10" onclick="flip10()">
+        <img id = "rarity10" src="rarity_common.png">
+        <div class = "front10">
+            <img src="mndcardback.jpg"></a>
+        </div>
+        <div class = "back10">
+            <img id="randomCard10" src="mndcardback.jpg"></a>
+        </div>
+    </div>
+
+    <div id = "myDiv11" class = "card11" onclick="flip11()">
+        <img id = "rarity11" src="rarity_common.png">
+        <div class = "front11">
+            <img src="mndcardback.jpg"></a>
+        </div>
+        <div class = "back11">
+            <img id="randomCard11" src="mndcardback.jpg"></a>
+        </div>
+    </div>
+    
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</div>
+
+<br>
+<br>
+
+<button id="button6" onclick="resetAll();setTimeout(randomPack, 501)">RANDOM PACK</button>
+<div class="dropup">
+        <button id="button7">CHOOSE SET</button>
+        <div class="dropup-content">
+            <a href="javascript:void();" onclick="resetAll();setTimeout(newPackUnlimited, 501)">BASE SET</a>
+            <a href="javascript:void();" onclick="resetAll();setTimeout(newPackAwakening, 501)">AWAKENING</a>
+            <a href="javascript:void();" onclick="resetAll();setTimeout(newPackDreamsEnd, 501)">DREAM'S END</a>
+            <a href="javascript:void();" onclick="resetAll();setTimeout(newPackNightmaresDawn, 501)">NIGHTMARE'S DAWN</a>
+            <a href="javascript:void();" onclick="resetAll();setTimeout(newPackVoiceOfTheStorms, 501)">VOICE OF THE STORMS</a>
+            <a href="javascript:void();" onclick="resetAll();setTimeout(newPackTraitorsReach, 501)">TRAITOR'S REACH</a>
+        </div>
+    </div>
+<button id="button8" onclick="resetAll();setTimeout(sameSet, 501)">SAME SET</button>
+<button id="button9" onclick="flipAll()">FLIP ALL</button>
+<button id="button10" onclick="toggleShuffle()">SHUFFLE (OFF)</button>
+
+<br>
+<br>
+
+<div class="bottomBar">
+    programming and design by justin keena (code download available at <a href = "https://github.com/jwkeena?tab=repositories">github</a>);
+    card images from <a href = "http://www.bluefurok.com/OfficialCards_index.htm">blue furok</a>
+</div>  
+
+<!--linking Javascript-->
+<script type="text/javascript" src="mndjavascript.js"></script>
+</body>
+</html>

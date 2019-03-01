@@ -1,3 +1,6 @@
+/* Feel free to use and repurpose my code, as long as you credit me and/or link to my github page
+   Written by justin keena, https://github.com/jwkeena/Magi-Nation-Booster-Pack-Simulator */
+
 function holographic() { 
     let randomCardId = "randomCard";
     let randomNumber = Math.floor(Math.random()*11) + 1;
@@ -6,83 +9,494 @@ function holographic() {
     element.className += "holographic";
 }
 
+//Sets variables for the flip all button to only affect unflipped cards
+let cardIsFlipped0 = 0;
+let cardIsFlipped1 = 0;
+let cardIsFlipped2 = 0;
+let cardIsFlipped3 = 0;
+let cardIsFlipped4 = 0;
+let cardIsFlipped5 = 0;
+let cardIsFlipped6 = 0;
+let cardIsFlipped7 = 0;
+let cardIsFlipped8 = 0;
+let cardIsFlipped9 = 0;
+let cardIsFlipped10 = 0;
+let cardIsFlipped11 = 0;
+
+//For flipping the booster pack image
 function flip0() {
     let element = document.getElementById('myDiv');
-    element.classList.toggle("flipped");
+    if (cardIsFlipped0 === 0) {
+        element.classList.toggle("flipped");
+        ++cardIsFlipped0;
+    } else {
+        element.classList.toggle("flipped");
+        cardIsFlipped0 = 1;
+    }
 }
 
+let checkFlip = 1;
+
+//When card is clicked, its CSS flipping animation is triggered
+//The computer also logs that it has been flipped by changing the cardIsFlipped variable
+//cardIsFlipped 0 = unflipped card; cardIsFlipped 1 = flipped card (waiting for modal zoom), 2 = card being reflipped
+//Checks if all cards have been flipped, and then affects the counter and countdown accordingly
 function flip1() {
     let element = document.getElementById('myDiv1');
-    element.classList.toggle("flipped");
+    if (cardIsFlipped1 === 0){
+        element.classList.toggle("flipped");
+        ++cardIsFlipped1;
+        if (cardIsFlipped1 === 1 && cardIsFlipped2 === 1 && cardIsFlipped3 === 1 &&
+            cardIsFlipped4 === 1 && cardIsFlipped5 === 1 && cardIsFlipped6 === 1 && 
+            cardIsFlipped7 === 1 && cardIsFlipped8 === 1 && cardIsFlipped9 === 1 &&
+            cardIsFlipped10 === 1 && cardIsFlipped11 === 1 && checkFlip === 1) {
+                decreaseCountdown();
+                increasePacksOpened();
+                ++checkFlip;
+                return;
+            }
+        return;
+    } 
+    if (cardIsFlipped1 === 1) {
+        ++cardIsFlipped1;
+        return;
+    } 
+    if (cardIsFlipped1 === 2) {
+        element.classList.toggle("flipped");
+        cardIsFlipped1 = 0;
+        return;
+    }
 }
 
 function flip2() {
     let element = document.getElementById('myDiv2');
-    element.classList.toggle("flipped");
- }
+    if (cardIsFlipped2 === 0){
+        element.classList.toggle("flipped");
+        ++cardIsFlipped2;
+        if (cardIsFlipped1 === 1 && cardIsFlipped2 === 1 && cardIsFlipped3 === 1 &&
+            cardIsFlipped4 === 1 && cardIsFlipped5 === 1 && cardIsFlipped6 === 1 && 
+            cardIsFlipped7 === 1 && cardIsFlipped8 === 1 && cardIsFlipped9 === 1 &&
+            cardIsFlipped10 === 1 && cardIsFlipped11 === 1 && checkFlip === 1) {
+                decreaseCountdown();
+                increasePacksOpened();
+                ++checkFlip;
+                return;
+            }
+        return;
+    } 
+    if (cardIsFlipped2 === 1) {
+        ++cardIsFlipped2;
+        return;
+    } 
+    if (cardIsFlipped2 === 2) {
+        element.classList.toggle("flipped");
+        cardIsFlipped2 = 0;
+        return;
+    }
+}
 
 function flip3() {
     let element = document.getElementById('myDiv3');
-    element.classList.toggle("flipped");
- }
+    if (cardIsFlipped3 === 0){
+        element.classList.toggle("flipped");
+        ++cardIsFlipped3;
+        if (cardIsFlipped1 === 1 && cardIsFlipped2 === 1 && cardIsFlipped3 === 1 &&
+            cardIsFlipped4 === 1 && cardIsFlipped5 === 1 && cardIsFlipped6 === 1 && 
+            cardIsFlipped7 === 1 && cardIsFlipped8 === 1 && cardIsFlipped9 === 1 &&
+            cardIsFlipped10 === 1 && cardIsFlipped11 === 1 && checkFlip === 1) {
+                decreaseCountdown();
+                increasePacksOpened();
+                ++checkFlip;
+                return;
+            }
+        return;
+    } 
+    if (cardIsFlipped3 === 1) {
+        ++cardIsFlipped3;
+        return;
+    } 
+    if (cardIsFlipped3 === 2) {
+        element.classList.toggle("flipped");
+        cardIsFlipped3 = 0;
+        return;
+    }
+}
 
 function flip4() {
     let element = document.getElementById('myDiv4');
-    element.classList.toggle("flipped");
- }
+    if (cardIsFlipped4 === 0){
+        element.classList.toggle("flipped");
+        ++cardIsFlipped4;
+        if (cardIsFlipped1 === 1 && cardIsFlipped2 === 1 && cardIsFlipped3 === 1 &&
+            cardIsFlipped4 === 1 && cardIsFlipped5 === 1 && cardIsFlipped6 === 1 && 
+            cardIsFlipped7 === 1 && cardIsFlipped8 === 1 && cardIsFlipped9 === 1 &&
+            cardIsFlipped10 === 1 && cardIsFlipped11 === 1 && checkFlip === 1) {
+                decreaseCountdown();
+                increasePacksOpened();
+                ++checkFlip;
+                return;
+            }
+        return;
+    } 
+    if (cardIsFlipped4 === 1) {
+        ++cardIsFlipped4;
+        return;
+    } 
+    if (cardIsFlipped4 === 2) {
+        element.classList.toggle("flipped");
+        cardIsFlipped4 = 0;
+        return;
+    }
+}
 
 function flip5() {
     let element = document.getElementById('myDiv5');
-    element.classList.toggle("flipped");
- }
+    if (cardIsFlipped5 === 0){
+        element.classList.toggle("flipped");
+        ++cardIsFlipped5;
+        if (cardIsFlipped1 === 1 && cardIsFlipped2 === 1 && cardIsFlipped3 === 1 &&
+            cardIsFlipped4 === 1 && cardIsFlipped5 === 1 && cardIsFlipped6 === 1 && 
+            cardIsFlipped7 === 1 && cardIsFlipped8 === 1 && cardIsFlipped9 === 1 &&
+            cardIsFlipped10 === 1 && cardIsFlipped11 === 1 && checkFlip === 1) {
+                decreaseCountdown();
+                increasePacksOpened();
+                ++checkFlip;
+                return;
+            }
+        return;
+    } 
+    if (cardIsFlipped5 === 1) {
+        ++cardIsFlipped5;
+        return;
+    } 
+    if (cardIsFlipped5 === 2) {
+        element.classList.toggle("flipped");
+        cardIsFlipped5 = 0;
+        return;
+    }
+}
 
- function flip6() {
+function flip6() {
     let element = document.getElementById('myDiv6');
-    element.classList.toggle("flipped");
- }
+    if (cardIsFlipped6 === 0){
+        element.classList.toggle("flipped");
+        ++cardIsFlipped6;
+        if (cardIsFlipped1 === 1 && cardIsFlipped2 === 1 && cardIsFlipped3 === 1 &&
+            cardIsFlipped4 === 1 && cardIsFlipped5 === 1 && cardIsFlipped6 === 1 && 
+            cardIsFlipped7 === 1 && cardIsFlipped8 === 1 && cardIsFlipped9 === 1 &&
+            cardIsFlipped10 === 1 && cardIsFlipped11 === 1 && checkFlip === 1) {
+                decreaseCountdown();
+                increasePacksOpened();
+                ++checkFlip;
+                return;
+            }
+        return;
+    } 
+    if (cardIsFlipped6 === 1) {
+        ++cardIsFlipped6;
+        return;
+    } 
+    if (cardIsFlipped6 === 2) {
+        element.classList.toggle("flipped");
+        cardIsFlipped6 = 0;
+        return;
+    }
+}
 
 function flip7() {
     let element = document.getElementById('myDiv7');
-    element.classList.toggle("flipped");
- }
+    if (cardIsFlipped7 === 0){
+        element.classList.toggle("flipped");
+        ++cardIsFlipped7;
+        if (cardIsFlipped1 === 1 && cardIsFlipped2 === 1 && cardIsFlipped3 === 1 &&
+            cardIsFlipped4 === 1 && cardIsFlipped5 === 1 && cardIsFlipped6 === 1 && 
+            cardIsFlipped7 === 1 && cardIsFlipped8 === 1 && cardIsFlipped9 === 1 &&
+            cardIsFlipped10 === 1 && cardIsFlipped11 === 1 && checkFlip === 1) {
+                decreaseCountdown();
+                increasePacksOpened();
+                ++checkFlip;
+                return;
+            }
+        return;
+    } 
+    if (cardIsFlipped7 === 1) {
+        ++cardIsFlipped7;
+        return;
+    } 
+    if (cardIsFlipped7 === 2) {
+        element.classList.toggle("flipped");
+        cardIsFlipped7 = 0;
+        return;
+    }
+}
 
 function flip8() {
     let element = document.getElementById('myDiv8');
-    element.classList.toggle("flipped");
- }
+    if (cardIsFlipped8 === 0){
+        element.classList.toggle("flipped");
+        ++cardIsFlipped8;
+        if (cardIsFlipped1 === 1 && cardIsFlipped2 === 1 && cardIsFlipped3 === 1 &&
+            cardIsFlipped4 === 1 && cardIsFlipped5 === 1 && cardIsFlipped6 === 1 && 
+            cardIsFlipped7 === 1 && cardIsFlipped8 === 1 && cardIsFlipped9 === 1 &&
+            cardIsFlipped10 === 1 && cardIsFlipped11 === 1 && checkFlip === 1) {
+                decreaseCountdown();
+                increasePacksOpened();
+                ++checkFlip;
+                return;
+            }
+        return;
+    } 
+    if (cardIsFlipped8 === 1) {
+        ++cardIsFlipped8;
+        return;
+    } 
+    if (cardIsFlipped8 === 2) {
+        element.classList.toggle("flipped");
+        cardIsFlipped8 = 0;
+        return;
+    }
+}
 
 function flip9() {
     let element = document.getElementById('myDiv9');
-    element.classList.toggle("flipped");
- }
+    if (cardIsFlipped9 === 0){
+        element.classList.toggle("flipped");
+        ++cardIsFlipped9;
+        if (cardIsFlipped1 === 1 && cardIsFlipped2 === 1 && cardIsFlipped3 === 1 &&
+            cardIsFlipped4 === 1 && cardIsFlipped5 === 1 && cardIsFlipped6 === 1 && 
+            cardIsFlipped7 === 1 && cardIsFlipped8 === 1 && cardIsFlipped9 === 1 &&
+            cardIsFlipped10 === 1 && cardIsFlipped11 === 1 && checkFlip === 1) {
+                decreaseCountdown();
+                increasePacksOpened();
+                ++checkFlip;
+                return;
+            }
+        return;
+    } 
+    if (cardIsFlipped9 === 1) {
+        ++cardIsFlipped9;
+        return;
+    } 
+    if (cardIsFlipped9 === 2) {
+        element.classList.toggle("flipped");
+        cardIsFlipped9 = 0;
+        return;
+    }   
+}
 
 function flip10() {
     let element = document.getElementById('myDiv10');
-    element.classList.toggle("flipped");
- }
+    if (cardIsFlipped10 === 0){
+        element.classList.toggle("flipped");
+        ++cardIsFlipped10;
+        if (cardIsFlipped1 === 1 && cardIsFlipped2 === 1 && cardIsFlipped3 === 1 &&
+            cardIsFlipped4 === 1 && cardIsFlipped5 === 1 && cardIsFlipped6 === 1 && 
+            cardIsFlipped7 === 1 && cardIsFlipped8 === 1 && cardIsFlipped9 === 1 &&
+            cardIsFlipped10 === 1 && cardIsFlipped11 === 1 && checkFlip === 1) {
+                decreaseCountdown();
+                increasePacksOpened();
+                ++checkFlip;
+                return;
+            }
+        return;
+    } 
+    if (cardIsFlipped10 === 1) {
+        ++cardIsFlipped10;
+        return;
+    } 
+    if (cardIsFlipped10 === 2) {
+        element.classList.toggle("flipped");
+        cardIsFlipped10 = 0;
+        return;
+    }
+
+}
 
 function flip11() {
     let element = document.getElementById('myDiv11');
-    element.classList.toggle("flipped");
- }
+    if (cardIsFlipped11 === 0){
+        element.classList.toggle("flipped");
+        ++cardIsFlipped11;
+        if (cardIsFlipped1 === 1 && cardIsFlipped2 === 1 && cardIsFlipped3 === 1 &&
+            cardIsFlipped4 === 1 && cardIsFlipped5 === 1 && cardIsFlipped6 === 1 && 
+            cardIsFlipped7 === 1 && cardIsFlipped8 === 1 && cardIsFlipped9 === 1 &&
+            cardIsFlipped10 === 1 && cardIsFlipped11 === 1 && checkFlip === 1) {
+                decreaseCountdown();
+                increasePacksOpened();
+                ++checkFlip;
+                return;
+            }
+        return;
+    } 
+    if (cardIsFlipped11 === 1) {
+        ++cardIsFlipped11;
+        return;
+    } 
+    if (cardIsFlipped11 === 2) {
+        element.classList.toggle("flipped");
+        cardIsFlipped11 = 0;
+        return;
+    }
 
+}
+
+//Only flips cards if they haven't been flipped already
 function flipAll() {
-    flip1()
-    flip2()
-    flip3()
-    flip4()
-    flip5()
-    flip6()
-    flip7()
-    flip8()
-    flip9()
-    flip10()
-    flip11()
+    if (cardIsFlipped1 === 0) {
+        flip1();
+        }
+    if (cardIsFlipped2 === 0) {
+        flip2();
+        }
+    if (cardIsFlipped3 === 0) {
+        flip3();
+        }
+    if (cardIsFlipped4 === 0) {
+        flip4();
+        }
+    if (cardIsFlipped5 === 0) {
+        flip5();
+        }
+    if (cardIsFlipped6 === 0) {
+        flip6();
+        }
+    if (cardIsFlipped7 === 0) {
+        flip7();
+        }
+    if (cardIsFlipped8 === 0) {
+        flip8();
+        }
+    if (cardIsFlipped9 === 0) {
+        flip9();
+        }
+    if (cardIsFlipped10 === 0) {
+        flip10();
+        }
+    if (cardIsFlipped11 === 0) {
+        flip11();
+        }
+}
+
+//Sets up image choices for for modal window
+var modal = document.getElementById("myModal");
+var modalImg = document.getElementById("modalImg");
+var img1 = document.getElementById("randomCard1");
+var img2 = document.getElementById("randomCard2");
+var img3 = document.getElementById("randomCard3");
+var img4 = document.getElementById("randomCard4");
+var img5 = document.getElementById("randomCard5");
+var img6 = document.getElementById("randomCard6");
+var img7 = document.getElementById("randomCard7");
+var img8 = document.getElementById("randomCard8");
+var img9 = document.getElementById("randomCard9");
+var img10 = document.getElementById("randomCard10");
+var img11 = document.getElementById("randomCard11");
+
+img1.onclick = function () {
+    if (cardIsFlipped1 = 1) {
+    modal.style.display="block";
+    modalImg.src = this.src;
+    return;
+    }
+}
+
+img2.onclick = function () {
+if (cardIsFlipped2 = 1) {
+    modal.style.display="block";
+    modalImg.src = this.src;
+    return;
+    }
+}
+
+img3.onclick = function () {
+if (cardIsFlipped3 = 1) {
+    modal.style.display="block";
+    modalImg.src = this.src;
+    return;
+    }
+}
+
+img4.onclick = function () {
+if (cardIsFlipped4 = 1) {
+    modal.style.display="block";
+    modalImg.src = this.src;
+    return;
+    }
+}
+
+img5.onclick = function () {
+if (cardIsFlipped5 = 1) {
+    modal.style.display="block";
+    modalImg.src = this.src;
+    return;
+    }
+}
+
+img6.onclick = function () {
+if (cardIsFlipped6 = 1) {
+    modal.style.display="block";
+    modalImg.src = this.src;
+    return;
+    }
+}
+
+img7.onclick = function () {
+if (cardIsFlipped7 = 1) {
+    modal.style.display="block";
+    modalImg.src = this.src;
+    return;
+    }
+}
+
+img8.onclick = function () {
+if (cardIsFlipped8 = 1) {
+    modal.style.display="block";
+    modalImg.src = this.src;
+    return;
+    }
+}
+
+img9.onclick = function () {
+if (cardIsFlipped9 = 1) {
+    modal.style.display="block";
+    modalImg.src = this.src;
+    return;
+    }
+}
+
+img10.onclick = function () {
+if (cardIsFlipped10 = 1) {
+    modal.style.display="block";
+    modalImg.src = this.src;
+    return;
+    }
+}
+
+img11.onclick = function () {
+if (cardIsFlipped11 = 1) {
+    modal.style.display="block";
+    modalImg.src = this.src;
+    return;
+    }
+}
+
+//Closes modal if x is clicked
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function () {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
 }
 
 function reset0() {
     const element = document.getElementById('myDiv');
     element.classList.remove("flipped");
+    cardIsFlipped0 = 0;
 }
 
 function reset1() {
@@ -90,6 +504,7 @@ function reset1() {
     element.classList.remove("flipped");
     const element2 = document.getElementById('randomCard1');
     element2.classList.remove("holographic");
+    cardIsFlipped1 = 0;
 }
 
 function reset2() {
@@ -97,70 +512,80 @@ function reset2() {
     element.classList.remove("flipped");
     const element2 = document.getElementById('randomCard2');
     element2.classList.remove("holographic");
- }
+    cardIsFlipped2 = 0;
+}
 
 function reset3() {
     const element = document.getElementById('myDiv3');
     element.classList.remove("flipped");
     const element2 = document.getElementById('randomCard3');
     element2.classList.remove("holographic");
- }
+    cardIsFlipped3 = 0;
+}
 
 function reset4() {
     const element = document.getElementById('myDiv4');
     element.classList.remove("flipped");
     const element2 = document.getElementById('randomCard4');
     element2.classList.remove("holographic");
- }
+    cardIsFlipped4 = 0;
+}
 
 function reset5() {
     const element = document.getElementById('myDiv5');
     element.classList.remove("flipped");
     const element2 = document.getElementById('randomCard5');
     element2.classList.remove("holographic");
- }
+    cardIsFlipped5 = 0;
+}
 
- function reset6() {
+function reset6() {
     const element = document.getElementById('myDiv6');
     element.classList.remove("flipped");
     const element2 = document.getElementById('randomCard6');
     element2.classList.remove("holographic");
- }
+    cardIsFlipped6 = 0;
+}
 
 function reset7() {
     const element = document.getElementById('myDiv7');
     element.classList.remove("flipped");
     const element2 = document.getElementById('randomCard7');
     element2.classList.remove("holographic");
- }
+    cardIsFlipped7 = 0;
+}
 
 function reset8() {
     const element = document.getElementById('myDiv8');
     element.classList.remove("flipped");
     const element2 = document.getElementById('randomCard8');
     element2.classList.remove("holographic");
- }
+    cardIsFlipped8 = 0;
+}
 
 function reset9() {
     const element = document.getElementById('myDiv9');
     element.classList.remove("flipped");
     const element2 = document.getElementById('randomCard9');
     element2.classList.remove("holographic");
- }
+    cardIsFlipped9 = 0;
+}
 
 function reset10() {
     const element = document.getElementById('myDiv10');
     element.classList.remove("flipped");
     const element2 = document.getElementById('randomCard10');
     element2.classList.remove("holographic");
- }
+    cardIsFlipped10 = 0;
+}
 
 function reset11() {
     const element = document.getElementById('myDiv11');
     element.classList.remove("flipped");
     const element2 = document.getElementById('randomCard11');
     element2.classList.remove("holographic");
- }
+    cardIsFlipped11 = 0;
+}
 
  function resetAll() {
     reset0();
@@ -223,16 +648,141 @@ Array.prototype.shuffle = function() {
     return this;
 }
 
+//Enables random pack button
+function randomPack() {
+    randomSet = Math.floor(Math.random()*6 + 1);
+    switch(randomSet) {
+        case 1:
+            newPackUnlimited();
+            break;
+        case 2:
+            newPackAwakening();
+            break;
+        case 3:
+            newPackDreamsEnd();
+            break;
+        case 4:
+            newPackNightmaresDawn();
+            break;
+        case 5:
+            newPackVoiceOfTheStorms();
+            break;
+        case 6:
+            newPackTraitorsReach();
+            break;
+    }
+}
+
+//Enables the same set button
+let currentSet = 0
+function sameSet() {
+    switch(currentSet) { 
+        case 1:
+            newPackUnlimited();
+            break;
+        case 2:
+            newPackAwakening();
+            break;
+        case 3:
+            newPackDreamsEnd();
+            break;
+        case 4:
+            newPackNightmaresDawn();
+            break;
+        case 5:
+            newPackVoiceOfTheStorms();
+            break;
+        case 6:
+            newPackTraitorsReach();
+            break;
+    }
+}
+
+//Shuffle starts in off position
+//Toggles shuffle array method on or off
+let currentShuffle = 0
+function toggleShuffle() {
+    var topButton = document.getElementById("button5");
+    var bottomButton = document.getElementById("button10");
+    switch(currentShuffle) {
+        //If shuffle button is hit, the suffle function is turned on
+        case 0:
+            ++currentShuffle;
+            topButton.innerHTML = "SHUFFLE (ON)";
+            topButton.style.backgroundColor = "rgb(75, 0, 130)";
+            topButton.style.color = "rgb(172, 154, 68)";
+            bottomButton.innerHTML = "SHUFFLE (ON)";
+            bottomButton.style.backgroundColor = "rgb(75, 0, 130)";
+            bottomButton.style.color = "rgb(172, 154, 68)";
+            break;
+        //If the shuffle button is hit again, the shuffle function is turned off
+        case 1:
+            --currentShuffle;
+            topButton.innerHTML = "SHUFFLE (OFF)";
+            topButton.style.backgroundColor = "rgb(172, 154, 68)";
+            topButton.style.color = "rgb(75, 0, 130)";
+            bottomButton.innerHTML = "SHUFFLE (OFF)";
+            bottomButton.style.backgroundColor = "rgb(172, 154, 68)";
+            bottomButton.style.color = "rgb(75, 0, 130)";
+            break;
+    }
+}
+
 function newPackUnlimited(){
+    //Increases pack counter
+    increaseCounter();
+    //Resets flip counter (to prevent the last card being spammed for the countdown)
+    checkFlip = 1;
+    //Prepares same set button 
+    currentSet = 1;
     //Changes first image to indicate the type of pack chosen
     document.getElementById("boosterPackFront").src="base_pack1.JPG";
     //Changes back of first image to indicate the type of pack chosen (currently don't have this image)
     document.getElementById("boosterPackBack").src="base_pack1.JPG";
     //Flips all cards over to starting position
     resetAll();
-    //Shuffles the IDs of cards in the pack
+    //Shuffles the IDs of cards if user chooses to shuffle; otherwise reverts to fixed order
+    if (currentShuffle === 1) {
     cardOrderArray.shuffle();
+        //Erases rarity indicators since it's randomized
+        document.getElementById("rarity1").src = "empty.png";
+        document.getElementById("rarity2").src = "empty.png";
+        document.getElementById("rarity3").src = "empty.png";
+        document.getElementById("rarity4").src = "empty.png";
+        document.getElementById("rarity5").src = "empty.png";
+        document.getElementById("rarity6").src = "empty.png";
+        document.getElementById("rarity7").src = "empty.png";
+        document.getElementById("rarity8").src = "empty.png";
+        document.getElementById("rarity9").src = "empty.png";
+        document.getElementById("rarity10").src = "empty.png";
+        document.getElementById("rarity11").src = "empty.png";
 
+    } else {
+    cardOrderArray = [
+        'randomCard1', 
+        'randomCard2', 
+        'randomCard3', 
+        'randomCard4', 
+        'randomCard5', 
+        'randomCard6', 
+        'randomCard7', 
+        'randomCard8', 
+        'randomCard9',
+        'randomCard10',
+        'randomCard11'];
+        //Rarity indicators appear for fixed order
+        document.getElementById("rarity1").src = "rarity_uncommon.png";
+        document.getElementById("rarity2").src = "rarity_uncommon.png";
+        document.getElementById("rarity3").src = "rarity_uncommon.png";
+        document.getElementById("rarity4").src = "rarity_rare.png";
+        document.getElementById("rarity5").src = "rarity_common.png";
+        document.getElementById("rarity6").src = "rarity_common.png";
+        document.getElementById("rarity7").src = "rarity_common.png";
+        document.getElementById("rarity8").src = "rarity_common.png";
+        document.getElementById("rarity9").src = "rarity_common.png";
+        document.getElementById("rarity10").src = "rarity_common.png";
+        document.getElementById("rarity11").src = "rarity_common.png";
+    }   
     //Counts the number of rares in the nested rares array
     let numOfRares = unlimitedLinks[0].length;
     //Picks a number between 0 and the total number of rares. Do NOT add 1 to Math.floor so that index position 0 can be chosen later. Adding 1 can result in blank cards
@@ -240,7 +790,7 @@ function newPackUnlimited(){
     //Picks a random rare from the nested array based on the random number just chosen
     let newRare = unlimitedLinks[0][randomRare];
     //Stores the value in the first position of the shuffled IDs array
-    let newId1 = cardOrderArray[0];
+    let newId1 = cardOrderArray[3];
     //Reassigns the value just stored as the new ID of the rare, thus putting it in a randomized position 
     document.getElementById(newId1).src = newRare;
 
@@ -252,12 +802,25 @@ function newPackUnlimited(){
     let newUncommon1 = unlimitedLinks[1][randomUncommon1];
     let newUncommon2 = unlimitedLinks[1][randomUncommon2];
     let newUncommon3 = unlimitedLinks[1][randomUncommon3];
-    let newId2= cardOrderArray[1];
-    let newId3= cardOrderArray[2];
-    let newId4= cardOrderArray[3];
+    let newId2= cardOrderArray[0];
+    let newId3= cardOrderArray[1];
+    let newId4= cardOrderArray[2];
     document.getElementById(newId2).src = newUncommon1;
     document.getElementById(newId3).src = newUncommon2;
     document.getElementById(newId4).src = newUncommon3;
+
+    //Prevents duplicate uncommons by repeating function if duplicate is found
+    let currentUncommons = [newUncommon1, newUncommon2, newUncommon3]
+    for (let i = 0; i < 3; i++) {
+        let j = 1 + i
+            for (j; j < currentUncommons.length; j++) {
+                if (currentUncommons[i] === currentUncommons[j]) {
+                    --counter;
+                    newPackUnlimited();
+                    return;
+            }
+        }
+    }
 
     //Same process, for 7 uncommons
     let numOfCommons = unlimitedLinks[2].length;
@@ -290,30 +853,83 @@ function newPackUnlimited(){
     document.getElementById(newId10).src = newCommon6;
     document.getElementById(newId11).src = newCommon7;
 
-    //1 in 5 chance of a random holo
+    //Prevents duplicate commons
+    let currentCommons = [newCommon1, newCommon2, newCommon3, newCommon4, newCommon5, newCommon6, newCommon7]
+    for (let i = 0; i < 7; i++) {
+        let j = 1 + i
+            for (j; j < currentCommons.length; j++) {
+                if (currentCommons[i] === currentCommons[j]) {
+                    --counter;
+                    newPackUnlimited();
+                    return;
+            }
+        }
+    }
+
+    //1 in 5 chance of a random holo. Replaces first common
     let randomHolographic = Math.floor(Math.random()*5);
     if (randomHolographic === 0) {
         let randomHoloRarity = Math.floor(Math.random()*3);
         let numOfRandomSet = unlimitedLinks[randomHoloRarity].length;
         let randomHolo = Math.floor(Math.random()*numOfRandomSet);
         let randomHoloURL = unlimitedLinks[randomHoloRarity][randomHolo];
-        document.getElementById(newId11).src = randomHoloURL;
-        let element = document.getElementById(newId11);
+        document.getElementById(newId5).src = randomHoloURL;
+        let element = document.getElementById(newId5);
         element.className += "holographic";
     }
 }
 
 function newPackAwakening(){
+    increaseCounter();
+    checkFlip = 1;
+    currentSet = 2;
     document.getElementById("boosterPackFront").src="awakening_pack1.JPG";
     document.getElementById("boosterPackBack").src="awakening_pack2.jpg";
     resetAll();
-    cardOrderArray.shuffle();
+    if (currentShuffle === 1) {
+        cardOrderArray.shuffle();
+        document.getElementById("rarity1").src = "empty.png";
+        document.getElementById("rarity2").src = "empty.png";
+        document.getElementById("rarity3").src = "empty.png";
+        document.getElementById("rarity4").src = "empty.png";
+        document.getElementById("rarity5").src = "empty.png";
+        document.getElementById("rarity6").src = "empty.png";
+        document.getElementById("rarity7").src = "empty.png";
+        document.getElementById("rarity8").src = "empty.png";
+        document.getElementById("rarity9").src = "empty.png";
+        document.getElementById("rarity10").src = "empty.png";
+        document.getElementById("rarity11").src = "empty.png";
+        } else {
+        cardOrderArray = [
+            'randomCard1', 
+            'randomCard2', 
+            'randomCard3', 
+            'randomCard4', 
+            'randomCard5', 
+            'randomCard6', 
+            'randomCard7', 
+            'randomCard8', 
+            'randomCard9',
+            'randomCard10',
+            'randomCard11'];
+            document.getElementById("rarity1").src = "rarity_uncommon.png";
+            document.getElementById("rarity2").src = "rarity_uncommon.png";
+            document.getElementById("rarity3").src = "rarity_uncommon.png";
+            document.getElementById("rarity4").src = "rarity_rare.png";
+            document.getElementById("rarity5").src = "rarity_common.png";
+            document.getElementById("rarity6").src = "rarity_common.png";
+            document.getElementById("rarity7").src = "rarity_common.png";
+            document.getElementById("rarity8").src = "rarity_common.png";
+            document.getElementById("rarity9").src = "rarity_common.png";
+            document.getElementById("rarity10").src = "rarity_common.png";
+            document.getElementById("rarity11").src = "rarity_common.png";
+        }   
 
     //Rare distribution
     let numOfRares = awakeningLinks[0].length;
     let randomRare = Math.floor(Math.random()*numOfRares);
     let newRare = awakeningLinks[0][randomRare];
-    let newId1 = cardOrderArray[0];
+    let newId1 = cardOrderArray[3];
     document.getElementById(newId1).src = newRare;
 
     //Uncommon distribution
@@ -324,12 +940,24 @@ function newPackAwakening(){
     let newUncommon1 = awakeningLinks[1][randomUncommon1];
     let newUncommon2 = awakeningLinks[1][randomUncommon2];
     let newUncommon3 = awakeningLinks[1][randomUncommon3];
-    let newId2= cardOrderArray[1];
-    let newId3= cardOrderArray[2];
-    let newId4= cardOrderArray[3];
+    let newId2= cardOrderArray[0];
+    let newId3= cardOrderArray[1];
+    let newId4= cardOrderArray[2];
     document.getElementById(newId2).src = newUncommon1;
     document.getElementById(newId3).src = newUncommon2;
     document.getElementById(newId4).src = newUncommon3;
+
+    let currentUncommons = [newUncommon1, newUncommon2, newUncommon3]
+    for (let i = 0; i < 3; i++) {
+        let j = 1 + i
+            for (j; j < currentUncommons.length; j++) {
+                if (currentUncommons[i] === currentUncommons[j]) {
+                    --counter;
+                    newPackAwakening();
+                    return;
+            }
+        }
+    }
 
     //Common distribution
     let numOfCommons = awakeningLinks[2].length;
@@ -361,31 +989,83 @@ function newPackAwakening(){
     document.getElementById(newId9).src = newCommon5;
     document.getElementById(newId10).src = newCommon6;
     document.getElementById(newId11).src = newCommon7;
+
+    let currentCommons = [newCommon1, newCommon2, newCommon3, newCommon4, newCommon5, newCommon6, newCommon7]
+    for (let i = 0; i < 7; i++) {
+        let j = 1 + i
+            for (j; j < currentCommons.length; j++) {
+                if (currentCommons[i] === currentCommons[j]) {
+                    --counter;
+                    newPackAwakening();
+                    return;
+            }
+        }
+    }
     
-    //1 in 5 chance of a random holo
+    //1 in 5 chance of a random holo. Replaces first common
     let randomHolographic = Math.floor(Math.random()*5);
-    if (randomHolographic === 1) {
+    if (randomHolographic === 0) {
         let randomHoloRarity = Math.floor(Math.random()*3);
-        let numOfRandomSet = awakeningLinks[randomHoloRarity].length;
+        let numOfRandomSet = unlimitedLinks[randomHoloRarity].length;
         let randomHolo = Math.floor(Math.random()*numOfRandomSet);
-        let randomHoloURL = awakeningLinks[randomHoloRarity][randomHolo];
-        document.getElementById(newId11).src = randomHoloURL;
-        let element = document.getElementById(newId11);
+        let randomHoloURL = unlimitedLinks[randomHoloRarity][randomHolo];
+        document.getElementById(newId5).src = randomHoloURL;
+        let element = document.getElementById(newId5);
         element.className += "holographic";
     }
 }
 
 function newPackDreamsEnd(){
+    increaseCounter();
+    checkFlip = 1;
+    currentSet = 3;
     document.getElementById("boosterPackFront").src="dreams_end_pack1.jpg";
     document.getElementById("boosterPackBack").src="dreams_end_pack2.jpg";
     resetAll();
+    if (currentShuffle === 1) {
     cardOrderArray.shuffle();
+    document.getElementById("rarity1").src = "empty.png";
+    document.getElementById("rarity2").src = "empty.png";
+    document.getElementById("rarity3").src = "empty.png";
+    document.getElementById("rarity4").src = "empty.png";
+    document.getElementById("rarity5").src = "empty.png";
+    document.getElementById("rarity6").src = "empty.png";
+    document.getElementById("rarity7").src = "empty.png";
+    document.getElementById("rarity8").src = "empty.png";
+    document.getElementById("rarity9").src = "empty.png";
+    document.getElementById("rarity10").src = "empty.png";
+    document.getElementById("rarity11").src = "empty.png";
+    } else {
+    cardOrderArray = [
+        'randomCard1', 
+        'randomCard2', 
+        'randomCard3', 
+        'randomCard4', 
+        'randomCard5', 
+        'randomCard6', 
+        'randomCard7', 
+        'randomCard8', 
+        'randomCard9',
+        'randomCard10',
+        'randomCard11'];
+        document.getElementById("rarity1").src = "rarity_uncommon.png";
+        document.getElementById("rarity2").src = "rarity_uncommon.png";
+        document.getElementById("rarity3").src = "rarity_uncommon.png";
+        document.getElementById("rarity4").src = "rarity_rare.png";
+        document.getElementById("rarity5").src = "rarity_common.png";
+        document.getElementById("rarity6").src = "rarity_common.png";
+        document.getElementById("rarity7").src = "rarity_common.png";
+        document.getElementById("rarity8").src = "rarity_common.png";
+        document.getElementById("rarity9").src = "rarity_common.png";
+        document.getElementById("rarity10").src = "rarity_common.png";
+        document.getElementById("rarity11").src = "rarity_common.png";
+    }   
 
     //Rare distribution. 
     let numOfRares = dreamsEndLinks[0].length;
     let randomRare = Math.floor(Math.random()*numOfRares);
     let newRare = dreamsEndLinks[0][randomRare];
-    let newId1 = cardOrderArray[0];
+    let newId1 = cardOrderArray[3];
     document.getElementById(newId1).src = newRare;
 
     //Uncommon distribution
@@ -396,12 +1076,24 @@ function newPackDreamsEnd(){
     let newUncommon1 = dreamsEndLinks[1][randomUncommon1];
     let newUncommon2 = dreamsEndLinks[1][randomUncommon2];
     let newUncommon3 = dreamsEndLinks[1][randomUncommon3];
-    let newId2= cardOrderArray[1];
-    let newId3= cardOrderArray[2];
-    let newId4= cardOrderArray[3];
+    let newId2= cardOrderArray[0];
+    let newId3= cardOrderArray[1];
+    let newId4= cardOrderArray[2];
     document.getElementById(newId2).src = newUncommon1;
     document.getElementById(newId3).src = newUncommon2;
     document.getElementById(newId4).src = newUncommon3;
+
+    let currentUncommons = [newUncommon1, newUncommon2, newUncommon3]
+    for (let i = 0; i < 3; i++) {
+        let j = 1 + i
+            for (j; j < currentUncommons.length; j++) {
+                if (currentUncommons[i] === currentUncommons[j]) {
+                    --counter;
+                    newPackDreamsEnd();
+                    return;
+            }
+        }
+    }
 
     //Common distribution
     let numOfCommons = dreamsEndLinks[2].length;
@@ -434,30 +1126,70 @@ function newPackDreamsEnd(){
     document.getElementById(newId10).src = newCommon6;
     document.getElementById(newId11).src = newCommon7;
     
-    //1 in 5 chance of a random holo
+    //1 in 5 chance of a random holo. Replaces first common
     let randomHolographic = Math.floor(Math.random()*5);
-    if (randomHolographic === 2) {
+    if (randomHolographic === 0) {
         let randomHoloRarity = Math.floor(Math.random()*3);
-        let numOfRandomSet = dreamsEndLinks[randomHoloRarity].length;
+        let numOfRandomSet = unlimitedLinks[randomHoloRarity].length;
         let randomHolo = Math.floor(Math.random()*numOfRandomSet);
-        let randomHoloURL = dreamsEndLinks[randomHoloRarity][randomHolo];
-        document.getElementById(newId11).src = randomHoloURL;
-        let element = document.getElementById(newId11);
+        let randomHoloURL = unlimitedLinks[randomHoloRarity][randomHolo];
+        document.getElementById(newId5).src = randomHoloURL;
+        let element = document.getElementById(newId5);
         element.className += "holographic";
     }
 }
 
 function newPackNightmaresDawn(){
+    increaseCounter();
+    checkFlip = 1;
+    currentSet = 4;
     document.getElementById("boosterPackFront").src="nightmares_dawn_pack1.JPG";
     document.getElementById("boosterPackBack").src="nightmares_dawn_pack2.jpg";
     resetAll();
-    cardOrderArray.shuffle();
+    if (currentShuffle === 1) {
+        cardOrderArray.shuffle();
+        document.getElementById("rarity1").src = "empty.png";
+        document.getElementById("rarity2").src = "empty.png";
+        document.getElementById("rarity3").src = "empty.png";
+        document.getElementById("rarity4").src = "empty.png";
+        document.getElementById("rarity5").src = "empty.png";
+        document.getElementById("rarity6").src = "empty.png";
+        document.getElementById("rarity7").src = "empty.png";
+        document.getElementById("rarity8").src = "empty.png";
+        document.getElementById("rarity9").src = "empty.png";
+        document.getElementById("rarity10").src = "empty.png";
+        document.getElementById("rarity11").src = "empty.png";
+        } else {
+        cardOrderArray = [
+            'randomCard1', 
+            'randomCard2', 
+            'randomCard3', 
+            'randomCard4', 
+            'randomCard5', 
+            'randomCard6', 
+            'randomCard7', 
+            'randomCard8', 
+            'randomCard9',
+            'randomCard10',
+            'randomCard11'];
+            document.getElementById("rarity1").src = "rarity_uncommon.png";
+            document.getElementById("rarity2").src = "rarity_uncommon.png";
+            document.getElementById("rarity3").src = "rarity_uncommon.png";
+            document.getElementById("rarity4").src = "rarity_rare.png";
+            document.getElementById("rarity5").src = "rarity_common.png";
+            document.getElementById("rarity6").src = "rarity_common.png";
+            document.getElementById("rarity7").src = "rarity_common.png";
+            document.getElementById("rarity8").src = "rarity_common.png";
+            document.getElementById("rarity9").src = "rarity_common.png";
+            document.getElementById("rarity10").src = "rarity_common.png";
+            document.getElementById("rarity11").src = "rarity_common.png";
+        }   
 
     //Rare distribution
     let numOfRares = nightmaresDawnLinks[0].length;
     let randomRare = Math.floor(Math.random()*numOfRares);
     let newRare = nightmaresDawnLinks[0][randomRare];
-    let newId1 = cardOrderArray[0];
+    let newId1 = cardOrderArray[3];
     document.getElementById(newId1).src = newRare;
 
     //Uncommon distribution
@@ -468,12 +1200,24 @@ function newPackNightmaresDawn(){
     let newUncommon1 = nightmaresDawnLinks[1][randomUncommon1];
     let newUncommon2 = nightmaresDawnLinks[1][randomUncommon2];
     let newUncommon3 = nightmaresDawnLinks[1][randomUncommon3];
-    let newId2= cardOrderArray[1];
-    let newId3= cardOrderArray[2];
-    let newId4= cardOrderArray[3];
+    let newId2= cardOrderArray[0];
+    let newId3= cardOrderArray[1];
+    let newId4= cardOrderArray[2];
     document.getElementById(newId2).src = newUncommon1;
     document.getElementById(newId3).src = newUncommon2;
     document.getElementById(newId4).src = newUncommon3;
+
+    let currentUncommons = [newUncommon1, newUncommon2, newUncommon3]
+    for (let i = 0; i < 3; i++) {
+        let j = 1 + i
+            for (j; j < currentUncommons.length; j++) {
+                if (currentUncommons[i] === currentUncommons[j]) {
+                    --counter;
+                    newPackNightmaresDawn();
+                    return;
+            }
+        }
+    }
 
     //Common distribution
     let numOfCommons = nightmaresDawnLinks[2].length;
@@ -506,30 +1250,82 @@ function newPackNightmaresDawn(){
     document.getElementById(newId10).src = newCommon6;
     document.getElementById(newId11).src = newCommon7;
     
-    //1 in 5 chance of a random holo
+    let currentCommons = [newCommon1, newCommon2, newCommon3, newCommon4, newCommon5, newCommon6, newCommon7]
+    for (let i = 0; i < 7; i++) {
+        let j = 1 + i
+            for (j; j < currentCommons.length; j++) {
+                if (currentCommons[i] === currentCommons[j]) {
+                    --counter;
+                    newPackNightmaresDawn();
+                    return;
+            }
+        }
+    }
+
+    //1 in 5 chance of a random holo. Replaces first common
     let randomHolographic = Math.floor(Math.random()*5);
-    if (randomHolographic === 3) {
+    if (randomHolographic === 0) {
         let randomHoloRarity = Math.floor(Math.random()*3);
-        let numOfRandomSet = nightmaresDawnLinks[randomHoloRarity].length;
+        let numOfRandomSet = unlimitedLinks[randomHoloRarity].length;
         let randomHolo = Math.floor(Math.random()*numOfRandomSet);
-        let randomHoloURL = nightmaresDawnLinks[randomHoloRarity][randomHolo];
-        document.getElementById(newId11).src = randomHoloURL;
-        let element = document.getElementById(newId11);
+        let randomHoloURL = unlimitedLinks[randomHoloRarity][randomHolo];
+        document.getElementById(newId5).src = randomHoloURL;
+        let element = document.getElementById(newId5);
         element.className += "holographic";
     }
 }
 
 function newPackVoiceOfTheStorms(){
+    increaseCounter();
+    checkFlip = 1;
+    currentSet = 5;
     document.getElementById("boosterPackFront").src="voice_of_the_storms_pack1.JPG";
     document.getElementById("boosterPackBack").src="voice_of_the_storms_pack2.jpg";
     resetAll();
-    cardOrderArray.shuffle();
+    if (currentShuffle === 1) {
+        cardOrderArray.shuffle();
+        document.getElementById("rarity1").src = "empty.png";
+        document.getElementById("rarity2").src = "empty.png";
+        document.getElementById("rarity3").src = "empty.png";
+        document.getElementById("rarity4").src = "empty.png";
+        document.getElementById("rarity5").src = "empty.png";
+        document.getElementById("rarity6").src = "empty.png";
+        document.getElementById("rarity7").src = "empty.png";
+        document.getElementById("rarity8").src = "empty.png";
+        document.getElementById("rarity9").src = "empty.png";
+        document.getElementById("rarity10").src = "empty.png";
+        document.getElementById("rarity11").src = "empty.png";
+        } else {
+        cardOrderArray = [
+            'randomCard1', 
+            'randomCard2', 
+            'randomCard3', 
+            'randomCard4', 
+            'randomCard5', 
+            'randomCard6', 
+            'randomCard7', 
+            'randomCard8', 
+            'randomCard9',
+            'randomCard10',
+            'randomCard11'];
+            document.getElementById("rarity1").src = "rarity_uncommon.png";
+            document.getElementById("rarity2").src = "rarity_uncommon.png";
+            document.getElementById("rarity3").src = "rarity_uncommon.png";
+            document.getElementById("rarity4").src = "rarity_rare.png";
+            document.getElementById("rarity5").src = "rarity_common.png";
+            document.getElementById("rarity6").src = "rarity_common.png";
+            document.getElementById("rarity7").src = "rarity_common.png";
+            document.getElementById("rarity8").src = "rarity_common.png";
+            document.getElementById("rarity9").src = "rarity_common.png";
+            document.getElementById("rarity10").src = "rarity_common.png";
+            document.getElementById("rarity11").src = "rarity_common.png";
+        }   
 
     //Rare distribution
     let numOfRares = voiceOfTheStormsLinks[0].length;
     let randomRare = Math.floor(Math.random()*numOfRares);
     let newRare = voiceOfTheStormsLinks[0][randomRare];
-    let newId1 = cardOrderArray[0];
+    let newId1 = cardOrderArray[3];
     document.getElementById(newId1).src = newRare;
 
     //Uncommon distribution
@@ -540,12 +1336,24 @@ function newPackVoiceOfTheStorms(){
     let newUncommon1 = voiceOfTheStormsLinks[1][randomUncommon1];
     let newUncommon2 = voiceOfTheStormsLinks[1][randomUncommon2];
     let newUncommon3 = voiceOfTheStormsLinks[1][randomUncommon3];
-    let newId2= cardOrderArray[1];
-    let newId3= cardOrderArray[2];
-    let newId4= cardOrderArray[3];
+    let newId2= cardOrderArray[0];
+    let newId3= cardOrderArray[1];
+    let newId4= cardOrderArray[2];
     document.getElementById(newId2).src = newUncommon1;
     document.getElementById(newId3).src = newUncommon2;
     document.getElementById(newId4).src = newUncommon3;
+
+    let currentUncommons = [newUncommon1, newUncommon2, newUncommon3]
+    for (let i = 0; i < 3; i++) {
+        let j = 1 + i
+            for (j; j < currentUncommons.length; j++) {
+                if (currentUncommons[i] === currentUncommons[j]) {
+                    --counter;
+                    newPackVoiceOfTheStorms();
+                    return;
+            }
+        }
+    }
 
     //Common distribution
     let numOfCommons = voiceOfTheStormsLinks[2].length;
@@ -578,30 +1386,82 @@ function newPackVoiceOfTheStorms(){
     document.getElementById(newId10).src = newCommon6;
     document.getElementById(newId11).src = newCommon7;
     
-    //1 in 5 chance of a random holo
+    let currentCommons = [newCommon1, newCommon2, newCommon3, newCommon4, newCommon5, newCommon6, newCommon7]
+    for (let i = 0; i < 7; i++) {
+        let j = 1 + i
+            for (j; j < currentCommons.length; j++) {
+                if (currentCommons[i] === currentCommons[j]) {
+                    --counter;
+                    newPackVoiceOfTheStorms();
+                    return;
+            }
+        }
+    }
+
+    //1 in 5 chance of a random holo. Replaces first common
     let randomHolographic = Math.floor(Math.random()*5);
-    if (randomHolographic === 4) {
+    if (randomHolographic === 0) {
         let randomHoloRarity = Math.floor(Math.random()*3);
-        let numOfRandomSet = voiceOfTheStormsLinks[randomHoloRarity].length;
+        let numOfRandomSet = unlimitedLinks[randomHoloRarity].length;
         let randomHolo = Math.floor(Math.random()*numOfRandomSet);
-        let randomHoloURL = voiceOfTheStormsLinks[randomHoloRarity][randomHolo];
-        document.getElementById(newId11).src = randomHoloURL;
-        let element = document.getElementById(newId11);
+        let randomHoloURL = unlimitedLinks[randomHoloRarity][randomHolo];
+        document.getElementById(newId5).src = randomHoloURL;
+        let element = document.getElementById(newId5);
         element.className += "holographic";
     }
 }
 
 function newPackTraitorsReach(){
+    increaseCounter();
+    checkFlip = 1;
+    currentSet = 6;
     document.getElementById("boosterPackFront").src="traitors_reach_pack1.jpg";
     document.getElementById("boosterPackBack").src="traitors_reach_pack1.jpg";
     resetAll();
-    cardOrderArray.shuffle();
+    if (currentShuffle === 1) {
+        cardOrderArray.shuffle();
+        document.getElementById("rarity1").src = "empty.png";
+        document.getElementById("rarity2").src = "empty.png";
+        document.getElementById("rarity3").src = "empty.png";
+        document.getElementById("rarity4").src = "empty.png";
+        document.getElementById("rarity5").src = "empty.png";
+        document.getElementById("rarity6").src = "empty.png";
+        document.getElementById("rarity7").src = "empty.png";
+        document.getElementById("rarity8").src = "empty.png";
+        document.getElementById("rarity9").src = "empty.png";
+        document.getElementById("rarity10").src = "empty.png";
+        document.getElementById("rarity11").src = "empty.png";
+        } else {
+        cardOrderArray = [
+            'randomCard1', 
+            'randomCard2', 
+            'randomCard3', 
+            'randomCard4', 
+            'randomCard5', 
+            'randomCard6', 
+            'randomCard7', 
+            'randomCard8', 
+            'randomCard9',
+            'randomCard10',
+            'randomCard11'];
+            document.getElementById("rarity1").src = "rarity_uncommon.png";
+            document.getElementById("rarity2").src = "rarity_uncommon.png";
+            document.getElementById("rarity3").src = "rarity_uncommon.png";
+            document.getElementById("rarity4").src = "rarity_rare.png";
+            document.getElementById("rarity5").src = "rarity_common.png";
+            document.getElementById("rarity6").src = "rarity_common.png";
+            document.getElementById("rarity7").src = "rarity_common.png";
+            document.getElementById("rarity8").src = "rarity_common.png";
+            document.getElementById("rarity9").src = "rarity_common.png";
+            document.getElementById("rarity10").src = "rarity_common.png";
+            document.getElementById("rarity11").src = "rarity_common.png";
+        }   
 
     //Rare distribution
     let numOfRares = traitorsReachLinks[0].length;
     let randomRare = Math.floor(Math.random()*numOfRares);
     let newRare = traitorsReachLinks[0][randomRare];
-    let newId1 = cardOrderArray[0];
+    let newId1 = cardOrderArray[3];
     document.getElementById(newId1).src = newRare;
 
     //Uncommon distribution
@@ -612,12 +1472,24 @@ function newPackTraitorsReach(){
     let newUncommon1 = traitorsReachLinks[1][randomUncommon1];
     let newUncommon2 = traitorsReachLinks[1][randomUncommon2];
     let newUncommon3 = traitorsReachLinks[1][randomUncommon3];
-    let newId2= cardOrderArray[1];
-    let newId3= cardOrderArray[2];
-    let newId4= cardOrderArray[3];
+    let newId2= cardOrderArray[0];
+    let newId3= cardOrderArray[1];
+    let newId4= cardOrderArray[2];
     document.getElementById(newId2).src = newUncommon1;
     document.getElementById(newId3).src = newUncommon2;
     document.getElementById(newId4).src = newUncommon3;
+
+    let currentUncommons = [newUncommon1, newUncommon2, newUncommon3]
+    for (let i = 0; i < 3; i++) {
+        let j = 1 + i
+            for (j; j < currentUncommons.length; j++) {
+                if (currentUncommons[i] === currentUncommons[j]) {
+                    --counter;
+                    newPackTraitorsReach();
+                    return;
+            }
+        }
+    }
 
     //Common distribution
     let numOfCommons = traitorsReachLinks[2].length;
@@ -649,19 +1521,47 @@ function newPackTraitorsReach(){
     document.getElementById(newId9).src = newCommon5;
     document.getElementById(newId10).src = newCommon6;
     document.getElementById(newId11).src = newCommon7;
-    
-    //1 in 5 chance of a random holo
+
+    let currentCommons = [newCommon1, newCommon2, newCommon3, newCommon4, newCommon5, newCommon6, newCommon7]
+    for (let i = 0; i < 7; i++) {
+        let j = 1 + i
+            for (j; j < currentCommons.length; j++) {
+                if (currentCommons[i] === currentCommons[j]) {
+                    --counter;
+                    newPackTraitorsReach();
+                    return;
+            }
+        }
+    }
+
+    //1 in 5 chance of a random holo. Replaces first common
     let randomHolographic = Math.floor(Math.random()*5);
     if (randomHolographic === 0) {
         let randomHoloRarity = Math.floor(Math.random()*3);
-        let numOfRandomSet = traitorsReachLinks[randomHoloRarity].length;
+        let numOfRandomSet = unlimitedLinks[randomHoloRarity].length;
         let randomHolo = Math.floor(Math.random()*numOfRandomSet);
-        let randomHoloURL = traitorsReachLinks[randomHoloRarity][randomHolo];
-        document.getElementById(newId11).src = randomHoloURL;
-        let element = document.getElementById(newId11);
+        let randomHoloURL = unlimitedLinks[randomHoloRarity][randomHolo];
+        document.getElementById(newId5).src = randomHoloURL;
+        let element = document.getElementById(newId5);
         element.className += "holographic";
     }
 }
+
+let counter = 0;
+let packsOpened = 0;
+
+function increaseCounter() {
+    ++counter;
+    var element = document.getElementById("counter");
+    element.innerHTML = "[ packs generated: " + counter;
+}
+
+function increasePacksOpened() {
+    ++packsOpened;
+    var element = document.getElementById("packsOpened");
+    element.innerHTML = " | packs opened: " + packsOpened + " ] ";
+}
+
 
 const unlimitedLinks = [
 

@@ -50,7 +50,6 @@ function flip1() {
             cardIsFlipped4 === 1 && cardIsFlipped5 === 1 && cardIsFlipped6 === 1 && 
             cardIsFlipped7 === 1 && cardIsFlipped8 === 1 && cardIsFlipped9 === 1 &&
             cardIsFlipped10 === 1 && cardIsFlipped11 === 1 && checkFlip === 1) {
-                decreaseCountdown();
                 increasePacksOpened();
                 ++checkFlip;
                 return;
@@ -77,7 +76,6 @@ function flip2() {
             cardIsFlipped4 === 1 && cardIsFlipped5 === 1 && cardIsFlipped6 === 1 && 
             cardIsFlipped7 === 1 && cardIsFlipped8 === 1 && cardIsFlipped9 === 1 &&
             cardIsFlipped10 === 1 && cardIsFlipped11 === 1 && checkFlip === 1) {
-                decreaseCountdown();
                 increasePacksOpened();
                 ++checkFlip;
                 return;
@@ -104,7 +102,6 @@ function flip3() {
             cardIsFlipped4 === 1 && cardIsFlipped5 === 1 && cardIsFlipped6 === 1 && 
             cardIsFlipped7 === 1 && cardIsFlipped8 === 1 && cardIsFlipped9 === 1 &&
             cardIsFlipped10 === 1 && cardIsFlipped11 === 1 && checkFlip === 1) {
-                decreaseCountdown();
                 increasePacksOpened();
                 ++checkFlip;
                 return;
@@ -131,7 +128,6 @@ function flip4() {
             cardIsFlipped4 === 1 && cardIsFlipped5 === 1 && cardIsFlipped6 === 1 && 
             cardIsFlipped7 === 1 && cardIsFlipped8 === 1 && cardIsFlipped9 === 1 &&
             cardIsFlipped10 === 1 && cardIsFlipped11 === 1 && checkFlip === 1) {
-                decreaseCountdown();
                 increasePacksOpened();
                 ++checkFlip;
                 return;
@@ -158,7 +154,6 @@ function flip5() {
             cardIsFlipped4 === 1 && cardIsFlipped5 === 1 && cardIsFlipped6 === 1 && 
             cardIsFlipped7 === 1 && cardIsFlipped8 === 1 && cardIsFlipped9 === 1 &&
             cardIsFlipped10 === 1 && cardIsFlipped11 === 1 && checkFlip === 1) {
-                decreaseCountdown();
                 increasePacksOpened();
                 ++checkFlip;
                 return;
@@ -185,7 +180,6 @@ function flip6() {
             cardIsFlipped4 === 1 && cardIsFlipped5 === 1 && cardIsFlipped6 === 1 && 
             cardIsFlipped7 === 1 && cardIsFlipped8 === 1 && cardIsFlipped9 === 1 &&
             cardIsFlipped10 === 1 && cardIsFlipped11 === 1 && checkFlip === 1) {
-                decreaseCountdown();
                 increasePacksOpened();
                 ++checkFlip;
                 return;
@@ -212,7 +206,6 @@ function flip7() {
             cardIsFlipped4 === 1 && cardIsFlipped5 === 1 && cardIsFlipped6 === 1 && 
             cardIsFlipped7 === 1 && cardIsFlipped8 === 1 && cardIsFlipped9 === 1 &&
             cardIsFlipped10 === 1 && cardIsFlipped11 === 1 && checkFlip === 1) {
-                decreaseCountdown();
                 increasePacksOpened();
                 ++checkFlip;
                 return;
@@ -239,7 +232,6 @@ function flip8() {
             cardIsFlipped4 === 1 && cardIsFlipped5 === 1 && cardIsFlipped6 === 1 && 
             cardIsFlipped7 === 1 && cardIsFlipped8 === 1 && cardIsFlipped9 === 1 &&
             cardIsFlipped10 === 1 && cardIsFlipped11 === 1 && checkFlip === 1) {
-                decreaseCountdown();
                 increasePacksOpened();
                 ++checkFlip;
                 return;
@@ -266,7 +258,6 @@ function flip9() {
             cardIsFlipped4 === 1 && cardIsFlipped5 === 1 && cardIsFlipped6 === 1 && 
             cardIsFlipped7 === 1 && cardIsFlipped8 === 1 && cardIsFlipped9 === 1 &&
             cardIsFlipped10 === 1 && cardIsFlipped11 === 1 && checkFlip === 1) {
-                decreaseCountdown();
                 increasePacksOpened();
                 ++checkFlip;
                 return;
@@ -293,8 +284,6 @@ function flip10() {
             cardIsFlipped4 === 1 && cardIsFlipped5 === 1 && cardIsFlipped6 === 1 && 
             cardIsFlipped7 === 1 && cardIsFlipped8 === 1 && cardIsFlipped9 === 1 &&
             cardIsFlipped10 === 1 && cardIsFlipped11 === 1 && checkFlip === 1) {
-                decreaseCountdown();
-                increasePacksOpened();
                 ++checkFlip;
                 return;
             }
@@ -321,7 +310,6 @@ function flip11() {
             cardIsFlipped4 === 1 && cardIsFlipped5 === 1 && cardIsFlipped6 === 1 && 
             cardIsFlipped7 === 1 && cardIsFlipped8 === 1 && cardIsFlipped9 === 1 &&
             cardIsFlipped10 === 1 && cardIsFlipped11 === 1 && checkFlip === 1) {
-                decreaseCountdown();
                 increasePacksOpened();
                 ++checkFlip;
                 return;
@@ -393,7 +381,7 @@ var img10 = document.getElementById("randomCard10");
 var img11 = document.getElementById("randomCard11");
 
 img1.onclick = function () {
-    if (cardIsFlipped1 = 1) {
+    if (cardIsFlipped1 === 1) {
     modal.style.display="block";
     modalImg.src = this.src;
     return;
@@ -401,7 +389,7 @@ img1.onclick = function () {
 }
 
 img2.onclick = function () {
-if (cardIsFlipped2 = 1) {
+if (cardIsFlipped2 === 1) {
     modal.style.display="block";
     modalImg.src = this.src;
     return;
@@ -409,7 +397,7 @@ if (cardIsFlipped2 = 1) {
 }
 
 img3.onclick = function () {
-if (cardIsFlipped3 = 1) {
+if (cardIsFlipped3 === 1) {
     modal.style.display="block";
     modalImg.src = this.src;
     return;
@@ -417,7 +405,7 @@ if (cardIsFlipped3 = 1) {
 }
 
 img4.onclick = function () {
-if (cardIsFlipped4 = 1) {
+if (cardIsFlipped4 === 1) {
     modal.style.display="block";
     modalImg.src = this.src;
     return;
@@ -425,7 +413,7 @@ if (cardIsFlipped4 = 1) {
 }
 
 img5.onclick = function () {
-if (cardIsFlipped5 = 1) {
+if (cardIsFlipped5 === 1) {
     modal.style.display="block";
     modalImg.src = this.src;
     return;
@@ -433,7 +421,7 @@ if (cardIsFlipped5 = 1) {
 }
 
 img6.onclick = function () {
-if (cardIsFlipped6 = 1) {
+if (cardIsFlipped6 === 1) {
     modal.style.display="block";
     modalImg.src = this.src;
     return;
@@ -441,7 +429,7 @@ if (cardIsFlipped6 = 1) {
 }
 
 img7.onclick = function () {
-if (cardIsFlipped7 = 1) {
+if (cardIsFlipped7 === 1) {
     modal.style.display="block";
     modalImg.src = this.src;
     return;
@@ -449,7 +437,7 @@ if (cardIsFlipped7 = 1) {
 }
 
 img8.onclick = function () {
-if (cardIsFlipped8 = 1) {
+if (cardIsFlipped8 === 1) {
     modal.style.display="block";
     modalImg.src = this.src;
     return;
@@ -457,7 +445,7 @@ if (cardIsFlipped8 = 1) {
 }
 
 img9.onclick = function () {
-if (cardIsFlipped9 = 1) {
+if (cardIsFlipped9 === 1) {
     modal.style.display="block";
     modalImg.src = this.src;
     return;
@@ -465,7 +453,7 @@ if (cardIsFlipped9 = 1) {
 }
 
 img10.onclick = function () {
-if (cardIsFlipped10 = 1) {
+if (cardIsFlipped10 === 1) {
     modal.style.display="block";
     modalImg.src = this.src;
     return;
@@ -473,7 +461,7 @@ if (cardIsFlipped10 = 1) {
 }
 
 img11.onclick = function () {
-if (cardIsFlipped11 = 1) {
+if (cardIsFlipped11 === 1) {
     modal.style.display="block";
     modalImg.src = this.src;
     return;
@@ -587,7 +575,7 @@ function reset11() {
     cardIsFlipped11 = 0;
 }
 
- function resetAll() {
+function resetAll() {
     reset0();
     reset1();
     reset2();

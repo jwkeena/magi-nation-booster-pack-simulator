@@ -231,7 +231,7 @@ function flip8() {
         if (cardIsFlipped1 >= 1 && cardIsFlipped2 >= 1 && cardIsFlipped3 >= 1 &&
             cardIsFlipped4 >= 1 && cardIsFlipped5 >= 1 && cardIsFlipped6 >= 1 && 
             cardIsFlipped7 >= 1 && cardIsFlipped8 >= 1 && cardIsFlipped9 >= 1 &&
-            cardIsFlipped10 >= 1 && cardIsFlipped11 >= 1 && checkFlip === 1) {
+            cardIsFlipped10 >= 1 && cardIsFlipped11 >= 1 && checkFlip === 1){
                 increasePacksOpened();
                 ++checkFlip;
                 return;
@@ -724,9 +724,9 @@ function newPackUnlimited(){
     //Prepares same set button 
     currentSet = 1;
     //Changes first image to indicate the type of pack chosen
-    document.getElementById("boosterPackFront").src="base_pack1.JPG";
+    document.getElementById("boosterPackFront").src="mobile_base_pack1.jpg";
     //Changes back of first image to indicate the type of pack chosen (currently don't have this image)
-    document.getElementById("boosterPackBack").src="base_pack1.JPG";
+    document.getElementById("boosterPackBack").src="mobile_base_pack1.jpg";
     //Flips all cards over to starting position
     resetAll();
     //Shuffles the IDs of cards if user chooses to shuffle; otherwise reverts to fixed order
@@ -871,8 +871,8 @@ function newPackAwakening(){
     increaseCounter();
     checkFlip = 1;
     currentSet = 2;
-    document.getElementById("boosterPackFront").src="awakening_pack1.JPG";
-    document.getElementById("boosterPackBack").src="awakening_pack2.jpg";
+    document.getElementById("boosterPackFront").src="mobile_awakening_pack1.jpg";
+    document.getElementById("boosterPackBack").src="mobile_awakening_pack2.jpg";
     resetAll();
     if (currentShuffle === 1) {
         cardOrderArray.shuffle();
@@ -1007,8 +1007,8 @@ function newPackDreamsEnd(){
     increaseCounter();
     checkFlip = 1;
     currentSet = 3;
-    document.getElementById("boosterPackFront").src="dreams_end_pack1.jpg";
-    document.getElementById("boosterPackBack").src="dreams_end_pack2.jpg";
+    document.getElementById("boosterPackFront").src="mobile_dreams_end_pack1.jpg";
+    document.getElementById("boosterPackBack").src="mobile_dreams_end_pack2.jpg";
     resetAll();
     if (currentShuffle === 1) {
     cardOrderArray.shuffle();
@@ -1131,8 +1131,8 @@ function newPackNightmaresDawn(){
     increaseCounter();
     checkFlip = 1;
     currentSet = 4;
-    document.getElementById("boosterPackFront").src="nightmares_dawn_pack1.JPG";
-    document.getElementById("boosterPackBack").src="nightmares_dawn_pack2.jpg";
+    document.getElementById("boosterPackFront").src="mobile_nightmares_dawn_pack1.jpg";
+    document.getElementById("boosterPackBack").src="mobile_nightmares_dawn_pack2.jpg";
     resetAll();
     if (currentShuffle === 1) {
         cardOrderArray.shuffle();
@@ -1267,8 +1267,8 @@ function newPackVoiceOfTheStorms(){
     increaseCounter();
     checkFlip = 1;
     currentSet = 5;
-    document.getElementById("boosterPackFront").src="voice_of_the_storms_pack1.JPG";
-    document.getElementById("boosterPackBack").src="voice_of_the_storms_pack2.jpg";
+    document.getElementById("boosterPackFront").src="mobile_voice_of_the_storms_pack1.JPG";
+    document.getElementById("boosterPackBack").src="mobile_voice_of_the_storms_pack2.jpg";
     resetAll();
     if (currentShuffle === 1) {
         cardOrderArray.shuffle();
@@ -1403,8 +1403,8 @@ function newPackTraitorsReach(){
     increaseCounter();
     checkFlip = 1;
     currentSet = 6;
-    document.getElementById("boosterPackFront").src="traitors_reach_pack1.jpg";
-    document.getElementById("boosterPackBack").src="traitors_reach_pack1.jpg";
+    document.getElementById("boosterPackFront").src="mobile_traitors_reach_pack1.jpg";
+    document.getElementById("boosterPackBack").src="mobile_traitors_reach_pack1.jpg";
     resetAll();
     if (currentShuffle === 1) {
         cardOrderArray.shuffle();

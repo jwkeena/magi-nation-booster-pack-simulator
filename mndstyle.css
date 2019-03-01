@@ -10,17 +10,14 @@
 
 .topBarLeft {
     float: left;
+    color: rgb(172, 154, 68);
 }
 
 .topBarMiddle {
     float: center;
 }
 
-#topBarMiddle {
-    float: center;
-}
-
-.topBarRight {
+#topBarRight {
     float: right;
 }
 

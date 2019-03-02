@@ -1113,6 +1113,18 @@ function newPackDreamsEnd(){
     document.getElementById(newId9).src = newCommon5;
     document.getElementById(newId10).src = newCommon6;
     document.getElementById(newId11).src = newCommon7;
+
+    let currentCommons = [newCommon1, newCommon2, newCommon3, newCommon4, newCommon5, newCommon6, newCommon7]
+    for (let i = 0; i < 7; i++) {
+        let j = 1 + i
+            for (j; j < currentCommons.length; j++) {
+                if (currentCommons[i] === currentCommons[j]) {
+                    --counter;
+                    newPackDreamsEnd();
+                    return;
+            }
+        }
+    }
     
     //1 in 5 chance of a random holo. Replaces first common
     let randomHolographic = Math.floor(Math.random()*5);

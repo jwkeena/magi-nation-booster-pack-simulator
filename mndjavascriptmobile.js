@@ -1114,6 +1114,18 @@ function newPackDreamsEnd(){
     document.getElementById(newId10).src = newCommon6;
     document.getElementById(newId11).src = newCommon7;
     
+    let currentCommons = [newCommon1, newCommon2, newCommon3, newCommon4, newCommon5, newCommon6, newCommon7]
+    for (let i = 0; i < 7; i++) {
+        let j = 1 + i
+            for (j; j < currentCommons.length; j++) {
+                if (currentCommons[i] === currentCommons[j]) {
+                    --counter;
+                    newPackDreamsEnd();
+                    return;
+            }
+        }
+    }
+
     //1 in 5 chance of a random holo. Replaces first common
     let randomHolographic = Math.floor(Math.random()*5);
     if (randomHolographic === 0) {
@@ -1254,9 +1266,9 @@ function newPackNightmaresDawn(){
     let randomHolographic = Math.floor(Math.random()*5);
     if (randomHolographic === 0) {
         let randomHoloRarity = Math.floor(Math.random()*3);
-        let numOfRandomSet = dreamsEndLinks[randomHoloRarity].length;
+        let numOfRandomSet = nightmaresDawnLinks[randomHoloRarity].length;
         let randomHolo = Math.floor(Math.random()*numOfRandomSet);
-        let randomHoloURL = dreamsEndLinks[randomHoloRarity][randomHolo];
+        let randomHoloURL = nightmaresDawnLinks[randomHoloRarity][randomHolo];
         document.getElementById(newId5).src = randomHoloURL;
         let element = document.getElementById(newId5);
         element.className += "holographic";

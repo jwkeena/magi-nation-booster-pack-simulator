@@ -994,9 +994,9 @@ function newPackAwakening(){
     let randomHolographic = Math.floor(Math.random()*5);
     if (randomHolographic === 0) {
         let randomHoloRarity = Math.floor(Math.random()*3);
-        let numOfRandomSet = unlimitedLinks[randomHoloRarity].length;
+        let numOfRandomSet = awakeningLinks[randomHoloRarity].length;
         let randomHolo = Math.floor(Math.random()*numOfRandomSet);
-        let randomHoloURL = unlimitedLinks[randomHoloRarity][randomHolo];
+        let randomHoloURL = awakeningLinks[randomHoloRarity][randomHolo];
         document.getElementById(newId5).src = randomHoloURL;
         let element = document.getElementById(newId5);
         element.className += "holographic";
@@ -1254,9 +1254,9 @@ function newPackNightmaresDawn(){
     let randomHolographic = Math.floor(Math.random()*5);
     if (randomHolographic === 0) {
         let randomHoloRarity = Math.floor(Math.random()*3);
-        let numOfRandomSet = unlimitedLinks[randomHoloRarity].length;
+        let numOfRandomSet = dreamsEndLinks[randomHoloRarity].length;
         let randomHolo = Math.floor(Math.random()*numOfRandomSet);
-        let randomHoloURL = unlimitedLinks[randomHoloRarity][randomHolo];
+        let randomHoloURL = dreamsEndLinks[randomHoloRarity][randomHolo];
         document.getElementById(newId5).src = randomHoloURL;
         let element = document.getElementById(newId5);
         element.className += "holographic";
@@ -1390,9 +1390,9 @@ function newPackVoiceOfTheStorms(){
     let randomHolographic = Math.floor(Math.random()*5);
     if (randomHolographic === 0) {
         let randomHoloRarity = Math.floor(Math.random()*3);
-        let numOfRandomSet = unlimitedLinks[randomHoloRarity].length;
+        let numOfRandomSet = voiceOfTheStormsLinks[randomHoloRarity].length;
         let randomHolo = Math.floor(Math.random()*numOfRandomSet);
-        let randomHoloURL = unlimitedLinks[randomHoloRarity][randomHolo];
+        let randomHoloURL = voiceOfTheStormsLinks[randomHoloRarity][randomHolo];
         document.getElementById(newId5).src = randomHoloURL;
         let element = document.getElementById(newId5);
         element.className += "holographic";
@@ -1526,9 +1526,9 @@ function newPackTraitorsReach(){
     let randomHolographic = Math.floor(Math.random()*5);
     if (randomHolographic === 0) {
         let randomHoloRarity = Math.floor(Math.random()*3);
-        let numOfRandomSet = unlimitedLinks[randomHoloRarity].length;
+        let numOfRandomSet = traitorsReachLinks[randomHoloRarity].length;
         let randomHolo = Math.floor(Math.random()*numOfRandomSet);
-        let randomHoloURL = unlimitedLinks[randomHoloRarity][randomHolo];
+        let randomHoloURL = traitorsReachLinks[randomHoloRarity][randomHolo];
         document.getElementById(newId5).src = randomHoloURL;
         let element = document.getElementById(newId5);
         element.className += "holographic";

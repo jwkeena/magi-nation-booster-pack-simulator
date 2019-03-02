@@ -724,7 +724,7 @@ function newPackUnlimited(){
     //Prepares same set button 
     currentSet = 1;
     //Changes first image to indicate the type of pack chosen
-    document.getElementById("boosterPackFront").src="base_pack1.JPG";
+    document.getElementById("boosterPackFront").src="base_pack1.jpg";
     //Changes back of first image to indicate the type of pack chosen (currently don't have this image)
     document.getElementById("boosterPackBack").src="base_pack1.JPG";
     //Flips all cards over to starting position
@@ -871,7 +871,7 @@ function newPackAwakening(){
     increaseCounter();
     checkFlip = 1;
     currentSet = 2;
-    document.getElementById("boosterPackFront").src="awakening_pack1.JPG";
+    document.getElementById("boosterPackFront").src="awakening_pack1.jpg";
     document.getElementById("boosterPackBack").src="awakening_pack2.jpg";
     resetAll();
     if (currentShuffle === 1) {
@@ -1143,7 +1143,7 @@ function newPackNightmaresDawn(){
     increaseCounter();
     checkFlip = 1;
     currentSet = 4;
-    document.getElementById("boosterPackFront").src="nightmares_dawn_pack1.JPG";
+    document.getElementById("boosterPackFront").src="nightmares_dawn_pack1.jpg";
     document.getElementById("boosterPackBack").src="nightmares_dawn_pack2.jpg";
     resetAll();
     if (currentShuffle === 1) {
@@ -1279,7 +1279,7 @@ function newPackVoiceOfTheStorms(){
     increaseCounter();
     checkFlip = 1;
     currentSet = 5;
-    document.getElementById("boosterPackFront").src="voice_of_the_storms_pack1.JPG";
+    document.getElementById("boosterPackFront").src="voice_of_the_storms_pack1.jpg";
     document.getElementById("boosterPackBack").src="voice_of_the_storms_pack2.jpg";
     resetAll();
     if (currentShuffle === 1) {

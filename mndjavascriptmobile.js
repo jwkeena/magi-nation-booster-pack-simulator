@@ -1279,7 +1279,7 @@ function newPackVoiceOfTheStorms(){
     increaseCounter();
     checkFlip = 1;
     currentSet = 5;
-    document.getElementById("boosterPackFront").src="mobile_voice_of_the_storms_pack1.JPG";
+    document.getElementById("boosterPackFront").src="mobile_voice_of_the_storms_pack1.jpg";
     document.getElementById("boosterPackBack").src="mobile_voice_of_the_storms_pack2.jpg";
     resetAll();
     if (currentShuffle === 1) {

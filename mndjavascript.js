@@ -726,7 +726,7 @@ function newPackUnlimited(){
     //Changes first image to indicate the type of pack chosen
     document.getElementById("boosterPackFront").src="base_pack1.jpg";
     //Changes back of first image to indicate the type of pack chosen (currently don't have this image)
-    document.getElementById("boosterPackBack").src="base_pack1.JPG";
+    document.getElementById("boosterPackBack").src="base_pack2.jpg";
     //Flips all cards over to starting position
     resetAll();
     //Shuffles the IDs of cards if user chooses to shuffle; otherwise reverts to fixed order

@@ -131,6 +131,8 @@ a:visited, a:link, a:active, a:hover {
         -moz-transform: rotateY( 180deg );
         -o-transform: rotateY( 180deg );
         transform: rotateY( 180deg );
+   
+   
     }
 
     .pack, .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8, .card9, .card10, .card11, .card12 {
@@ -164,6 +166,8 @@ a:visited, a:link, a:active, a:hover {
     border-radius: 20px;
     width: 420px;
     height: 565px;
+    outline: 3px solid black; /* adds an inner border to the image on mobile to make up for the lack of clipping */
+    outline-offset: -3px; /* adds an inner border to the image on mobile to make up for the lack of clipping */
 }
 /*End of style common to all cards*/
 

@@ -209,7 +209,6 @@ a:visited, a:link, a:active, a:hover {
 .modal-content {
     margin: auto;
     height: 100%; 
-    width: 100%;
     display: block;
     border-radius: 20px;
 }
@@ -238,13 +237,6 @@ to {transform:scale(1)}
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-    @media only screen and (max-width: 700px){
-    .modal-content {
-        width: 100%;
-    }
 }
 
 /*Style common to dropup and dropdown buttons*/

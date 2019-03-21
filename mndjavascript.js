@@ -1,6 +1,8 @@
 /* Feel free to use and repurpose my code, as long as you credit me and/or link to my github page
    Written by justin keena, https://github.com/jwkeena/Magi-Nation-Booster-Pack-Simulator */
 
+let holo = 0;
+
 function holographic() { 
     let randomCardId = "randomCard";
     let randomNumber = Math.floor(Math.random()*11) + 1;
@@ -723,6 +725,8 @@ function newPackUnlimited(){
     checkFlip = 1;
     //Prepares same set button 
     currentSet = 1;
+    //Resets holo for modal
+    holo = 0;
     //Changes first image to indicate the type of pack chosen
     document.getElementById("boosterPackFront").src="base_pack1.jpg";
     //Changes back of first image to indicate the type of pack chosen (currently don't have this image)
@@ -857,6 +861,7 @@ function newPackUnlimited(){
     //1 in 5 chance of a random holo. Replaces first common
     let randomHolographic = Math.floor(Math.random()*5);
     if (randomHolographic === 0) {
+        holo = 1;
         let randomHoloRarity = Math.floor(Math.random()*3);
         let numOfRandomSet = unlimitedLinks[randomHoloRarity].length;
         let randomHolo = Math.floor(Math.random()*numOfRandomSet);
@@ -871,6 +876,7 @@ function newPackAwakening(){
     increaseCounter();
     checkFlip = 1;
     currentSet = 2;
+    holo = 0;
     document.getElementById("boosterPackFront").src="awakening_pack1.jpg";
     document.getElementById("boosterPackBack").src="awakening_pack2.jpg";
     resetAll();
@@ -993,6 +999,7 @@ function newPackAwakening(){
     //1 in 5 chance of a random holo. Replaces first common
     let randomHolographic = Math.floor(Math.random()*5);
     if (randomHolographic === 0) {
+        holo = 1;
         let randomHoloRarity = Math.floor(Math.random()*3);
         let numOfRandomSet = awakeningLinks[randomHoloRarity].length;
         let randomHolo = Math.floor(Math.random()*numOfRandomSet);
@@ -1007,6 +1014,7 @@ function newPackDreamsEnd(){
     increaseCounter();
     checkFlip = 1;
     currentSet = 3;
+    holo = 0;
     document.getElementById("boosterPackFront").src="dreams_end_pack1.jpg";
     document.getElementById("boosterPackBack").src="dreams_end_pack2.jpg";
     resetAll();
@@ -1129,6 +1137,7 @@ function newPackDreamsEnd(){
     //1 in 5 chance of a random holo. Replaces first common
     let randomHolographic = Math.floor(Math.random()*5);
     if (randomHolographic === 0) {
+        holo = 1;
         let randomHoloRarity = Math.floor(Math.random()*3);
         let numOfRandomSet = dreamsEndLinks[randomHoloRarity].length;
         let randomHolo = Math.floor(Math.random()*numOfRandomSet);
@@ -1143,6 +1152,7 @@ function newPackNightmaresDawn(){
     increaseCounter();
     checkFlip = 1;
     currentSet = 4;
+    holo = 0;
     document.getElementById("boosterPackFront").src="nightmares_dawn_pack1.jpg";
     document.getElementById("boosterPackBack").src="nightmares_dawn_pack2.jpg";
     resetAll();
@@ -1265,6 +1275,7 @@ function newPackNightmaresDawn(){
     //1 in 5 chance of a random holo. Replaces first common
     let randomHolographic = Math.floor(Math.random()*5);
     if (randomHolographic === 0) {
+        holo = 1;
         let randomHoloRarity = Math.floor(Math.random()*3);
         let numOfRandomSet = nightmaresDawnLinks[randomHoloRarity].length;
         let randomHolo = Math.floor(Math.random()*numOfRandomSet);
@@ -1279,6 +1290,7 @@ function newPackVoiceOfTheStorms(){
     increaseCounter();
     checkFlip = 1;
     currentSet = 5;
+    holo = 0;
     document.getElementById("boosterPackFront").src="voice_of_the_storms_pack1.jpg";
     document.getElementById("boosterPackBack").src="voice_of_the_storms_pack2.jpg";
     resetAll();
@@ -1401,6 +1413,7 @@ function newPackVoiceOfTheStorms(){
     //1 in 5 chance of a random holo. Replaces first common
     let randomHolographic = Math.floor(Math.random()*5);
     if (randomHolographic === 0) {
+        holo = 1;
         let randomHoloRarity = Math.floor(Math.random()*3);
         let numOfRandomSet = voiceOfTheStormsLinks[randomHoloRarity].length;
         let randomHolo = Math.floor(Math.random()*numOfRandomSet);
@@ -1415,6 +1428,7 @@ function newPackTraitorsReach(){
     increaseCounter();
     checkFlip = 1;
     currentSet = 6;
+    holo = 0;
     document.getElementById("boosterPackFront").src="traitors_reach_pack1.jpg";
     document.getElementById("boosterPackBack").src="traitors_reach_pack1.jpg";
     resetAll();
@@ -1537,6 +1551,7 @@ function newPackTraitorsReach(){
     //1 in 5 chance of a random holo. Replaces first common
     let randomHolographic = Math.floor(Math.random()*5);
     if (randomHolographic === 0) {
+        holo = 1;
         let randomHoloRarity = Math.floor(Math.random()*3);
         let numOfRandomSet = traitorsReachLinks[randomHoloRarity].length;
         let randomHolo = Math.floor(Math.random()*numOfRandomSet);

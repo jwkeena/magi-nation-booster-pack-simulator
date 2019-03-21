@@ -31,8 +31,8 @@
 #rarity4 {
     clip-path: inset(0px 0px 0px 0px);
     position: absolute;
-    width: 9px;
-    height: 9px;
+    width: 16px;
+    height: 16px;
     top: -10px;
     left: 152.5px;
 }
@@ -40,8 +40,8 @@
 #rarity1, #rarity2, #rarity3 {
     clip-path: inset(0px 0px 0px 0px);
     position: absolute;
-    width: 18px;
-    height: 10px;
+    width: 23px;
+    height: 14px;
     top: -10px;
     left: 148px;
 }
@@ -49,8 +49,8 @@
 #rarity5, #rarity6, #rarity7, #rarity8, #rarity9, #rarity10, #rarity11 {
     clip-path: inset(0px 0px 0px 0px);
     position: absolute;
-    width: 27px;
-    height: 10px;
+    width: 29px;
+    height: 12px;
     top: -10px;
     left: 143.5px;
 }

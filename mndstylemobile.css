@@ -25,16 +25,16 @@
 
 #rarity4 {
     position: absolute;
-    width: 18px;
-    height: 15px;
+    width: 30px;
+    height: 30px;
     top: -30px;
     left: 202.5px;
 }
 
 #rarity1, #rarity2, #rarity3 {
     position: absolute;
-    width: 36px;
-    height: 15px;
+    width: 43px;
+    height: 27px;
     top: -30px;
     left: 198px;
 }
@@ -166,8 +166,8 @@ a:visited, a:link, a:active, a:hover {
     border-radius: 20px;
     width: 420px;
     height: 565px;
-    outline: 3px solid black; /* adds an inner border to the image on mobile to make up for the lack of clipping */
-    outline-offset: -3px; /* adds an inner border to the image on mobile to make up for the lack of clipping */
+    outline: 4px solid black; /* adds an inner border to the image on mobile to make up for the lack of clipping */
+    outline-offset: -4px; /* adds an inner border to the image on mobile to make up for the lack of clipping */
 }
 /*End of style common to all cards*/
 
@@ -215,6 +215,8 @@ a:visited, a:link, a:active, a:hover {
     height: 100%; 
     display: block;
     border-radius: 20px;
+    outline: 5px solid black; /* adds an inner border to the image on mobile to make up for the lack of clipping */
+    outline-offset: -5px; /* adds an inner border to the image on mobile to make up for the lack of clipping */
 }
 
 /* Add Animation - Zoom in the Modal */

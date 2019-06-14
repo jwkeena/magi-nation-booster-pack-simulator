@@ -25,6 +25,139 @@ let cardIsFlipped9 = 0;
 let cardIsFlipped10 = 0;
 let cardIsFlipped11 = 0;
 
+$("#pulls").hide();
+let drafting = false;
+let currentPulls = ["PULLS"];
+let currentDeck = ["DECK"];
+
+function toggleDrafting() {
+    draftingTool = ("#drafting-tool");
+    if (drafting === false) {
+        $("#pulls").show();
+        $("#pulls").empty();
+        for (i=0; i<currentPulls.length; i++) {
+            let li = $("<li>");
+            li.text(currentPulls[i]);
+            li.addClass("pulls");
+            $("#pulls").append(li)
+        }
+        
+        $("#deck").show();
+        $("#deck").empty();
+        for (i=0; i<currentDeck.length; i++) {
+            let li = $("<li>");
+            li.text(currentDeck[i]);
+            li.addClass("deck");
+            $("#deck").append(li)
+        }
+
+        drafting = true;
+        $(draftingTool).html('[<a href="#" onclick="toggleDrafting();">drafting tool: on</a>]');
+
+    } else {
+        $("#pulls").hide();
+        $("#deck").hide();
+        drafting = false;
+        $(draftingTool).html('[<a href="#" onclick="toggleDrafting();">drafting tool: off</a>]');
+    }
+}
+
+function displayPulls() {
+    $("#pulls").empty();
+    for (i=0; i<currentPulls.length; i++) {
+        let li = $("<li>");
+        li.text(currentPulls[i]);
+        li.addClass("deck");
+        $("#deck").append(li)
+    }
+}
+
+function displayDeck(cardName) {
+    currentDeck.shift(); // Cuts out "DECK"
+    currentDeck.push(cardName); 
+    currentDeck.sort();
+    currentDeck.unshift("DECK");
+    $("#deck").empty();
+    for (i=0; i<currentDeck.length; i++) {
+        let li = $("<li>");
+        li.text(currentDeck[i]);
+        li.addClass("deck");
+        $("#deck").append(li)
+    }
+}
+
+// Event delegation to delete cards from deck
+$(document.body).on("dblclick", ".deck", function () {
+    cardName = $(this).text();
+    if (cardName !== "DECK") {
+        cardIndex = currentDeck.indexOf(cardName);
+        currentDeck.splice(cardIndex, 1);
+        $("#deck").empty();
+        for (i=0; i<currentDeck.length; i++) {
+            let li = $("<li>");
+            li.text(currentDeck[i]);
+            li.addClass("deck");
+            $("#deck").append(li)
+        }
+    }
+});
+
+// Event delegation to move pulls to deck and display
+$(document.body).on("contextmenu", ".pulls", function () {
+    cardName = $(this).text();
+    if (cardName !== "PULLS") {
+        cardIndex = currentPulls.indexOf(cardName);
+        currentPulls.splice(cardIndex, 1);
+        $("#pulls").empty();
+        for (i=0; i<currentPulls.length; i++) {
+            let li = $("<li>");
+            li.text(currentPulls[i]);
+            li.addClass("pulls");
+            $("#pulls").append(li)
+        }
+        displayDeck(cardName);
+    }
+    return false; // Disables context menu from appearing
+});
+
+// Event delegation to discard pulls
+$(document.body).on("dblclick", ".pulls", function () {
+    cardName = $(this).text();
+    if (cardName !== "PULLS") {
+        cardIndex = currentPulls.indexOf(cardName);
+        currentPulls.splice(cardIndex, 1);
+        $("#pulls").empty();
+        for (i=0; i<currentPulls.length; i++) {
+            let li = $("<li>");
+            li.text(currentPulls[i]);
+            li.addClass("pulls");
+            $("#pulls").append(li)
+        }
+    }
+});
+
+// Display each pull as it's clicked
+$(".card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8, .card9, .card10, .card11").on("click", function () {
+    let divID = $(this).attr("id");
+    divNumber = divID.slice(5);
+    card = "#randomCard" + divNumber;
+    cardURL = ($(card).attr("src"));
+    cardName = cardURL.split("s/")[1];
+    cardName = cardName.slice(0, -4);
+    if (currentPulls.includes(cardName)) {
+        return;
+    } else {
+        currentPulls.push(cardName);
+        $("#pulls").empty();
+        for (i=0; i<currentPulls.length; i++) {
+            let li = $("<li>");
+            li.text(currentPulls[i]);
+            li.addClass("pulls");
+            $("#pulls").append(li)
+        }
+    }
+});
+
 //For flipping the booster pack image
 function flip0() {
     let element = document.getElementById('myDiv');
@@ -858,6 +991,8 @@ function newPackUnlimited(){
         }
     }
 
+    let allCardsPulled = [newUncommon1, newCommon2, newUncommon3, newRare, newCommon1, newCommon2, newCommon3, newCommon4, newCommon5, newCommon6, newCommon7]
+
     //1 in 5 chance of a random holo. Replaces first common
     let randomHolographic = Math.floor(Math.random()*5);
     if (randomHolographic === 0) {
@@ -869,6 +1004,8 @@ function newPackUnlimited(){
         document.getElementById(newId5).src = randomHoloURL;
         let element = document.getElementById(newId5);
         element.className += "holographic";
+        allCardsPulled.splice(4, 1); //Cuts out first common to replace with the holo
+        allCardsPulled.splice(4, 0, randomHoloURL)
     }
 }
 

@@ -22,11 +22,21 @@
 <body onload="newPackUnlimited()">
 
     <div class ="topBar">
-        <span class = "topBarLeft"> MOVE OVER</span>
+        <span class = "topBarLeft" id="drafting-tool">[<a href="#" onclick="toggleDrafting();">drafting tool: off</a>]</span>
         <span class = "topBarMiddle" id = "counter"></span>
         <span class = "topBarMiddle" id = "packsOpened"> | packs opened: 0 ] </span>
         <div id = "topBarRight">[<a href = "mobile.html">mobile</a>]</div>
     </div>  
+
+    <div>
+        <ul id = "pulls">
+        </ul>
+    </div>
+
+    <div>
+        <ul id = "deck">
+        </ul>
+    </div>
 
     <br>
     <br>
@@ -37,7 +47,7 @@
     <img src = "mndlogotitle.png">
     <br>
     <br>
-
+    
     <!-- The Modal -->
     <div id="myModal" class="modal">
         <span class="close">&times;</span>
@@ -61,7 +71,7 @@
     <button id="button5" onclick="toggleShuffle()">SHUFFLE (OFF)</button>
     <br>
     <br>
-
+    
 <div class = "boxed">
 <div class = "row">
 
@@ -274,15 +284,15 @@
 <br>
 <br>
 
+
 </div>
 
 <br>
 <br>
-
 <button id="button6" onclick="resetAll();setTimeout(randomPack, 501)">RANDOM PACK</button>
 <div class="dropup">
-        <button id="button7">CHOOSE SET</button>
-        <div class="dropup-content">
+    <button id="button7">CHOOSE SET</button>
+    <div class="dropup-content">
             <a href="javascript:void();" onclick="resetAll();setTimeout(newPackUnlimited, 501)">BASE SET</a>
             <a href="javascript:void();" onclick="resetAll();setTimeout(newPackAwakening, 501)">AWAKENING</a>
             <a href="javascript:void();" onclick="resetAll();setTimeout(newPackDreamsEnd, 501)">DREAM'S END</a>
@@ -291,18 +301,22 @@
             <a href="javascript:void();" onclick="resetAll();setTimeout(newPackTraitorsReach, 501)">TRAITOR'S REACH</a>
         </div>
     </div>
-<button id="button8" onclick="resetAll();setTimeout(sameSet, 501)">SAME SET</button>
-<button id="button9" onclick="flipAll()">FLIP ALL</button>
-<button id="button10" onclick="toggleShuffle()">SHUFFLE (OFF)</button>
+    <button id="button8" onclick="resetAll();setTimeout(sameSet, 501)">SAME SET</button>
+    <button id="button9" onclick="flipAll()">FLIP ALL</button>
+    <button id="button10" onclick="toggleShuffle()">SHUFFLE (OFF)</button>
+    
+    <br>
+    <br>
+    
 
-<br>
-<br>
 
 <div class="bottomBar">
     programming and design by justin keena (code download available at <a href = "https://github.com/jwkeena?tab=repositories">github</a>);
     card images from <a href = "http://www.bluefurok.com/OfficialCards_index.htm">blue furok</a>
 </div>  
 
+<!-- jQuery link -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <!--linking Javascript-->
 <script type="text/javascript" src="mndjavascript.js"></script>
 </body>

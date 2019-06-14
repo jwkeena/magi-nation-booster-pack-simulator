@@ -1,6 +1,36 @@
 /* Feel free to use and repurpose my code, as long as you credit me and/or link to my github page
    Written by justin keena, https://github.com/jwkeena/Magi-Nation-Booster-Pack-Simulator */
 
+#deck {
+    position: fixed; 
+    float: right;
+    text-align: left; 
+    font-size: 13px; 
+    left: 86%;
+    list-style-type: none;
+}
+
+.deck:hover {
+    color: indigo;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#pulls {
+    position: fixed; 
+    float: left; 
+    text-align: left; 
+    font-size: 13px; 
+    left: -32px;
+    list-style-type: none;
+}
+
+.pulls:hover {
+    color: indigo;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 .topBar {
     background: rgb(172, 154, 68);
     padding: 10px;
@@ -10,7 +40,7 @@
 
 .topBarLeft {
     float: left;
-    color: rgb(172, 154, 68);
+    color: indigo;
 }
 
 .topBarMiddle {

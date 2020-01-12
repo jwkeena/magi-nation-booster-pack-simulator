@@ -27,8 +27,8 @@ let cardIsFlipped11 = 0;
 
 $("#pulls").hide();
 let drafting = false;
-let currentPulls = ["PULLS"];
-let currentDeck = ["DECK"];
+let currentPulls = ["<<PULLS>>"];
+let currentDeck = ["<<DECK>>"];
 
 function toggleDrafting() {
     draftingTool = ("#drafting-tool");
@@ -67,54 +67,73 @@ function displayPulls() {
     for (i=0; i<currentPulls.length; i++) {
         let li = $("<li>");
         li.text(currentPulls[i]);
-        li.addClass("deck");
-        $("#deck").append(li)
+        li.addClass("pulls");
+        $("#pulls").append(li)
     }
+    let li = $("<li>");
+    li.text("<<CLEAR>>");
+    li.addClass("pulls");
+    $("#pulls").append(li)
 }
 
 function displayDeck(cardName) {
     currentDeck.shift(); // Cuts out "DECK"
-    currentDeck.push(cardName); 
+    if (cardName) {
+        currentDeck.push(cardName); 
+    }
     currentDeck.sort();
-    currentDeck.unshift("DECK");
+
+    // Counts the number of times a card has been repeated
+    var currentDeckCounted = ["<<DECK>>"];
+    var currentCard = null;
+    var cnt = 0;
+    for (var i = 0; i < currentDeck.length; i++) {
+        if (currentDeck[i] != currentCard) {
+            if (cnt > 0) {
+                currentDeckCounted.push(currentCard + ": " + cnt);
+            }
+            currentCard = currentDeck[i];
+            cnt = 1;
+        } else {
+            cnt++;
+        }
+    }
+    if (cnt > 0) {
+        currentDeckCounted.push(currentCard + ": " + cnt);
+    }
+
+    currentDeck.unshift("<<DECK>>");
     $("#deck").empty();
-    for (i=0; i<currentDeck.length; i++) {
+    for (i=0; i<currentDeckCounted.length; i++) {
         let li = $("<li>");
-        li.text(currentDeck[i]);
+        li.text(currentDeckCounted[i]);
         li.addClass("deck");
         $("#deck").append(li)
     }
+
+    // Counts and prints total number of cards
+    let li = $("<li>");
+    li.text("<<TOTAL: " + (currentDeck.length - 1) + ">>"); // Be sure to use the original count of currentDeck
+    $("#deck").append(li)
 }
 
 // Event delegation to delete cards from deck
 $(document.body).on("dblclick", ".deck", function () {
     cardName = $(this).text();
-    if (cardName !== "DECK") {
+    if (cardName !== "<<DECK>>") {
         cardIndex = currentDeck.indexOf(cardName);
         currentDeck.splice(cardIndex, 1);
-        $("#deck").empty();
-        for (i=0; i<currentDeck.length; i++) {
-            let li = $("<li>");
-            li.text(currentDeck[i]);
-            li.addClass("deck");
-            $("#deck").append(li)
-        }
+        displayDeck();
     }
 });
 
 // Event delegation to move pulls to deck and display
 $(document.body).on("contextmenu", ".pulls", function () {
     cardName = $(this).text();
-    if (cardName !== "PULLS") {
+    if (cardName !== "<<PULLS>>" && cardName !== "<<CLEAR>>") {
         cardIndex = currentPulls.indexOf(cardName);
         currentPulls.splice(cardIndex, 1);
-        $("#pulls").empty();
-        for (i=0; i<currentPulls.length; i++) {
-            let li = $("<li>");
-            li.text(currentPulls[i]);
-            li.addClass("pulls");
-            $("#pulls").append(li)
-        }
+        displayPulls();
         displayDeck(cardName);
     }
     return false; // Disables context menu from appearing
@@ -123,25 +142,29 @@ $(document.body).on("contextmenu", ".pulls", function () {
 // Event delegation to discard pulls
 $(document.body).on("dblclick", ".pulls", function () {
     cardName = $(this).text();
-    if (cardName !== "PULLS") {
+    if (cardName !== "<<PULLS>>" && cardName !== "<<CLEAR>>") {
         cardIndex = currentPulls.indexOf(cardName);
         currentPulls.splice(cardIndex, 1);
+        displayPulls();
+    }
+
+    if (cardName === "<<CLEAR>>") {
         $("#pulls").empty();
-        for (i=0; i<currentPulls.length; i++) {
-            let li = $("<li>");
-            li.text(currentPulls[i]);
-            li.addClass("pulls");
-            $("#pulls").append(li)
-        }
+        currentPulls = ["<<PULLS>>"]
+        let li = $("<li>");
+        li.text("<<PULLS>>");
+        $("#pulls").append(li)
     }
 });
 
 // Event listener to display each pull as it's clicked
 $(".card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8, .card9, .card10, .card11").on("click", function () {
     let divID = $(this).attr("id");
+    console.log(divID);
     divNumber = divID.slice(5);
     card = "#randomCard" + divNumber;
     cardURL = ($(card).attr("src"));
+    console.log(cardURL);
     cardName = cardURL.split("s/")[1];
     cardName = cardName.slice(0, -4);
     if (currentPulls.includes(cardName)) {
@@ -149,12 +172,7 @@ $(".card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8, .card9, .card
     } else {
         currentPulls.push(cardName);
         $("#pulls").empty();
-        for (i=0; i<currentPulls.length; i++) {
-            let li = $("<li>");
-            li.text(currentPulls[i]);
-            li.addClass("pulls");
-            $("#pulls").append(li)
-        }
+        displayPulls();
     }
 });
 
@@ -182,13 +200,7 @@ function flipAllAddToPulls(divNumber) {
         return;
     } else {
         currentPulls.push(cardName);
-        $("#pulls").empty();
-        for (i=0; i<currentPulls.length; i++) {
-            let li = $("<li>");
-            li.text(currentPulls[i]);
-            li.addClass("pulls");
-            $("#pulls").append(li)
-        }
+        displayPulls();
     }
 }
 

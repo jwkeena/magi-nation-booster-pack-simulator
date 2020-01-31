@@ -724,7 +724,7 @@ function newPackUnlimited(){
     //Prepares same set button 
     currentSet = 1;
     //Changes first image to indicate the type of pack chosen
-    document.getElementById("boosterPackFront").src="mobile_base_pack1.jpg";
+    document.getElementById("boosterPackFront").src="mobile_base_pack.jpg";
     //Changes back of first image to indicate the type of pack chosen (currently don't have this image)
     document.getElementById("boosterPackBack").src="mobile_base_pack2.jpg";
     //Flips all cards over to starting position

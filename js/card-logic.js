@@ -45,7 +45,7 @@ function openPack(setName) {
 
     const holoPulled = calculateOdds(set.chanceOfHolo);
     const cardsInPack = [];
-    const newPackArtUrls = set.packart;
+    const newPackArtUrls = set.packArt;
     set.cardsToPull.forEach((cardType, index) => pullCard(cardType, cardsInPack, set, holoPulled, index));
     const newId = Symbol(); // Give each pack a unique ID so that even if its cards and set exactly match another, it will be considered unique for deletion purposes
     pulledPacks.push({ id: newId, set: set, packArtUrls: newPackArtUrls, cards: [...cardsInPack]});
@@ -100,20 +100,17 @@ function pullCard(cardType, pack, set, holoPulled, index) {
     // See https://stackoverflow.com/questions/122102/what-is-the-most-efficient-way-to-deep-clone-an-object-in-javascript for more options
 
     switch (cardType) {
-        case "Energy":
-            card = Object.assign({}, set.sortedCards.energy[randomIndex(set.sortedCards.energy.length)]);
-            break;
-        case "Rare":
-            if (holoPulled)
-                card = Object.assign({}, set.sortedCards.holoRares[randomIndex(set.sortedCards.holoRares.length)]);
-            else 
+        case "R":
+            // if (holoPulled)
+            //     card = Object.assign({}, set.sortedCards.holoRares[randomIndex(set.sortedCards.holoRares.length)]);
+            // else 
                 card = Object.assign({}, set.sortedCards.rares[randomIndex(set.sortedCards.rares.length)]);
             break;
-        case "Regular Rare":
-            card = Object.assign({}, set.sortedCards.rares[randomIndex(set.sortedCards.rares.length)]);
+        case "U":
+            card = Object.assign({}, set.sortedCards.uncommons[randomIndex(set.sortedCards.uncommons.length)]);
             break;
-        default: // Handles commons, uncommons
-            card = Object.assign({}, set.sortedCards[cardType.decapitalize() + "s"][randomIndex(set.sortedCards[cardType.decapitalize() + "s"].length)]);
+        default: // Handles commons
+            card = Object.assign({}, set.sortedCards.commons[randomIndex(set.sortedCards.commons.length)]);
     };
 
     // Using recursion again. TODO: refactor to keep a duplicate array of possible choices, popping off chosen ones
@@ -136,6 +133,6 @@ function randomIndex(arrayLength) {
 
 function isDuplicate(item, arr) {
     for (let i = 0; i < arr.length; i++) {
-        if (arr[i].id === item.id) return true;
+        if (arr[i].key === item.key) return true;
     };
 };

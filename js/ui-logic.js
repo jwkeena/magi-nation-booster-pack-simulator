@@ -100,29 +100,26 @@ function preloadImage(card, imageUrl, cardType) {
     img.src = imageUrl;
 };
 
-function onImageLoaded(card, reverseHoloType) {
+function onImageLoaded(card, isHolo) {
     const loadedImageUrl = card.getAttribute("data-card-image");
-    if (reverseHoloType === "cssEffectReverseHolo") {
-        card.style.backgroundImage = "url('" + loadedImageUrl + "'), url('../images/site/foil.jpg')";
-        card.classList.add("reverse-holo-effect");
-    }
-    else if (reverseHoloType === "imageUrlReverseHolo") {
+    if (isHolo) {
         card.style.backgroundImage = "url('" + loadedImageUrl + "')";
         card.classList.add("crop-reverse-holo-img");
     }
-    else
+    else {
         card.style.backgroundImage = "url('" + loadedImageUrl + "')";
+    }
     card.classList.remove("loading");
 };
 
-function zoomCard(url, reverseHoloType = null) {
+function zoomCard(url, isHolo = null) {
     gtag("event", "zoom_card", {
         "event_category": "engagement"
     });
 
     const div = document.getElementById("hi-res-card");
-    div.setAttribute("data-card-image", url, reverseHoloType);
-    preloadImage(div, url, reverseHoloType);
+    div.setAttribute("data-card-image", url, isHolo);
+    preloadImage(div, url, isHolo);
     const modal = document.getElementById("card-zoom");
     modal.style.display = "block";
 };
@@ -141,29 +138,17 @@ function singlePackFlip(packArtUrls, pack) {
     target.append(packArtFront);
     for (let i = 0; i < pack.length; i++) {
         let card;
-        if (pack[i].rarity === "Secret Rare" || pack[i].id === "base1-4") {
+        if (pack[i].rarity === "Secret Rare") {
             card = buildCardHTML(["card", "loading", "fireworks"], pack[i].imageUrl, pack[i].imageUrlHiRes);
         }
-        else if (pack[i].rarity === "Holo Rare") {
+        else if (pack[i].rarity === "H") {
             card = buildCardHTML(["card", "loading", "confetti"], pack[i].imageUrl, pack[i].imageUrlHiRes);
-        } else if (pack[i].isReverseHolo === true) {
-            // We have two types of reverse holo. First, the one we have image urls for
-            if (pack[i].set === "Legendary Collection")
-                card = buildCardHTML(["card", "loading", "crop-reverse-holo-img"], pack[i].imageUrlReverseHolo, pack[i].imageUrlReverseHolo, "imageUrlReverseHolo");
-            // And second, the one we apply a css filter for
-            else
-                card = buildCardHTML(["card", "loading"], pack[i].imageUrl, pack[i].imageUrlHiRes, "cssEffectReverseHolo");
         } else {
             card = buildCardHTML(["card", "loading"], pack[i].imageUrl, pack[i].imageUrlHiRes);
         }
         card.addEventListener("contextmenu", (e) => {
             e.preventDefault();
-            if (pack[i].set === "Legendary Collection" && pack[i].isReverseHolo)
-                zoomCard(pack[i].imageUrlReverseHolo, "imageUrlReverseHolo");
-            else if (pack[i].isReverseHolo)
-                zoomCard(pack[i].imageUrlHiRes, "cssEffectReverseHolo");
-            else
-                zoomCard(pack[i].imageUrlHiRes);
+            zoomCard(pack[i].imageUrlHiRes);
 
         });
         target.appendChild(card);
@@ -188,30 +173,18 @@ function displayRowView(packId, packArtUrls, pack, sortOption) {
     // For some unfathomable reason I can't create img tags, or the flexbox overflow-y breaks. Must use div tags
     for (let i = 0; i < pack.length; i++) {
         let card;
-        if (pack[i].set === "Legendary Collection" && pack[i].isReverseHolo) {
-            card = buildCardHTML(["pulled-card", "loading", "crop-reverse-holo-img"], pack[i].imageUrlReverseHolo);
-            packWrapper.appendChild(card);
-            card.addEventListener("click", () => zoomCard(pack[i].imageUrlReverseHolo, "imageUrlReverseHolo"));
-        }
-        else if (pack[i].isReverseHolo) {
-            card = buildCardHTML(["pulled-card", "loading"], pack[i].imageUrl, pack[i].imageUrlHiRes, "cssEffectReverseHolo");
-            packWrapper.appendChild(card);
-            card.addEventListener("click", () => zoomCard(pack[i].imageUrlHiRes, "cssEffectReverseHolo"));
-        }
-        else {
-            card = buildCardHTML(["pulled-card", "loading"], pack[i].imageUrl);
-            packWrapper.appendChild(card);
-            card.addEventListener("click", () => zoomCard(pack[i].imageUrlHiRes));
-        };
+        card = buildCardHTML(["pulled-card", "loading"], pack[i].imageUrl);
+        packWrapper.appendChild(card);
+        card.addEventListener("click", () => zoomCard(pack[i].imageUrlHiRes));
 
         // But I can use img tags for the rarity markers
         const raritySymbol = document.createElement("img");
         raritySymbol.classList.add("rarity");
-        if (pack[i].rarity === "Common")
+        if (pack[i].rarity === "C")
             raritySymbol.src = "../images/site/rarity_common.png";
-        if (pack[i].rarity === "Uncommon")
+        if (pack[i].rarity === "U")
             raritySymbol.src = "../images/site/rarity_uncommon.png";
-        if (pack[i].rarity === "Holo Rare" || pack[i].rarity === "Rare" || pack[i].rarity === "Secret Rare")
+        if (pack[i].rarity === "R")
             raritySymbol.src = "../images/site/rarity_rare.png";
         card.appendChild(raritySymbol);
     };
@@ -258,55 +231,18 @@ function sortThis(cards, sortOption) {
         });
     };
 
-    // Within the switch statement below, some cards' set number is like "H4" instead of 4. 
-    // So I strip the "H" here and return "0" so (1) parseInt() can be run on it and 
-    // (2) the holo is always treated as the highest or lowest number in the set
-    function accountForHoloNumbers(rarityString) {
-        if (rarityString.charAt(0) === "H")
-            return "0";
-        else
-            return rarityString;
-    };
-
     switch (sortOption) {
         case "packOrder":
             sortedCards = cards.sort((a, b) => { return parseInt(a.pullOrder) - parseInt(b.pullOrder) })
             break;
         case "rarityDescending":
-            sortBy = ["Secret Rare", "Holo Rare", "Rare", "Uncommon", "Common"];
+            sortBy = ["H", "R", "U", "C"];
             sortedCards = customSort({ data: cards, sortBy, sortField: 'rarity' });
             break;
         case "rarityAscending":
-            sortBy = ["Common", "Uncommon", "Rare", "Holo Rare", "Secret Rare"];
+            sortBy = ["C", "U", "R", "H",];
             sortedCards = customSort({ data: cards, sortBy, sortField: 'rarity' });
             break;
-        case "setNumberDescending":
-            sortedCards = cards.sort((a, b) => { 
-                // First sort by set
-                if (a.set > b.set) return 1;
-                if (a.set < b.set) return -1;
-
-                // Then set by number
-                if (parseInt(accountForHoloNumbers(a.number)) < parseInt(accountForHoloNumbers(b.number))) return 1;
-                if (parseInt(accountForHoloNumbers(a.number)) > parseInt(accountForHoloNumbers(b.number))) return -1;
-                
-                return 0;
-            });
-            break;
-        case "setNumberAscending":
-            sortedCards = cards.sort((a, b) => { 
-                // First sort by set
-                if (a.set > b.set) return 1;
-                if (a.set < b.set) return -1;
-
-                // Then set by number
-                if (parseInt(accountForHoloNumbers(a.number)) > parseInt(accountForHoloNumbers(b.number))) return 1;
-                if (parseInt(accountForHoloNumbers(a.number)) < parseInt(accountForHoloNumbers(b.number))) return -1;
-                
-                return 0;
-            });
-            break;
-        // https://stackoverflow.com/questions/8900732/sort-objects-in-an-array-alphabetically-on-one-property-of-the-array
         case "cardNameDescending":
             sortedCards = cards.sort((a, b) => {
                 const name1 = a.name;
@@ -328,7 +264,7 @@ function sortThis(cards, sortOption) {
             // Return
             break;
         default:
-            console.log("Unknown sorting method.");
+            alert("Unknown sorting method.");
     };
     return sortedCards;
 };
@@ -427,8 +363,7 @@ const magnifyingGlass = document.querySelector(".magnifying-glass");
 magnifyingGlass.addEventListener("click", () => {
     const currentCard = document.querySelector(".card--current");
     const hiResUrl = currentCard.getAttribute("data-card-image-hi-res");
-    if (currentCard.classList.contains("reverse-holo-effect")) zoomCard(hiResUrl, "cssEffectReverseHolo")
-    if (currentCard.classList.contains("crop-reverse-holo-img")) zoomCard(hiResUrl, "imageUrlReverseHolo")
+    // if (currentCard.classList.contains("holo-effect")) zoomCard(hiResUrl, "cssEffectReverseHolo")
     if (hiResUrl !== "none") zoomCard(hiResUrl);
     // Pack art is not zoomed, hence it will not be caught here
 });
@@ -446,32 +381,16 @@ $(window).on('shake', function() {
 const openPackButtons = document.querySelectorAll(".open-pack-button");
 openPackButtons.forEach(button => button.onclick = () => {
     openPack(currentSet);
-    gtag("event", "new_pack_opened", {
-        "event_category": "engagement",
-        "event_label": "New pack button"
-    });
 });
 
 const clearPackButton = document.querySelector(".clear-cards");
 clearPackButton.onclick = () => {
-    gtag("event", "clear_cards", {
-        "event_category": "engagement"
-    });
-
     if (pulledPacks.length === 0) return alert("There are no cards to delete.")
     if (confirm("Are you sure you want to delete all your cards? This action cannot be undone.")) {
         pulledPacks = [];
         setDisplay();
     };
 };
-
-
-const ads = document.querySelector(".adsbygoogle");
-ads.addEventListener("click", () => {
-    gtag("event", "click_ad", {
-        "event_category": "engagement"
-    });
-});
 
 // Flip through stack of cards modified from https://codepen.io/shshaw/pen/KzYXvP
 $.fn.commentCards = function () {

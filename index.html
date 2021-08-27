@@ -1,324 +1,176 @@
 <!DOCTYPE html>
-<!-- Feel free to use and repurpose my code, as long as you credit me and/or link to my github page
-   Written by justin keena, https://github.com/jwkeena/Magi-Nation-Booster-Pack-Simulator -->
-
+<!--Written by Justin Keena-->
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name = "description" content = "Free Magi Nation Duel booster pack simulator">
-    <meta name = "keywords" content = "Magi-Nation,magi,nation,magination,duel,booster,blister,pack,box,simulator,opening,tcg,,ccg,set,cards,limited,unlimited">
-    <!--Linking CSS-->
-    <link type="text/css" rel="stylesheet" href="mndstyle.css">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Magi Nation Duel pack opening simulator. Open packs, booster boxes, and collect all the cards online in this free web app."
+    />
+    <meta
+      name="keywords"
+      content="Magi Nation,MND,magi,nation,booster,pack,box,simulator,sim,open,opener,opening,tcg,set,card,cards,free,online,pulls,pack,packs,breaks,app,games,game,"
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:title"
+      content="Magi Nation Booster Pack Simulator"
+    />
+    <meta name="twitter:description" content="Magi Nation Duel pack opening simulator. Open packs, booster boxes, and collect all the cards online in this free web app."/>
+    <meta
+      name="twitter:image"
+      content="https://pokemonboosterpack.com/images/site/twitter-card-screenshot.png"
+    />
+    <!-- Enables media queries on mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSS-->
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="fireworks/style/fireworks.css"
+      media="screen"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon//favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon//favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/favicon//site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="images/favicon//safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
     <title>Magi Nation Booster Pack Simulator</title>
+  </head>
 
-    <!--Redirect to mobile, courtesy of https://css-tricks.com/snippets/javascript/redirect-mobile-devices/ -->
-    <script type="text/javascript">
-        if (screen.width <= 699) {
-            document.location = "mobile.html";
-        }
-    </script>
+  <body style="background: lightblue;">
 
-</head>
-<body onload="newPackUnlimited()">
+    <section>
 
-    <div class ="topBar">
-        <span class = "topBarLeft" id="drafting-tool" title="When activated, double click items to delete them, and right click pulls to move them to the deck area.">[<a href="#" onclick="toggleDrafting();">drafting tool: off</a>]</span>
-        <span class = "topBarMiddle" id = "counter"></span>
-        <span class = "topBarMiddle" id = "packsOpened"> | packs opened: 0 ] </span>
-        <div id = "topBarRight">[<a href = "mobile.html">mobile</a>]</div>
-    </div>  
+      <div class="section-wrapper">
+        <header>
+          <!-- Custom font from https://textcraft.net/style/Textcraft/pokemon -->
+          <a href="pages/about.html"><img id="logo" src="images/site/logo-shortened.png" title="Click to learn more about the site: submit suggestions, learn about the rarity rules, browse updates and the original version of the site."/></a>
+        </header>
 
-    <div>
-        <ul id = "pulls">
-        </ul>
-    </div>
-    
-    <div>
-        <ul id = "deck">
-        </ul>
-    </div>
-    
-    <br>
-    <br>
-    <img src = "mndlogo.jpg">
-    <br>
-    &nbsp;&nbsp;&nbsp;<img src = "mndlogoduel.jpg">
-    <br>
-    <img src = "mndlogotitle.png">
-    <br>
-    <br>
-    
+        <main class="front-page">
 
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="modalImg">
-    </div>
+          <nav style="background: lightblue;">
+            <button class="button open-pack-button desktop-only">OPEN</button>
 
-    <button id="button1" onclick="resetAll();setTimeout(randomPack, 501)">RANDOM PACK</button>
-    <div class="dropdown">
-        <button id="button2">CHOOSE SET</button>
-        <div class="dropdown-content">
-            <a href="javascript:void();" onclick="resetAll();setTimeout(newPackUnlimited, 501)">BASE SET</a>
-            <a href="javascript:void();" onclick="resetAll();setTimeout(newPackAwakening, 501)">AWAKENING</a>
-            <a href="javascript:void();" onclick="resetAll();setTimeout(newPackDreamsEnd, 501)">DREAM'S END</a>
-            <a href="javascript:void();" onclick="resetAll();setTimeout(newPackNightmaresDawn, 501)">NIGHTMARE'S DAWN</a>
-            <a href="javascript:void();" onclick="resetAll();setTimeout(newPackVoiceOfTheStorms, 501)">VOICE OF THE STORMS</a>
-            <a href="javascript:void();" onclick="resetAll();setTimeout(newPackTraitorsReach, 501)">TRAITOR'S REACH</a>
+            <select class="button select-set" onchange="chooseSet()">
+              <option value="unlimited">UNLIMITED</option>
+              <option value="awakening">AWAKENING</option>
+              <option value="dreamsEnd">DREAM'S END</option>
+              <option value="nightmaresDawn">NIGHTMARE'S DAWN</option>
+              <option value="voiceOfTheStorms">VOICE OF THE STORMS</option>
+              <option value="traitorsReach">TRAITOR'S REACH</option>
+              <option value="random">RANDOM</option>
+            </select>
+
+            <select class="button select-display" onchange="setDisplay()">
+              <option value="singlePackFlip">DISPLAY: SINGLE</option>
+              <option value="rowView">DISPLAY: ROWS</option>
+              <option value="gridView">DISPLAY: GRID</option>
+            </select>
+
+            <select
+              class="button select-row-view-sorting"
+              onchange="resortCardsOnDisplay()"
+            >
+              <option class="row-view-only" value="packOrder">
+                SORT: PACK ORDER
+              </option>
+              <option value="cardNameDescending">SORT: CARD NAME (A-Z)</option>
+              <option value="cardNameAscending">SORT: CARD NAME (Z-A)</option>
+              <option value="rarityDescending">SORT: RARITY (DESC)</option>
+              <option value="rarityAscending">SORT: RARITY (ASC)</option>
+              <option value="setNumberAscending">SORT: SET NUMBER (ASC)</option>
+              <option value="setNumberDescending">
+                SORT: SET NUMBER (DESC)
+              </option>
+              <!-- <option value="type">
+              SORT BY: TYPE
+            </option> -->
+            </select>
+
+            <button class="button clear-cards desktop-only">
+              <img class="trash-icon" src="images/site/trash.png" />
+            </button>
+
+          </nav>
+
+          <div class="all-views">
+            <div id="single-pack-flip-area" class="cards">
+              <div id="emitter"></div>
+            </div>
+            <div id="row-view"></div>
+            <div id="grid-view"></div>
+            <button class="button open-pack-button mobile-only">OPEN</button>
+            <img
+              src="images/site/magnifying-glass.png"
+              class="mobile-only magnifying-glass"
+            />
+          </div>
+
+          <div id="card-zoom" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <br />
+              <div id="hi-res-card"></div>
+            </div>
+          </div>
+        </main>
+
+        <div id="fireworks-template">
+          <div id="fw" class="firework"></div>
+          <div id="fp" class="fireworkParticle">
+            <img src="fireworks/image/particles.gif" alt="" />
+          </div>
         </div>
-    </div>
-    <button id="button3" onclick="resetAll();setTimeout(sameSet, 501)">SAME SET</button>
-    <button id="button4" onclick="flipAll()">FLIP ALL</button>
-    <button id="button5" onclick="toggleShuffle()">SHUFFLE (OFF)</button>
-    <br>
-    <br>
-    
-<div class = "boxed">
-<div class = "row">
+        <div id="fireContainer"></div>
 
-    <div id = "myDiv" class = "pack" onclick="flip0()">
-        <div class = "front">
-            <img id = "boosterPackFront" src="base_pack1.jpg">
-        </div>
-        <div class = "back">
-            <img id = "boosterPackBack" src="base_pack2.jpg">
-        </div>
-    </div>
+        <footer style="background: transparent;">
+        </footer>
 
-    <div id = "myDiv1" class = "card1" onclick="flip1()">
-        <img id = "rarity1" src="rarity_uncommon.png">
-        <div class = "front1">
-            <img src="mndcardback.jpg">
-        </div>
-        <div class = "back1">
-            <img id="randomCard1" src="mndcardback.jpg">
-        </div>
-    </div>
+      </div>
+    </section>
 
-    <div id = "myDiv2" class = "card2" onclick="flip2()">
-        <img id = "rarity2" src="rarity_uncommon.png">
-        <div class = "front2">
-            <img src="mndcardback.jpg">
-        </div>
-        <div class = "back2">
-            <img id="randomCard2" src="mndcardback.jpg">
-        </div>
-    </div> 
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <div id = "myDiv3" class = "card3" onclick="flip3()">
-        <img id = "rarity3" src="rarity_uncommon.png">
-        <div class = "front3">
-            <img src="mndcardback.jpg">
-        </div>
-        <div class = "back3">
-            <img id="randomCard3" src="mndcardback.jpg">
-        </div>
-    </div> 
-
-    <div id = "myDiv4" class = "card4" onclick="flip4()">
-        <img id = "rarity4" src="rarity_rare.png">
-        <div class = "front4">
-            <img src="mndcardback.jpg">
-        </div>
-        <div class = "back4">
-            <img id="randomCard4" src="mndcardback.jpg">
-        </div>
-    </div> 
-
-    <div id = "myDiv5" class = "card5" onclick="flip5()">
-        <img id = "rarity5" src="rarity_common.png">
-        <div class = "front5">
-            <img src="mndcardback.jpg">
-        </div>
-        <div class = "back5">
-            <img id="randomCard5" src="mndcardback.jpg">
-        </div>
-    </div>
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-
-    <div id = "myDiv6" class = "card6" onclick="flip6()">
-        <img id = "rarity6" src="rarity_common.png">
-        <div class = "front6">
-            <img src="mndcardback.jpg">
-        </div>
-        <div class = "back6">
-            <img id="randomCard6" src="mndcardback.jpg">
-        </div>
-    </div>
-
-    <div id = "myDiv7" class = "card7" onclick="flip7()">
-        <img id = "rarity7" src="rarity_common.png">
-        <div class = "front7">
-            <img src="mndcardback.jpg">
-        </div>
-        <div class = "back7">
-            <img id="randomCard7" src="mndcardback.jpg">
-        </div>
-    </div>
-
-    <div id = "myDiv8" class = "card8" onclick="flip8()">
-        <img id = "rarity8" src="rarity_common.png">
-        <div class = "front8">
-            <img src="mndcardback.jpg">
-        </div>
-        <div class = "back8">
-            <img id="randomCard8" src="mndcardback.jpg">
-        </div>
-    </div>
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <div id = "myDiv9" class = "card9" onclick="flip9()">
-        <img id = "rarity9" src="rarity_common.png">
-        <div class = "front9">
-            <img src="mndcardback.jpg">
-        </div>
-        <div class = "back9">
-            <img id="randomCard9" src="mndcardback.jpg">
-        </div>
-    </div>
-
-    <div id = "myDiv10" class = "card10" onclick="flip10()">
-        <img id = "rarity10" src="rarity_common.png">
-        <div class = "front10">
-            <img src="mndcardback.jpg">
-        </div>
-        <div class = "back10">
-            <img id="randomCard10" src="mndcardback.jpg">
-        </div>
-    </div>
-
-    <div id = "myDiv11" class = "card11" onclick="flip11()">
-        <img id = "rarity11" src="rarity_common.png">
-        <div class = "front11">
-            <img src="mndcardback.jpg">
-        </div>
-        <div class = "back11">
-            <img id="randomCard11" src="mndcardback.jpg">
-        </div>
-    </div>
-    
-</div>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
-</div>
-
-<br>
-<br>
-<button id="button6" onclick="resetAll();setTimeout(randomPack, 501)">RANDOM PACK</button>
-<div class="dropup">
-    <button id="button7">CHOOSE SET</button>
-    <div class="dropup-content">
-            <a href="javascript:void();" onclick="resetAll();setTimeout(newPackUnlimited, 501)">BASE SET</a>
-            <a href="javascript:void();" onclick="resetAll();setTimeout(newPackAwakening, 501)">AWAKENING</a>
-            <a href="javascript:void();" onclick="resetAll();setTimeout(newPackDreamsEnd, 501)">DREAM'S END</a>
-            <a href="javascript:void();" onclick="resetAll();setTimeout(newPackNightmaresDawn, 501)">NIGHTMARE'S DAWN</a>
-            <a href="javascript:void();" onclick="resetAll();setTimeout(newPackVoiceOfTheStorms, 501)">VOICE OF THE STORMS</a>
-            <a href="javascript:void();" onclick="resetAll();setTimeout(newPackTraitorsReach, 501)">TRAITOR'S REACH</a>
-        </div>
-    </div>
-    <button id="button8" onclick="resetAll();setTimeout(sameSet, 501)">SAME SET</button>
-    <button id="button9" onclick="flipAll()">FLIP ALL</button>
-    <button id="button10" onclick="toggleShuffle()">SHUFFLE (OFF)</button>
-    
-    <br>
-    <br>
-    
-
-
-<div class="bottomBar">
-    programming and design by justin keena (code download available at <a href = "https://github.com/jwkeena?tab=repositories">github</a>);
-    card images from <a href = "http://www.bluefurok.com/OfficialCards_index.htm">blue furok</a>
-</div>  
-
-<!-- jQuery link -->
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<!--linking Javascript-->
-<script type="text/javascript" src="mndjavascript.js"></script>
-</body>
+    <!-- Javascript must be at end so it can access the loaded DOM -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Huge props to https://www.npmjs.com/package/canvas-confetti for such a delightful project -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.3.2/dist/confetti.browser.min.js"></script>
+    <!-- Likewise to http://www.schillmania.com/projects/fireworks/ -->
+    <script type="text/javascript" src="fireworks/script/fireworks.js"></script>
+    <!-- And thanks to https://github.com/alexgibson/shake.js/ -->
+    <script type="text/javascript" src="js/shake.js"></script>
+    <script type="text/javascript" src="js/cards.js"></script>
+    <script type="text/javascript" src="js/sets.js"></script>
+    <script type="text/javascript" src="js/card-logic.js"></script>
+    <script type="text/javascript" src="js/ui-logic.js"></script>
+  </body>
 </html>

@@ -134,14 +134,12 @@ function singlePackFlip(packArtUrls, pack) {
     target.append(packArtFront);
     for (let i = 0; i < pack.length; i++) {
         let card;
-        if (pack[i].rarity === "Secret Rare") {
-            card = buildCardHTML(["card", "loading", "fireworks"], pack[i].imageUrl, pack[i].imageUrlHiRes);
-        }
-        else if (pack[i].rarity === "H") {
-            card = buildCardHTML(["card", "loading", "confetti"], pack[i].imageUrl, pack[i].imageUrlHiRes);
-        } else {
+        if (pack[i].rarity.charAt(0) === "H") 
+            card = buildCardHTML(["card", "loading", "holographic"], pack[i].imageUrl, pack[i].imageUrlHiRes);
+        else
             card = buildCardHTML(["card", "loading"], pack[i].imageUrl, pack[i].imageUrlHiRes);
-        }
+        
+            
         card.addEventListener("contextmenu", (e) => {
             e.preventDefault();
             zoomCard(pack[i].imageUrlHiRes);
@@ -169,7 +167,10 @@ function displayRowView(packId, packArtUrls, pack, sortOption) {
     // For some unfathomable reason I can't create img tags, or the flexbox overflow-y breaks. Must use div tags
     for (let i = 0; i < pack.length; i++) {
         let card;
-        card = buildCardHTML(["pulled-card", "loading"], pack[i].imageUrl);
+        if (pack[i].rarity.charAt(0) === "H") 
+            card = buildCardHTML(["pulled-card", "loading", "holographic"], pack[i].imageUrl);
+        else 
+            card = buildCardHTML(["pulled-card", "loading"], pack[i].imageUrl);
         packWrapper.appendChild(card);
         card.addEventListener("click", () => zoomCard(pack[i].imageUrlHiRes));
 
@@ -232,11 +233,11 @@ function sortThis(cards, sortOption) {
             sortedCards = cards.sort((a, b) => { return parseInt(a.pullOrder) - parseInt(b.pullOrder) })
             break;
         case "rarityDescending":
-            sortBy = ["H", "R", "U", "C"];
+            sortBy = ["HR", "HU", "HC", "R", "U", "C"];
             sortedCards = customSort({ data: cards, sortBy, sortField: 'rarity' });
             break;
         case "rarityAscending":
-            sortBy = ["C", "U", "R", "H",];
+            sortBy = ["C", "U", "R", "HC", "HU", "HR"];
             sortedCards = customSort({ data: cards, sortBy, sortField: 'rarity' });
             break;
         case "cardNameDescending":
@@ -298,31 +299,15 @@ function displayGridView(sortOption) {
     // For some unfathomable reason I can't create img tags, or the flexbox overflow-y breaks. Must use div tags
     for (let i = 0; i < allCards.length; i++) {
         let card;
-
-        if (allCards[i].set === "Legendary Collection" && allCards[i].isReverseHolo) {
-            card = buildCardHTML(["grid-card", "loading", "crop-reverse-holo-img"], allCards[i].imageUrlReverseHolo);
-            gridWrapper.appendChild(card);
-            card.addEventListener("click", e => {
-                e.target.removeClass("fresh-pull");
-                zoomCard(allCards[i].imageUrlReverseHolo, "imageUrlReverseHolo")
-            });
-        }
-        else if (allCards[i].isReverseHolo) {
-            card = buildCardHTML(["grid-card", "loading"], allCards[i].imageUrl, allCards[i].imageUrlHiRes, "cssEffectReverseHolo");
-            gridWrapper.appendChild(card);
-            card.addEventListener("click", e => {
-                e.target.removeClass("fresh-pull");
-                zoomCard(allCards[i].imageUrlHiRes, "cssEffectReverseHolo")
-            });
-        }
-        else {
+        if (allCards[i].rarity.charAt(0) === "H")
+            card = buildCardHTML(["grid-card", "loading", "holographic"], allCards[i].imageUrl);
+        else 
             card = buildCardHTML(["grid-card", "loading"], allCards[i].imageUrl);
-            gridWrapper.appendChild(card);
-            card.addEventListener("click", e => {
-                e.target.classList.remove("fresh-pull");
-                zoomCard(allCards[i].imageUrlHiRes)
-            });
-        };
+        gridWrapper.appendChild(card);
+        card.addEventListener("click", e => {
+            e.target.classList.remove("fresh-pull");
+            zoomCard(allCards[i].imageUrlHiRes)
+        });
 
         // Mark fresh pulls as new
         if (allCards[i].isFreshPull) card.classList.add("fresh-pull");

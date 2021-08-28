@@ -91,36 +91,49 @@ function calculateOdds(odds) {
     // I know the else statement is optional since js coerces undefined to false but this reads better OKAY?!
 };
 
-function pullCard(cardType, pack, set, isHoloPulled, index) {
+function pullCard(rarity, pack, set, isHoloPulled, index) {
     let card = null;
     // Remember js objects are passed by reference, not value. So when I assign the card variable declared in the first line of this function to a random card object later, 
     // any change I make to the card variable here will also change the card in the set--they are both using the same reference.
     // So I have to create a (shallow) clone of the card object so that it doesn't mutate the card in the set, using Object.assign
-    // If I didn't, whenever this card is pulled again it will appear to be a reverse holo even when it's supposed to be a normal card
+    // If I didn't, I couldn't distinguish each card as being a "new pull" later in the grid view, or count duplicates, etc
     // See https://stackoverflow.com/questions/122102/what-is-the-most-efficient-way-to-deep-clone-an-object-in-javascript for more options
-
-    switch (cardType) {
+    
+    if (isHoloPulled && index === 4) { // Holos always replace 1st common
+        const holoRarityTiers = ["HR", "HU", "HC"] // Holos can be any rarity
+        const randomHoloRarity = holoRarityTiers[randomIndex(holoRarityTiers.length)];
+        rarity = randomHoloRarity;
+        console.log(rarity)
+    }
+    
+    switch (rarity) {
+        case "HR": 
         case "R":
             card = Object.assign({}, set.sortedCards.rares[randomIndex(set.sortedCards.rares.length)]);
-            if (isHoloPulled) card.isHoloPulled = true;
             break;
+        case "HU":
         case "U":
             card = Object.assign({}, set.sortedCards.uncommons[randomIndex(set.sortedCards.uncommons.length)]);
             break;
-        default: // Handles commons
+        case "HC":
+        case "C": 
             card = Object.assign({}, set.sortedCards.commons[randomIndex(set.sortedCards.commons.length)]);
+            break;
+        default:
+            alert("Unknown rarity type.")
     };
 
     // Using recursion again. TODO: refactor to keep a duplicate array of possible choices, popping off chosen ones
     if (isDuplicate(card, pack)) {
-        pullCard(cardType, pack, set, isHoloPulled, index);
-    }
-    else {
+        pullCard(rarity, pack, set, isHoloPulled, index);
+    } else {
+        card.rarity = rarity; // In case it's a holo, the front end needs to know it was given an HR, HU, or HC
         card.pullOrder = index; // For row view "PACK ORDER" sorting
         card.setSymbolUrl = set.symbolUrl; // For grid view set symbol display
         card.isFreshPull = true; // For grid view, marking which cards are newly rendered
         pack.push(card);
     };
+
     return pack;
 };
 

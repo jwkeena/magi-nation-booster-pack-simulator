@@ -34,12 +34,12 @@ function setDisplay(displayOption = document.querySelector(".select-display").va
             break;
         case "noCards":
             const target = document.getElementById("single-pack-flip-area");
-            const card = buildCardHTML(["card", "card--current", "no-card"], "../images/site/cardback.jpg");
+            const card = buildCardHTML(["card", "card--current", "no-card"], "../images/site/cardback.png");
             card.title = "No cards to display!"
             target.appendChild(card);
             break;
         default:
-            console.log("Somehow we've passed a nonexistent view type: " + displayOption + ". This should be impossible.")
+            alert("Somehow we've passed a nonexistent view type: " + displayOption + ". This should be impossible.")
     };
 };
 
@@ -49,7 +49,7 @@ function buildCardHTML(classesToAdd, imageUrl, hiResImageUrl, cardType) {
     if (cardType === "packArt")
         card.style.backgroundImage = "url('" + imageUrl + "')";
     else
-        card.style.backgroundImage = "url('../images/site/pokeball-loading.gif')";
+        card.style.backgroundImage = "url('../images/site/progress-bar.gif')";
     preloadImage(card, imageUrl, cardType);
     card.setAttribute("data-card-image", imageUrl);
     card.setAttribute("data-card-image-hi-res", hiResImageUrl);
@@ -113,10 +113,6 @@ function onImageLoaded(card, isHolo) {
 };
 
 function zoomCard(url, isHolo = null) {
-    gtag("event", "zoom_card", {
-        "event_category": "engagement"
-    });
-
     const div = document.getElementById("hi-res-card");
     div.setAttribute("data-card-image", url, isHolo);
     preloadImage(div, url, isHolo);
@@ -354,7 +350,7 @@ const modal = document.getElementById("card-zoom");
 modal.onclick = function (e) {
     if (e.target !== document.getElementById("hi-res-card")) {
         modal.style.display = "none";
-        document.getElementById("hi-res-card").style.backgroundImage = "url('../images/site/pokeball-loading.gif')";
+        document.getElementById("hi-res-card").style.backgroundImage = "url('../images/site/progress-bar.gif')";
     };
 };
 

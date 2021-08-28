@@ -43,10 +43,10 @@ function openPack(setName) {
         removeFreshPullMarkerFrom(previousPack);
     }
 
-    const holoPulled = calculateOdds(set.chanceOfHolo);
+    const isHoloPulled = calculateOdds(set.chanceOfHolo);
     const cardsInPack = [];
     const newPackArtUrls = set.packArt;
-    set.cardsToPull.forEach((cardType, index) => pullCard(cardType, cardsInPack, set, holoPulled, index));
+    set.cardsToPull.forEach((cardType, index) => pullCard(cardType, cardsInPack, set, isHoloPulled, index));
     const newId = Symbol(); // Give each pack a unique ID so that even if its cards and set exactly match another, it will be considered unique for deletion purposes
     pulledPacks.push({ id: newId, set: set, packArtUrls: newPackArtUrls, cards: [...cardsInPack]});
     
@@ -91,7 +91,7 @@ function calculateOdds(odds) {
     // I know the else statement is optional since js coerces undefined to false but this reads better OKAY?!
 };
 
-function pullCard(cardType, pack, set, holoPulled, index) {
+function pullCard(cardType, pack, set, isHoloPulled, index) {
     let card = null;
     // Remember js objects are passed by reference, not value. So when I assign the card variable declared in the first line of this function to a random card object later, 
     // any change I make to the card variable here will also change the card in the set--they are both using the same reference.
@@ -101,10 +101,8 @@ function pullCard(cardType, pack, set, holoPulled, index) {
 
     switch (cardType) {
         case "R":
-            // if (holoPulled)
-            //     card = Object.assign({}, set.sortedCards.holoRares[randomIndex(set.sortedCards.holoRares.length)]);
-            // else 
-                card = Object.assign({}, set.sortedCards.rares[randomIndex(set.sortedCards.rares.length)]);
+            card = Object.assign({}, set.sortedCards.rares[randomIndex(set.sortedCards.rares.length)]);
+            if (isHoloPulled) card.isHoloPulled = true;
             break;
         case "U":
             card = Object.assign({}, set.sortedCards.uncommons[randomIndex(set.sortedCards.uncommons.length)]);
@@ -114,9 +112,8 @@ function pullCard(cardType, pack, set, holoPulled, index) {
     };
 
     // Using recursion again. TODO: refactor to keep a duplicate array of possible choices, popping off chosen ones
-    // Only run duplicate check if it's not a reverse holo. Reverse holos CAN be duplicates
     if (isDuplicate(card, pack)) {
-        pullCard(cardType, pack, set, holoPulled, index);
+        pullCard(cardType, pack, set, isHoloPulled, index);
     }
     else {
         card.pullOrder = index; // For row view "PACK ORDER" sorting

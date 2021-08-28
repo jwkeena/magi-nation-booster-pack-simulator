@@ -1,13 +1,14 @@
 /* --------------------------------------------- */
 /* Whole page styling */
 body {
-    /* background-image: -webkit-linear-gradient(to right, red, orange, goldenrod, gold);
-    background-image: linear-gradient(to right, red, orange, goldenrod, gold); */
-    background: lightblue;
+    background: lightgoldenrodyellow;
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Papyrus, Arial, sans-serif;
     font-size: 20px;
-    color: yellow;
+    font-weight: bold;
+    color: saddlebrown;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: black;
     padding: 0;
     margin: 0;
 }
@@ -16,7 +17,7 @@ a:visited,
 a:link,
 a:active,
 a:hover {
-    color: yellow;
+    color: saddlebrown;
 }
 
 .button.select-row-view-sorting.hide,
@@ -36,6 +37,7 @@ a:hover {
 
 .card.card--current.no-card {
     cursor: initial;
+    border-radius: 9px;
 }
 
 .centered-text {
@@ -48,9 +50,7 @@ nav {
     position: sticky;
     top: 0;
     z-index: 15;
-    /* background-image: -webkit-linear-gradient(to right, red, orange, goldenrod, gold);
-    background-image: linear-gradient(to right, red, orange, goldenrod, gold); */
-    background: lightblue;
+    background: lightgoldenrod;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -83,26 +83,47 @@ main.front-page {
 
 /* --------------------------------------------- */
 /* Header, footer styling */
+
+header {
+    padding-top: 3rem;
+}
+
 #logo {
-    padding-top: 4rem;
-    width: 35rem;
+    margin: 0 auto;
+    background-image: url('../images/site/mnd-logo.png');
+    width: 20rem;
+    height: 10rem;
+    background-position: center;
+    /* Make the background image cover the area of the <div>, and clip the excess */
+    background-size: cover;
 }
 
-header>div,
-footer>div {
-    background: blue;
-    color: yellow;
-    padding: 1rem;
+header > p {
+    position: relative;
+    top: -.5rem;
 }
 
-/* --------------------------------------------- */
-/* Reverse holo - tips from https://css-tricks.com/chaining-multiple-blend-modes/ */
-.reverse-holo-effect {
-    background-blend-mode: darken, multiply;
+/*Rainbow effect, adapted from https://gist.github.com/ajaegers/52a82619cc191f898ec4*/
+@keyframes rainbow {
+    from {
+        filter: hue-rotate(0deg);
+        -webkit-filter: hue-rotate(0deg);
+        -moz-filter: hue-rotate(0deg);
+        -o-filter: hue-rotate(0deg);
+    }
+    to {
+        filter: hue-rotate(360deg);
+        -webkit-filter: hue-rotate(360deg);
+        -moz-filter: hue-rotate(360deg);
+        -o-filter: hue-rotate(360deg);
+    }
 }
 
-.pulled-card.reverse-holo-effect {
-    background-repeat: initial;
+.holographic {
+    animation: rainbow 2s steps(36) infinite;
+    -webkit-animation: rainbow 2s steps(36) infinite;
+    -moz-animation: rainbow 2s steps(36) infinite;
+    -o-animation: rainbow 2s steps(36) infinite;
 }
 
 /* --------------------------------------------- */
@@ -219,12 +240,12 @@ div.card {
 }
 
 .delete-pack-button {
-    background: blue;
+    background: lightlightblue;
     display: inline-block;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
     font-size: 1.5rem;
-    color: yellow;
+    color: goldenrod;
     padding: .5rem 2rem .5rem 2rem;
     border-radius: 3px;
     cursor: pointer;
@@ -300,10 +321,10 @@ div.card {
     background-color: none;
     background-size: contain;
     background-repeat: no-repeat;
-    border-radius: 8px;
+    border-radius: 10px;
     display: inline;
-    height: calc(110vw/5.85);
-    flex-basis: calc(110vw/8);
+    height: calc(110vw/5.5);
+    flex-basis: calc(110vw/7.71);
     flex-grow: 0;
     flex-shrink: 0;
     margin: 2rem .5rem 0rem .5rem;
@@ -314,19 +335,8 @@ div.card {
     position: relative;
 }
 
-.card.crop-reverse-holo-img,
-#hi-res-card.crop-reverse-holo-img {
-    border-radius: 2.5vh;
-    background-size: cover;
-}
-
-.pulled-card.crop-reverse-holo-img {
-    flex-basis: calc(107.5vw/8);
-    border-radius: 6px;
-}
-
 .pulled-card img {
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 .pulled-card:hover:not(:first-child) {
@@ -344,8 +354,7 @@ div.card {
 .rarity {
     position: absolute;
     bottom: -1.75rem;
-    right: 46%;
-    width: .85rem;
+    right: 41%;
     height: .85rem;
 }
 
@@ -369,8 +378,7 @@ div.card {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     border-radius: 4px;
-    /* Maintains approx. 1.375 ratio between height and width without looking too short */
-    height: calc(86vw/5.85);
+    height: calc(86vw/5.8);
     flex-basis: calc(80vw/8);
     margin-left: .3rem;
     margin-right: .3rem;
@@ -397,9 +405,9 @@ div.card {
 
 .set-symbol {
     position: absolute;
-    bottom: -1.3rem;
+    bottom: -2rem;
     right: 41%;
-    max-height: 15px;
+    height: 30px;
 }
 
 .fresh-pull::after {
@@ -419,12 +427,13 @@ div.card {
 /* --------------------------------------------- */
 /* Buttons */
 .button {
-    background: blue;
+    background: lightblue;
     display: inline-block;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
     font-size: 1.2rem;
-    color: yellow;
+    color: saddlebrown;
+    -webkit-text-stroke-width: 0;
     padding: .5rem 2rem .5rem 2rem;
     border-radius: 3px;
     max-width: 20%;
@@ -468,7 +477,7 @@ div.card {
     width: 59vh;
     margin: 0 auto;
     border-radius: 8px;
-    background-image: url('../images/site/pokeball-loading.gif');
+    background-image: url('../images/site/progress-bar.gif');
     background-size: cover;
     background-position-x: center;
 }
@@ -514,8 +523,8 @@ div.card {
     text-align: left;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
-    background-color: blue;
-    border: 15px solid yellow;
+    background-color: lightblue;
+    border: 15px solid goldenrod;
     padding: 2rem;
 }
 
@@ -560,7 +569,7 @@ h3 {
         width: 58vh;
         margin: 0 auto;
         border-radius: 8px;
-        background-image: url('../images/site/pokeball-loading.gif');
+        background-image: url('../images/site/progress-bar.gif');
         background-size: cover;
         background-position-x: center;
     }
@@ -652,7 +661,7 @@ h3 {
         width: 47vh;
         margin: 0 auto;
         border-radius: 8px;
-        background-image: url('../images/site/pokeball-loading.gif');
+        background-image: url('../images/site/progress-bar.gif');
         background-size: cover;
         background-position-x: center;
     }

@@ -11,8 +11,8 @@ const sets = {
       },
     name: "Base",
     totalCards: 190,
-    symbolUrl: "https://images.pokemontcg.io/base1/symbol.png",
-    logoUrl: "https://images.pokemontcg.io/base1/logo.png",
+    symbolUrl: "../images/site/mnd-logo.png",
+    logoUrl: "../images/site/mnd-logo.png",
   },
   AW: {
     cards: awakeningCards,
@@ -26,8 +26,7 @@ const sets = {
       },
     name: "Awakening",
     totalCards: 140,
-    symbolUrl: "https://images.pokemontcg.io/base1/symbol.png",
-    logoUrl: "https://images.pokemontcg.io/base1/logo.png",
+    symbolUrl: "../images/set-symbols/awakening-set-symbol.png"
   },
   DE: {
     cards: dreamsEndCards,
@@ -41,8 +40,7 @@ const sets = {
       },
     name: "Dream's End",
     totalCards: 185,
-    symbolUrl: "https://images.pokemontcg.io/base1/symbol.png",
-    logoUrl: "https://images.pokemontcg.io/base1/logo.png",
+    symbolUrl: "../images/set-symbols/dreams-end-set-symbol.png"
   },
   ND: {
     cards: nightmaresDawnCards,
@@ -56,8 +54,7 @@ const sets = {
       },
     name: "Nightmare's Dawn",
     totalCards: 300,
-    symbolUrl: "https://images.pokemontcg.io/base1/symbol.png",
-    logoUrl: "https://images.pokemontcg.io/base1/logo.png",
+    symbolUrl: "../images/set-symbols/nightmares-dawn-set-symbol.png"
   },
   VS: {
     cards: voiceOfTheStormsCards,
@@ -71,8 +68,7 @@ const sets = {
       },
     name: "Voice of the Storms",
     totalCards: 300,
-    symbolUrl: "https://images.pokemontcg.io/base1/symbol.png",
-    logoUrl: "https://images.pokemontcg.io/base1/logo.png",
+    symbolUrl: "../images/set-symbols/voice-of-the-storms-set-symbol.png"
   },
   TR: {
     cards: traitorsReachCards,
@@ -86,7 +82,6 @@ const sets = {
       },
     name: "Traitor's Reach",
     totalCards: 149,
-    symbolUrl: "https://images.pokemontcg.io/base1/symbol.png",
-    logoUrl: "https://images.pokemontcg.io/base1/logo.png",
+    symbolUrl: "../images/set-symbols/traitors-reach-set-symbol.png"
   }
 }

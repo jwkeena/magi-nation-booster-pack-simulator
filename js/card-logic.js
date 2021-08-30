@@ -66,7 +66,7 @@ function decideWhichDisplayToSet(uiViewType) {
             setDisplay("gridView")
             break;
         default:
-            console.log("Default view type - this should be impossible");
+            alert("Default view type - this should be impossible.");
     };
 }
 
@@ -103,7 +103,6 @@ function pullCard(rarity, pack, set, isHoloPulled, index) {
         const holoRarityTiers = ["HR", "HU", "HC"] // Holos can be any rarity
         const randomHoloRarity = holoRarityTiers[randomIndex(holoRarityTiers.length)];
         rarity = randomHoloRarity;
-        console.log(rarity)
     }
     
     switch (rarity) {

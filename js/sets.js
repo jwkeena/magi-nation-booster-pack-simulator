@@ -2,7 +2,7 @@ const sets = {
   BS: {
     cards: unlimitedCards,
     cardsAreSorted: false,
-    chanceOfHolo: 1 / 5,
+    chanceOfHolo: 1,
     cardsToPull: ["U", "U", "U", "R", "C", "C", "C", "C", "C", "C", "C"],
     packArt:
       {

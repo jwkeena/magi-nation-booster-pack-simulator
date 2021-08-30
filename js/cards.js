@@ -1,4304 +1,4304 @@
 const unlimitedCards = [
     {
-        artist: "Holmberg, Vega",
-        cost: 1,
-        flavor: "It will haunt you. If you are weak, it will become you.\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Abaquist.jpg",
-        key: 1249,
-        name: "Abaquist",
-        normalized_name: "Abaquist",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 1,
+        "flavor": "It will haunt you. If you are weak, it will become you.\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Abaquist.jpg",
+        "imageUrl": "../images/cards/BS/Abaquist.jpg",
+        "key": 1249,
+        "name": "Abaquist",
+        "normalized_name": "Abaquist",
+        "powers": [
             {
-                name: "Possess",
-                text: "Choose any one Creature in play with less energy than Abaquist. Discard Abaquist from play. Gain control of the chosen Creature. That Creature may not attack this turn.\n"
+                "name": "Possess",
+                "text": "Choose any one Creature in play with less energy than Abaquist. Discard Abaquist from play. Gain control of the chosen Creature. That Creature may not attack this turn.\n"
             }
         ],
-        rarity: "U",
-        regions: [
+        "rarity": "U",
+        "regions": [
             "Orothe"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Vega",
-        cost: 15,
-        effects: [
+        "artist": "Vega",
+        "cost": 15,
+        "effects": [
             {
-                name: "Haunt",
-                text: "If Adis is defeated, your opponents each choose and discard three cards from each of their hands.\n"
+                "name": "Haunt",
+                "text": "If Adis is defeated, your opponents each choose and discard three cards from each of their hands.\n"
             }
         ],
-        energize: 5,
-        flavor: "\"She's gone, but I can still hear her screaming.\"\n-- Zet, Core Warrior\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Adis.jpg",
-        key: 1160,
-        name: "Adis",
-        normalized_name: "Adis",
-        rarity: "U",
-        regions: [
+        "energize": 5,
+        "flavor": "\"She's gone, but I can still hear her screaming.\"\n-- Zet, Core Warrior\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Adis.jpg",
+        "imageUrl": "../images/cards/BS/Adis.jpg",
+        "key": 1160,
+        "name": "Adis",
+        "normalized_name": "Adis",
+        "rarity": "U",
+        "regions": [
             "Arderial"
         ],
-        set: "BS",
-        starting: [
+        "set": "BS",
+        "starting": [
             "Epik",
             "Orish",
             "Shooting Star"
         ],
-        type: "Magi"
+        "type": "Magi"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 4,
-        flavor: "\"To protect its spores, the Great Mushroom of Knowledge gives them wings.\"\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Agovo.jpg",
-        key: 1284,
-        name: "Agovo",
-        normalized_name: "Agovo",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 4,
+        "flavor": "\"To protect its spores, the Great Mushroom of Knowledge gives them wings.\"\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Agovo.jpg",
+        "imageUrl": "../images/cards/BS/Agovo.jpg",
+        "key": 1284,
+        "name": "Agovo",
+        "normalized_name": "Agovo",
+        "powers": [
             {
-                cost: 2,
-                name: "Lore",
-                text: "Draw one card."
+                "cost": 2,
+                "name": "Lore",
+                "text": "Draw one card."
             }
         ],
-        rarity: "U",
-        regions: [
+        "rarity": "U",
+        "regions": [
             "Underneath"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Christopher",
-        cost: 6,
-        flavor: "Some dreams don't go away when you wake up. That's what these things are for.\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Alaban.jpg",
-        key: 1144,
-        name: "Alaban",
-        normalized_name: "Alaban",
-        powers: [
+        "artist": "Holmberg, Christopher",
+        "cost": 6,
+        "flavor": "Some dreams don't go away when you wake up. That's what these things are for.\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Alaban.jpg",
+        "imageUrl": "../images/cards/BS/Alaban.jpg",
+        "key": 1144,
+        "name": "Alaban",
+        "normalized_name": "Alaban",
+        "powers": [
             {
-                cost: 5,
-                name: "Undream",
-                text: "Choose any one Creature in play. Return the chosen creature to its owner's hand. Discard the chosen Creature's energy.\n"
+                "cost": 5,
+                "name": "Undream",
+                "text": "Choose any one Creature in play. Return the chosen creature to its owner's hand. Discard the chosen Creature's energy.\n"
             }
         ],
-        rarity: "U",
-        regions: [
+        "rarity": "U",
+        "regions": [
             "Arderial"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Shreve",
-        cost: 0,
-        flavor: "Motash watched as the Grag bore down on her crippled hyren. She clasped the amulet with a silent prayer...\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Amulet_of_Ombor.jpg",
-        key: 1307,
-        name: "Amulet of Ombor",
-        normalized_name: "Amulet_of_Ombor",
-        powers: [
+        "artist": "Holmberg, Shreve",
+        "cost": 0,
+        "flavor": "Motash watched as the Grag bore down on her crippled hyren. She clasped the amulet with a silent prayer...\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Amulet_of_Ombor.jpg",
+        "imageUrl": "../images/cards/BS/Amulet_of_Ombor.jpg",
+        "key": 1307,
+        "name": "Amulet of Ombor",
+        "normalized_name": "Amulet_of_Ombor",
+        "powers": [
             {
-                name: "Energy Boost",
-                text: "Roll one die.\n1, 2, or 3 = Your opponents add one energy\nto each of their Creatures in play.\n4 or 5 = Choose any one Creature in play.\nAdd two energy to the chosen Creature.\n6 = Choose any one Creature in play.\nAdd four energy to the chosen Creature.\n"
+                "name": "Energy Boost",
+                "text": "Roll one die.\n1, 2, or 3 = Your opponents add one energy\nto each of their Creatures in play.\n4 or 5 = Choose any one Creature in play.\nAdd two energy to the chosen Creature.\n6 = Choose any one Creature in play.\nAdd four energy to the chosen Creature.\n"
             }
         ],
-        rarity: "R",
-        regions: [
+        "rarity": "R",
+        "regions": [
             "Underneath"
         ],
-        set: "BS",
-        type: "Relic"
+        "set": "BS",
+        "type": "Relic"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 0,
-        flavor: "\"Play something else. That makes me homesick.\"\n-- Tony, to Tryn\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Ancestral_Flute.jpg",
-        key: 1320,
-        name: "Ancestral Flute",
-        normalized_name: "Ancestral_Flute",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 0,
+        "flavor": "\"Play something else. That makes me homesick.\"\n-- Tony, to Tryn\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Ancestral_Flute.jpg",
+        "imageUrl": "../images/cards/BS/Ancestral_Flute.jpg",
+        "key": 1320,
+        "name": "Ancestral Flute",
+        "normalized_name": "Ancestral_Flute",
+        "powers": [
             {
-                cost: 2,
-                name: "Song of the Family",
-                text: "Choose any one Creature in play. Discard Ancestral Flute from play. Search your deck for up to two copies of the chosen Creature. Show the cards to your opponents, and put them into your hand. Shuffle your deck.\n"
+                "cost": 2,
+                "name": "Song of the Family",
+                "text": "Choose any one Creature in play. Discard Ancestral Flute from play. Search your deck for up to two copies of the chosen Creature. Show the cards to your opponents, and put them into your hand. Shuffle your deck.\n"
             }
         ],
-        rarity: "U",
-        regions: [
+        "rarity": "U",
+        "regions": [
             "Universal"
         ],
-        set: "BS",
-        type: "Relic"
+        "set": "BS",
+        "type": "Relic"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 1,
-        flavor: "\"The sun's fire makes a garden grow,\n And forge fires temper steel.\n Why then are you surprised to find\n A fire that can heal?\"\n -- \"The Arbolit\", verse 3\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Arbolit.jpg",
-        key: 1179,
-        name: "Arbolit",
-        normalized_name: "Arbolit",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 1,
+        "flavor": "\"The sun's fire makes a garden grow,\n And forge fires temper steel.\n Why then are you surprised to find\n A fire that can heal?\"\n -- \"The Arbolit\", verse 3\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Arbolit.jpg",
+        "imageUrl": "../images/cards/BS/Arbolit.jpg",
+        "key": 1179,
+        "name": "Arbolit",
+        "normalized_name": "Arbolit",
+        "powers": [
             {
-                name: "Healing Flame",
-                text: "Choose any one Creature in play. Discard Arbolit from play. Add two energy to the chosen creature.\n"
+                "name": "Healing Flame",
+                "text": "Choose any one Creature in play. Discard Arbolit from play. Add two energy to the chosen creature.\n"
             }
         ],
-        rarity: "C",
-        regions: [
+        "rarity": "C",
+        "regions": [
             "Cald"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg",
-        cost: 3,
-        flavor: "\"Instant energy right there, brother. Individually wrapped for\nconvenience. Oh yeah.\"\n-- Yaki, Naroom Tracker\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Arboll.jpg",
-        key: 1214,
-        name: "Arboll",
-        normalized_name: "Arboll",
-        powers: [
+        "artist": "Holmberg",
+        "cost": 3,
+        "flavor": "\"Instant energy right there, brother. Individually wrapped for\nconvenience. Oh yeah.\"\n-- Yaki, Naroom Tracker\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Arboll.jpg",
+        "imageUrl": "../images/cards/BS/Arboll.jpg",
+        "key": 1214,
+        "name": "Arboll",
+        "normalized_name": "Arboll",
+        "powers": [
             {
-                name: "Life Channel",
-                text: "Choose any one Magi in play. Discard Arboll from play. Add four energy to the chosen Magi.\n"
+                "name": "Life Channel",
+                "text": "Choose any one Magi in play. Discard Arboll from play. Add four energy to the chosen Magi.\n"
             }
         ],
-        rarity: "C",
-        regions: [
+        "rarity": "C",
+        "regions": [
             "Naroom"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Russell",
-        cost: 0,
-        effects: [
+        "artist": "Holmberg, Russell",
+        "cost": 0,
+        "effects": [
             {
-                name: "Strengthen",
-                text: "At the beginning of your turn, choose any one Creature in play. Add one enery to the chosen Creature.\n"
+                "name": "Strengthen",
+                "text": "At the beginning of your turn, choose any one Creature in play. Add one enery to the chosen Creature.\n"
             }
         ],
-        flavor: "\"The wind and his children answer to the one wearing me.\"\n-- Crown inscription\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Arderials_Crown.jpg",
-        key: 1167,
-        name: "Arderial's Crown",
-        normalized_name: "Arderials_Crown",
-        rarity: "R",
-        regions: [
+        "flavor": "\"The wind and his children answer to the one wearing me.\"\n-- Crown inscription\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Arderials_Crown.jpg",
+        "imageUrl": "../images/cards/BS/Arderials_Crown.jpg",
+        "key": 1167,
+        "name": "Arderial's Crown",
+        "normalized_name": "Arderials_Crown",
+        "rarity": "R",
+        "regions": [
             "Arderial"
         ],
-        set: "BS",
-        type: "Relic"
+        "set": "BS",
+        "type": "Relic"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 10,
-        effects: [
+        "artist": "Holmberg, Vega",
+        "cost": 10,
+        "effects": [
             {
-                name: "Nerve",
-                text: "If a Creature attacks Ashgar directly, draw a card before energy is removed.\n"
+                "name": "Nerve",
+                "text": "If a Creature attacks Ashgar directly, draw a card before energy is removed.\n"
             }
         ],
-        energize: 6,
-        flavor: "I'm addicted to stress. That's the way I get things done.",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Ashgar.jpg",
-        key: 1195,
-        name: "Ashgar",
-        normalized_name: "Ashgar",
-        rarity: "R",
-        regions: [
+        "energize": 6,
+        "flavor": "I'm addicted to stress. That's the way I get things done.",
+        "imageUrlHiRes": "../images/hirescards/BS/Ashgar.jpg",
+        "imageUrl": "../images/cards/BS/Ashgar.jpg",
+        "key": 1195,
+        "name": "Ashgar",
+        "normalized_name": "Ashgar",
+        "rarity": "R",
+        "regions": [
             "Cald"
         ],
-        set: "BS",
-        starting: [
+        "set": "BS",
+        "starting": [
             "Arbolit",
             "Quor",
             "Flame Geyser"
         ],
-        type: "Magi"
+        "type": "Magi"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 5,
-        effects: [
+        "artist": "Holmberg, Vega",
+        "cost": 5,
+        "effects": [
             {
-                name: "Double Strike",
-                text: "Ayebaw can attack twice during your Attack Step."
+                "name": "Double Strike",
+                "text": "Ayebaw can attack twice during your Attack Step."
             }
         ],
-        flavor: "The great bird smashed into his shield, and then vanished into the clouds. But the battle was far from over.\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Ayebaw.jpg",
-        key: 1145,
-        name: "Ayebaw",
-        normalized_name: "Ayebaw",
-        rarity: "R",
-        regions: [
+        "flavor": "The great bird smashed into his shield, and then vanished into the clouds. But the battle was far from over.\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Ayebaw.jpg",
+        "imageUrl": "../images/cards/BS/Ayebaw.jpg",
+        "key": 1145,
+        "name": "Ayebaw",
+        "normalized_name": "Ayebaw",
+        "rarity": "R",
+        "regions": [
             "Arderial"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 6,
-        flavor: "You can try to hide your trail.",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Balamant.jpg",
-        key: 1215,
-        name: "Balamant",
-        normalized_name: "Balamant",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 6,
+        "flavor": "You can try to hide your trail.",
+        "imageUrlHiRes": "../images/hirescards/BS/Balamant.jpg",
+        "imageUrl": "../images/cards/BS/Balamant.jpg",
+        "key": 1215,
+        "name": "Balamant",
+        "normalized_name": "Balamant",
+        "powers": [
             {
-                cost: 2,
-                name: "Hunt",
-                text: "Choose any one Magi in play. Discard four energy from the chosen Magi.\n"
+                "cost": 2,
+                "name": "Hunt",
+                "text": "Choose any one Magi in play. Discard four energy from the chosen Magi.\n"
             }
         ],
-        rarity: "R",
-        regions: [
+        "rarity": "R",
+        "regions": [
             "Naroom"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 4,
-        flavor: "Balamants protect their young and vice versa.",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Balamant_Pup.jpg",
-        key: 1216,
-        name: "Balamant Pup",
-        normalized_name: "Balamant_Pup",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 4,
+        "flavor": "Balamants protect their young and vice versa.",
+        "imageUrlHiRes": "../images/hirescards/BS/Balamant_Pup.jpg",
+        "imageUrl": "../images/cards/BS/Balamant_Pup.jpg",
+        "key": 1216,
+        "name": "Balamant Pup",
+        "normalized_name": "Balamant_Pup",
+        "powers": [
             {
-                cost: 2,
-                name: "Support",
-                text: "Choose any one other Creature in play. Add two energy to the chosen Creature. Add one additional energy if the chosen Creature is a Balamant.\n"
+                "cost": 2,
+                "name": "Support",
+                "text": "Choose any one other Creature in play. Add two energy to the chosen Creature. Add one additional energy if the chosen Creature is a Balamant.\n"
             }
         ],
-        rarity: "U",
-        regions: [
+        "rarity": "U",
+        "regions": [
             "Naroom"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Vega",
-        cost: 0,
-        flavor: "IT'S GOOD FOR YOU!!!",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Baloo_Root.jpg",
-        key: 1321,
-        name: "Baloo Root",
-        normalized_name: "Baloo_Root",
-        powers: [
+        "artist": "Vega",
+        "cost": 0,
+        "flavor": "IT'S GOOD FOR YOU!!!",
+        "imageUrlHiRes": "../images/hirescards/BS/Baloo_Root.jpg",
+        "imageUrl": "../images/cards/BS/Baloo_Root.jpg",
+        "key": 1321,
+        "name": "Baloo Root",
+        "normalized_name": "Baloo_Root",
+        "powers": [
             {
-                name: "Nourish",
-                text: "Choose any one Creature in play. Discard Baloo Root from play. Add one energy to the chosen Creature.\n"
+                "name": "Nourish",
+                "text": "Choose any one Creature in play. Discard Baloo Root from play. Add one energy to the chosen Creature.\n"
             }
         ],
-        rarity: "C",
-        regions: [
+        "rarity": "C",
+        "regions": [
             "Universal"
         ],
-        set: "BS",
-        type: "Relic"
+        "set": "BS",
+        "type": "Relic"
     },
     {
-        artist: "Holmberg, Shreve",
-        cost: 17,
-        energize: 5,
-        flavor: "\"Listen up, Core scum. You know what I see in your future? A big, hot, red-orange fireball.\"\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Barak.jpg",
-        key: 1196,
-        name: "Barak",
-        normalized_name: "Barak",
-        powers: [
+        "artist": "Holmberg, Shreve",
+        "cost": 17,
+        "energize": 5,
+        "flavor": "\"Listen up, Core scum. You know what I see in your future? A big, hot, red-orange fireball.\"\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Barak.jpg",
+        "imageUrl": "../images/cards/BS/Barak.jpg",
+        "key": 1196,
+        "name": "Barak",
+        "normalized_name": "Barak",
+        "powers": [
             {
-                name: "Prophecy",
-                text: "Look at the top four cards of your deck. Replace them in any order wish.\n"
+                "name": "Prophecy",
+                "text": "Look at the top four cards of your deck. Replace them in any order wish.\n"
             }
         ],
-        rarity: "R",
-        regions: [
+        "rarity": "R",
+        "regions": [
             "Cald"
         ],
-        set: "BS",
-        starting: [
+        "set": "BS",
+        "starting": [
             "Arbolit",
             "Lava Balamant",
             "Thermal Blast"
         ],
-        type: "Magi"
+        "type": "Magi"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 5,
-        effects: [
+        "artist": "Holmberg, Vega",
+        "cost": 5,
+        "effects": [
             {
-                name: "Tunneling Charge",
-                text: "If Bhatar attacks an Underneath Creature, add three energy to Bhatar before energy is removed.\n"
+                "name": "Tunneling Charge",
+                "text": "If Bhatar attacks an Underneath Creature, add three energy to Bhatar before energy is removed.\n"
             },
             {
-                name: "Charge",
-                text: "If Bhatar attacks a non-Underneath Creature, add one energy to Bhatar before energy is removed.\n"
+                "name": "Charge",
+                "text": "If Bhatar attacks a non-Underneath Creature, add one energy to Bhatar before energy is removed.\n"
             }
         ],
-        flavor: "It tears through Undermonsters like tree roots tear through soil -- only much faster.\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Bhatar.jpg",
-        key: 1217,
-        name: "Bhatar",
-        normalized_name: "Bhatar",
-        rarity: "R",
-        regions: [
+        "flavor": "It tears through Undermonsters like tree roots tear through soil -- only much faster.\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Bhatar.jpg",
+        "imageUrl": "../images/cards/BS/Bhatar.jpg",
+        "key": 1217,
+        "name": "Bhatar",
+        "normalized_name": "Bhatar",
+        "rarity": "R",
+        "regions": [
             "Naroom"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 3,
-        effects: [
+        "artist": "Holmberg, Vega",
+        "cost": 3,
+        "effects": [
             {
-                name: "Tunneling Attack",
-                text: "While burrowed, Bisiwog may still attack as normal."
+                "name": "Tunneling Attack",
+                "text": "While burrowed, Bisiwog may still attack as normal."
             }
         ],
-        flavor: "Shh. Listen. Do you hear that scratching?",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Bisiwog.jpg",
-        key: 1285,
-        name: "Bisiwog",
-        normalized_name: "Bisiwog",
-        rarity: "C",
-        regions: [
+        "flavor": "Shh. Listen. Do you hear that scratching?",
+        "imageUrlHiRes": "../images/hirescards/BS/Bisiwog.jpg",
+        "imageUrl": "../images/cards/BS/Bisiwog.jpg",
+        "key": 1285,
+        "name": "Bisiwog",
+        "normalized_name": "Bisiwog",
+        "rarity": "C",
+        "regions": [
             "Underneath"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 14,
-        effects: [
+        "artist": "Holmberg, Vega",
+        "cost": 14,
+        "effects": [
             {
-                name: "Artifice",
-                text: "When Blu plays a Relic, he may discard one energy. If he does, draw one card.\n"
+                "name": "Artifice",
+                "text": "When Blu plays a Relic, he may discard one energy. If he does, draw one card.\n"
             }
         ],
-        energize: 5,
-        flavor: "\"Tony, I been guardin' that vault since I was old enough ta hold a\ntrident. Me daddy was a guard afore I was, and his daddy afore him. Nobody\never told any of us about the outside world.\"\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Blu.jpg",
-        key: 1265,
-        name: "Blu",
-        normalized_name: "Blu",
-        rarity: "R",
-        regions: [
+        "energize": 5,
+        "flavor": "\"Tony, I been guardin' that vault since I was old enough ta hold a\ntrident. Me daddy was a guard afore I was, and his daddy afore him. Nobody\never told any of us about the outside world.\"\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Blu.jpg",
+        "imageUrl": "../images/cards/BS/Blu.jpg",
+        "key": 1265,
+        "name": "Blu",
+        "normalized_name": "Blu",
+        "rarity": "R",
+        "regions": [
             "Orothe"
         ],
-        set: "BS",
-        starting: [
+        "set": "BS",
+        "starting": [
             "Orathan",
             "Orpus",
             "Submerge"
         ],
-        type: "Magi"
+        "type": "Magi"
     },
     {
-        artist: "Vega",
-        cost: 0,
-        flavor: "\"The more knowledge you gain, the better prepared you are.\"\n-- Evu, Naroom Loremaster\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Book_of_Ages.jpg",
-        key: 1322,
-        name: "Book of Ages",
-        normalized_name: "Book_of_Ages",
-        powers: [
+        "artist": "Vega",
+        "cost": 0,
+        "flavor": "\"The more knowledge you gain, the better prepared you are.\"\n-- Evu, Naroom Loremaster\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Book_of_Ages.jpg",
+        "imageUrl": "../images/cards/BS/Book_of_Ages.jpg",
+        "key": 1322,
+        "name": "Book of Ages",
+        "normalized_name": "Book_of_Ages",
+        "powers": [
             {
-                cost: 2,
-                name: "Lore",
-                text: "Draw one card."
+                "cost": 2,
+                "name": "Lore",
+                "text": "Draw one card."
             }
         ],
-        rarity: "U",
-        regions: [
+        "rarity": "U",
+        "regions": [
             "Universal"
         ],
-        set: "BS",
-        type: "Relic"
+        "set": "BS",
+        "type": "Relic"
     },
     {
-        artist: "Holmberg",
-        cost: 0,
-        flavor: "\"Everything you'll ever need to know is in there, but it\nwill take a lifetime to read.\"\n-- Tryn, Daughter of Runes\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Book_of_Life.jpg",
-        key: 1237,
-        name: "Book of Life",
-        normalized_name: "Book_of_Life",
-        powers: [
+        "artist": "Holmberg",
+        "cost": 0,
+        "flavor": "\"Everything you'll ever need to know is in there, but it\nwill take a lifetime to read.\"\n-- Tryn, Daughter of Runes\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Book_of_Life.jpg",
+        "imageUrl": "../images/cards/BS/Book_of_Life.jpg",
+        "key": 1237,
+        "name": "Book of Life",
+        "normalized_name": "Book_of_Life",
+        "powers": [
             {
-                cost: 3,
-                name: "Relearn",
-                text: "Choose any one Spell in your discard pile. Move the chosen card to the top of your deck.\n"
+                "cost": 3,
+                "name": "Relearn",
+                "text": "Choose any one Spell in your discard pile. Move the chosen card to the top of your deck.\n"
             }
         ],
-        rarity: "R",
-        regions: [
+        "rarity": "R",
+        "regions": [
             "Naroom"
         ],
-        set: "BS",
-        type: "Relic"
+        "set": "BS",
+        "type": "Relic"
     },
     {
-        artist: "Christopher",
-        cost: 3,
-        flavor: "Aieeeeeee!",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Bottomless_Pit.jpg",
-        key: 1312,
-        name: "Bottomless Pit",
-        normalized_name: "Bottomless_Pit",
-        rarity: "U",
-        regions: [
+        "artist": "Christopher",
+        "cost": 3,
+        "flavor": "Aieeeeeee!",
+        "imageUrlHiRes": "../images/hirescards/BS/Bottomless_Pit.jpg",
+        "imageUrl": "../images/cards/BS/Bottomless_Pit.jpg",
+        "key": 1312,
+        "name": "Bottomless Pit",
+        "normalized_name": "Bottomless_Pit",
+        "rarity": "U",
+        "regions": [
             "Underneath"
         ],
-        set: "BS",
-        text: "Choose any one Creature in play with less than five energy. Discard the chosen Creature.\n",
-        type: "Spell"
+        "set": "BS",
+        "text": "Choose any one Creature in play with less than five energy. Discard the chosen Creature.\n",
+        "type": "Spell"
     },
     {
-        artist: "Holmberg, Christopher",
-        cost: 2,
-        flavor: "\"When I find out who put that Brub in my Korrit pen, I'll...\"\n-- Ulk, Underwarden\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Brub.jpg",
-        key: 1286,
-        name: "Brub",
-        normalized_name: "Brub",
-        powers: [
+        "artist": "Holmberg, Christopher",
+        "cost": 2,
+        "flavor": "\"When I find out who put that Brub in my Korrit pen, I'll...\"\n-- Ulk, Underwarden\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Brub.jpg",
+        "imageUrl": "../images/cards/BS/Brub.jpg",
+        "key": 1286,
+        "name": "Brub",
+        "normalized_name": "Brub",
+        "powers": [
             {
-                name: "Scrub",
-                text: "Choose any one Korrit in play. If you control the chosen Korrit, move all its energy to Brub. If not, discard the chosen Korrit.\n"
+                "name": "Scrub",
+                "text": "Choose any one Korrit in play. If you control the chosen Korrit, move all its energy to Brub. If not, discard the chosen Korrit.\n"
             }
         ],
-        rarity: "C",
-        regions: [
+        "rarity": "C",
+        "regions": [
             "Underneath"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: "X+1",
-        flavor: "There isn't much they can do to hurt you if they have to get through three meters of rock and soil first.\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Burrow.jpg",
-        key: 1313,
-        name: "Burrow",
-        normalized_name: "Burrow",
-        rarity: "C",
-        regions: [
+        "artist": "Holmberg, Vega",
+        "cost": "X+1",
+        "flavor": "There isn't much they can do to hurt you if they have to get through three meters of rock and soil first.\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Burrow.jpg",
+        "imageUrl": "../images/cards/BS/Burrow.jpg",
+        "key": 1313,
+        "name": "Burrow",
+        "normalized_name": "Burrow",
+        "rarity": "C",
+        "regions": [
             "Underneath"
         ],
-        set: "BS",
-        text: "Choose any one of your Creatures in play. For X turns, the chosen Creatures cannot attack or lose more than two energy per turn from attacks or your opponents' Spells or Powers. The chosen creature is considered \"burrowed.\" X includes your own turns.\n",
-        type: "Spell"
+        "set": "BS",
+        "text": "Choose any one of your Creatures in play. For X turns, the chosen Creatures cannot attack or lose more than two energy per turn from attacks or your opponents' Spells or Powers. The chosen creature is considered \"burrowed.\" X includes your own turns.\n",
+        "type": "Spell"
     },
     {
-        artist: "Vega, Holmberg",
-        cost: 1,
-        effects: [
+        "artist": "Vega, Holmberg",
+        "cost": 1,
+        "effects": [
             {
-                name: "Karma",
-                text: "If any Creature attacks and defeats Bwill, discard that Creature from play.\n"
+                "name": "Karma",
+                "text": "If any Creature attacks and defeats Bwill, discard that Creature from play.\n"
             }
         ],
-        flavor: "\"So, harpoon the blasted shrimplobsterfish! What's the worst that could\nhappen?\"\n-- Korg, to Zet\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Bwill.jpg",
-        key: 1250,
-        name: "Bwill",
-        normalized_name: "Bwill",
-        rarity: "C",
-        regions: [
+        "flavor": "\"So, harpoon the blasted shrimplobsterfish! What's the worst that could\nhappen?\"\n-- Korg, to Zet\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Bwill.jpg",
+        "imageUrl": "../images/cards/BS/Bwill.jpg",
+        "key": 1250,
+        "name": "Bwill",
+        "normalized_name": "Bwill",
+        "rarity": "C",
+        "regions": [
             "Orothe"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 4,
-        effects: [
+        "artist": "Holmberg, Vega",
+        "cost": 4,
+        "effects": [
             {
-                name: "Resilience",
-                text: "If Carillion attacks a Creature that starts the attack with less than three energy, Carillion loses no energy in the attack.\n"
+                "name": "Resilience",
+                "text": "If Carillion attacks a Creature that starts the attack with less than three energy, Carillion loses no energy in the attack.\n"
             }
         ],
-        flavor: "\"Throwing Weebos in front of a charging Carillion is like\ntrying to cut down a tree with a pocket knife.\"\n-- Pruitt, Naroom Ringsmith\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Carillion.jpg",
-        key: 1218,
-        name: "Carillion",
-        normalized_name: "Carillion",
-        rarity: "C",
-        regions: [
+        "flavor": "\"Throwing Weebos in front of a charging Carillion is like\ntrying to cut down a tree with a pocket knife.\"\n-- Pruitt, Naroom Ringsmith\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Carillion.jpg",
+        "imageUrl": "../images/cards/BS/Carillion.jpg",
+        "key": 1218,
+        "name": "Carillion",
+        "normalized_name": "Carillion",
+        "rarity": "C",
+        "regions": [
             "Naroom"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg",
-        cost: 3,
-        flavor: "\"Looks like a good place to have lunch.\"\n-- Korg, to Zet\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Carnivorous_Cave.jpg",
-        key: 1314,
-        name: "Carnivorous Cave",
-        normalized_name: "Carnivorous_Cave",
-        rarity: "C",
-        regions: [
+        "artist": "Holmberg",
+        "cost": 3,
+        "flavor": "\"Looks like a good place to have lunch.\"\n-- Korg, to Zet\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Carnivorous_Cave.jpg",
+        "imageUrl": "../images/cards/BS/Carnivorous_Cave.jpg",
+        "key": 1314,
+        "name": "Carnivorous Cave",
+        "normalized_name": "Carnivorous_Cave",
+        "rarity": "C",
+        "regions": [
             "Underneath"
         ],
-        set: "BS",
-        text: "Discard one energy from each Creature and Magi in play. Carnivorous Cave does not affect burrowed Creatures.\n",
-        type: "Spell"
+        "set": "BS",
+        "text": "Discard one energy from each Creature and Magi in play. Carnivorous Cave does not affect burrowed Creatures.\n",
+        "type": "Spell"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 5,
-        flavor: "Blu drew up some plans for making Hyren-plate armor. Then he remembered that, like all dream creatures, they disappeared when they were defeated.\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Cave_Hyren.jpg",
-        key: 1287,
-        name: "Cave Hyren",
-        normalized_name: "Cave_Hyren",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 5,
+        "flavor": "Blu drew up some plans for making Hyren-plate armor. Then he remembered that, like all dream creatures, they disappeared when they were defeated.\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Cave_Hyren.jpg",
+        "imageUrl": "../images/cards/BS/Cave_Hyren.jpg",
+        "key": 1287,
+        "name": "Cave Hyren",
+        "normalized_name": "Cave_Hyren",
+        "powers": [
             {
-                cost: "X",
-                name: "Energy Transfer",
-                text: "Choose any one Creature in play. Add X energy to the chosen Creature.\n"
+                "cost": "X",
+                "name": "Energy Transfer",
+                "text": "Choose any one Creature in play. Add X energy to the chosen Creature.\n"
             }
         ],
-        rarity: "R",
-        regions: [
+        "rarity": "R",
+        "regions": [
             "Underneath"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Christopher, Shreve",
-        cost: 4,
-        flavor: "\"Stop rocking the cave... hey, come back here!\"\n-- Korg, to Zet\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Cave_In.jpg",
-        key: 1315,
-        name: "Cave In",
-        normalized_name: "Cave_In",
-        rarity: "R",
-        regions: [
+        "artist": "Christopher, Shreve",
+        "cost": 4,
+        "flavor": "\"Stop rocking the cave... hey, come back here!\"\n-- Korg, to Zet\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Cave_In.jpg",
+        "imageUrl": "../images/cards/BS/Cave_In.jpg",
+        "key": 1315,
+        "name": "Cave In",
+        "normalized_name": "Cave_In",
+        "rarity": "R",
+        "regions": [
             "Underneath"
         ],
-        set: "BS",
-        text: "Discard one energy from each non-Underneath Creature and Magi in play. Discard one additional energy from each Arderial Creature and Magi.\n",
-        type: "Spell"
+        "set": "BS",
+        "text": "Discard one energy from each non-Underneath Creature and Magi in play. Discard one additional energy from each Arderial Creature and Magi.\n",
+        "type": "Spell"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 3,
-        effects: [
+        "artist": "Holmberg, Vega",
+        "cost": 3,
+        "effects": [
             {
-                name: "Defense",
-                text: "If Cave Rudwot is attacked, add two energy to it before energy is removed.\n"
+                "name": "Defense",
+                "text": "If Cave Rudwot is attacked, add two energy to it before energy is removed.\n"
             }
         ],
-        flavor: "Don't take on a Rudwot in its home, unless you like getting hurt.",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Cave_Rudwot.jpg",
-        key: 1288,
-        name: "Cave Rudwot",
-        normalized_name: "Cave_Rudwot",
-        rarity: "C",
-        regions: [
+        "flavor": "Don't take on a Rudwot in its home, unless you like getting hurt.",
+        "imageUrlHiRes": "../images/hirescards/BS/Cave_Rudwot.jpg",
+        "imageUrl": "../images/cards/BS/Cave_Rudwot.jpg",
+        "key": 1288,
+        "name": "Cave Rudwot",
+        "normalized_name": "Cave_Rudwot",
+        "rarity": "C",
+        "regions": [
             "Underneath"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 0,
-        flavor: "\"To the Core with knowledge. I need power NOW!\"\n-- Fossik, Underkeeper\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Channelers_Gloves.jpg",
-        key: 1323,
-        name: "Channeler's Gloves",
-        normalized_name: "Channelers_Gloves",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 0,
+        "flavor": "\"To the Core with knowledge. I need power NOW!\"\n-- Fossik, Underkeeper\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Channelers_Gloves.jpg",
+        "imageUrl": "../images/cards/BS/Channelers_Gloves.jpg",
+        "key": 1323,
+        "name": "Channeler's Gloves",
+        "normalized_name": "Channelers_Gloves",
+        "powers": [
             {
-                name: "Channeling",
-                text: "Discard two cards from your hand. Add two energy to your Magi.\n"
+                "name": "Channeling",
+                "text": "Discard two cards from your hand. Add two energy to your Magi.\n"
             }
         ],
-        rarity: "U",
-        regions: [
+        "rarity": "U",
+        "regions": [
             "Universal"
         ],
-        set: "BS",
-        type: "Relic"
+        "set": "BS",
+        "type": "Relic"
     },
     {
-        artist: "Holmberg, Sato",
-        cost: 2,
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Cloud_Narth.jpg",
-        key: 1146,
-        name: "Cloud Narth",
-        normalized_name: "Cloud_Narth",
-        powers: [
+        "artist": "Holmberg, Sato",
+        "cost": 2,
+        "imageUrlHiRes": "../images/hirescards/BS/Cloud_Narth.jpg",
+        "imageUrl": "../images/cards/BS/Cloud_Narth.jpg",
+        "key": 1146,
+        "name": "Cloud Narth",
+        "normalized_name": "Cloud_Narth",
+        "powers": [
             {
-                name: "Healing Rain",
-                text: "Choose any one Creature or Magi in play. Move Cloud Narth's energy to the chosen Creature or Magi.\n"
+                "name": "Healing Rain",
+                "text": "Choose any one Creature or Magi in play. Move Cloud Narth's energy to the chosen Creature or Magi.\n"
             },
             {
-                name: "Healing Storm",
-                text: "Choose any one Creature or Magi in play, and a Pharan you control. Move the chosen Pharan's energy to the chosen Creature or Magi. Move Cloud Narth's energy to the chosen Creature or Magi. Add three energy to the chosen Creature or Magi.\n"
+                "name": "Healing Storm",
+                "text": "Choose any one Creature or Magi in play, and a Pharan you control. Move the chosen Pharan's energy to the chosen Creature or Magi. Move Cloud Narth's energy to the chosen Creature or Magi. Add three energy to the chosen Creature or Magi.\n"
             }
         ],
-        rarity: "C",
-        regions: [
+        "rarity": "C",
+        "regions": [
             "Arderial"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Sato",
-        cost: 0,
-        flavor: "Cool air will rush into places the heat leaves behind;\nThe is the law of the winds and the law of the mind.\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Cloud_Sceptre.jpg",
-        key: 1168,
-        name: "Cloud Sceptre",
-        normalized_name: "Cloud_Sceptre",
-        powers: [
+        "artist": "Holmberg, Sato",
+        "cost": 0,
+        "flavor": "Cool air will rush into places the heat leaves behind;\nThe is the law of the winds and the law of the mind.\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Cloud_Sceptre.jpg",
+        "imageUrl": "../images/cards/BS/Cloud_Sceptre.jpg",
+        "key": 1168,
+        "name": "Cloud Sceptre",
+        "normalized_name": "Cloud_Sceptre",
+        "powers": [
             {
-                cost: 1,
-                name: "Mindwinds",
-                text: "Discard X cards from your hand. Draw X cards."
+                "cost": 1,
+                "name": "Mindwinds",
+                "text": "Discard X cards from your hand. Draw X cards."
             }
         ],
-        rarity: "U",
-        regions: [
+        "rarity": "U",
+        "regions": [
             "Arderial"
         ],
-        set: "BS",
-        type: "Relic"
+        "set": "BS",
+        "type": "Relic"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 12,
-        effects: [
+        "artist": "Holmberg, Vega",
+        "cost": 12,
+        "effects": [
             {
-                name: "Anti-Magic",
-                text: "Colossus may not be affected by Spells, Powers or Effects that specifically discard Creatures from play. Your Spells, Powers and Effects may not alter the amount of energy on Colossus, or prevent Colossus from losing energy.\n"
+                "name": "Anti-Magic",
+                "text": "Colossus may not be affected by Spells, Powers or Effects that specifically discard Creatures from play. Your Spells, Powers and Effects may not alter the amount of energy on Colossus, or prevent Colossus from losing energy.\n"
             }
         ],
-        flavor: "\"You can fight a war with cloaks and daggers.\nBut you don't have to.\"\n-- Jaela, Arderial Regis\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Colossus.jpg",
-        key: 1319,
-        name: "Colossus",
-        normalized_name: "Colossus",
-        rarity: "U",
-        regions: [
+        "flavor": "\"You can fight a war with cloaks and daggers.\nBut you don't have to.\"\n-- Jaela, Arderial Regis\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Colossus.jpg",
+        "imageUrl": "../images/cards/BS/Colossus.jpg",
+        "key": 1319,
+        "name": "Colossus",
+        "normalized_name": "Colossus",
+        "rarity": "U",
+        "regions": [
             "Universal"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 4,
-        effects: [
+        "artist": "Holmberg, Vega",
+        "cost": 4,
+        "effects": [
             {
-                name: "Spelltap",
-                text: "Whenever you play an Orothe Spell, add one energy to Coral Hyren.\n"
+                "name": "Spelltap",
+                "text": "Whenever you play an Orothe Spell, add one energy to Coral Hyren.\n"
             }
         ],
-        flavor: "Because of its size, strength, and ability to feed off its Magi's spells, this hyren fears nothing short of a Cawh.\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Coral_Hyren.jpg",
-        key: 1251,
-        name: "Coral Hyren",
-        normalized_name: "Coral_Hyren",
-        rarity: "R",
-        regions: [
+        "flavor": "Because of its size, strength, and ability to feed off its Magi's spells, this hyren fears nothing short of a Cawh.\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Coral_Hyren.jpg",
+        "imageUrl": "../images/cards/BS/Coral_Hyren.jpg",
+        "key": 1251,
+        "name": "Coral Hyren",
+        "normalized_name": "Coral_Hyren",
+        "rarity": "R",
+        "regions": [
             "Orothe"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 3,
-        flavor: "Finish him.",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Corf.jpg",
-        key: 1252,
-        name: "Corf",
-        normalized_name: "Corf",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 3,
+        "flavor": "Finish him.",
+        "imageUrlHiRes": "../images/hirescards/BS/Corf.jpg",
+        "imageUrl": "../images/cards/BS/Corf.jpg",
+        "key": 1252,
+        "name": "Corf",
+        "normalized_name": "Corf",
+        "powers": [
             {
-                cost: 3,
-                name: "Final Blow",
-                text: "Choose any one Creature in play that was attacked this turn. Discard the chosen Creature from play.\n"
+                "cost": 3,
+                "name": "Final Blow",
+                "text": "Choose any one Creature in play that was attacked this turn. Discard the chosen Creature from play.\n"
             }
         ],
-        rarity: "C",
-        regions: [
+        "rarity": "C",
+        "regions": [
             "Orothe"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 0,
-        flavor: "Unpredictable as the weather.",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Corf_Pearl.jpg",
-        key: 1272,
-        name: "Corf Pearl",
-        normalized_name: "Corf_Pearl",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 0,
+        "flavor": "Unpredictable as the weather.",
+        "imageUrlHiRes": "../images/hirescards/BS/Corf_Pearl.jpg",
+        "imageUrl": "../images/cards/BS/Corf_Pearl.jpg",
+        "key": 1272,
+        "name": "Corf Pearl",
+        "normalized_name": "Corf_Pearl",
+        "powers": [
             {
-                name: "Weathercall",
-                text: "Roll one die.\n1, 2, or 3 = Remove three energy from your Magi.\n4 or 5 = Choose any one Creature in play.\nDiscard two energy from the chosen Creature.\n6 = Choose any one Creature in play. Add\nthree energy to the chosen Creature.\n"
+                "name": "Weathercall",
+                "text": "Roll one die.\n1, 2, or 3 = Remove three energy from your Magi.\n4 or 5 = Choose any one Creature in play.\nDiscard two energy from the chosen Creature.\n6 = Choose any one Creature in play. Add\nthree energy to the chosen Creature.\n"
             }
         ],
-        rarity: "U",
-        regions: [
+        "rarity": "U",
+        "regions": [
             "Orothe"
         ],
-        set: "BS",
-        type: "Relic"
+        "set": "BS",
+        "type": "Relic"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 2,
-        flavor: "The Cave Rudwot turned to face him, and Wence took a step back. The lizard's eye were taking on the glow of the fallen Arboll.\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Crystal_Arboll.jpg",
-        key: 1289,
-        name: "Crystal Arboll",
-        normalized_name: "Crystal_Arboll",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 2,
+        "flavor": "The Cave Rudwot turned to face him, and Wence took a step back. The lizard's eye were taking on the glow of the fallen Arboll.\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Crystal_Arboll.jpg",
+        "imageUrl": "../images/cards/BS/Crystal_Arboll.jpg",
+        "key": 1289,
+        "name": "Crystal Arboll",
+        "normalized_name": "Crystal_Arboll",
+        "powers": [
             {
-                name: "Healing Light",
-                text: "Choose any one Creature in play. Discard Crystal Arboll from play. Add two energy to the chosen Creature. If the chosen Creature is Underneath, add two additional energy.\n"
+                "name": "Healing Light",
+                "text": "Choose any one Creature in play. Discard Crystal Arboll from play. Add two energy to the chosen Creature. If the chosen Creature is Underneath, add two additional energy.\n"
             }
         ],
-        rarity: "C",
-        regions: [
+        "rarity": "C",
+        "regions": [
             "Underneath"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Sato",
-        cost: 4,
-        flavor: "\"Attacking the Vashp\"\n-- Naroom expression meaning \"courting disaster\"\n\"Befriending the Vashp\"\n-- Arderial expression meaning \"courting disaster\"\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Cyclone_Vashp.jpg",
-        key: 1147,
-        name: "Cyclone Vashp",
-        normalized_name: "Cyclone_Vashp",
-        powers: [
+        "artist": "Holmberg, Sato",
+        "cost": 4,
+        "flavor": "\"Attacking the Vashp\"\n-- Naroom expression meaning \"courting disaster\"\n\"Befriending the Vashp\"\n-- Arderial expression meaning \"courting disaster\"\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Cyclone_Vashp.jpg",
+        "imageUrl": "../images/cards/BS/Cyclone_Vashp.jpg",
+        "key": 1147,
+        "name": "Cyclone Vashp",
+        "normalized_name": "Cyclone_Vashp",
+        "powers": [
             {
-                cost: 1,
-                name: "Cyclone",
-                text: "Choose one of your Creatures and one of your opponent's Creatures in play. Discard as much energy from your opponent's Creature as is on your Creature. Discard your Creature from play.\n"
+                "cost": 1,
+                "name": "Cyclone",
+                "text": "Choose one of your Creatures and one of your opponent's Creatures in play. Discard as much energy from your opponent's Creature as is on your Creature. Discard your Creature from play.\n"
             }
         ],
-        rarity: "R",
-        regions: [
+        "rarity": "R",
+        "regions": [
             "Arderial"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 6,
-        flavor: "When it doesn't like the tides, it turns them.",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Deep_Hyren.jpg",
-        key: 1253,
-        name: "Deep Hyren",
-        normalized_name: "Deep_Hyren",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 6,
+        "flavor": "When it doesn't like the tides, it turns them.",
+        "imageUrlHiRes": "../images/hirescards/BS/Deep_Hyren.jpg",
+        "imageUrl": "../images/cards/BS/Deep_Hyren.jpg",
+        "key": 1253,
+        "name": "Deep Hyren",
+        "normalized_name": "Deep_Hyren",
+        "powers": [
             {
-                cost: 6,
-                name: "Hurricane",
-                text: "Choose any one of your Creatures in play. Discard the chosen Creature from play. Discard three energy from each non-Orothe Creature and Magi in play.\n"
+                "cost": 6,
+                "name": "Hurricane",
+                "text": "Choose any one of your Creatures in play. Discard the chosen Creature from play. Discard three energy from each non-Orothe Creature and Magi in play.\n"
             }
         ],
-        rarity: "R",
-        regions: [
+        "rarity": "R",
+        "regions": [
             "Orothe"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Shreve",
-        cost: 0,
-        effects: [
+        "artist": "Holmberg, Shreve",
+        "cost": 0,
+        "effects": [
             {
-                name: "Tunneling Attack",
-                text: "You burrowed Creatures may attack as normal."
+                "name": "Tunneling Attack",
+                "text": "You burrowed Creatures may attack as normal."
             }
         ],
-        flavor: "Zed snorted. \"You and what army?\"\nThat's when he noticed the rumbling under his feet.\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Digging_Goggles.jpg",
-        key: 1308,
-        name: "Digging Goggles",
-        normalized_name: "Digging_Goggles",
-        rarity: "U",
-        regions: [
+        "flavor": "Zed snorted. \"You and what army?\"\nThat's when he noticed the rumbling under his feet.\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Digging_Goggles.jpg",
+        "imageUrl": "../images/cards/BS/Digging_Goggles.jpg",
+        "key": 1308,
+        "name": "Digging Goggles",
+        "normalized_name": "Digging_Goggles",
+        "rarity": "U",
+        "regions": [
             "Underneath"
         ],
-        set: "BS",
-        type: "Relic"
+        "set": "BS",
+        "type": "Relic"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 6,
-        flavor: "It mocks you as it fades away.",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Diobor.jpg",
-        key: 1180,
-        name: "Diobor",
-        normalized_name: "Diobor",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 6,
+        "flavor": "It mocks you as it fades away.",
+        "imageUrlHiRes": "../images/hirescards/BS/Diobor.jpg",
+        "imageUrl": "../images/cards/BS/Diobor.jpg",
+        "key": 1180,
+        "name": "Diobor",
+        "normalized_name": "Diobor",
+        "powers": [
             {
-                name: "Fireball",
-                text: "Choose any one Creature in play. Discard Diobor from play. Remove two energy from the chosen Creature.\n"
+                "name": "Fireball",
+                "text": "Choose any one Creature in play. Discard Diobor from play. Remove two energy from the chosen Creature.\n"
             },
             {
-                cost: "X",
-                name: "Energy Transfer",
-                text: "Add X Energy to your Magi."
+                "cost": "X",
+                "name": "Energy Transfer",
+                "text": "Add X Energy to your Magi."
             }
         ],
-        rarity: "C",
-        regions: [
+        "rarity": "C",
+        "regions": [
             "Cald"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 6,
-        flavor: "\"What army? To the Drakans, they're just kindling.\"\n-- Barak, Cald Warlord\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Drakan.jpg",
-        key: 1181,
-        name: "Drakan",
-        normalized_name: "Drakan",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 6,
+        "flavor": "\"What army? To the Drakans, they're just kindling.\"\n-- Barak, Cald Warlord\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Drakan.jpg",
+        "imageUrl": "../images/cards/BS/Drakan.jpg",
+        "key": 1181,
+        "name": "Drakan",
+        "normalized_name": "Drakan",
+        "powers": [
             {
-                cost: 3,
-                name: "Thermal Blast",
-                text: "Roll one die. Choose any one Creature in play. Discard energy equal to the die roll from the chosen Creature.\n"
+                "cost": 3,
+                "name": "Thermal Blast",
+                "text": "Roll one die. Choose any one Creature in play. Discard energy equal to the die roll from the chosen Creature.\n"
             }
         ],
-        rarity: "U",
-        regions: [
+        "rarity": "U",
+        "regions": [
             "Cald"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 0,
-        flavor: "\"Ye know what it's made of? Artificially sweetened\ndreams. Ye can put it in yer mouth now, but ye won't\ntaste it until ye go to sleep.\"\n-- Blu, Vault Guardian\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Dream_Balm.jpg",
-        key: 1324,
-        name: "Dream Balm",
-        normalized_name: "Dream_Balm",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 0,
+        "flavor": "\"Ye know what it's made of? Artificially sweetened\ndreams. Ye can put it in yer mouth now, but ye won't\ntaste it until ye go to sleep.\"\n-- Blu, Vault Guardian\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Dream_Balm.jpg",
+        "imageUrl": "../images/cards/BS/Dream_Balm.jpg",
+        "key": 1324,
+        "name": "Dream Balm",
+        "normalized_name": "Dream_Balm",
+        "powers": [
             {
-                cost: 2,
-                name: "Vitalize",
-                text: "Choose any one Creature in play with less than its starting energy. Discard Dream Balm from play. Restore the chosen Creature to its starting energy.\n"
+                "cost": 2,
+                "name": "Vitalize",
+                "text": "Choose any one Creature in play with less than its starting energy. Discard Dream Balm from play. Restore the chosen Creature to its starting energy.\n"
             }
         ],
-        rarity: "C",
-        regions: [
+        "rarity": "C",
+        "regions": [
             "Universal"
         ],
-        set: "BS",
-        type: "Relic"
+        "set": "BS",
+        "type": "Relic"
     },
     {
-        artist: "Holmberg, Vega, Shreve, Christopher",
-        cost: 13,
-        energize: 5,
-        flavor: "\"Kbish! K-BISH! Boy, I was just going crazy! Blu never spoke to me again after that.\"\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Ebylon.jpg",
-        key: 1266,
-        name: "Ebylon",
-        normalized_name: "Ebylon",
-        powers: [
+        "artist": "Holmberg, Vega, Shreve, Christopher",
+        "cost": 13,
+        "energize": 5,
+        "flavor": "\"Kbish! K-BISH! Boy, I was just going crazy! Blu never spoke to me again after that.\"\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Ebylon.jpg",
+        "imageUrl": "../images/cards/BS/Ebylon.jpg",
+        "key": 1266,
+        "name": "Ebylon",
+        "normalized_name": "Ebylon",
+        "powers": [
             {
-                cost: 1,
-                name: "Shatterwave",
-                text: "Choose any one Relic in play. Discard the chosen Relic from play.\n"
+                "cost": 1,
+                "name": "Shatterwave",
+                "text": "Choose any one Relic in play. Discard the chosen Relic from play.\n"
             }
         ],
-        rarity: "U",
-        regions: [
+        "rarity": "U",
+        "regions": [
             "Orothe"
         ],
-        set: "BS",
-        starting: [
+        "set": "BS",
+        "starting": [
             "Orpus",
             "Sea Barl",
             "Submerge"
         ],
-        type: "Magi"
+        "type": "Magi"
     },
     {
-        artist: "Christopher",
-        cost: 5,
-        flavor: "\"Big deal. If I want darkness at midday, I'll go back home.\"\n-- Ulk, Underwarden\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Eclipse.jpg",
-        key: 1172,
-        name: "Eclipse",
-        normalized_name: "Eclipse",
-        rarity: "R",
-        regions: [
+        "artist": "Christopher",
+        "cost": 5,
+        "flavor": "\"Big deal. If I want darkness at midday, I'll go back home.\"\n-- Ulk, Underwarden\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Eclipse.jpg",
+        "imageUrl": "../images/cards/BS/Eclipse.jpg",
+        "key": 1172,
+        "name": "Eclipse",
+        "normalized_name": "Eclipse",
+        "rarity": "R",
+        "regions": [
             "Arderial"
         ],
-        set: "BS",
-        text: "Choose any one Magi in play. The chosen Magi's Creatures cannot attack during that Magi's next turn.\n",
-        type: "Spell"
+        "set": "BS",
+        "text": "Choose any one Magi in play. The chosen Magi's Creatures cannot attack during that Magi's next turn.\n",
+        "type": "Spell"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 2,
-        effects: [
+        "artist": "Holmberg, Vega",
+        "cost": 2,
+        "effects": [
             {
-                name: "Escape",
-                text: "If Eebit is defeated in an attack, instead of discarding it, put it back into its owner's hand.\n"
+                "name": "Escape",
+                "text": "If Eebit is defeated in an attack, instead of discarding it, put it back into its owner's hand.\n"
             }
         ],
-        flavor: "\"How many lives DO these pests have?\"\n-- Zet, Core Warrior\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Eebit.jpg",
-        key: 1219,
-        name: "Eebit",
-        normalized_name: "Eebit",
-        rarity: "U",
-        regions: [
+        "flavor": "\"How many lives DO these pests have?\"\n-- Zet, Core Warrior\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Eebit.jpg",
+        "imageUrl": "../images/cards/BS/Eebit.jpg",
+        "key": 1219,
+        "name": "Eebit",
+        "normalized_name": "Eebit",
+        "rarity": "U",
+        "regions": [
             "Naroom"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 0,
-        flavor: "\"I am a Force of Nature.\"\n-- Band inscription\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Energy_Band.jpg",
-        key: 1238,
-        name: "Energy Band",
-        normalized_name: "Energy_Band",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 0,
+        "flavor": "\"I am a Force of Nature.\"\n-- Band inscription\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Energy_Band.jpg",
+        "imageUrl": "../images/cards/BS/Energy_Band.jpg",
+        "key": 1238,
+        "name": "Energy Band",
+        "normalized_name": "Energy_Band",
+        "powers": [
             {
-                cost: 1,
-                name: "Charge",
-                text: "Use this Power only before your Attack Step. Choose any one Creature in play. Add two energy to the chosen Creature. That Creature must attack this turn, if able.\n"
+                "cost": 1,
+                "name": "Charge",
+                "text": "Use this Power only before your Attack Step. Choose any one Creature in play. Add two energy to the chosen Creature. That Creature must attack this turn, if able.\n"
             }
         ],
-        rarity: "R",
-        regions: [
+        "rarity": "R",
+        "regions": [
             "Naroom"
         ],
-        set: "BS",
-        type: "Relic"
+        "set": "BS",
+        "type": "Relic"
     },
     {
-        artist: "Christopher, Shreve",
-        cost: 1,
-        flavor: "\"It's packed with nine essential nutrients and a full day's supply of energy! Got Soil?\"\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Enrich.jpg",
-        key: 1316,
-        name: "Enrich",
-        normalized_name: "Enrich",
-        rarity: "U",
-        regions: [
+        "artist": "Christopher, Shreve",
+        "cost": 1,
+        "flavor": "\"It's packed with nine essential nutrients and a full day's supply of energy! Got Soil?\"\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Enrich.jpg",
+        "imageUrl": "../images/cards/BS/Enrich.jpg",
+        "key": 1316,
+        "name": "Enrich",
+        "normalized_name": "Enrich",
+        "rarity": "U",
+        "regions": [
             "Underneath"
         ],
-        set: "BS",
-        text: "Choose any one burrowed Creature in play. Add three energy to the chosen Creature.\n",
-        type: "Spell"
+        "set": "BS",
+        "text": "Choose any one burrowed Creature in play. Add three energy to the chosen Creature.\n",
+        "type": "Spell"
     },
     {
-        artist: "Christopher",
-        cost: 3,
-        flavor: "Abracadableeeeerrrrrgh!",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Entangle.jpg",
-        key: 1277,
-        name: "Entangle",
-        normalized_name: "Entangle",
-        rarity: "R",
-        regions: [
+        "artist": "Christopher",
+        "cost": 3,
+        "flavor": "Abracadableeeeerrrrrgh!",
+        "imageUrlHiRes": "../images/hirescards/BS/Entangle.jpg",
+        "imageUrl": "../images/cards/BS/Entangle.jpg",
+        "key": 1277,
+        "name": "Entangle",
+        "normalized_name": "Entangle",
+        "rarity": "R",
+        "regions": [
             "Orothe"
         ],
-        set: "BS",
-        text: "Choose any one Magi in play. The chosen Magi cannot play any spells during his or her next turn.\n",
-        type: "Spell"
+        "set": "BS",
+        "text": "Choose any one Magi in play. The chosen Magi cannot play any spells during his or her next turn.\n",
+        "type": "Spell"
     },
     {
-        artist: "Holmberg, Sato",
-        cost: 4,
-        flavor: "\"Poor child. The Epiks are devouring his sweet dreams,\nand all he's left with are nightmares.\"\n-- Jaela, Arderial Regis\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Epik.jpg",
-        key: 1148,
-        name: "Epik",
-        normalized_name: "Epik",
-        powers: [
+        "artist": "Holmberg, Sato",
+        "cost": 4,
+        "flavor": "\"Poor child. The Epiks are devouring his sweet dreams,\nand all he's left with are nightmares.\"\n-- Jaela, Arderial Regis\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Epik.jpg",
+        "imageUrl": "../images/cards/BS/Epik.jpg",
+        "key": 1148,
+        "name": "Epik",
+        "normalized_name": "Epik",
+        "powers": [
             {
-                cost: 1,
-                name: "Dream Feast",
-                text: "Choose any one player. Discard Epik from play. Look at the chosen player's hand and choose up to two Creature cards there. The player discards the chosen cards.\n"
+                "cost": 1,
+                "name": "Dream Feast",
+                "text": "Choose any one player. Discard Epik from play. Look at the chosen player's hand and choose up to two Creature cards there. The player discards the chosen cards.\n"
             }
         ],
-        rarity: "U",
-        regions: [
+        "rarity": "U",
+        "regions": [
             "Arderial"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 15,
-        effects: [
+        "artist": "Holmberg, Vega",
+        "cost": 15,
+        "effects": [
             {
-                name: "Lore",
-                text: "At the end of each of your turns, draw a card."
+                "name": "Lore",
+                "text": "At the end of each of your turns, draw a card."
             }
         ],
-        energize: 4,
-        flavor: "\"Give me enough time, and enough jellybeans, and I'll have the answer.\"\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Evu.jpg",
-        key: 1230,
-        name: "Evu",
-        normalized_name: "Evu",
-        rarity: "R",
-        regions: [
+        "energize": 4,
+        "flavor": "\"Give me enough time, and enough jellybeans, and I'll have the answer.\"\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Evu.jpg",
+        "imageUrl": "../images/cards/BS/Evu.jpg",
+        "key": 1230,
+        "name": "Evu",
+        "normalized_name": "Evu",
+        "rarity": "R",
+        "regions": [
             "Naroom"
         ],
-        set: "BS",
-        starting: [
+        "set": "BS",
+        "starting": [
             "Plith",
             "Furok",
             "Vortex of Knowledge"
         ],
-        type: "Magi"
+        "type": "Magi"
     },
     {
-        artist: "Holmberg, Sato",
-        cost: 0,
-        flavor: "\"In the eye of the storm, all is still... usually.\"\n-- Stradus, Arderial Warrior\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Eye_of_the_Storm.jpg",
-        key: 1169,
-        name: "Eye of the Storm",
-        normalized_name: "Eye_of_the_Storm",
-        powers: [
+        "artist": "Holmberg, Sato",
+        "cost": 0,
+        "flavor": "\"In the eye of the storm, all is still... usually.\"\n-- Stradus, Arderial Warrior\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Eye_of_the_Storm.jpg",
+        "imageUrl": "../images/cards/BS/Eye_of_the_Storm.jpg",
+        "key": 1169,
+        "name": "Eye of the Storm",
+        "normalized_name": "Eye_of_the_Storm",
+        "powers": [
             {
-                name: "Storm Seeker",
-                text: "Roll one die.\n1 = Discard your hand.\n2, 3, 4 or 5 = Do nothing.\n6 = Draw five cards, or choose any one opponent. \nThe chosen opponent discards his or her hand.\n"
+                "name": "Storm Seeker",
+                "text": "Roll one die.\n1 = Discard your hand.\n2, 3, 4 or 5 = Do nothing.\n6 = Draw five cards, or choose any one opponent. \nThe chosen opponent discards his or her hand.\n"
             }
         ],
-        rarity: "U",
-        regions: [
+        "rarity": "U",
+        "regions": [
             "Arderial"
         ],
-        set: "BS",
-        type: "Relic"
+        "set": "BS",
+        "type": "Relic"
     },
     {
-        artist: "Holmberg, Christopher",
-        cost: 2,
-        flavor: "\"Have some flame!\"\n-- Barak, Cald Warlord\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Fire_Ball.jpg",
-        key: 1207,
-        name: "Fire Ball",
-        normalized_name: "Fire_Ball",
-        rarity: "C",
-        regions: [
+        "artist": "Holmberg, Christopher",
+        "cost": 2,
+        "flavor": "\"Have some flame!\"\n-- Barak, Cald Warlord\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Fire_Ball.jpg",
+        "imageUrl": "../images/cards/BS/Fire_Ball.jpg",
+        "key": 1207,
+        "name": "Fire Ball",
+        "normalized_name": "Fire_Ball",
+        "rarity": "C",
+        "regions": [
             "Cald"
         ],
-        set: "BS",
-        text: "Remove two energy from any Creature or Magi.",
-        type: "Spell"
+        "set": "BS",
+        "text": "Remove two energy from any Creature or Magi.",
+        "type": "Spell"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 2,
-        flavor: "She's gonna blow!",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Fire_Chogo.jpg",
-        key: 1182,
-        name: "Fire Chogo",
-        normalized_name: "Fire_Chogo",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 2,
+        "flavor": "She's gonna blow!",
+        "imageUrlHiRes": "../images/hirescards/BS/Fire_Chogo.jpg",
+        "imageUrl": "../images/cards/BS/Fire_Chogo.jpg",
+        "key": 1182,
+        "name": "Fire Chogo",
+        "normalized_name": "Fire_Chogo",
+        "powers": [
             {
-                name: "Heat Storm",
-                text: "Discard Fire Chogo from play to discard one energy from each non-Cald Creature in play.\n"
+                "name": "Heat Storm",
+                "text": "Discard Fire Chogo from play to discard one energy from each non-Cald Creature in play.\n"
             }
         ],
-        rarity: "C",
-        regions: [
+        "rarity": "C",
+        "regions": [
             "Cald"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Christopher",
-        cost: 1,
-        flavor: "\"These creatures pay the final price\nTo heal those of the Crater.\nYou too might need to sacrifice\nFor those whose needs are greater.\"\n-- \"The Arbolit\", verse 10\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Fire_Flow.jpg",
-        key: 1208,
-        name: "Fire Flow",
-        normalized_name: "Fire_Flow",
-        rarity: "C",
-        regions: [
+        "artist": "Christopher",
+        "cost": 1,
+        "flavor": "\"These creatures pay the final price\nTo heal those of the Crater.\nYou too might need to sacrifice\nFor those whose needs are greater.\"\n-- \"The Arbolit\", verse 10\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Fire_Flow.jpg",
+        "imageUrl": "../images/cards/BS/Fire_Flow.jpg",
+        "key": 1208,
+        "name": "Fire Flow",
+        "normalized_name": "Fire_Flow",
+        "rarity": "C",
+        "regions": [
             "Cald"
         ],
-        set: "BS",
-        text: "Choose any one Creature in play. Move up to four energy from your Magi to the chosen Creature.\n",
-        type: "Spell"
+        "set": "BS",
+        "text": "Choose any one Creature in play. Move up to four energy from your Magi to the chosen Creature.\n",
+        "type": "Spell"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 6,
-        flavor: "You be the ammunition this time!",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Fire_Grag.jpg",
-        key: 1183,
-        name: "Fire Grag",
-        normalized_name: "Fire_Grag",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 6,
+        "flavor": "You be the ammunition this time!",
+        "imageUrlHiRes": "../images/hirescards/BS/Fire_Grag.jpg",
+        "imageUrl": "../images/cards/BS/Fire_Grag.jpg",
+        "key": 1183,
+        "name": "Fire Grag",
+        "normalized_name": "Fire_Grag",
+        "powers": [
             {
-                cost: 3,
-                name: "Metabolize",
-                text: "Choose any one of your Creatures and any one of your opponents' Creatures in play. Discard twice your Creature's current energy from your opponent's Creature. Discard your chosen Creature from play.\n"
+                "cost": 3,
+                "name": "Metabolize",
+                "text": "Choose any one of your Creatures and any one of your opponents' Creatures in play. Discard twice your Creature's current energy from your opponent's Creature. Discard your chosen Creature from play.\n"
             }
         ],
-        rarity: "U",
-        regions: [
+        "rarity": "U",
+        "regions": [
             "Cald"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Christopher",
-        cost: 1,
-        flavor: "One for you, fifteen for me.",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Flame_Control.jpg",
-        key: 1209,
-        name: "Flame Control",
-        normalized_name: "Flame_Control",
-        rarity: "R",
-        regions: [
+        "artist": "Christopher",
+        "cost": 1,
+        "flavor": "One for you, fifteen for me.",
+        "imageUrlHiRes": "../images/hirescards/BS/Flame_Control.jpg",
+        "imageUrl": "../images/cards/BS/Flame_Control.jpg",
+        "key": 1209,
+        "name": "Flame Control",
+        "normalized_name": "Flame_Control",
+        "rarity": "R",
+        "regions": [
             "Cald"
         ],
-        set: "BS",
-        text: "Rearrange the energy on your Creatures as you wish.",
-        type: "Spell"
+        "set": "BS",
+        "text": "Rearrange the energy on your Creatures as you wish.",
+        "type": "Spell"
     },
     {
-        artist: "Christopher, Sato",
-        cost: 7,
-        flavor: "Writhe and expire,\nIn the rage of the fire.\nAfter the rain,\nOnly ashes remain.\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Flame_Geyser.jpg",
-        key: 1210,
-        name: "Flame Geyser",
-        normalized_name: "Flame_Geyser",
-        rarity: "U",
-        regions: [
+        "artist": "Christopher, Sato",
+        "cost": 7,
+        "flavor": "Writhe and expire,\nIn the rage of the fire.\nAfter the rain,\nOnly ashes remain.\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Flame_Geyser.jpg",
+        "imageUrl": "../images/cards/BS/Flame_Geyser.jpg",
+        "key": 1210,
+        "name": "Flame Geyser",
+        "normalized_name": "Flame_Geyser",
+        "rarity": "U",
+        "regions": [
             "Cald"
         ],
-        set: "BS",
-        text: "Discard three energy from each Creature and Magi in play.",
-        type: "Spell"
+        "set": "BS",
+        "text": "Discard three energy from each Creature and Magi in play.",
+        "type": "Spell"
     },
     {
-        artist: "Holmberg, Sato",
-        cost: 9,
-        flavor: "Korg was pleasantly surprised when the Hyren disintegrated after only a single blow of his sword. But his shout of triumph died when he saw the other Cald minions suddenly burn brighter.\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Flame_Hyren.jpg",
-        key: 1184,
-        name: "Flame Hyren",
-        normalized_name: "Flame_Hyren",
-        powers: [
+        "artist": "Holmberg, Sato",
+        "cost": 9,
+        "flavor": "Korg was pleasantly surprised when the Hyren disintegrated after only a single blow of his sword. But his shout of triumph died when he saw the other Cald minions suddenly burn brighter.\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Flame_Hyren.jpg",
+        "imageUrl": "../images/cards/BS/Flame_Hyren.jpg",
+        "key": 1184,
+        "name": "Flame Hyren",
+        "normalized_name": "Flame_Hyren",
+        "powers": [
             {
-                name: "Energy Transfer",
-                text: "Distribute Flame Hyren's energy among any number of Creatures. Discard Flame Hyren from play.\n"
+                "name": "Energy Transfer",
+                "text": "Distribute Flame Hyren's energy among any number of Creatures. Discard Flame Hyren from play.\n"
             }
         ],
-        rarity: "R",
-        regions: [
+        "rarity": "R",
+        "regions": [
             "Cald"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Christopher",
-        cost: 2,
-        flavor: "\"Sometimes nature can be a little too generous.\"\n-- Eidon, Keeper\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Flood_of_Energy.jpg",
-        key: 1242,
-        name: "Flood of Energy",
-        normalized_name: "Flood_of_Energy",
-        rarity: "R",
-        regions: [
+        "artist": "Christopher",
+        "cost": 2,
+        "flavor": "\"Sometimes nature can be a little too generous.\"\n-- Eidon, Keeper\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Flood_of_Energy.jpg",
+        "imageUrl": "../images/cards/BS/Flood_of_Energy.jpg",
+        "key": 1242,
+        "name": "Flood of Energy",
+        "normalized_name": "Flood_of_Energy",
+        "rarity": "R",
+        "regions": [
             "Naroom"
         ],
-        set: "BS",
-        text: "Energize all cards with an energize rate.",
-        type: "Spell"
+        "set": "BS",
+        "text": "Energize all cards with an energize rate.",
+        "type": "Spell"
     },
     {
-        artist: "Holmberg, Sato",
-        cost: 3,
-        flavor: "\"No place to hide? I'll fix that.\"\n-- Shimmer, Arderial Adept\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Fog_Bank.jpg",
-        key: 1173,
-        name: "Fog Bank",
-        normalized_name: "Fog_Bank",
-        rarity: "U",
-        regions: [
+        "artist": "Holmberg, Sato",
+        "cost": 3,
+        "flavor": "\"No place to hide? I'll fix that.\"\n-- Shimmer, Arderial Adept\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Fog_Bank.jpg",
+        "imageUrl": "../images/cards/BS/Fog_Bank.jpg",
+        "key": 1173,
+        "name": "Fog Bank",
+        "normalized_name": "Fog_Bank",
+        "rarity": "U",
+        "regions": [
             "Arderial"
         ],
-        set: "BS",
-        text: "Choose any one Creature in play. The chosen Creature cannot be attacked during your opponents' next two turns. Place this card on the chosen Creature while Fog Bank is in effect.\n",
-        type: "Spell"
+        "set": "BS",
+        "text": "Choose any one Creature in play. The chosen Creature cannot be attacked during your opponents' next two turns. Place this card on the chosen Creature while Fog Bank is in effect.\n",
+        "type": "Spell"
     },
     {
-        artist: "Holmberg, Vega, Shreve",
-        cost: 10,
-        effects: [
+        "artist": "Holmberg, Vega, Shreve",
+        "cost": 10,
+        "effects": [
             {
-                name: "Strengthen",
-                text: "During your Draw Step, you may choose to add three energy to any one Creature, instead of drawing one of your two cards. Use this Effects only one per turn.\n"
+                "name": "Strengthen",
+                "text": "During your Draw Step, you may choose to add three energy to any one Creature, instead of drawing one of your two cards. Use this Effects only one per turn.\n"
             }
         ],
-        energize: 5,
-        flavor: "Knowledge or power. Your choice.",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Fossik.jpg",
-        key: 1300,
-        name: "Fossik",
-        normalized_name: "Fossik",
-        rarity: "U",
-        regions: [
+        "energize": 5,
+        "flavor": "Knowledge or power. Your choice.",
+        "imageUrlHiRes": "../images/hirescards/BS/Fossik.jpg",
+        "imageUrl": "../images/cards/BS/Fossik.jpg",
+        "key": 1300,
+        "name": "Fossik",
+        "normalized_name": "Fossik",
+        "rarity": "U",
+        "regions": [
             "Underneath"
         ],
-        set: "BS",
-        starting: [
+        "set": "BS",
+        "starting": [
             "Crystal Arboll",
             "Parmalag",
             "Bottomless Pit"
         ],
-        type: "Magi"
+        "type": "Magi"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 4,
-        effects: [
+        "artist": "Holmberg, Vega",
+        "cost": 4,
+        "effects": [
             {
-                name: "Retrieve",
-                text: "When a defending Creature removes energy from Furok, place half of that energy, rounded up, back on your Magi.\n"
+                "name": "Retrieve",
+                "text": "When a defending Creature removes energy from Furok, place half of that energy, rounded up, back on your Magi.\n"
             }
         ],
-        flavor: "\"Fine, you can pet it. But don't blame me if it rolls over on you.\"\n-- Wence, Adventurer\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Furok.jpg",
-        key: 1220,
-        name: "Furok",
-        normalized_name: "Furok",
-        rarity: "C",
-        regions: [
+        "flavor": "\"Fine, you can pet it. But don't blame me if it rolls over on you.\"\n-- Wence, Adventurer\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Furok.jpg",
+        "imageUrl": "../images/cards/BS/Furok.jpg",
+        "key": 1220,
+        "name": "Furok",
+        "normalized_name": "Furok",
+        "rarity": "C",
+        "regions": [
             "Naroom"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 14,
-        effects: [
+        "artist": "Holmberg, Vega",
+        "cost": 14,
+        "effects": [
             {
-                name: "Strengthen",
-                text: "Before you draw your cards during your Draw Step, add two energy to your Creature with the least energy. If there is a tie, you choose which Creature the energy gets placed on.\n"
+                "name": "Strengthen",
+                "text": "Before you draw your cards during your Draw Step, add two energy to your Creature with the least energy. If there is a tie, you choose which Creature the energy gets placed on.\n"
             }
         ],
-        energize: 5,
-        flavor: "Feel better now? Good! Next...",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Gar.jpg",
-        key: 1197,
-        name: "Gar",
-        normalized_name: "Gar",
-        rarity: "U",
-        regions: [
+        "energize": 5,
+        "flavor": "Feel better now? Good! Next...",
+        "imageUrlHiRes": "../images/hirescards/BS/Gar.jpg",
+        "imageUrl": "../images/cards/BS/Gar.jpg",
+        "key": 1197,
+        "name": "Gar",
+        "normalized_name": "Gar",
+        "rarity": "U",
+        "regions": [
             "Cald"
         ],
-        set: "BS",
-        starting: [
+        "set": "BS",
+        "starting": [
             "Lava Balamant",
             "Fire Ball",
             "Magma Armor"
         ],
-        type: "Magi"
+        "type": "Magi"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 8,
-        flavor: "\"When a tree falls in the forest, it sometimes falls on\nthe one that hears it.\"\n-- Poad, Naroom Innkeeper\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Giant_Carillion.jpg",
-        key: 1221,
-        name: "Giant Carillion",
-        normalized_name: "Giant_Carillion",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 8,
+        "flavor": "\"When a tree falls in the forest, it sometimes falls on\nthe one that hears it.\"\n-- Poad, Naroom Innkeeper\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Giant_Carillion.jpg",
+        "imageUrl": "../images/cards/BS/Giant_Carillion.jpg",
+        "key": 1221,
+        "name": "Giant Carillion",
+        "normalized_name": "Giant_Carillion",
+        "powers": [
             {
-                cost: 6,
-                name: "Stomp",
-                text: "Choose any one Creature in play. Discard the chosen Creature from play.\n"
+                "cost": 6,
+                "name": "Stomp",
+                "text": "Choose any one Creature in play. Discard the chosen Creature from play.\n"
             }
         ],
-        rarity: "U",
-        regions: [
+        "rarity": "U",
+        "regions": [
             "Naroom"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg",
-        cost: 5,
-        effects: [
+        "artist": "Holmberg",
+        "cost": 5,
+        "effects": [
             {
-                name: "Pack Hunt",
-                text: "Instead of its normal attack, Giant Korrit can attack with one of your other Creatures. Both Giant Korrit and the attacking Creature remove energy from the defending Creature, but Giant Korrit loses no energy in the attack.\n"
+                "name": "Pack Hunt",
+                "text": "Instead of its normal attack, Giant Korrit can attack with one of your other Creatures. Both Giant Korrit and the attacking Creature remove energy from the defending Creature, but Giant Korrit loses no energy in the attack.\n"
             }
         ],
-        flavor: "That's a big mushroom, all right.",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Giant_Korrit.jpg",
-        key: 1290,
-        name: "Giant Korrit",
-        normalized_name: "Giant_Korrit",
-        rarity: "R",
-        regions: [
+        "flavor": "That's a big mushroom, all right.",
+        "imageUrlHiRes": "../images/hirescards/BS/Giant_Korrit.jpg",
+        "imageUrl": "../images/cards/BS/Giant_Korrit.jpg",
+        "key": 1290,
+        "name": "Giant Korrit",
+        "normalized_name": "Giant_Korrit",
+        "rarity": "R",
+        "regions": [
             "Underneath"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Vega, Shreve",
-        cost: 10,
-        flavor: "\"Look, it's a Paralit with barnacles on its back! No, wait, we're still\nseveral leagues away... oh... Mother of...\"\n-- Wence, Adventurer\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Giant_Parathin.jpg",
-        key: 1254,
-        name: "Giant Parathin",
-        normalized_name: "Giant_Parathin",
-        powers: [
+        "artist": "Holmberg, Vega, Shreve",
+        "cost": 10,
+        "flavor": "\"Look, it's a Paralit with barnacles on its back! No, wait, we're still\nseveral leagues away... oh... Mother of...\"\n-- Wence, Adventurer\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Giant_Parathin.jpg",
+        "imageUrl": "../images/cards/BS/Giant_Parathin.jpg",
+        "key": 1254,
+        "name": "Giant Parathin",
+        "normalized_name": "Giant_Parathin",
+        "powers": [
             {
-                name: "Interchange",
-                text: "Discard Giant Parathin from play. Place your current Magi on the bottom of your Magi pile face down. Bring in your next Magi with his or her starting energy. You do not get the new Magi's starting cards. You may keep your current Relics and Creatures in play.\n"
+                "name": "Interchange",
+                "text": "Discard Giant Parathin from play. Place your current Magi on the bottom of your Magi pile face down. Bring in your next Magi with his or her starting energy. You do not get the new Magi's starting cards. You may keep your current Relics and Creatures in play.\n"
             }
         ],
-        rarity: "R",
-        regions: [
+        "rarity": "R",
+        "regions": [
             "Orothe"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Vega, Shreve",
-        cost: 5,
-        flavor: "\"Going Parmalag\"\n-- Underneath expression meaning \"on the defensive\"\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Giant_Parmalag.jpg",
-        key: 1291,
-        name: "Giant Parmalag",
-        normalized_name: "Giant_Parmalag",
-        powers: [
+        "artist": "Holmberg, Vega, Shreve",
+        "cost": 5,
+        "flavor": "\"Going Parmalag\"\n-- Underneath expression meaning \"on the defensive\"\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Giant_Parmalag.jpg",
+        "imageUrl": "../images/cards/BS/Giant_Parmalag.jpg",
+        "key": 1291,
+        "name": "Giant Parmalag",
+        "normalized_name": "Giant_Parmalag",
+        "powers": [
             {
-                cost: 3,
-                name: "Withdraw",
-                text: "Giant Parmalag cannot be attacked until after your next turn."
+                "cost": 3,
+                "name": "Withdraw",
+                "text": "Giant Parmalag cannot be attacked until after your next turn."
             }
         ],
-        rarity: "R",
-        regions: [
+        "rarity": "R",
+        "regions": [
             "Underneath"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 4,
-        flavor: "\"Tough choice, I know.\"\n-- Fossik, Underkeeper\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Giant_Vulbor.jpg",
-        key: 1292,
-        name: "Giant Vulbor",
-        normalized_name: "Giant_Vulbor",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 4,
+        "flavor": "\"Tough choice, I know.\"\n-- Fossik, Underkeeper\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Giant_Vulbor.jpg",
+        "imageUrl": "../images/cards/BS/Giant_Vulbor.jpg",
+        "key": 1292,
+        "name": "Giant Vulbor",
+        "normalized_name": "Giant_Vulbor",
+        "powers": [
             {
-                cost: 2,
-                name: "Mind Shock",
-                text: "Remove four energy from any one Creature. That Creature's Magi may discard up to two cards. For each card discarded, remove two less energy.\n"
+                "cost": 2,
+                "name": "Mind Shock",
+                "text": "Remove four energy from any one Creature. That Creature's Magi may discard up to two cards. For each card discarded, remove two less energy.\n"
             }
         ],
-        rarity: "U",
-        regions: [
+        "rarity": "U",
+        "regions": [
             "Underneath"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 0,
-        effects: [
+        "artist": "Holmberg, Vega",
+        "cost": 0,
+        "effects": [
             {
-                name: "Strengthen",
-                text: "Whenever you play an Underneath Creature, you may move one additional energy from your Magi to that Creature. If the Creature is a Bisiwog, you may move one additional energy to it.\n"
+                "name": "Strengthen",
+                "text": "Whenever you play an Underneath Creature, you may move one additional energy from your Magi to that Creature. If the Creature is a Bisiwog, you may move one additional energy to it.\n"
             }
         ],
-        flavor: "\"Dreaming can hurt a bit when using these. But the\nresults are worth the discomfort.\"\n-- Motash, Underlord\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Gloves_of_Crystal.jpg",
-        key: 1309,
-        name: "Gloves of Crystal",
-        normalized_name: "Gloves_of_Crystal",
-        rarity: "R",
-        regions: [
+        "flavor": "\"Dreaming can hurt a bit when using these. But the\nresults are worth the discomfort.\"\n-- Motash, Underlord\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Gloves_of_Crystal.jpg",
+        "imageUrl": "../images/cards/BS/Gloves_of_Crystal.jpg",
+        "key": 1309,
+        "name": "Gloves of Crystal",
+        "normalized_name": "Gloves_of_Crystal",
+        "rarity": "R",
+        "regions": [
             "Underneath"
         ],
-        set: "BS",
-        type: "Relic"
+        "set": "BS",
+        "type": "Relic"
     },
     {
-        artist: "Vega",
-        cost: 13,
-        energize: 5,
-        flavor: "\"The walls tremble at my mighty... aww, look, a baby Bisiwog.\"\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Gogor.jpg",
-        key: 1301,
-        name: "Gogor",
-        normalized_name: "Gogor",
-        powers: [
+        "artist": "Vega",
+        "cost": 13,
+        "energize": 5,
+        "flavor": "\"The walls tremble at my mighty... aww, look, a baby Bisiwog.\"\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Gogor.jpg",
+        "imageUrl": "../images/cards/BS/Gogor.jpg",
+        "key": 1301,
+        "name": "Gogor",
+        "normalized_name": "Gogor",
+        "powers": [
             {
-                cost: 4,
-                name: "Gravel Storm",
-                text: "Roll one die. Discard energy equal to the die roll from each Creature in play. Gravel Storm does not affect burrowed Creatures.\n"
+                "cost": 4,
+                "name": "Gravel Storm",
+                "text": "Roll one die. Discard energy equal to the die roll from each Creature in play. Gravel Storm does not affect burrowed Creatures.\n"
             }
         ],
-        rarity: "U",
-        regions: [
+        "rarity": "U",
+        "regions": [
             "Underneath"
         ],
-        set: "BS",
-        starting: [
+        "set": "BS",
+        "starting": [
             "Digging Goggles",
             "Crystal Arboll",
             "Cave Rudwot"
         ],
-        type: "Magi"
+        "type": "Magi"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 0,
-        flavor: "The ring saved old Gorgle's life many times.\nThen his luck ran out.\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Gorgles_Ring.jpg",
-        key: 1202,
-        name: "Gorgle's Ring",
-        normalized_name: "Gorgles_Ring",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 0,
+        "flavor": "The ring saved old Gorgle's life many times.\nThen his luck ran out.\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Gorgles_Ring.jpg",
+        "imageUrl": "../images/cards/BS/Gorgles_Ring.jpg",
+        "key": 1202,
+        "name": "Gorgle's Ring",
+        "normalized_name": "Gorgles_Ring",
+        "powers": [
             {
-                name: "Wild Fire",
-                text: "Roll one die.\n1, 2 or 3 = Discard one energy from each of your Creatures in play.\n4 or 5 = Choose any one Creature in play. Discard two energy from the\nchosen Creature.\n6 = Choose any one Magi in play. Discard four energy from the chosen\nMagi.\n"
+                "name": "Wild Fire",
+                "text": "Roll one die.\n1, 2 or 3 = Discard one energy from each of your Creatures in play.\n4 or 5 = Choose any one Creature in play. Discard two energy from the\nchosen Creature.\n6 = Choose any one Magi in play. Discard four energy from the chosen\nMagi.\n"
             }
         ],
-        rarity: "R",
-        regions: [
+        "rarity": "R",
+        "regions": [
             "Cald"
         ],
-        set: "BS",
-        type: "Relic"
+        "set": "BS",
+        "type": "Relic"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 5,
-        flavor: "Don't make it angry. You won't like it when it's angry.",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Greater_Vaal.jpg",
-        key: 1185,
-        name: "Greater Vaal",
-        normalized_name: "Greater_Vaal",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 5,
+        "flavor": "Don't make it angry. You won't like it when it's angry.",
+        "imageUrlHiRes": "../images/hirescards/BS/Greater_Vaal.jpg",
+        "imageUrl": "../images/cards/BS/Greater_Vaal.jpg",
+        "key": 1185,
+        "name": "Greater Vaal",
+        "normalized_name": "Greater_Vaal",
+        "powers": [
             {
-                cost: 5,
-                name: "Immolate",
-                text: "Roll two dice. Choose any one Creature or Magi in play. Discard energy equal to the dice total from the chosen Creature or Magi.\n"
+                "cost": 5,
+                "name": "Immolate",
+                "text": "Roll two dice. Choose any one Creature or Magi in play. Discard energy equal to the dice total from the chosen Creature or Magi.\n"
             }
         ],
-        rarity: "R",
-        regions: [
+        "rarity": "R",
+        "regions": [
             "Cald"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 10,
-        energize: 5,
-        flavor: "\"She's Gorgle's granddaughter. Just as powerful, and just as\nunpredictable.\"\n-- Valkan, Cald Pyromancer\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Grega.jpg",
-        key: 1198,
-        name: "Grega",
-        normalized_name: "Grega",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 10,
+        "energize": 5,
+        "flavor": "\"She's Gorgle's granddaughter. Just as powerful, and just as\nunpredictable.\"\n-- Valkan, Cald Pyromancer\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Grega.jpg",
+        "imageUrl": "../images/cards/BS/Grega.jpg",
+        "key": 1198,
+        "name": "Grega",
+        "normalized_name": "Grega",
+        "powers": [
             {
-                cost: 2,
-                name: "Thermal Blast",
-                text: "Roll one die. Choose any one Creature or Magi in play. Discard energy equal to the die roll from the chosen Creature or Magi.\n"
+                "cost": 2,
+                "name": "Thermal Blast",
+                "text": "Roll one die. Choose any one Creature or Magi in play. Discard energy equal to the die roll from the chosen Creature or Magi.\n"
             }
         ],
-        rarity: "U",
-        regions: [
+        "rarity": "U",
+        "regions": [
             "Cald"
         ],
-        set: "BS",
-        starting: [
+        "set": "BS",
+        "starting": [
             "Arbolit",
             "Quor Pup",
             "Fire Flow"
         ],
-        type: "Magi"
+        "type": "Magi"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 3,
-        flavor: "\"If I can't make them shake with fear, I can at least make them shake.\"\n-- Strag, Underwatcher\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Ground_Breaker.jpg",
-        key: 1317,
-        name: "Ground Breaker",
-        normalized_name: "Ground_Breaker",
-        rarity: "U",
-        regions: [
+        "artist": "Holmberg, Vega",
+        "cost": 3,
+        "flavor": "\"If I can't make them shake with fear, I can at least make them shake.\"\n-- Strag, Underwatcher\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Ground_Breaker.jpg",
+        "imageUrl": "../images/cards/BS/Ground_Breaker.jpg",
+        "key": 1317,
+        "name": "Ground Breaker",
+        "normalized_name": "Ground_Breaker",
+        "rarity": "U",
+        "regions": [
             "Underneath"
         ],
-        set: "BS",
-        text: "Roll one die. Choose any one Magi in play. Discard energy equal to the die roll from the chosen Magi.\n",
-        type: "Spell"
+        "set": "BS",
+        "text": "Roll one die. Choose any one Magi in play. Discard energy equal to the die roll from the chosen Magi.\n",
+        "type": "Spell"
     },
     {
-        artist: "Christopher",
-        cost: 3,
-        flavor: "\"Let's see how far the ivy spreads this time!\"\n-- Tryn, Daughter of Runes\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Grow.jpg",
-        key: 1243,
-        name: "Grow",
-        normalized_name: "Grow",
-        rarity: "C",
-        regions: [
+        "artist": "Christopher",
+        "cost": 3,
+        "flavor": "\"Let's see how far the ivy spreads this time!\"\n-- Tryn, Daughter of Runes\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Grow.jpg",
+        "imageUrl": "../images/cards/BS/Grow.jpg",
+        "key": 1243,
+        "name": "Grow",
+        "normalized_name": "Grow",
+        "rarity": "C",
+        "regions": [
             "Naroom"
         ],
-        set: "BS",
-        text: "Roll one die. Choose any one Creature in play. Add energy equal to the die roll to the chosen Creature.\n",
-        type: "Spell"
+        "set": "BS",
+        "text": "Roll one die. Choose any one Creature in play. Add energy equal to the die roll to the chosen Creature.\n",
+        "type": "Spell"
     },
     {
-        artist: "Vega",
-        cost: 13,
-        energize: 5,
-        flavor: "\"Sure, she's an incredible Mushroom Farmer, but I\ncan only stand them for dinner so often.\"\n-- Wence, Naroom Adventurer\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Gruk.jpg",
-        key: 1302,
-        name: "Gruk",
-        normalized_name: "Gruk",
+        "artist": "Vega",
+        "cost": 13,
+        "energize": 5,
+        "flavor": "\"Sure, she's an incredible Mushroom Farmer, but I\ncan only stand them for dinner so often.\"\n-- Wence, Naroom Adventurer\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Gruk.jpg",
+        "imageUrl": "../images/cards/BS/Gruk.jpg",
+        "key": 1302,
+        "name": "Gruk",
+        "normalized_name": "Gruk",
         "power": [
             {
-                cost: 1,
-                name: "Undream",
-                text: "Choose any one of your Creatures in play. Return the chosen Creature to its owner's hand and place its energy on Gruk.\n"
+                "cost": 1,
+                "name": "Undream",
+                "text": "Choose any one of your Creatures in play. Return the chosen Creature to its owner's hand and place its energy on Gruk.\n"
             }
         ],
-        rarity: "U",
-        regions: [
+        "rarity": "U",
+        "regions": [
             "Underneath"
         ],
-        set: "BS",
-        starting: [
+        "set": "BS",
+        "starting": [
             "Agovo",
             "Crystal Arboll",
             "Gloves of Crystal"
         ],
-        type: "Magi"
+        "type": "Magi"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 2,
-        effects: [
+        "artist": "Holmberg, Vega",
+        "cost": 2,
+        "effects": [
             {
-                name: "Slide",
-                text: "If Gum-Gum is attacked, you may switch it with any other Creature you control before energy is removed.\n"
+                "name": "Slide",
+                "text": "If Gum-Gum is attacked, you may switch it with any other Creature you control before energy is removed.\n"
             }
         ],
-        flavor: "\"When hunting Gum-Gums, make sure you're ready for whatever they choose to\nhide behind.\"\n-- Fossik, Underkeeper\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Gum-Gum.jpg",
-        key: 1293,
-        name: "Gum-Gum",
-        normalized_name: "Gum-Gum",
-        rarity: "C",
-        regions: [
+        "flavor": "\"When hunting Gum-Gums, make sure you're ready for whatever they choose to\nhide behind.\"\n-- Fossik, Underkeeper\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Gum-Gum.jpg",
+        "imageUrl": "../images/cards/BS/Gum-Gum.jpg",
+        "key": 1293,
+        "name": "Gum-Gum",
+        "normalized_name": "Gum-Gum",
+        "rarity": "C",
+        "regions": [
             "Underneath"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Shreve",
-        cost: 0,
-        flavor: "Fire and forget.",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Heat_Lens.jpg",
-        key: 1203,
-        name: "Heat Lens",
-        normalized_name: "Heat_Lens",
-        powers: [
+        "artist": "Holmberg, Shreve",
+        "cost": 0,
+        "flavor": "Fire and forget.",
+        "imageUrlHiRes": "../images/hirescards/BS/Heat_Lens.jpg",
+        "imageUrl": "../images/cards/BS/Heat_Lens.jpg",
+        "key": 1203,
+        "name": "Heat Lens",
+        "normalized_name": "Heat_Lens",
+        "powers": [
             {
-                cost: 2,
-                name: "Mind Burn",
-                text: "Choose any one player. Look at the chosen player's hand. You may choose any one card in that player's hand. The player discards the chosen card.\n"
+                "cost": 2,
+                "name": "Mind Burn",
+                "text": "Choose any one player. Look at the chosen player's hand. You may choose any one card in that player's hand. The player discards the chosen card.\n"
             }
         ],
-        rarity: "R",
-        regions: [
+        "rarity": "R",
+        "regions": [
             "Cald"
         ],
-        set: "BS",
-        type: "Relic"
+        "set": "BS",
+        "type": "Relic"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 0,
-        flavor: "\"The problem with this is that you can't see yourself\neither, so you have to guess where your feet are going.\"\n-- Wence, Adventurer\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Hood_of_Hiding.jpg",
-        key: 1239,
-        name: "Hood of Hiding",
-        normalized_name: "Hood_of_Hiding",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 0,
+        "flavor": "\"The problem with this is that you can't see yourself\neither, so you have to guess where your feet are going.\"\n-- Wence, Adventurer\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Hood_of_Hiding.jpg",
+        "imageUrl": "../images/cards/BS/Hood_of_Hiding.jpg",
+        "key": 1239,
+        "name": "Hood of Hiding",
+        "normalized_name": "Hood_of_Hiding",
+        "powers": [
             {
-                name: "Conceal",
-                text: "bla blah blah..."
+                "name": "Conceal",
+                "text": "bla blah blah..."
             }
         ],
-        rarity: "U",
-        regions: [
+        "rarity": "U",
+        "regions": [
             "Naroom"
         ],
-        set: "BS",
-        type: "Relic"
+        "set": "BS",
+        "type": "Relic"
     },
     {
-        artist: "Holmberg, Vega, Shreve",
-        cost: 0,
-        flavor: "\"Tharik-shell points bounce off dream auras, but they \ngo through Magi just fine.\"\n-- Blu, Vault Guardian\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Hubdras_Spear.jpg",
-        key: 1273,
-        name: "Hubdra's Spear",
-        normalized_name: "Hubdras_Spear",
-        powers: [
+        "artist": "Holmberg, Vega, Shreve",
+        "cost": 0,
+        "flavor": "\"Tharik-shell points bounce off dream auras, but they \ngo through Magi just fine.\"\n-- Blu, Vault Guardian\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Hubdras_Spear.jpg",
+        "imageUrl": "../images/cards/BS/Hubdras_Spear.jpg",
+        "key": 1273,
+        "name": "Hubdra's Spear",
+        "normalized_name": "Hubdras_Spear",
+        "powers": [
             {
-                cost: 4,
-                name: "Stab",
-                text: "Choose any one Magi with no Creatures in play. Discard Hubdra's Spear from play. Discard all but one energy from the chosen Magi.\n"
+                "cost": 4,
+                "name": "Stab",
+                "text": "Choose any one Magi with no Creatures in play. Discard Hubdra's Spear from play. Discard all but one energy from the chosen Magi.\n"
             }
         ],
-        rarity: "R",
-        regions: [
+        "rarity": "R",
+        "regions": [
             "Orothe"
         ],
-        set: "BS",
-        type: "Relic"
+        "set": "BS",
+        "type": "Relic"
     },
     {
-        artist: "Holmberg, Christopher",
-        cost: 6,
-        flavor: "Through the forests, through the deep,\nThrough the mountains hyren creep.\nCaverns echo hyrens' cries.\nStreaking shadows split the skies.\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Hyrens_Call.jpg",
-        key: 1244,
-        name: "Hyren's Call",
-        normalized_name: "Hyrens_Call",
-        rarity: "R",
-        regions: [
+        "artist": "Holmberg, Christopher",
+        "cost": 6,
+        "flavor": "Through the forests, through the deep,\nThrough the mountains hyren creep.\nCaverns echo hyrens' cries.\nStreaking shadows split the skies.\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Hyrens_Call.jpg",
+        "imageUrl": "../images/cards/BS/Hyrens_Call.jpg",
+        "key": 1244,
+        "name": "Hyren's Call",
+        "normalized_name": "Hyrens_Call",
+        "rarity": "R",
+        "regions": [
             "Naroom"
         ],
-        set: "BS",
-        text: "Search your deck for any one hyren. Play the hyren with full energy. The hyren cannot attack this turn. Shuffle your deck.\n",
-        type: "Spell"
+        "set": "BS",
+        "text": "Search your deck for any one hyren. Play the hyren with full energy. The hyren cannot attack this turn. Shuffle your deck.\n",
+        "type": "Spell"
     },
     {
-        artist: "Christopher",
-        cost: 1,
-        flavor: "What is the sound of one mind emptying?",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Implosion.jpg",
-        key: 1278,
-        name: "Implosion",
-        normalized_name: "Implosion",
-        rarity: "C",
-        regions: [
+        "artist": "Christopher",
+        "cost": 1,
+        "flavor": "What is the sound of one mind emptying?",
+        "imageUrlHiRes": "../images/hirescards/BS/Implosion.jpg",
+        "imageUrl": "../images/cards/BS/Implosion.jpg",
+        "key": 1278,
+        "name": "Implosion",
+        "normalized_name": "Implosion",
+        "rarity": "C",
+        "regions": [
             "Orothe"
         ],
-        set: "BS",
-        text: "Choose any one Creature or Magi in play. Discard X Orothe cards from your hand. Discard X energy from the chosen Creature or Magi.\n",
-        type: "Spell"
+        "set": "BS",
+        "text": "Choose any one Creature or Magi in play. Discard X Orothe cards from your hand. Discard X energy from the chosen Creature or Magi.\n",
+        "type": "Spell"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 15,
+        "artist": "Holmberg, Vega",
+        "cost": 15,
         "effect": [
             {
-                name: "Spite",
-                text: "If Jaela is defeated, discard one energy from each Creature in play.\n"
+                "name": "Spite",
+                "text": "If Jaela is defeated, discard one energy from each Creature in play.\n"
             }
         ],
-        energize: 5,
-        flavor: "Regis of the sky realm, she watches over her people in their isolation.\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Jaela.jpg",
-        key: 1161,
-        name: "Jaela",
-        normalized_name: "Jaela",
-        rarity: "R",
-        regions: [
+        "energize": 5,
+        "flavor": "Regis of the sky realm, she watches over her people in their isolation.\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Jaela.jpg",
+        "imageUrl": "../images/cards/BS/Jaela.jpg",
+        "key": 1161,
+        "name": "Jaela",
+        "normalized_name": "Jaela",
+        "rarity": "R",
+        "regions": [
             "Arderial"
         ],
-        set: "BS",
-        starting: [
+        "set": "BS",
+        "starting": [
             "Xyx Elder",
             "Lightning",
             "Shooting Star"
         ],
-        type: "Magi"
+        "type": "Magi"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 5,
-        flavor: "\"These scurvy knaves know the real thing from a Relic Mirror reflection.\nGood thing they're easily intimidated.\"\n-- Blu, Vault Guardian\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Karak.jpg",
-        key: 1255,
-        name: "Karak",
-        normalized_name: "Karak",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 5,
+        "flavor": "\"These scurvy knaves know the real thing from a Relic Mirror reflection.\nGood thing they're easily intimidated.\"\n-- Blu, Vault Guardian\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Karak.jpg",
+        "imageUrl": "../images/cards/BS/Karak.jpg",
+        "key": 1255,
+        "name": "Karak",
+        "normalized_name": "Karak",
+        "powers": [
             {
-                cost: 2,
-                name: "Steal",
-                text: "Choose any one player and a Relic controlled by that player. Place the chosen Relic under Karak. While Karak is in play, Relics with the same name cannot be played by the chosen player. Relics under Karak are not affected by Spells and Powers. When Karak leaves play, return any Relics under Karak to their owners' hands.\n"
+                "cost": 2,
+                "name": "Steal",
+                "text": "Choose any one player and a Relic controlled by that player. Place the chosen Relic under Karak. While Karak is in play, Relics with the same name cannot be played by the chosen player. Relics under Karak are not affected by Spells and Powers. When Karak leaves play, return any Relics under Karak to their owners' hands.\n"
             }
         ],
-        rarity: "U",
-        regions: [
+        "rarity": "U",
+        "regions": [
             "Orothe"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Vega",
-        cost: 4,
-        flavor: "Feed me.",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Kelthet.jpg",
-        key: 1186,
-        name: "Kelthet",
-        normalized_name: "Kelthet",
-        powers: [
+        "artist": "Vega",
+        "cost": 4,
+        "flavor": "Feed me.",
+        "imageUrlHiRes": "../images/hirescards/BS/Kelthet.jpg",
+        "imageUrl": "../images/cards/BS/Kelthet.jpg",
+        "key": 1186,
+        "name": "Kelthet",
+        "normalized_name": "Kelthet",
+        "powers": [
             {
-                cost: 1,
-                name: "Consume",
-                text: "Choose any one of your Creatures in play. Move all of the chosen Creature's energy to Kelthet.\n"
+                "cost": 1,
+                "name": "Consume",
+                "text": "Choose any one of your Creatures in play. Move all of the chosen Creature's energy to Kelthet.\n"
             }
         ],
-        rarity: "C",
-        regions: [
+        "rarity": "C",
+        "regions": [
             "Cald"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 3,
-        effects: [
+        "artist": "Holmberg, Vega",
+        "cost": 3,
+        "effects": [
             {
-                name: "Pack Hunt",
-                text: "Instead of its normal attack, Korrit can attack with one of your other Creatures. Both Korrit and the attacking Creature remove energy from the defending Creature, but Korrit loses no energy in the attack.\n"
+                "name": "Pack Hunt",
+                "text": "Instead of its normal attack, Korrit can attack with one of your other Creatures. Both Korrit and the attacking Creature remove energy from the defending Creature, but Korrit loses no energy in the attack.\n"
             }
         ],
-        flavor: "Oh look, they want to play too.",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Korrit.jpg",
-        key: 1294,
-        name: "Korrit",
-        normalized_name: "Korrit",
-        rarity: "U",
-        regions: [
+        "flavor": "Oh look, they want to play too.",
+        "imageUrlHiRes": "../images/hirescards/BS/Korrit.jpg",
+        "imageUrl": "../images/cards/BS/Korrit.jpg",
+        "key": 1294,
+        "name": "Korrit",
+        "normalized_name": "Korrit",
+        "rarity": "U",
+        "regions": [
             "Underneath"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 11,
-        effects: [
+        "artist": "Holmberg, Vega",
+        "cost": 11,
+        "effects": [
             {
-                name: "Warning",
-                text: "If Lasada is defeated, draw three cards."
+                "name": "Warning",
+                "text": "If Lasada is defeated, draw three cards."
             }
         ],
-        energize: 6,
-        flavor: "If I'm not around to learn from my mistakes, someone else will be.",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Lasada.jpg",
-        key: 1162,
-        name: "Lasada",
-        normalized_name: "Lasada",
-        rarity: "U",
-        regions: [
+        "energize": 6,
+        "flavor": "If I'm not around to learn from my mistakes, someone else will be.",
+        "imageUrlHiRes": "../images/hirescards/BS/Lasada.jpg",
+        "imageUrl": "../images/cards/BS/Lasada.jpg",
+        "key": 1162,
+        "name": "Lasada",
+        "normalized_name": "Lasada",
+        "rarity": "U",
+        "regions": [
             "Arderial"
         ],
-        set: "BS",
-        starting: [
+        "set": "BS",
+        "starting": [
             "Thunder Vashp",
             "Xyx",
             "Shooting Star"
         ],
-        type: "Magi"
+        "type": "Magi"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 4,
-        flavor: "Before the firestorm swept over him, Wence thought he saw a burning image of the creature that fueled it.\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Lava_Aq.jpg",
-        key: 1187,
-        name: "Lava Aq",
-        normalized_name: "Lava_Aq",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 4,
+        "flavor": "Before the firestorm swept over him, Wence thought he saw a burning image of the creature that fueled it.\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Lava_Aq.jpg",
+        "imageUrl": "../images/cards/BS/Lava_Aq.jpg",
+        "key": 1187,
+        "name": "Lava Aq",
+        "normalized_name": "Lava_Aq",
+        "powers": [
             {
-                cost: 2,
-                name: "Firestorm",
-                text: "Choose any one of your Creatures in play. Discard the chosen Creature from play. Discard one energy from all non-Cald Creatures and Magi in play.\n"
+                "cost": 2,
+                "name": "Firestorm",
+                "text": "Choose any one of your Creatures in play. Discard the chosen Creature from play. Discard one energy from all non-Cald Creatures and Magi in play.\n"
             }
         ],
-        rarity: "U",
-        regions: [
+        "rarity": "U",
+        "regions": [
             "Cald"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 2,
-        flavor: "\"Arbolits heal when they burn out.\nIt's just a day's work to 'em.\nBut Lava Arbolls' stronger flames\nCan easily outdo 'em.\"\n-- \"The Arbolit\", verse 5\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Lava_Arboll.jpg",
-        key: 1188,
-        name: "Lava Arboll",
-        normalized_name: "Lava_Arboll",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 2,
+        "flavor": "\"Arbolits heal when they burn out.\nIt's just a day's work to 'em.\nBut Lava Arbolls' stronger flames\nCan easily outdo 'em.\"\n-- \"The Arbolit\", verse 5\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Lava_Arboll.jpg",
+        "imageUrl": "../images/cards/BS/Lava_Arboll.jpg",
+        "key": 1188,
+        "name": "Lava Arboll",
+        "normalized_name": "Lava_Arboll",
+        "powers": [
             {
-                cost: 2,
-                name: "Healing Flame",
-                text: "Choose any one Creature or Magi in play. Discard Lava Arboll from play. Add three energy to the chosen Creature or Magi.\n"
+                "cost": 2,
+                "name": "Healing Flame",
+                "text": "Choose any one Creature or Magi in play. Discard Lava Arboll from play. Add three energy to the chosen Creature or Magi.\n"
             }
         ],
-        rarity: "U",
-        regions: [
+        "rarity": "U",
+        "regions": [
             "Cald"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Vega, Holmberg",
-        cost: 5,
-        effects: [
+        "artist": "Vega, Holmberg",
+        "cost": 5,
+        "effects": [
             {
-                name: "Charge",
-                text: "If Lava Balamant attacks, add one energy before energy is removed.\n"
+                "name": "Charge",
+                "text": "If Lava Balamant attacks, add one energy before energy is removed.\n"
             }
         ],
-        flavor: "\"Now that line down there looks like a lava stream, but\nit's really a charging pack of those Lava Balamants.\"\n-- Stradus, Arderial Warrior\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Lava_Balamant.jpg",
-        key: 1189,
-        name: "Lava Balamant",
-        normalized_name: "Lava_Balamant",
-        rarity: "U",
-        regions: [
+        "flavor": "\"Now that line down there looks like a lava stream, but\nit's really a charging pack of those Lava Balamants.\"\n-- Stradus, Arderial Warrior\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Lava_Balamant.jpg",
+        "imageUrl": "../images/cards/BS/Lava_Balamant.jpg",
+        "key": 1189,
+        "name": "Lava Balamant",
+        "normalized_name": "Lava_Balamant",
+        "rarity": "U",
+        "regions": [
             "Cald"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 4,
-        flavor: "\"The dead leaves nourish the seedlings. It is the Cycle of Life.\"\n-- Orwin, Naroom Elder\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Leaf_Hyren.jpg",
-        key: 1222,
-        name: "Leaf Hyren",
-        normalized_name: "Leaf_Hyren",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 4,
+        "flavor": "\"The dead leaves nourish the seedlings. It is the Cycle of Life.\"\n-- Orwin, Naroom Elder\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Leaf_Hyren.jpg",
+        "imageUrl": "../images/cards/BS/Leaf_Hyren.jpg",
+        "key": 1222,
+        "name": "Leaf Hyren",
+        "normalized_name": "Leaf_Hyren",
+        "powers": [
             {
-                cost: "X",
-                name: "Energy Transfer",
-                text: "Choose any one Creature in play. Add X energy to the chosen Creature.\n"
+                "cost": "X",
+                "name": "Energy Transfer",
+                "text": "Choose any one Creature in play. Add X energy to the chosen Creature.\n"
             }
         ],
-        rarity: "C",
-        regions: [
+        "rarity": "C",
+        "regions": [
             "Naroom"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Christopher, Shreve",
-        cost: 2,
-        flavor: "The clouds sow their seeds, and the blinding trees grow tall and strong.\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Lightning.jpg",
-        key: 1174,
-        name: "Lightning",
-        normalized_name: "Lightning",
-        rarity: "C",
-        regions: [
+        "artist": "Christopher, Shreve",
+        "cost": 2,
+        "flavor": "The clouds sow their seeds, and the blinding trees grow tall and strong.\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Lightning.jpg",
+        "imageUrl": "../images/cards/BS/Lightning.jpg",
+        "key": 1174,
+        "name": "Lightning",
+        "normalized_name": "Lightning",
+        "rarity": "C",
+        "regions": [
             "Arderial"
         ],
-        set: "BS",
-        text: "Choose any one Creature in play. Add two energy to or discard two energy from the chosen Creature.\n",
-        type: "Spell"
+        "set": "BS",
+        "text": "Choose any one Creature in play. Add two energy to or discard two energy from the chosen Creature.\n",
+        "type": "Spell"
     },
     {
-        artist: "Holmberg, Shreve",
-        cost: 5,
-        flavor: "With sticks of sizzling light it beats on the drums of thunder.",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Lightning_Hyren.jpg",
-        key: 1149,
-        name: "Lightning Hyren",
-        normalized_name: "Lightning_Hyren",
-        powers: [
+        "artist": "Holmberg, Shreve",
+        "cost": 5,
+        "flavor": "With sticks of sizzling light it beats on the drums of thunder.",
+        "imageUrlHiRes": "../images/hirescards/BS/Lightning_Hyren.jpg",
+        "imageUrl": "../images/cards/BS/Lightning_Hyren.jpg",
+        "key": 1149,
+        "name": "Lightning Hyren",
+        "normalized_name": "Lightning_Hyren",
+        "powers": [
             {
-                cost: 4,
-                name: "Shockstorm",
-                text: "Discard one energy from each non-Arderial Creature in play."
+                "cost": 4,
+                "name": "Shockstorm",
+                "text": "Discard one energy from each non-Arderial Creature in play."
             }
         ],
-        rarity: "C",
-        regions: [
+        "rarity": "C",
+        "regions": [
             "Arderial"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Vega",
-        cost: 4,
-        effects: [
+        "artist": "Vega",
+        "cost": 4,
+        "effects": [
             {
-                name: "Resistance",
-                text: "Non-Arderial Spells do not affect Lovian."
+                "name": "Resistance",
+                "text": "Non-Arderial Spells do not affect Lovian."
             }
         ],
-        flavor: "\"Ever try to down a cloud?\nA little secret -- it usually doesn't work.\"\n-- Orlon, Friend of Wellisks\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Lovian.jpg",
-        key: 1150,
-        name: "Lovian",
-        normalized_name: "Lovian",
-        rarity: "R",
-        regions: [
+        "flavor": "\"Ever try to down a cloud?\nA little secret -- it usually doesn't work.\"\n-- Orlon, Friend of Wellisks\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Lovian.jpg",
+        "imageUrl": "../images/cards/BS/Lovian.jpg",
+        "key": 1150,
+        "name": "Lovian",
+        "normalized_name": "Lovian",
+        "rarity": "R",
+        "regions": [
             "Arderial"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Sato",
-        cost: 13,
-        energize: 5,
-        flavor: "With the right fuel, any spark of life can be rekindled.",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Magam.jpg",
-        key: 1199,
-        name: "Magam",
-        normalized_name: "Magam",
-        powers: [
+        "artist": "Holmberg, Sato",
+        "cost": 13,
+        "energize": 5,
+        "flavor": "With the right fuel, any spark of life can be rekindled.",
+        "imageUrlHiRes": "../images/hirescards/BS/Magam.jpg",
+        "imageUrl": "../images/cards/BS/Magam.jpg",
+        "key": 1199,
+        "name": "Magam",
+        "normalized_name": "Magam",
+        "powers": [
             {
-                cost: 4,
-                name: "Vitalize",
-                text: "Choose any one Creature in play with less than its starting energy. Restore the chosen Creature to its starting energy.\n"
+                "cost": 4,
+                "name": "Vitalize",
+                "text": "Choose any one Creature in play with less than its starting energy. Restore the chosen Creature to its starting energy.\n"
             }
         ],
-        rarity: "R",
-        regions: [
+        "rarity": "R",
+        "regions": [
             "Cald"
         ],
-        set: "BS",
-        starting: [
+        "set": "BS",
+        "starting": [
             "Flame Control",
             "Lava Balamant",
             "Arbolit"
         ],
-        type: "Magi"
+        "type": "Magi"
     },
     {
-        artist: "Holmberg, Christopher",
-        cost: 0,
-        effects: [
+        "artist": "Holmberg, Christopher",
+        "cost": 0,
+        "effects": [
             {
-                name: "Defense",
-                text: "Whenever a Creature attacks your Magi directly, add two energy to that Magi before energy is removed.\n"
+                "name": "Defense",
+                "text": "Whenever a Creature attacks your Magi directly, add two energy to that Magi before energy is removed.\n"
             }
         ],
-        flavor: "For some reason, creatures striking the wearer feel no heat.",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Magma_Armor.jpg",
-        key: 1204,
-        name: "Magma Armor",
-        normalized_name: "Magma_Armor",
-        rarity: "C",
-        regions: [
+        "flavor": "For some reason, creatures striking the wearer feel no heat.",
+        "imageUrlHiRes": "../images/hirescards/BS/Magma_Armor.jpg",
+        "imageUrl": "../images/cards/BS/Magma_Armor.jpg",
+        "key": 1204,
+        "name": "Magma Armor",
+        "normalized_name": "Magma_Armor",
+        "rarity": "C",
+        "regions": [
             "Cald"
         ],
-        set: "BS",
-        type: "Relic"
+        "set": "BS",
+        "type": "Relic"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 3,
-        flavor: "The magma takes wing. The foe takes flight.",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Magma_Hyren.jpg",
-        key: 1190,
-        name: "Magma Hyren",
-        normalized_name: "Magma_Hyren",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 3,
+        "flavor": "The magma takes wing. The foe takes flight.",
+        "imageUrlHiRes": "../images/hirescards/BS/Magma_Hyren.jpg",
+        "imageUrl": "../images/cards/BS/Magma_Hyren.jpg",
+        "key": 1190,
+        "name": "Magma Hyren",
+        "normalized_name": "Magma_Hyren",
+        "powers": [
             {
-                cost: 1,
-                name: "Fireball",
-                text: "Choose any one Creature in play. Discard one energy from the chosen Creature.\n"
+                "cost": 1,
+                "name": "Fireball",
+                "text": "Choose any one Creature in play. Discard one energy from the chosen Creature.\n"
             },
             {
-                cost: 1,
-                name: "Healing Flame",
-                text: "Choose any one Creature in play. Add two energy to the chosen Creature.\n"
+                "cost": 1,
+                "name": "Healing Flame",
+                "text": "Choose any one Creature in play. Add two energy to the chosen Creature.\n"
             }
         ],
-        rarity: "R",
-        regions: [
+        "rarity": "R",
+        "regions": [
             "Cald"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Sato",
-        cost: 0,
-        flavor: "\"This way, they can't see the look on your face when you\nfind out what's REALLY on their minds.\"\n-- Abwyn's Journal\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Mask_of_Abwyn.jpg",
-        key: 1170,
-        name: "Mask of Abwyn",
-        normalized_name: "Mask_of_Abwyn",
-        powers: [
+        "artist": "Holmberg, Sato",
+        "cost": 0,
+        "flavor": "\"This way, they can't see the look on your face when you\nfind out what's REALLY on their minds.\"\n-- Abwyn's Journal\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Mask_of_Abwyn.jpg",
+        "imageUrl": "../images/cards/BS/Mask_of_Abwyn.jpg",
+        "key": 1170,
+        "name": "Mask of Abwyn",
+        "normalized_name": "Mask_of_Abwyn",
+        "powers": [
             {
-                name: "Windsight",
-                text: "Choose any one opponent. The chosen opponent shows you his or her hand.\n"
+                "name": "Windsight",
+                "text": "Choose any one opponent. The chosen opponent shows you his or her hand.\n"
             }
         ],
-        rarity: "U",
-        regions: [
+        "rarity": "U",
+        "regions": [
             "Arderial"
         ],
-        set: "BS",
-        type: "Relic"
+        "set": "BS",
+        "type": "Relic"
     },
     {
-        artist: "Holmberg, Christopher",
-        cost: 8,
-        effects: [
+        "artist": "Holmberg, Christopher",
+        "cost": 8,
+        "effects": [
             {
-                name: "Feed",
-                text: "Add one energy to Megathan at the end of any turn in which Megathan defeated one or more Creatures.\n"
+                "name": "Feed",
+                "text": "Add one energy to Megathan at the end of any turn in which Megathan defeated one or more Creatures.\n"
             }
         ],
-        flavor: "I will take you to your grim and watery nightmare.",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Megathan.jpg",
-        key: 1256,
-        name: "Megathan",
-        normalized_name: "Megathan",
-        rarity: "R",
-        regions: [
+        "flavor": "I will take you to your grim and watery nightmare.",
+        "imageUrlHiRes": "../images/hirescards/BS/Megathan.jpg",
+        "imageUrl": "../images/cards/BS/Megathan.jpg",
+        "key": 1256,
+        "name": "Megathan",
+        "normalized_name": "Megathan",
+        "rarity": "R",
+        "regions": [
             "Orothe"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 0,
-        flavor: "\"I don't care too much for jewelry, but wow...\"\n-- Tryn, Daughter of Runes\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Mirror_Pendant.jpg",
-        key: 1325,
-        name: "Mirror Pendant",
-        normalized_name: "Mirror_Pendant",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 0,
+        "flavor": "\"I don't care too much for jewelry, but wow...\"\n-- Tryn, Daughter of Runes\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Mirror_Pendant.jpg",
+        "imageUrl": "../images/cards/BS/Mirror_Pendant.jpg",
+        "key": 1325,
+        "name": "Mirror Pendant",
+        "normalized_name": "Mirror_Pendant",
+        "powers": [
             {
-                name: "Auraflection",
-                text: "Choose any one Power on your Magi. Discard energy from your Magi equal to the chosen Power's cost, and discard an additional two energy. Play all actions of the chosen Power.\n"
+                "name": "Auraflection",
+                "text": "Choose any one Power on your Magi. Discard energy from your Magi equal to the chosen Power's cost, and discard an additional two energy. Play all actions of the chosen Power.\n"
             }
         ],
-        rarity: "U",
-        regions: [
+        "rarity": "U",
+        "regions": [
             "Universal"
         ],
-        set: "BS",
-        type: "Relic"
+        "set": "BS",
+        "type": "Relic"
     },
     {
-        artist: "Holmberg, Vega, Shreve",
-        cost: 16,
-        effects: [
+        "artist": "Holmberg, Vega, Shreve",
+        "cost": 16,
+        "effects": [
             {
-                name: "Legacy",
-                text: "If Mobis is defeated, add three energy to your next Magi when he or she is revealed.\n"
+                "name": "Legacy",
+                "text": "If Mobis is defeated, add three energy to your next Magi when he or she is revealed.\n"
             }
         ],
-        energize: 5,
-        flavor: "\"My hour will come. That is why I have been preparing someone to rule Orothe in my place.\"\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Mobis.jpg",
-        key: 1267,
-        name: "Mobis",
-        normalized_name: "Mobis",
-        rarity: "R",
-        regions: [
+        "energize": 5,
+        "flavor": "\"My hour will come. That is why I have been preparing someone to rule Orothe in my place.\"\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Mobis.jpg",
+        "imageUrl": "../images/cards/BS/Mobis.jpg",
+        "key": 1267,
+        "name": "Mobis",
+        "normalized_name": "Mobis",
+        "rarity": "R",
+        "regions": [
             "Orothe"
         ],
-        set: "BS",
-        starting: [
+        "set": "BS",
+        "starting": [
             "Bwill",
             "Wellisk",
             "Submerge"
         ],
-        type: "Magi"
+        "type": "Magi"
     },
     {
-        artist: "Vega",
-        cost: 16,
-        effects: [
+        "artist": "Vega",
+        "cost": 16,
+        "effects": [
             {
-                name: "Escape",
-                text: "Whenever a Creature you control in play is attacked and defeated, return that Creature to your hand instead of discarding it.\n"
+                "name": "Escape",
+                "text": "Whenever a Creature you control in play is attacked and defeated, return that Creature to your hand instead of discarding it.\n"
             }
         ],
-        energize: 4,
-        flavor: "That's not the last you'll see of him.",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Motash.jpg",
-        key: 1303,
-        name: "Motash",
-        normalized_name: "Motash",
-        rarity: "R",
-        regions: [
+        "energize": 4,
+        "flavor": "That's not the last you'll see of him.",
+        "imageUrlHiRes": "../images/hirescards/BS/Motash.jpg",
+        "imageUrl": "../images/cards/BS/Motash.jpg",
+        "key": 1303,
+        "name": "Motash",
+        "normalized_name": "Motash",
+        "rarity": "R",
+        "regions": [
             "Underneath"
         ],
-        set: "BS",
-        starting: [
+        "set": "BS",
+        "starting": [
             "Crystal Arboll",
             "Mushroom Hyren",
             "Digging Goggles"
         ],
-        type: "Magi"
+        "type": "Magi"
     },
     {
-        artist: "Holmberg, Christopher",
-        cost: 0,
-        effects: [
+        "artist": "Holmberg, Christopher",
+        "cost": 0,
+        "effects": [
             {
-                name: "Dreamcatch",
-                text: "If a Creature you control is being returned to your hand and the energy on that Creature is being discarded, instead place the Creature's energy on your Magi.\n"
+                "name": "Dreamcatch",
+                "text": "If a Creature you control is being returned to your hand and the energy on that Creature is being discarded, instead place the Creature's energy on your Magi.\n"
             }
         ],
-        flavor: "\"Undreaming is a sloppy process, but I think I've managed to clean it up a\nbit.\"\n-- Motash, Underlord\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Motashs_Staff.jpg",
-        key: 1310,
-        name: "Motash's Staff",
-        normalized_name: "Motashs_Staff",
-        rarity: "R",
-        regions: [
+        "flavor": "\"Undreaming is a sloppy process, but I think I've managed to clean it up a\nbit.\"\n-- Motash, Underlord\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Motashs_Staff.jpg",
+        "imageUrl": "../images/cards/BS/Motashs_Staff.jpg",
+        "key": 1310,
+        "name": "Motash's Staff",
+        "normalized_name": "Motashs_Staff",
+        "rarity": "R",
+        "regions": [
             "Underneath"
         ],
-        set: "BS",
-        type: "Relic"
+        "set": "BS",
+        "type": "Relic"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 7,
-        flavor: "\"It can undream its allies, giving its master extra power in a pinch.\"\n-- Strag, Underwatcher\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Mushroom_Hyren.jpg",
-        key: 1295,
-        name: "Mushroom Hyren",
-        normalized_name: "Mushroom_Hyren",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 7,
+        "flavor": "\"It can undream its allies, giving its master extra power in a pinch.\"\n-- Strag, Underwatcher\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Mushroom_Hyren.jpg",
+        "imageUrl": "../images/cards/BS/Mushroom_Hyren.jpg",
+        "key": 1295,
+        "name": "Mushroom Hyren",
+        "normalized_name": "Mushroom_Hyren",
+        "powers": [
             {
-                cost: 1,
-                name: "Sanctuary",
-                text: "Choose any one of your Creatures in play. Place the chosen Creature's energy on your Magi and return the Creature to your hand.\n"
+                "cost": 1,
+                "name": "Sanctuary",
+                "text": "Choose any one of your Creatures in play. Place the chosen Creature's energy on your Magi and return the Creature to your hand.\n"
             }
         ],
-        rarity: "U",
-        regions: [
+        "rarity": "U",
+        "regions": [
             "Underneath"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Sato",
-        cost: 14,
-        energize: 5,
-        flavor: "\"All we got now is a little energy.\"\n\"Oh, okay, I'll take that.\"\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Nimbulo.jpg",
-        key: 1163,
-        name: "Nimbulo",
-        normalized_name: "Nimbulo",
-        powers: [
+        "artist": "Holmberg, Sato",
+        "cost": 14,
+        "energize": 5,
+        "flavor": "\"All we got now is a little energy.\"\n\"Oh, okay, I'll take that.\"\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Nimbulo.jpg",
+        "imageUrl": "../images/cards/BS/Nimbulo.jpg",
+        "key": 1163,
+        "name": "Nimbulo",
+        "normalized_name": "Nimbulo",
+        "powers": [
             {
-                cost: 1,
-                name: "Energy Drain",
-                text: "Choose any two Creatures in play. Move one energy from one of the  chosen Creatures to the other chosen Creature.\n"
+                "cost": 1,
+                "name": "Energy Drain",
+                "text": "Choose any two Creatures in play. Move one energy from one of the  chosen Creatures to the other chosen Creature.\n"
             }
         ],
-        rarity: "R",
-        regions: [
+        "rarity": "R",
+        "regions": [
             "Arderial"
         ],
-        set: "BS",
-        starting: [
+        "set": "BS",
+        "starting": [
             "Fog Bank",
             "Lovian",
             "Shooting Star"
         ],
-        type: "Magi"
+        "type": "Magi"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 11,
-        energize: 4,
-        flavor: "\"We have powerful friends.\nYou're going to regret this.\"\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/OQua.jpg",
-        key: 1268,
-        name: "O'Qua",
-        normalized_name: "OQua",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 11,
+        "energize": 4,
+        "flavor": "\"We have powerful friends.\nYou're going to regret this.\"\n",
+        "imageUrlHiRes": "../images/hirescards/BS/OQua.jpg",
+        "imageUrl": "../images/cards/BS/OQua.jpg",
+        "key": 1268,
+        "name": "O'Qua",
+        "normalized_name": "OQua",
+        "powers": [
             {
-                cost: 4,
-                name: "Conjure",
-                text: "Search your deck for any Orothe Creature. Play the chosen Creature with four energy. The chosen Creature may not attack this turn.\n"
+                "cost": 4,
+                "name": "Conjure",
+                "text": "Search your deck for any Orothe Creature. Play the chosen Creature with four energy. The chosen Creature may not attack this turn.\n"
             }
         ],
-        rarity: "R",
-        regions: [
+        "rarity": "R",
+        "regions": [
             "Orothe"
         ],
-        set: "BS",
-        starting: [
+        "set": "BS",
+        "starting": [
             "Orothean Belt",
             "Submerge",
             "Implosion"
         ],
-        type: "Magi"
+        "type": "Magi"
     },
     {
-        artist: "Holmberg, Sato",
-        cost: 12,
-        effects: [
+        "artist": "Holmberg, Sato",
+        "cost": 12,
+        "effects": [
             {
-                name: "Strengthen",
-                text: "Whenever Ora plays an Arderial Creature, add one energy to that Creature.\n"
+                "name": "Strengthen",
+                "text": "Whenever Ora plays an Arderial Creature, add one energy to that Creature.\n"
             }
         ],
-        energize: 5,
-        flavor: "My Vellup is bigger than yours!",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Ora.jpg",
-        key: 1164,
-        name: "Ora",
-        normalized_name: "Ora",
-        rarity: "R",
-        regions: [
+        "energize": 5,
+        "flavor": "My Vellup is bigger than yours!",
+        "imageUrlHiRes": "../images/hirescards/BS/Ora.jpg",
+        "imageUrl": "../images/cards/BS/Ora.jpg",
+        "key": 1164,
+        "name": "Ora",
+        "normalized_name": "Ora",
+        "rarity": "R",
+        "regions": [
             "Arderial"
         ],
-        set: "BS",
-        starting: [
+        "set": "BS",
+        "starting": [
             "Xyx Elder",
             "Xyx Minor",
             "Shooting Star"
         ],
-        type: "Magi"
+        "type": "Magi"
     },
     {
-        artist: "Holmberg, Vega, Shreve",
-        cost: 5,
-        effects: [
+        "artist": "Holmberg, Vega, Shreve",
+        "cost": 5,
+        "effects": [
             {
-                name: "Engulf",
-                text: "If Orathan attacks a Creature with less than three energy, add two energy to Orathan before energy is removed.\n"
+                "name": "Engulf",
+                "text": "If Orathan attacks a Creature with less than three energy, add two energy to Orathan before energy is removed.\n"
             }
         ],
-        flavor: "\"Defending against an Orathan with a handful of Eebits is like trying to\nempty a lake with a teaspoon.\"\n-- Pruitt, Naroom Ringsmith\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Orathan.jpg",
-        key: 1257,
-        name: "Orathan",
-        normalized_name: "Orathan",
-        rarity: "R",
-        regions: [
+        "flavor": "\"Defending against an Orathan with a handful of Eebits is like trying to\nempty a lake with a teaspoon.\"\n-- Pruitt, Naroom Ringsmith\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Orathan.jpg",
+        "imageUrl": "../images/cards/BS/Orathan.jpg",
+        "key": 1257,
+        "name": "Orathan",
+        "normalized_name": "Orathan",
+        "rarity": "R",
+        "regions": [
             "Orothe"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Christopher, Sato",
-        cost: 5,
-        effects: [
+        "artist": "Holmberg, Christopher, Sato",
+        "cost": 5,
+        "effects": [
             {
-                name: "Summoning",
-                text: "When your Magi plays a Creature, he or she may use energy from Orathan Flyer to pay for the Creature. The Creature's entire energy cost must be paid by Orathan Flyer.\n"
+                "name": "Summoning",
+                "text": "When your Magi plays a Creature, he or she may use energy from Orathan Flyer to pay for the Creature. The Creature's entire energy cost must be paid by Orathan Flyer.\n"
             },
             {
-                name: "Caution",
-                text: "Orathan Flyer may not attack."
+                "name": "Caution",
+                "text": "Orathan Flyer may not attack."
             }
         ],
-        energize: 2,
-        flavor: "\"They ruled the clouds before our fathers' fathers.\"\n-- Jaela, Arderial Regis\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Orathan_Flyer.jpg",
-        key: 1151,
-        name: "Orathan Flyer",
-        normalized_name: "Orathan_Flyer",
-        rarity: "R",
-        regions: [
+        "energize": 2,
+        "flavor": "\"They ruled the clouds before our fathers' fathers.\"\n-- Jaela, Arderial Regis\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Orathan_Flyer.jpg",
+        "imageUrl": "../images/cards/BS/Orathan_Flyer.jpg",
+        "key": 1151,
+        "name": "Orathan Flyer",
+        "normalized_name": "Orathan_Flyer",
+        "rarity": "R",
+        "regions": [
             "Arderial"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 3,
-        flavor: "It scatters your thoughts to the wind.",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Orish.jpg",
-        key: 1152,
-        name: "Orish",
-        normalized_name: "Orish",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 3,
+        "flavor": "It scatters your thoughts to the wind.",
+        "imageUrlHiRes": "../images/hirescards/BS/Orish.jpg",
+        "imageUrl": "../images/cards/BS/Orish.jpg",
+        "key": 1152,
+        "name": "Orish",
+        "normalized_name": "Orish",
+        "powers": [
             {
-                cost: 1,
-                name: "Hypnotize",
-                text: "Choose any one player. The chosen player discards one card at random from his or her hand.\n"
+                "cost": 1,
+                "name": "Hypnotize",
+                "text": "Choose any one player. The chosen player discards one card at random from his or her hand.\n"
             }
         ],
-        rarity: "R",
-        regions: [
+        "rarity": "R",
+        "regions": [
             "Arderial"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Sato",
-        cost: 10,
-        effects: [
+        "artist": "Holmberg, Sato",
+        "cost": 10,
+        "effects": [
             {
-                name: "Anti-Magic",
-                text: "Any Barl or Wellisk controlled by Orlon cannot be affected by any opposing Spells.\n"
+                "name": "Anti-Magic",
+                "text": "Any Barl or Wellisk controlled by Orlon cannot be affected by any opposing Spells.\n"
             }
         ],
-        energize: 6,
-        flavor: "\"Be careful. Animate causes severe head swelling.\"\n\"It does?!\" \"Sure!\"\n-- Orlon, to Tony\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Orlon.jpg",
-        key: 1269,
-        name: "Orlon",
-        normalized_name: "Orlon",
-        rarity: "U",
-        regions: [
+        "energize": 6,
+        "flavor": "\"Be careful. Animate causes severe head swelling.\"\n\"It does?!\" \"Sure!\"\n-- Orlon, to Tony\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Orlon.jpg",
+        "imageUrl": "../images/cards/BS/Orlon.jpg",
+        "key": 1269,
+        "name": "Orlon",
+        "normalized_name": "Orlon",
+        "rarity": "U",
+        "regions": [
             "Orothe"
         ],
-        set: "BS",
-        starting: [
+        "set": "BS",
+        "starting": [
             "Abaquist",
             "Sea Barl",
             "Submerge"
         ],
-        type: "Magi"
+        "type": "Magi"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 10,
-        flavor: "\"Now THAT is a BIG mushroom.\"\n-- Wence, Adventurer\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Ormagon.jpg",
-        key: 1296,
-        name: "Ormagon",
-        normalized_name: "Ormagon",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 10,
+        "flavor": "\"Now THAT is a BIG mushroom.\"\n-- Wence, Adventurer\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Ormagon.jpg",
+        "imageUrl": "../images/cards/BS/Ormagon.jpg",
+        "key": 1296,
+        "name": "Ormagon",
+        "normalized_name": "Ormagon",
+        "powers": [
             {
-                cost: 10,
-                name: "Devastate",
-                text: "Discards all non-Underneath Creatures in play."
+                "cost": 10,
+                "name": "Devastate",
+                "text": "Discards all non-Underneath Creatures in play."
             }
         ],
-        rarity: "R",
-        regions: [
+        "rarity": "R",
+        "regions": [
             "Underneath"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Vega, Shreve",
-        cost: 0,
-        effects: [
+        "artist": "Holmberg, Vega, Shreve",
+        "cost": 0,
+        "effects": [
             {
-                name: "Hydromancy",
-                text: "Whenever you play a Spell that adds energy to a Creature in play, add one additional energy to that Creature.\n"
+                "name": "Hydromancy",
+                "text": "Whenever you play a Spell that adds energy to a Creature in play, add one additional energy to that Creature.\n"
             }
         ],
-        flavor: "\"A drop, a drizzle, a torrent.\"\n-- Belt inscription\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Orothean_Belt.jpg",
-        key: 1274,
-        name: "Orothean Belt",
-        normalized_name: "Orothean_Belt",
-        rarity: "U",
-        regions: [
+        "flavor": "\"A drop, a drizzle, a torrent.\"\n-- Belt inscription\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Orothean_Belt.jpg",
+        "imageUrl": "../images/cards/BS/Orothean_Belt.jpg",
+        "key": 1274,
+        "name": "Orothean Belt",
+        "normalized_name": "Orothean_Belt",
+        "rarity": "U",
+        "regions": [
             "Orothe"
         ],
-        set: "BS",
-        type: "Relic"
+        "set": "BS",
+        "type": "Relic"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 0,
-        effects: [
+        "artist": "Holmberg, Vega",
+        "cost": 0,
+        "effects": [
             {
-                name: "Empower",
-                text: "Each of the Powers on your Creatures in play costs one less energy to use, to a minimum of one.\n"
+                "name": "Empower",
+                "text": "Each of the Powers on your Creatures in play costs one less energy to use, to a minimum of one.\n"
             }
         ],
-        flavor: "\"Boulders, pebbles, sand.\"\n-- Inscription on left-hand glove\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Orothean_Gloves.jpg",
-        key: 1275,
-        name: "Orothean Gloves",
-        normalized_name: "Orothean_Gloves",
-        rarity: "R",
-        regions: [
+        "flavor": "\"Boulders, pebbles, sand.\"\n-- Inscription on left-hand glove\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Orothean_Gloves.jpg",
+        "imageUrl": "../images/cards/BS/Orothean_Gloves.jpg",
+        "key": 1275,
+        "name": "Orothean Gloves",
+        "normalized_name": "Orothean_Gloves",
+        "rarity": "R",
+        "regions": [
             "Orothe"
         ],
-        set: "BS",
-        type: "Relic"
+        "set": "BS",
+        "type": "Relic"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 0,
-        flavor: "\"What ye see doesn't have to be what ye get.\"\n-- Blu, Vault Guardian\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Orothean_Goggles.jpg",
-        key: 1276,
-        name: "Orothean Goggles",
-        normalized_name: "Orothean_Goggles",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 0,
+        "flavor": "\"What ye see doesn't have to be what ye get.\"\n-- Blu, Vault Guardian\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Orothean_Goggles.jpg",
+        "imageUrl": "../images/cards/BS/Orothean_Goggles.jpg",
+        "key": 1276,
+        "name": "Orothean Goggles",
+        "normalized_name": "Orothean_Goggles",
+        "powers": [
             {
-                name: "Foresight",
-                text: "Look at the top two cards of your deck. You may discard either or both of these cards, or put them back on top of your deck in any order.\n"
+                "name": "Foresight",
+                "text": "Look at the top two cards of your deck. You may discard either or both of these cards, or put them back on top of your deck in any order.\n"
             }
         ],
-        rarity: "U",
-        regions: [
+        "rarity": "U",
+        "regions": [
             "Orothe"
         ],
-        set: "BS",
-        type: "Relic"
+        "set": "BS",
+        "type": "Relic"
     },
     {
-        artist: "Holmberg, Vega, Shreve",
-        cost: 3,
-        effects: [
+        "artist": "Holmberg, Vega, Shreve",
+        "cost": 3,
+        "effects": [
             {
-                name: "Relic Guard",
-                text: "If your opponent discards one of your Relics from play, you may discard one energy from Orpus instead of discarding the Relic.\n"
+                "name": "Relic Guard",
+                "text": "If your opponent discards one of your Relics from play, you may discard one energy from Orpus instead of discarding the Relic.\n"
             }
         ],
-        flavor: "\"Four relic mirrors. Four Orpuses. Try and loot the Vault now, I dare ye.\"\n-- Blue, Vault Guardian\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Orpus.jpg",
-        key: 1258,
-        name: "Orpus",
-        normalized_name: "Orpus",
-        rarity: "C",
-        regions: [
+        "flavor": "\"Four relic mirrors. Four Orpuses. Try and loot the Vault now, I dare ye.\"\n-- Blue, Vault Guardian\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Orpus.jpg",
+        "imageUrl": "../images/cards/BS/Orpus.jpg",
+        "key": 1258,
+        "name": "Orpus",
+        "normalized_name": "Orpus",
+        "rarity": "C",
+        "regions": [
             "Orothe"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Sato",
-        cost: 15,
-        effects: [
+        "artist": "Holmberg, Sato",
+        "cost": 15,
+        "effects": [
             {
-                name: "Salvage",
-                text: "Whenever an opposing Magi's Spell or Relic discards any amount of energy from Orthea, you may add that amount of energy to any one Orothe Creature in play.\n"
+                "name": "Salvage",
+                "text": "Whenever an opposing Magi's Spell or Relic discards any amount of energy from Orthea, you may add that amount of energy to any one Orothe Creature in play.\n"
             }
         ],
-        energize: 5,
-        flavor: "That hurt. I hope you're happy, because it's your turn.",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Orthea.jpg",
-        key: 1270,
-        name: "Orthea",
-        normalized_name: "Orthea",
-        rarity: "U",
-        regions: [
+        "energize": 5,
+        "flavor": "That hurt. I hope you're happy, because it's your turn.",
+        "imageUrlHiRes": "../images/hirescards/BS/Orthea.jpg",
+        "imageUrl": "../images/cards/BS/Orthea.jpg",
+        "key": 1270,
+        "name": "Orthea",
+        "normalized_name": "Orthea",
+        "rarity": "U",
+        "regions": [
             "Orothe"
         ],
-        set: "BS",
-        starting: [
+        "set": "BS",
+        "starting": [
             "Sphor",
             "Paralit",
             "Corf"
         ],
-        type: "Magi"
+        "type": "Magi"
     },
     {
-        artist: "Holmberg, Vega, Shreve",
-        cost: 16,
-        energize: 5,
-        flavor: "\"He knows a lot about our history. He's been there, after all.\"\n-- Tryn, Daughter of Runes\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Orwin.jpg",
-        key: 1231,
-        name: "Orwin",
-        normalized_name: "Orwin",
-        powers: [
+        "artist": "Holmberg, Vega, Shreve",
+        "cost": 16,
+        "energize": 5,
+        "flavor": "\"He knows a lot about our history. He's been there, after all.\"\n-- Tryn, Daughter of Runes\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Orwin.jpg",
+        "imageUrl": "../images/cards/BS/Orwin.jpg",
+        "key": 1231,
+        "name": "Orwin",
+        "normalized_name": "Orwin",
+        "powers": [
             {
-                cost: 2,
-                name: "Recall",
-                text: "Take any one card from your discard pile and place it in your hand. Do not draw any cards during your Draw Step this turn. Cards are only affected by Recall once per game.\n"
+                "cost": 2,
+                "name": "Recall",
+                "text": "Take any one card from your discard pile and place it in your hand. Do not draw any cards during your Draw Step this turn. Cards are only affected by Recall once per game.\n"
             }
         ],
-        rarity: "R",
-        regions: [
+        "rarity": "R",
+        "regions": [
             "Naroom"
         ],
-        set: "BS",
-        starting: [
+        "set": "BS",
+        "starting": [
             "Eebit",
             "Leaf Hyren",
             "Grow"
         ],
-        type: "Magi"
+        "type": "Magi"
     },
     {
-        artist: "Holmberg, Christopher",
-        cost: 3,
-        flavor: "\"When will then be now?\"\n\"Soon!\"\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Orwins_Gaze.jpg",
-        key: 1245,
-        name: "Orwin's Gaze",
-        normalized_name: "Orwins_Gaze",
-        rarity: "U",
-        regions: [
+        "artist": "Holmberg, Christopher",
+        "cost": 3,
+        "flavor": "\"When will then be now?\"\n\"Soon!\"\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Orwins_Gaze.jpg",
+        "imageUrl": "../images/cards/BS/Orwins_Gaze.jpg",
+        "key": 1245,
+        "name": "Orwin's Gaze",
+        "normalized_name": "Orwins_Gaze",
+        "rarity": "U",
+        "regions": [
             "Naroom"
         ],
-        set: "BS",
-        text: "Take any one card from your discard pile and place it on the top of your deck.\n",
-        type: "Spell"
+        "set": "BS",
+        "text": "Take any one card from your discard pile and place it on the top of your deck.\n",
+        "type": "Spell"
     },
     {
-        artist: "Christopher, Holmberg",
-        cost: 0,
-        flavor: "The future is always in motion, but that doesn't stop people from trying to jump on it and pin it down.\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Orwins_Staff.jpg",
-        key: 1240,
-        name: "Orwin's Staff",
-        normalized_name: "Orwins_Staff",
-        powers: [
+        "artist": "Christopher, Holmberg",
+        "cost": 0,
+        "flavor": "The future is always in motion, but that doesn't stop people from trying to jump on it and pin it down.\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Orwins_Staff.jpg",
+        "imageUrl": "../images/cards/BS/Orwins_Staff.jpg",
+        "key": 1240,
+        "name": "Orwin's Staff",
+        "normalized_name": "Orwins_Staff",
+        "powers": [
             {
-                name: "Preordinance",
-                text: "Discard Orwin's Staff from play and discard two cards from your hand. Search your deck for any one card. Place that card in your hand without showing it to your opponents. Shuffle your deck.\n"
+                "name": "Preordinance",
+                "text": "Discard Orwin's Staff from play and discard two cards from your hand. Search your deck for any one card. Place that card in your hand without showing it to your opponents. Shuffle your deck.\n"
             }
         ],
-        rarity: "R",
-        regions: [
+        "rarity": "R",
+        "regions": [
             "Naroom"
         ],
-        set: "BS",
-        type: "Relic"
+        "set": "BS",
+        "type": "Relic"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 1,
-        flavor: "\"Arbolits sacrifice themselves,\nThroughout our land of flame.\nDown in the darkened Underneath,\nThe Korrits do the same.\"\n-- \"The Arbolit\", verse 12\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Pack_Korrit.jpg",
-        key: 1297,
-        name: "Pack Korrit",
-        normalized_name: "Pack_Korrit",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 1,
+        "flavor": "\"Arbolits sacrifice themselves,\nThroughout our land of flame.\nDown in the darkened Underneath,\nThe Korrits do the same.\"\n-- \"The Arbolit\", verse 12\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Pack_Korrit.jpg",
+        "imageUrl": "../images/cards/BS/Pack_Korrit.jpg",
+        "key": 1297,
+        "name": "Pack Korrit",
+        "normalized_name": "Pack_Korrit",
+        "powers": [
             {
-                cost: 1,
-                name: "Morale",
-                text: "Add one energy to each other Korrit in play."
+                "cost": 1,
+                "name": "Morale",
+                "text": "Add one energy to each other Korrit in play."
             }
         ],
-        rarity: "C",
-        regions: [
+        "rarity": "C",
+        "regions": [
             "Underneath"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 3,
-        flavor: "Must... have... energy.",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Paralit.jpg",
-        key: 1259,
-        name: "Paralit",
-        normalized_name: "Paralit",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 3,
+        "flavor": "Must... have... energy.",
+        "imageUrlHiRes": "../images/hirescards/BS/Paralit.jpg",
+        "imageUrl": "../images/cards/BS/Paralit.jpg",
+        "key": 1259,
+        "name": "Paralit",
+        "normalized_name": "Paralit",
+        "powers": [
             {
-                cost: 1,
-                name: "Lie Channel",
-                text: "Discard Paralit from play. Add five energy to your Magi. Discard one energy from each of your Creatures in play.\n"
+                "cost": 1,
+                "name": "Lie Channel",
+                "text": "Discard Paralit from play. Add five energy to your Magi. Discard one energy from each of your Creatures in play.\n"
             }
         ],
-        rarity: "U",
-        regions: [
+        "rarity": "U",
+        "regions": [
             "Orothe"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 3,
-        flavor: "Protected in their rock-hard shells, they attack by rolling at high speed toward their targets.\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Parmalag.jpg",
-        key: 1298,
-        name: "Parmalag",
-        normalized_name: "Parmalag",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 3,
+        "flavor": "Protected in their rock-hard shells, they attack by rolling at high speed toward their targets.\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Parmalag.jpg",
+        "imageUrl": "../images/cards/BS/Parmalag.jpg",
+        "key": 1298,
+        "name": "Parmalag",
+        "normalized_name": "Parmalag",
+        "powers": [
             {
-                cost: 1,
-                name: "Shield",
-                text: "Parmalag is prevented from losing any energy from attacks until the end of your turn.\n"
+                "cost": 1,
+                "name": "Shield",
+                "text": "Parmalag is prevented from losing any energy from attacks until the end of your turn.\n"
             }
         ],
-        rarity: "C",
-        regions: [
+        "rarity": "C",
+        "regions": [
             "Underneath"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Vega, Shreve",
-        cost: 3,
-        flavor: "\"Take deep breaths. The air is alive, and will give of its\nlife to restore you.\"\n-- Jaela, to Tony\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Pharan.jpg",
-        key: 1153,
-        name: "Pharan",
-        normalized_name: "Pharan",
-        powers: [
+        "artist": "Holmberg, Vega, Shreve",
+        "cost": 3,
+        "flavor": "\"Take deep breaths. The air is alive, and will give of its\nlife to restore you.\"\n-- Jaela, to Tony\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Pharan.jpg",
+        "imageUrl": "../images/cards/BS/Pharan.jpg",
+        "key": 1153,
+        "name": "Pharan",
+        "normalized_name": "Pharan",
+        "powers": [
             {
-                name: "Healing Rain",
-                text: "Choose any one Creature or Magi in play. Discard Pharan from play and add its energy to the chosen Creature or Magi.\n"
+                "name": "Healing Rain",
+                "text": "Choose any one Creature or Magi in play. Discard Pharan from play and add its energy to the chosen Creature or Magi.\n"
             }
         ],
-        rarity: "C",
-        regions: [
+        "rarity": "C",
+        "regions": [
             "Arderial"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 6,
-        flavor: "\"Bitten by a Platheus\"\n-- Orothe expression meaning 'lazy'\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Platheus.jpg",
-        key: 1260,
-        name: "Platheus",
-        normalized_name: "Platheus",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 6,
+        "flavor": "\"Bitten by a Platheus\"\n-- Orothe expression meaning 'lazy'\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Platheus.jpg",
+        "imageUrl": "../images/cards/BS/Platheus.jpg",
+        "key": 1260,
+        "name": "Platheus",
+        "normalized_name": "Platheus",
+        "powers": [
             {
-                cost: 2,
-                name: "Soporific",
-                text: "Choose any one Creature in play. The chosen Creature cannot attack until after your next turn.\n"
+                "cost": 2,
+                "name": "Soporific",
+                "text": "Choose any one Creature in play. The chosen Creature cannot attack until after your next turn.\n"
             }
         ],
-        rarity: "R",
-        regions: [
+        "rarity": "R",
+        "regions": [
             "Orothe"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Shreve",
-        cost: 3,
-        effects: [
+        "artist": "Holmberg, Shreve",
+        "cost": 3,
+        "effects": [
             {
-                name: "Warning",
-                text: "If Plith is attacked, draw one card. If Evu is your Magi when Plith is attacked, draw one additional card.\n"
+                "name": "Warning",
+                "text": "If Plith is attacked, draw one card. If Evu is your Magi when Plith is attacked, draw one additional card.\n"
             }
         ],
-        flavor: "They bear the news from all over the forest to the ancient Loremaster.\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Plith.jpg",
-        key: 1223,
-        name: "Plith",
-        normalized_name: "Plith",
-        rarity: "C",
-        regions: [
+        "flavor": "They bear the news from all over the forest to the ancient Loremaster.\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Plith.jpg",
+        "imageUrl": "../images/cards/BS/Plith.jpg",
+        "key": 1223,
+        "name": "Plith",
+        "normalized_name": "Plith",
+        "rarity": "C",
+        "regions": [
             "Naroom"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 13,
-        energize: 5,
-        flavor: "\"I could've sworn the food he cooked gave me superhuman strength!\"\n-- Eidon, Keeper\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Poad.jpg",
-        key: 1232,
-        name: "Poad",
-        normalized_name: "Poad",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 13,
+        "energize": 5,
+        "flavor": "\"I could've sworn the food he cooked gave me superhuman strength!\"\n-- Eidon, Keeper\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Poad.jpg",
+        "imageUrl": "../images/cards/BS/Poad.jpg",
+        "key": 1232,
+        "name": "Poad",
+        "normalized_name": "Poad",
+        "powers": [
             {
-                cost: 2,
-                name: "Heroes' Feast",
-                text: "Add one energy to each of your Creatures in play."
+                "cost": 2,
+                "name": "Heroes' Feast",
+                "text": "Add one energy to each of your Creatures in play."
             }
         ],
-        rarity: "U",
-        regions: [
+        "rarity": "U",
+        "regions": [
             "Naroom"
         ],
-        set: "BS",
-        starting: [
+        "set": "BS",
+        "starting": [
             "Leaf Hyren",
             "Balamant Pup",
             "Vortex of Knowledge"
         ],
-        type: "Magi"
+        "type": "Magi"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 15,
-        energize: 5,
-        flavor: "After working with Animite for so long, she can send anchoring energy to her creatures in her sleep.\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Pruitt.jpg",
-        key: 1233,
-        name: "Pruitt",
-        normalized_name: "Pruitt",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 15,
+        "energize": 5,
+        "flavor": "After working with Animite for so long, she can send anchoring energy to her creatures in her sleep.\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Pruitt.jpg",
+        "imageUrl": "../images/cards/BS/Pruitt.jpg",
+        "key": 1233,
+        "name": "Pruitt",
+        "normalized_name": "Pruitt",
+        "powers": [
             {
-                cost: 2,
-                name: "Refresh",
-                text: "Choose any one Creature in play. Add three energy to the chosen Creature.\n"
+                "cost": 2,
+                "name": "Refresh",
+                "text": "Choose any one Creature in play. Add three energy to the chosen Creature.\n"
             }
         ],
-        rarity: "U",
-        regions: [
+        "rarity": "U",
+        "regions": [
             "Naroom"
         ],
-        set: "BS",
-        starting: [
+        "set": "BS",
+        "starting": [
             "Vinoc",
             "Carillion",
             "Grow"
         ],
-        type: "Magi"
+        "type": "Magi"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 4,
-        effects: [
+        "artist": "Holmberg, Vega",
+        "cost": 4,
+        "effects": [
             {
-                name: "Battering Ram",
-                text: "When Quor attacks an opposing Creature, discard two energy from that Creature's Magi.\n"
+                "name": "Battering Ram",
+                "text": "When Quor attacks an opposing Creature, discard two energy from that Creature's Magi.\n"
             }
         ],
-        flavor: "Nothing can keep it from you.",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Quor.jpg",
-        key: 1191,
-        name: "Quor",
-        normalized_name: "Quor",
-        rarity: "C",
-        regions: [
+        "flavor": "Nothing can keep it from you.",
+        "imageUrlHiRes": "../images/hirescards/BS/Quor.jpg",
+        "imageUrl": "../images/cards/BS/Quor.jpg",
+        "key": 1191,
+        "name": "Quor",
+        "normalized_name": "Quor",
+        "rarity": "C",
+        "regions": [
             "Cald"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 2,
-        effects: [
+        "artist": "Holmberg, Vega",
+        "cost": 2,
+        "effects": [
             {
-                name: "Charge",
-                text: "When Quor Pup attacks, move up to two energy to it from your Magi.\n"
+                "name": "Charge",
+                "text": "When Quor Pup attacks, move up to two energy to it from your Magi.\n"
             }
         ],
-        flavor: "Since it spits fire as it speaks, its bark is no different from its bite.\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Quor_Pup.jpg",
-        key: 1192,
-        name: "Quor Pup",
-        normalized_name: "Quor_Pup",
-        rarity: "U",
-        regions: [
+        "flavor": "Since it spits fire as it speaks, its bark is no different from its bite.\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Quor_Pup.jpg",
+        "imageUrl": "../images/cards/BS/Quor_Pup.jpg",
+        "key": 1192,
+        "name": "Quor Pup",
+        "normalized_name": "Quor_Pup",
+        "rarity": "U",
+        "regions": [
             "Cald"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 4,
-        flavor: "\"Raxis' nest\"\n-- Cald expression meaning 'one big mess'\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Raxis.jpg",
-        key: 1193,
-        name: "Raxis",
-        normalized_name: "Raxis",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 4,
+        "flavor": "\"Raxis' nest\"\n-- Cald expression meaning 'one big mess'\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Raxis.jpg",
+        "imageUrl": "../images/cards/BS/Raxis.jpg",
+        "key": 1193,
+        "name": "Raxis",
+        "normalized_name": "Raxis",
+        "powers": [
             {
-                cost: 1,
-                name: "Shatterfire",
-                text: "Choose any one Relic in play. The Relic's controller may discard four energy from his or her Magi. If he or she doesn't, discard the chosen Relic from play.\n"
+                "cost": 1,
+                "name": "Shatterfire",
+                "text": "Choose any one Relic in play. The Relic's controller may discard four energy from his or her Magi. If he or she doesn't, discard the chosen Relic from play.\n"
             }
         ],
-        rarity: "R",
-        regions: [
+        "rarity": "R",
+        "regions": [
             "Cald"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 0,
-        effects: [
+        "artist": "Holmberg, Vega",
+        "cost": 0,
+        "effects": [
             {
-                name: "Trick Image",
-                text: "If your opponent discards one of your Relics from play, you may have Relic Mirror discarded from play in its place.\n"
+                "name": "Trick Image",
+                "text": "If your opponent discards one of your Relics from play, you may have Relic Mirror discarded from play in its place.\n"
             }
         ],
-        flavor: "\"Only fools attack a reflection. But fools are everywhere.\"\n-- Blue, Vault Guardian\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Relic_Mirror.jpg",
-        key: 1326,
-        name: "Relic Mirror",
-        normalized_name: "Relic_Mirror",
-        rarity: "U",
-        regions: [
+        "flavor": "\"Only fools attack a reflection. But fools are everywhere.\"\n-- Blue, Vault Guardian\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Relic_Mirror.jpg",
+        "imageUrl": "../images/cards/BS/Relic_Mirror.jpg",
+        "key": 1326,
+        "name": "Relic Mirror",
+        "normalized_name": "Relic_Mirror",
+        "rarity": "U",
+        "regions": [
             "Universal"
         ],
-        set: "BS",
-        type: "Relic"
+        "set": "BS",
+        "type": "Relic"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 0,
-        flavor: "Pitter-patter-pitter-patter WHAM WHAM WHAM!",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Relic_Stalker.jpg",
-        key: 1327,
-        name: "Relic Stalker",
-        normalized_name: "Relic_Stalker",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 0,
+        "flavor": "Pitter-patter-pitter-patter WHAM WHAM WHAM!",
+        "imageUrlHiRes": "../images/hirescards/BS/Relic_Stalker.jpg",
+        "imageUrl": "../images/cards/BS/Relic_Stalker.jpg",
+        "key": 1327,
+        "name": "Relic Stalker",
+        "normalized_name": "Relic_Stalker",
+        "powers": [
             {
-                name: "Pound Pound Pound",
-                text: "Choose any one Relic in play. Discard Relic Stalker from player. Discard the chosen Relic from play.\n"
+                "name": "Pound Pound Pound",
+                "text": "Choose any one Relic in play. Discard Relic Stalker from player. Discard the chosen Relic from play.\n"
             }
         ],
-        rarity: "C",
-        regions: [
+        "rarity": "C",
+        "regions": [
             "Universal"
         ],
-        set: "BS",
-        type: "Relic"
+        "set": "BS",
+        "type": "Relic"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 0,
-        effects: [
+        "artist": "Holmberg, Vega",
+        "cost": 0,
+        "effects": [
             {
-                name: "Tinker",
-                text: "Whenever you play a Relic, choose any one Creature in play. Add one enery to the chosen Creature.\n"
+                "name": "Tinker",
+                "text": "Whenever you play a Relic, choose any one Creature in play. Add one enery to the chosen Creature.\n"
             }
         ],
-        flavor: "\"Me mates and I guard the Vault of Science, and\nthe Vault returns the favor.\"\n-- Blu, Vault Guardian\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Ring_of_Secrets.jpg",
-        key: 1328,
-        name: "Ring of Secrets",
-        normalized_name: "Ring_of_Secrets",
-        rarity: "U",
-        regions: [
+        "flavor": "\"Me mates and I guard the Vault of Science, and\nthe Vault returns the favor.\"\n-- Blu, Vault Guardian\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Ring_of_Secrets.jpg",
+        "imageUrl": "../images/cards/BS/Ring_of_Secrets.jpg",
+        "key": 1328,
+        "name": "Ring of Secrets",
+        "normalized_name": "Ring_of_Secrets",
+        "rarity": "U",
+        "regions": [
             "Universal"
         ],
-        set: "BS",
-        type: "Relic"
+        "set": "BS",
+        "type": "Relic"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 0,
-        effects: [
+        "artist": "Holmberg, Vega",
+        "cost": 0,
+        "effects": [
             {
-                name: "Ancestral Favor",
-                text: "Your Spells cost one less energy to play, to a minimum of one.\n"
+                "name": "Ancestral Favor",
+                "text": "Your Spells cost one less energy to play, to a minimum of one.\n"
             }
         ],
-        flavor: "\"Ye can hear the voices of all the wizards who've worn\nit before. Ye get to draw on their leftover power, but I tell\nye, matey, it gets creepy.\"\n-- Blu, Vault Guardian\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Robe_of_the_Ages.jpg",
-        key: 1329,
-        name: "Robe of the Ages",
-        normalized_name: "Robe_of_the_Ages",
-        rarity: "U",
-        regions: [
+        "flavor": "\"Ye can hear the voices of all the wizards who've worn\nit before. Ye get to draw on their leftover power, but I tell\nye, matey, it gets creepy.\"\n-- Blu, Vault Guardian\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Robe_of_the_Ages.jpg",
+        "imageUrl": "../images/cards/BS/Robe_of_the_Ages.jpg",
+        "key": 1329,
+        "name": "Robe of the Ages",
+        "normalized_name": "Robe_of_the_Ages",
+        "rarity": "U",
+        "regions": [
             "Universal"
         ],
-        set: "BS",
-        type: "Relic"
+        "set": "BS",
+        "type": "Relic"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 0,
-        effects: [
+        "artist": "Holmberg, Vega",
+        "cost": 0,
+        "effects": [
             {
-                name: "Strengthen",
-                text: "Whenever you play a Naroom Creature, add one additional energy to it.\n"
+                "name": "Strengthen",
+                "text": "Whenever you play a Naroom Creature, add one additional energy to it.\n"
             }
         ],
-        flavor: "\"It's more than a fashion statement, of course, but don't I look good in\nvines?\"\n-- Tryn, to Tony\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Robe_of_Vines.jpg",
-        key: 1241,
-        name: "Robe of Vines",
-        normalized_name: "Robe_of_Vines",
-        rarity: "U",
-        regions: [
+        "flavor": "\"It's more than a fashion statement, of course, but don't I look good in\nvines?\"\n-- Tryn, to Tony\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Robe_of_Vines.jpg",
+        "imageUrl": "../images/cards/BS/Robe_of_Vines.jpg",
+        "key": 1241,
+        "name": "Robe of Vines",
+        "normalized_name": "Robe_of_Vines",
+        "rarity": "U",
+        "regions": [
             "Naroom"
         ],
-        set: "BS",
-        type: "Relic"
+        "set": "BS",
+        "type": "Relic"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 0,
-        flavor: "\"Feeble fires burn out on their own, including the fire of life.\"\n-- Magam, Cald Ringsmith\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Rod_of_Coals.jpg",
-        key: 1205,
-        name: "Rod of Coals",
-        normalized_name: "Rod_of_Coals",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 0,
+        "flavor": "\"Feeble fires burn out on their own, including the fire of life.\"\n-- Magam, Cald Ringsmith\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Rod_of_Coals.jpg",
+        "imageUrl": "../images/cards/BS/Rod_of_Coals.jpg",
+        "key": 1205,
+        "name": "Rod of Coals",
+        "normalized_name": "Rod_of_Coals",
+        "powers": [
             {
-                name: "Snuff Out",
-                text: "Choose any one Creature in play with only one energy.Discard the chosen Creature from play.\n"
+                "name": "Snuff Out",
+                "text": "Choose any one Creature in play with only one energy.Discard the chosen Creature from play.\n"
             }
         ],
-        rarity: "R",
-        regions: [
+        "rarity": "R",
+        "regions": [
             "Cald"
         ],
-        set: "BS",
-        type: "Relic"
+        "set": "BS",
+        "type": "Relic"
     },
     {
-        artist: "Holmberg, Shreve",
-        cost: 3,
-        effects: [
+        "artist": "Holmberg, Shreve",
+        "cost": 3,
+        "effects": [
             {
-                name: "Trample",
-                text: "If Rudwot attacks a Creature that starts the attack with less than three energy, add two energy to Rudwot before energy is removed.\n"
+                "name": "Trample",
+                "text": "If Rudwot attacks a Creature that starts the attack with less than three energy, add two energy to Rudwot before energy is removed.\n"
             }
         ],
-        flavor: "Good for clearing the weak off the battlefield.",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Rudwot.jpg",
-        key: 1224,
-        name: "Rudwot",
-        normalized_name: "Rudwot",
-        rarity: "U",
-        regions: [
+        "flavor": "Good for clearing the weak off the battlefield.",
+        "imageUrlHiRes": "../images/hirescards/BS/Rudwot.jpg",
+        "imageUrl": "../images/cards/BS/Rudwot.jpg",
+        "key": 1224,
+        "name": "Rudwot",
+        "normalized_name": "Rudwot",
+        "rarity": "U",
+        "regions": [
             "Naroom"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Christopher, Shreve",
-        cost: 3,
-        flavor: "\"You got any Weebos?\"\n\"NO! WE'RE ALL OUT OF WEEBOS!\"\n\"Well, in that case, what do you have?\"\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Sap_of_Life.jpg",
-        key: 1246,
-        name: "Sap of Life",
-        normalized_name: "Sap_of_Life",
-        rarity: "R",
-        regions: [
+        "artist": "Christopher, Shreve",
+        "cost": 3,
+        "flavor": "\"You got any Weebos?\"\n\"NO! WE'RE ALL OUT OF WEEBOS!\"\n\"Well, in that case, what do you have?\"\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Sap_of_Life.jpg",
+        "imageUrl": "../images/cards/BS/Sap_of_Life.jpg",
+        "key": 1246,
+        "name": "Sap of Life",
+        "normalized_name": "Sap_of_Life",
+        "rarity": "R",
+        "regions": [
             "Naroom"
         ],
-        set: "BS",
-        text: "Choose any one Creature in play with less than its starting energy. Restore the chosen Creature to its starting energy.\n",
-        type: "Spell"
+        "set": "BS",
+        "text": "Choose any one Creature in play with less than its starting energy. Restore the chosen Creature to its starting energy.\n",
+        "type": "Spell"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 0,
-        effects: [
+        "artist": "Holmberg, Vega",
+        "cost": 0,
+        "effects": [
             {
-                name: "Pyromancy",
-                text: "Whenever a Spell you play or a Power on a Creature you control discards energy from an opposing Creature, discard one additional energy from that Creature.\n"
+                "name": "Pyromancy",
+                "text": "Whenever a Spell you play or a Power on a Creature you control discards energy from an opposing Creature, discard one additional energy from that Creature.\n"
             }
         ],
-        flavor: "\"I consume.\"\n-- Scroll footnote\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Scroll_of_Fire.jpg",
-        key: 1206,
-        name: "Scroll of Fire",
-        normalized_name: "Scroll_of_Fire",
-        rarity: "R",
-        regions: [
+        "flavor": "\"I consume.\"\n-- Scroll footnote\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Scroll_of_Fire.jpg",
+        "imageUrl": "../images/cards/BS/Scroll_of_Fire.jpg",
+        "key": 1206,
+        "name": "Scroll of Fire",
+        "normalized_name": "Scroll_of_Fire",
+        "rarity": "R",
+        "regions": [
             "Cald"
         ],
-        set: "BS",
-        type: "Relic"
+        "set": "BS",
+        "type": "Relic"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 4,
-        flavor: "\"Poor thing. I'd hate to carry so much knowledge around without being able\nto access it.\"\n-- Orthea\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Sea_Barl.jpg",
-        key: 1261,
-        name: "Sea Barl",
-        normalized_name: "Sea_Barl",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 4,
+        "flavor": "\"Poor thing. I'd hate to carry so much knowledge around without being able\nto access it.\"\n-- Orthea\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Sea_Barl.jpg",
+        "imageUrl": "../images/cards/BS/Sea_Barl.jpg",
+        "key": 1261,
+        "name": "Sea Barl",
+        "normalized_name": "Sea_Barl",
+        "powers": [
             {
-                cost: 3,
-                name: "Lore",
-                text: "Draw two cards."
+                "cost": 3,
+                "name": "Lore",
+                "text": "Draw two cards."
             }
         ],
-        rarity: "C",
-        regions: [
+        "rarity": "C",
+        "regions": [
             "Orothe"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Christopher",
-        cost: 12,
-        effects: [
+        "artist": "Holmberg, Christopher",
+        "cost": 12,
+        "effects": [
             {
-                name: "Creature Bond",
-                text: "If there is no energy on Shimmer at the end of your turn, discard one energy from each opposing Creature in play.\n"
+                "name": "Creature Bond",
+                "text": "If there is no energy on Shimmer at the end of your turn, discard one energy from each opposing Creature in play.\n"
             }
         ],
-        energize: 5,
-        flavor: "They feel my pain.",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Shimmer.jpg",
-        key: 1165,
-        name: "Shimmer",
-        normalized_name: "Shimmer",
-        rarity: "U",
-        regions: [
+        "energize": 5,
+        "flavor": "They feel my pain.",
+        "imageUrlHiRes": "../images/hirescards/BS/Shimmer.jpg",
+        "imageUrl": "../images/cards/BS/Shimmer.jpg",
+        "key": 1165,
+        "name": "Shimmer",
+        "normalized_name": "Shimmer",
+        "rarity": "U",
+        "regions": [
             "Arderial"
         ],
-        set: "BS",
-        starting: [
+        "set": "BS",
+        "starting": [
             "Cloud Narth",
             "Pharan",
             "Shooting Star"
         ],
-        type: "Magi"
+        "type": "Magi"
     },
     {
-        artist: "Christopher",
-        cost: 5,
-        flavor: "\"Wind, in my hands, can crack an Ormagon's carapace or\nreduce a Carillion to splinters.\"\n-- Stradus, Arderial Magi\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Shockwave.jpg",
-        key: 1175,
-        name: "Shockwave",
-        normalized_name: "Shockwave",
-        rarity: "U",
-        regions: [
+        "artist": "Christopher",
+        "cost": 5,
+        "flavor": "\"Wind, in my hands, can crack an Ormagon's carapace or\nreduce a Carillion to splinters.\"\n-- Stradus, Arderial Magi\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Shockwave.jpg",
+        "imageUrl": "../images/cards/BS/Shockwave.jpg",
+        "key": 1175,
+        "name": "Shockwave",
+        "normalized_name": "Shockwave",
+        "rarity": "U",
+        "regions": [
             "Arderial"
         ],
-        set: "BS",
-        text: "Choose any one Creature in play. Discard the chosen Creature from play.\n",
-        type: "Spell"
+        "set": "BS",
+        "text": "Choose any one Creature in play. Discard the chosen Creature from play.\n",
+        "type": "Spell"
     },
     {
-        artist: "Christopher",
-        cost: 1,
-        flavor: "\"Falling stars are blessings from the sky.\"\n\"Really? I thought they were rocks from outer space, heated\nby atmospheric friction.\"\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Shooting_Star.jpg",
-        key: 1176,
-        name: "Shooting Star",
-        normalized_name: "Shooting_Star",
-        rarity: "C",
-        regions: [
+        "artist": "Christopher",
+        "cost": 1,
+        "flavor": "\"Falling stars are blessings from the sky.\"\n\"Really? I thought they were rocks from outer space, heated\nby atmospheric friction.\"\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Shooting_Star.jpg",
+        "imageUrl": "../images/cards/BS/Shooting_Star.jpg",
+        "key": 1176,
+        "name": "Shooting Star",
+        "normalized_name": "Shooting_Star",
+        "rarity": "C",
+        "regions": [
             "Arderial"
         ],
-        set: "BS",
-        text: "Choose any one Arderial Creature in play. Add two energy to the chosen Creature.\n",
-        type: "Spell"
+        "set": "BS",
+        "text": "Choose any one Arderial Creature in play. Add two energy to the chosen Creature.\n",
+        "type": "Spell"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 12,
-        energize: 5,
-        flavor: "He who controls the flame, controls the universe.",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Sinder.jpg",
-        key: 1200,
-        name: "Sinder",
-        normalized_name: "Sinder",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 12,
+        "energize": 5,
+        "flavor": "He who controls the flame, controls the universe.",
+        "imageUrlHiRes": "../images/hirescards/BS/Sinder.jpg",
+        "imageUrl": "../images/cards/BS/Sinder.jpg",
+        "key": 1200,
+        "name": "Sinder",
+        "normalized_name": "Sinder",
+        "powers": [
             {
-                cost: 1,
-                name: "Refresh",
-                text: "Choose any one Creature in play. Add two energy to the chosen Creature.\n"
+                "cost": 1,
+                "name": "Refresh",
+                "text": "Choose any one Creature in play. Add two energy to the chosen Creature.\n"
             }
         ],
-        rarity: "U",
-        regions: [
+        "rarity": "U",
+        "regions": [
             "Cald"
         ],
-        set: "BS",
-        starting: [
+        "set": "BS",
+        "starting": [
             "Fire Grag",
             "Arbolit",
             "Flame Control"
         ],
-        type: "Magi"
+        "type": "Magi"
     },
     {
-        artist: "Holmberg, Vega, Shreve",
-        cost: 2,
-        effects: [
+        "artist": "Holmberg, Vega, Shreve",
+        "cost": 2,
+        "effects": [
             {
-                name: "Scavenge",
-                text: "Each time a Creature you control is discarded from play, add one energy to Sphor.\n"
+                "name": "Scavenge",
+                "text": "Each time a Creature you control is discarded from play, add one energy to Sphor.\n"
             }
         ],
-        flavor: "It never goes hungry during a war.",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Sphor.jpg",
-        key: 1262,
-        name: "Sphor",
-        normalized_name: "Sphor",
-        rarity: "C",
-        regions: [
+        "flavor": "It never goes hungry during a war.",
+        "imageUrlHiRes": "../images/hirescards/BS/Sphor.jpg",
+        "imageUrl": "../images/cards/BS/Sphor.jpg",
+        "key": 1262,
+        "name": "Sphor",
+        "normalized_name": "Sphor",
+        "rarity": "C",
+        "regions": [
             "Orothe"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Christopher, Sato",
-        cost: 1,
-        flavor: "\"I had to choose between healing the wounded Quor and dreaming a lesser\nCreature to defend it.\"\n-- Gar, Cald Healer\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Spirit_of_the_Flame.jpg",
-        key: 1211,
-        name: "Spirit of the Flame",
-        normalized_name: "Spirit_of_the_Flame",
-        rarity: "R",
-        regions: [
+        "artist": "Christopher, Sato",
+        "cost": 1,
+        "flavor": "\"I had to choose between healing the wounded Quor and dreaming a lesser\nCreature to defend it.\"\n-- Gar, Cald Healer\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Spirit_of_the_Flame.jpg",
+        "imageUrl": "../images/cards/BS/Spirit_of_the_Flame.jpg",
+        "key": 1211,
+        "name": "Spirit of the Flame",
+        "normalized_name": "Spirit_of_the_Flame",
+        "rarity": "R",
+        "regions": [
             "Cald"
         ],
-        set: "BS",
-        text: "Choose any one Creature in play. Discard X Cald Creatures from your hand. Add X energy to the chosen Creature.\n",
-        type: "Spell"
+        "set": "BS",
+        "text": "Choose any one Creature in play. Discard X Cald Creatures from your hand. Add X energy to the chosen Creature.\n",
+        "type": "Spell"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 0,
-        effects: [
+        "artist": "Holmberg, Vega",
+        "cost": 0,
+        "effects": [
             {
-                name: "Strengthen",
-                text: "Whenever you play a Hyren, add one additional energy to it."
+                "name": "Strengthen",
+                "text": "Whenever you play a Hyren, add one additional energy to it."
             }
         ],
-        flavor: "\"The Hyren rule the land. But I rule the Hyren.\"\n-- Staff inscription\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Staff_of_Hyren.jpg",
-        key: 1330,
-        name: "Staff of Hyren",
-        normalized_name: "Staff_of_Hyren",
-        rarity: "C",
-        regions: [
+        "flavor": "\"The Hyren rule the land. But I rule the Hyren.\"\n-- Staff inscription\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Staff_of_Hyren.jpg",
+        "imageUrl": "../images/cards/BS/Staff_of_Hyren.jpg",
+        "key": 1330,
+        "name": "Staff of Hyren",
+        "normalized_name": "Staff_of_Hyren",
+        "rarity": "C",
+        "regions": [
             "Universal"
         ],
-        set: "BS",
-        type: "Relic"
+        "set": "BS",
+        "type": "Relic"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 0,
-        effects: [
+        "artist": "Holmberg, Vega",
+        "cost": 0,
+        "effects": [
             {
-                name: "Korrit Charge",
-                text: "Whenever a Korrit you control Pack Hunts with another Creature, add one energy to that Korrit before energy is removed.\n"
+                "name": "Korrit Charge",
+                "text": "Whenever a Korrit you control Pack Hunts with another Creature, add one energy to that Korrit before energy is removed.\n"
             }
         ],
-        flavor: "\"The spotted pink mushrooms answer to the one that holds me.\"\n-- Staff inscription\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Staff_of_Korrits.jpg",
-        key: 1311,
-        name: "Staff of Korrits",
-        normalized_name: "Staff_of_Korrits",
-        rarity: "R",
-        regions: [
+        "flavor": "\"The spotted pink mushrooms answer to the one that holds me.\"\n-- Staff inscription\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Staff_of_Korrits.jpg",
+        "imageUrl": "../images/cards/BS/Staff_of_Korrits.jpg",
+        "key": 1311,
+        "name": "Staff of Korrits",
+        "normalized_name": "Staff_of_Korrits",
+        "rarity": "R",
+        "regions": [
             "Underneath"
         ],
-        set: "BS",
-        type: "Relic"
+        "set": "BS",
+        "type": "Relic"
     },
     {
-        artist: "Holmberg, Christopher, Shreve",
-        cost: 3,
-        effects: [
+        "artist": "Holmberg, Christopher, Shreve",
+        "cost": 3,
+        "effects": [
             {
-                name: "Agility",
-                text: "Stagadan can attack any opposing Magi directly, as if that Magi had no Creatures in play.\n"
+                "name": "Agility",
+                "text": "Stagadan can attack any opposing Magi directly, as if that Magi had no Creatures in play.\n"
             }
         ],
-        flavor: "Catch it if you can.",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Stagadan.jpg",
-        key: 1225,
-        name: "Stagadan",
-        normalized_name: "Stagadan",
-        rarity: "R",
-        regions: [
+        "flavor": "Catch it if you can.",
+        "imageUrlHiRes": "../images/hirescards/BS/Stagadan.jpg",
+        "imageUrl": "../images/cards/BS/Stagadan.jpg",
+        "key": 1225,
+        "name": "Stagadan",
+        "normalized_name": "Stagadan",
+        "rarity": "R",
+        "regions": [
             "Naroom"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Christopher, Holmberg",
-        cost: 5,
-        flavor: "When the clouds cleared, the Colossus had crumpled to the ground, unable to support its own weight.\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Storm_Cloud.jpg",
-        key: 1177,
-        name: "Storm Cloud",
-        normalized_name: "Storm_Cloud",
-        rarity: "R",
-        regions: [
+        "artist": "Christopher, Holmberg",
+        "cost": 5,
+        "flavor": "When the clouds cleared, the Colossus had crumpled to the ground, unable to support its own weight.\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Storm_Cloud.jpg",
+        "imageUrl": "../images/cards/BS/Storm_Cloud.jpg",
+        "key": 1177,
+        "name": "Storm Cloud",
+        "normalized_name": "Storm_Cloud",
+        "rarity": "R",
+        "regions": [
             "Arderial"
         ],
-        set: "BS",
-        text: "Choose any one Creature in play. Discard all but one energy from the chosen Creature.\n",
-        type: "Spell"
+        "set": "BS",
+        "text": "Choose any one Creature in play. Discard all but one energy from the chosen Creature.\n",
+        "type": "Spell"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 0,
-        effects: [
+        "artist": "Holmberg, Vega",
+        "cost": 0,
+        "effects": [
             {
-                name: "Thunder Charge",
-                text: "Whenever one of your Creatures attacks, add one energy to that Creature before energy is removed. If that Creature is a hyren, add one additional energy.\n"
+                "name": "Thunder Charge",
+                "text": "Whenever one of your Creatures attacks, add one energy to that Creature before energy is removed. If that Creature is a hyren, add one additional energy.\n"
             }
         ],
-        flavor: "\"My shield is the wind and my arrows the hail.\nMy sword is the lightning -- with these I prevail.\"\n-- Arderial battlehymn\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Storm_Ring.jpg",
-        key: 1171,
-        name: "Storm Ring",
-        normalized_name: "Storm_Ring",
-        rarity: "R",
-        regions: [
+        "flavor": "\"My shield is the wind and my arrows the hail.\nMy sword is the lightning -- with these I prevail.\"\n-- Arderial battlehymn\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Storm_Ring.jpg",
+        "imageUrl": "../images/cards/BS/Storm_Ring.jpg",
+        "key": 1171,
+        "name": "Storm Ring",
+        "normalized_name": "Storm_Ring",
+        "rarity": "R",
+        "regions": [
             "Arderial"
         ],
-        set: "BS",
-        type: "Relic"
+        "set": "BS",
+        "type": "Relic"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 12,
-        effects: [
+        "artist": "Holmberg, Vega",
+        "cost": 12,
+        "effects": [
             {
-                name: "Backlash",
-                text: "Whenever one of your Creatures is attacked, you may discard one energy from the attacking Creature before energy is removed.\n"
+                "name": "Backlash",
+                "text": "Whenever one of your Creatures is attacked, you may discard one energy from the attacking Creature before energy is removed.\n"
             }
         ],
-        energize: 5,
-        flavor: "\"It doesn't matter now. Just let them come.\"\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Stradus.jpg",
-        key: 1166,
-        name: "Stradus",
-        normalized_name: "Stradus",
-        rarity: "U",
-        regions: [
+        "energize": 5,
+        "flavor": "\"It doesn't matter now. Just let them come.\"\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Stradus.jpg",
+        "imageUrl": "../images/cards/BS/Stradus.jpg",
+        "key": 1166,
+        "name": "Stradus",
+        "normalized_name": "Stradus",
+        "rarity": "U",
+        "regions": [
             "Arderial"
         ],
-        set: "BS",
-        starting: [
+        "set": "BS",
+        "starting": [
             "Lightning Hyren",
             "Lightning",
             "Shooting Star"
         ],
-        type: "Magi"
+        "type": "Magi"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 13,
-        effects: [
+        "artist": "Holmberg, Vega",
+        "cost": 13,
+        "effects": [
             {
-                name: "Defense",
-                text: "Whenever one of your Creatures is attacked, add one energy to that Creature before energy is removed.\n"
+                "name": "Defense",
+                "text": "Whenever one of your Creatures is attacked, add one energy to that Creature before energy is removed.\n"
             }
         ],
-        energize: 5,
-        flavor: "My eyes are everywhere. Hey, you almost sat on one!",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Strag.jpg",
-        key: 1304,
-        name: "Strag",
-        normalized_name: "Strag",
-        rarity: "U",
-        regions: [
+        "energize": 5,
+        "flavor": "My eyes are everywhere. Hey, you almost sat on one!",
+        "imageUrlHiRes": "../images/hirescards/BS/Strag.jpg",
+        "imageUrl": "../images/cards/BS/Strag.jpg",
+        "key": 1304,
+        "name": "Strag",
+        "normalized_name": "Strag",
+        "rarity": "U",
+        "regions": [
             "Underneath"
         ],
-        set: "BS",
-        starting: [
+        "set": "BS",
+        "starting": [
             "Giant Parmalag",
             "Gum-Gum",
             "Bottomless Pit"
         ],
-        type: "Magi"
+        "type": "Magi"
     },
     {
-        artist: "Christopher",
-        cost: 2,
-        flavor: "\"Ask any Orathan who's been stranded on a beach by the tide. Water feels\ngood.\"\n-- O'Qua, Summoner\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Submerge.jpg",
-        key: 1279,
-        name: "Submerge",
-        normalized_name: "Submerge",
-        rarity: "C",
-        regions: [
+        "artist": "Christopher",
+        "cost": 2,
+        "flavor": "\"Ask any Orathan who's been stranded on a beach by the tide. Water feels\ngood.\"\n-- O'Qua, Summoner\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Submerge.jpg",
+        "imageUrl": "../images/cards/BS/Submerge.jpg",
+        "key": 1279,
+        "name": "Submerge",
+        "normalized_name": "Submerge",
+        "rarity": "C",
+        "regions": [
             "Orothe"
         ],
-        set: "BS",
-        text: "Choose any one Orothe Creature in play. Add three energy to the chosen Creature.\n",
-        type: "Spell"
+        "set": "BS",
+        "text": "Choose any one Orothe Creature in play. Add three energy to the chosen Creature.\n",
+        "type": "Spell"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 0,
-        flavor: "\"If there were some way to make use of the energy it drains\naway, then it would be powerful indeed.\"\n-- Nimbulo, Arderial Sage\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Syphon_Stone.jpg",
-        key: 1331,
-        name: "Syphon Stone",
-        normalized_name: "Syphon_Stone",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 0,
+        "flavor": "\"If there were some way to make use of the energy it drains\naway, then it would be powerful indeed.\"\n-- Nimbulo, Arderial Sage\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Syphon_Stone.jpg",
+        "imageUrl": "../images/cards/BS/Syphon_Stone.jpg",
+        "key": 1331,
+        "name": "Syphon Stone",
+        "normalized_name": "Syphon_Stone",
+        "powers": [
             {
-                name: "Syphon",
-                text: "Choose any one Creature in play. Discard Syphon from play. Discard one energy from the chosen Creature.\n"
+                "name": "Syphon",
+                "text": "Choose any one Creature in play. Discard Syphon from play. Discard one energy from the chosen Creature.\n"
             }
         ],
-        rarity: "C",
-        regions: [
+        "rarity": "C",
+        "regions": [
             "Universal"
         ],
-        set: "BS",
-        type: "Relic"
+        "set": "BS",
+        "type": "Relic"
     },
     {
-        artist: "Christopher, Holmberg",
-        cost: "X+4",
-        flavor: "\"Okay, you can be fancy and steal their energy. I'm just \ngoing to burn them down the traditional way.\"\n-- Grega, Cald Pyromancer\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Syphon_Vortex.jpg",
-        key: 1212,
-        name: "Syphon Vortex",
-        normalized_name: "Syphon_Vortex",
-        rarity: "U",
-        regions: [
+        "artist": "Christopher, Holmberg",
+        "cost": "X+4",
+        "flavor": "\"Okay, you can be fancy and steal their energy. I'm just \ngoing to burn them down the traditional way.\"\n-- Grega, Cald Pyromancer\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Syphon_Vortex.jpg",
+        "imageUrl": "../images/cards/BS/Syphon_Vortex.jpg",
+        "key": 1212,
+        "name": "Syphon Vortex",
+        "normalized_name": "Syphon_Vortex",
+        "rarity": "U",
+        "regions": [
             "Cald"
         ],
-        set: "BS",
-        text: "Choose any one Creature in play. Discard X energy from the chosen Creature. Add X energy to your Magi.\n",
-        type: "Spell"
+        "set": "BS",
+        "text": "Choose any one Creature in play. Discard X energy from the chosen Creature. Add X energy to your Magi.\n",
+        "type": "Spell"
     },
     {
-        artist: "Holmberg, Mayo",
-        cost: 3,
-        flavor: "\"I'm the gardener. These are my plants. And you, brother, are the\nfertilizer. Dig it.\"\n-- Yaki, Naroom Tracker\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Tap_Roots.jpg",
-        key: 1247,
-        name: "Tap Roots",
-        normalized_name: "Tap_Roots",
-        rarity: "C",
-        regions: [
+        "artist": "Holmberg, Mayo",
+        "cost": 3,
+        "flavor": "\"I'm the gardener. These are my plants. And you, brother, are the\nfertilizer. Dig it.\"\n-- Yaki, Naroom Tracker\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Tap_Roots.jpg",
+        "imageUrl": "../images/cards/BS/Tap_Roots.jpg",
+        "key": 1247,
+        "name": "Tap Roots",
+        "normalized_name": "Tap_Roots",
+        "rarity": "C",
+        "regions": [
             "Naroom"
         ],
-        set: "BS",
-        text: "Choose any two Creatures in play. Remove up to two energy from one of the chosen Creatures. Add up to two energy to the other chosen Creature.\n",
-        type: "Spell"
+        "set": "BS",
+        "text": "Choose any two Creatures in play. Remove up to two energy from one of the chosen Creatures. Add up to two energy to the other chosen Creature.\n",
+        "type": "Spell"
     },
     {
-        artist: "Christopher, Shreve",
-        cost: 3,
-        flavor: "\"It's bright and pretty and burns things. I never grow tired of it.\"\n-- Grega, Cald Pyromancer\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Thermal_Blast.jpg",
-        key: 1213,
-        name: "Thermal Blast",
-        normalized_name: "Thermal_Blast",
-        rarity: "C",
-        regions: [
+        "artist": "Christopher, Shreve",
+        "cost": 3,
+        "flavor": "\"It's bright and pretty and burns things. I never grow tired of it.\"\n-- Grega, Cald Pyromancer\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Thermal_Blast.jpg",
+        "imageUrl": "../images/cards/BS/Thermal_Blast.jpg",
+        "key": 1213,
+        "name": "Thermal Blast",
+        "normalized_name": "Thermal_Blast",
+        "rarity": "C",
+        "regions": [
             "Cald"
         ],
-        set: "BS",
-        text: "Roll one die. Choose any one Creature or Magi in play. Remove energy equal to the die roll from the chosen Creature or Magi.\n",
-        type: "Spell"
+        "set": "BS",
+        "text": "Roll one die. Choose any one Creature or Magi in play. Remove energy equal to the die roll from the chosen Creature or Magi.\n",
+        "type": "Spell"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 7,
-        flavor: "\"Send me the hyren bringing rain,\nCleansing wounds and easing pain.\nBut if with lightning storms they play,\nKeep them very far away.\"\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Thunder_Hyren.jpg",
-        key: 1154,
-        name: "Thunder Hyren",
-        normalized_name: "Thunder_Hyren",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 7,
+        "flavor": "\"Send me the hyren bringing rain,\nCleansing wounds and easing pain.\nBut if with lightning storms they play,\nKeep them very far away.\"\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Thunder_Hyren.jpg",
+        "imageUrl": "../images/cards/BS/Thunder_Hyren.jpg",
+        "key": 1154,
+        "name": "Thunder Hyren",
+        "normalized_name": "Thunder_Hyren",
+        "powers": [
             {
-                cost: 6,
-                name: "Shockstorm",
-                text: "Discard two energy from each Non-Arderial Creature in play."
+                "cost": 6,
+                "name": "Shockstorm",
+                "text": "Discard two energy from each Non-Arderial Creature in play."
             },
             {
-                cost: 2,
-                name: "Replenish",
-                text: "Discard Thunder Hyren from play. Add two energy to each of your hyren in play.\n"
+                "cost": 2,
+                "name": "Replenish",
+                "text": "Discard Thunder Hyren from play. Add two energy to each of your hyren in play.\n"
             }
         ],
-        rarity: "R",
-        regions: [
+        "rarity": "R",
+        "regions": [
             "Arderial"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Sato",
-        cost: 2,
-        flavor: "When the echoes fades, the Vashps and its victim were nowhere to be seen.\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Thunder_Vashp.jpg",
-        key: 1155,
-        name: "Thunder Vashp",
-        normalized_name: "Thunder_Vashp",
-        powers: [
+        "artist": "Holmberg, Sato",
+        "cost": 2,
+        "flavor": "When the echoes fades, the Vashps and its victim were nowhere to be seen.\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Thunder_Vashp.jpg",
+        "imageUrl": "../images/cards/BS/Thunder_Vashp.jpg",
+        "key": 1155,
+        "name": "Thunder Vashp",
+        "normalized_name": "Thunder_Vashp",
+        "powers": [
             {
-                name: "Thunderclap",
-                text: "Choose any one Creature in play with three or less energy. Discard Thunder Vashp from play. Discard the chosen Creature from play.\n"
+                "name": "Thunderclap",
+                "text": "Choose any one Creature in play with three or less energy. Discard Thunder Vashp from play. Discard the chosen Creature from play.\n"
             }
         ],
-        rarity: "C",
-        regions: [
+        "rarity": "C",
+        "regions": [
             "Arderial"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Christopher",
-        cost: "X",
-        flavor: "\"Oh no it wasn't! It was shaking worse under MY feet!\"\n-- Zet, to Korg\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Thunderquake.jpg",
-        key: 1318,
-        name: "Thunderquake",
-        normalized_name: "Thunderquake",
-        rarity: "R",
-        regions: [
+        "artist": "Christopher",
+        "cost": "X",
+        "flavor": "\"Oh no it wasn't! It was shaking worse under MY feet!\"\n-- Zet, to Korg\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Thunderquake.jpg",
+        "imageUrl": "../images/cards/BS/Thunderquake.jpg",
+        "key": 1318,
+        "name": "Thunderquake",
+        "normalized_name": "Thunderquake",
+        "rarity": "R",
+        "regions": [
             "Underneath"
         ],
-        set: "BS",
-        text: "Choose any number of Creatures in play. Discard a total of X energy in any combination from the chosen Creatures. X cannot be more than 10.\n",
-        type: "Spell"
+        "set": "BS",
+        "text": "Choose any number of Creatures in play. Discard a total of X energy in any combination from the chosen Creatures. X cannot be more than 10.\n",
+        "type": "Spell"
     },
     {
-        artist: "Christopher",
-        cost: 6,
-        flavor: "\"Oh, better that her shattered hulk\nShould sink beneath the wave;\nHer thunder shook the mighty deep,\nAnd there should be her grave.\"\n-- Oliver Wendell Holmes, \"Old ironsides\"\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Tidal_Wave.jpg",
-        key: 1280,
-        name: "Tidal Wave",
-        normalized_name: "Tidal_Wave",
-        rarity: "U",
-        regions: [
+        "artist": "Christopher",
+        "cost": 6,
+        "flavor": "\"Oh, better that her shattered hulk\nShould sink beneath the wave;\nHer thunder shook the mighty deep,\nAnd there should be her grave.\"\n-- Oliver Wendell Holmes, \"Old ironsides\"\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Tidal_Wave.jpg",
+        "imageUrl": "../images/cards/BS/Tidal_Wave.jpg",
+        "key": 1280,
+        "name": "Tidal Wave",
+        "normalized_name": "Tidal_Wave",
+        "rarity": "U",
+        "regions": [
             "Orothe"
         ],
-        set: "BS",
-        text: "Choose any one Creature in play. Discard the chosen Creature from play. For an additional four energy you may choose and discard a second Creature from play.\n",
-        type: "Spell"
+        "set": "BS",
+        "text": "Choose any one Creature in play. Discard the chosen Creature from play. For an additional four energy you may choose and discard a second Creature from play.\n",
+        "type": "Spell"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 7,
-        flavor: "\"It has served and protected Naroom for generations.\nWhatever its price, I pay it gladly.\"\n-- Orwin, Naroom Elder\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Timber_Hyren.jpg",
-        key: 1226,
-        name: "Timber Hyren",
-        normalized_name: "Timber_Hyren",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 7,
+        "flavor": "\"It has served and protected Naroom for generations.\nWhatever its price, I pay it gladly.\"\n-- Orwin, Naroom Elder\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Timber_Hyren.jpg",
+        "imageUrl": "../images/cards/BS/Timber_Hyren.jpg",
+        "key": 1226,
+        "name": "Timber Hyren",
+        "normalized_name": "Timber_Hyren",
+        "powers": [
             {
-                name: "Tribute",
-                text: "Take up to five energy from your Magi and place it on Timber Hyren.\n"
+                "name": "Tribute",
+                "text": "Take up to five energy from your Magi and place it on Timber Hyren.\n"
             }
         ],
-        rarity: "R",
-        regions: [
+        "rarity": "R",
+        "regions": [
             "Naroom"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 9,
-        energize: 5,
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Trug.jpg",
-        key: 1305,
-        name: "Trug",
-        normalized_name: "Trug",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 9,
+        "energize": 5,
+        "imageUrlHiRes": "../images/hirescards/BS/Trug.jpg",
+        "imageUrl": "../images/cards/BS/Trug.jpg",
+        "key": 1305,
+        "name": "Trug",
+        "normalized_name": "Trug",
+        "powers": [
             {
-                cost: 15,
-                name: "Cataclysm",
-                text: "Discard ALL cards in play. Each Magi is defeated and go to his or her owner's Magi pile.\n"
+                "cost": 15,
+                "name": "Cataclysm",
+                "text": "Discard ALL cards in play. Each Magi is defeated and go to his or her owner's Magi pile.\n"
             }
         ],
-        rarity: "R",
-        regions: [
+        "rarity": "R",
+        "regions": [
             "Underneath"
         ],
-        set: "BS",
-        starting: [
+        "set": "BS",
+        "starting": [
             "Giant Parmalag",
             "Crystal Arboll"
         ],
-        type: "Magi"
+        "type": "Magi"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 14,
-        energize: 5,
-        flavor: "\"It never hurts to be her friend.\"\n-- Poad, Naroom Innkeeper\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Tryn.jpg",
-        key: 1234,
-        name: "Tryn",
-        normalized_name: "Tryn",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 14,
+        "energize": 5,
+        "flavor": "\"It never hurts to be her friend.\"\n-- Poad, Naroom Innkeeper\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Tryn.jpg",
+        "imageUrl": "../images/cards/BS/Tryn.jpg",
+        "key": 1234,
+        "name": "Tryn",
+        "normalized_name": "Tryn",
+        "powers": [
             {
-                name: "Refresh",
-                text: "Choose any one Creature in play. Add two energy to the chosen Creature.\n"
+                "name": "Refresh",
+                "text": "Choose any one Creature in play. Add two energy to the chosen Creature.\n"
             }
         ],
-        rarity: "U",
-        regions: [
+        "rarity": "U",
+        "regions": [
             "Naroom"
         ],
-        set: "BS",
-        starting: [
+        "set": "BS",
+        "starting": [
             "Rudwot",
             "Hood of Hiding",
             "Grow"
         ],
-        type: "Magi"
+        "type": "Magi"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 1,
-        effects: [
+        "artist": "Holmberg, Vega",
+        "cost": 1,
+        "effects": [
             {
-                name: "Regrow",
-                text: "If Twee is put into your discard pile from play, move the first Creature card under Twee to your hand.\n"
+                "name": "Regrow",
+                "text": "If Twee is put into your discard pile from play, move the first Creature card under Twee to your hand.\n"
             }
         ],
-        flavor: "One, two, Twee, more.",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Twee.jpg",
-        key: 1227,
-        name: "Twee",
-        normalized_name: "Twee",
-        rarity: "R",
-        regions: [
+        "flavor": "One, two, Twee, more.",
+        "imageUrlHiRes": "../images/hirescards/BS/Twee.jpg",
+        "imageUrl": "../images/cards/BS/Twee.jpg",
+        "key": 1227,
+        "name": "Twee",
+        "normalized_name": "Twee",
+        "rarity": "R",
+        "regions": [
             "Naroom"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Christopher",
-        cost: 8,
-        flavor: "The wind and the sea rise. Everything else goes down.",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Typhoon.jpg",
-        key: 1281,
-        name: "Typhoon",
-        normalized_name: "Typhoon",
-        rarity: "R",
-        regions: [
+        "artist": "Christopher",
+        "cost": 8,
+        "flavor": "The wind and the sea rise. Everything else goes down.",
+        "imageUrlHiRes": "../images/hirescards/BS/Typhoon.jpg",
+        "imageUrl": "../images/cards/BS/Typhoon.jpg",
+        "key": 1281,
+        "name": "Typhoon",
+        "normalized_name": "Typhoon",
+        "rarity": "R",
+        "regions": [
             "Orothe"
         ],
-        set: "BS",
-        text: "Roll one die. Discard enery equal to the die roll from each non-Orothe Creature in play.\n",
-        type: "Spell"
+        "set": "BS",
+        "text": "Roll one die. Discard enery equal to the die roll from each non-Orothe Creature in play.\n",
+        "type": "Spell"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 12,
-        effects: [
+        "artist": "Holmberg, Vega",
+        "cost": 12,
+        "effects": [
             {
-                name: "Strengthen",
-                text: "At the start of your turn add one energy to each of your Korrits in play.\n"
+                "name": "Strengthen",
+                "text": "At the start of your turn add one energy to each of your Korrits in play.\n"
             }
         ],
-        energize: 6,
-        flavor: "Is this the first time mushrooms have had YOU for lunch?",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Ulk.jpg",
-        key: 1306,
-        name: "Ulk",
-        normalized_name: "Ulk",
-        rarity: "R",
-        regions: [
+        "energize": 6,
+        "flavor": "Is this the first time mushrooms have had YOU for lunch?",
+        "imageUrlHiRes": "../images/hirescards/BS/Ulk.jpg",
+        "imageUrl": "../images/cards/BS/Ulk.jpg",
+        "key": 1306,
+        "name": "Ulk",
+        "normalized_name": "Ulk",
+        "rarity": "R",
+        "regions": [
             "Underneath"
         ],
-        set: "BS",
-        starting: [
+        "set": "BS",
+        "starting": [
             "Korrit",
             "Gum-Gum",
             "Burrow"
         ],
-        type: "Magi"
+        "type": "Magi"
     },
     {
-        artist: "Christopher",
-        cost: 5,
-        flavor: "\"Controlling the current is the easy part of the spell. The hard part is\nforcing the critter into the water in the first place.\"\n-- Orlon, Friend of Wellisks\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Undertow.jpg",
-        key: 1282,
-        name: "Undertow",
-        normalized_name: "Undertow",
-        rarity: "U",
-        regions: [
+        "artist": "Christopher",
+        "cost": 5,
+        "flavor": "\"Controlling the current is the easy part of the spell. The hard part is\nforcing the critter into the water in the first place.\"\n-- Orlon, Friend of Wellisks\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Undertow.jpg",
+        "imageUrl": "../images/cards/BS/Undertow.jpg",
+        "key": 1282,
+        "name": "Undertow",
+        "normalized_name": "Undertow",
+        "rarity": "U",
+        "regions": [
             "Orothe"
         ],
-        set: "BS",
-        text: "Choose any one Creature in play. Discard the chosen Creature from play. The chosen Creature's owner then shuffles that Creature back into his or her deck.\n",
-        type: "Spell"
+        "set": "BS",
+        "text": "Choose any one Creature in play. Discard the chosen Creature from play. The chosen Creature's owner then shuffles that Creature back into his or her deck.\n",
+        "type": "Spell"
     },
     {
-        artist: "Christopher, Holmberg",
-        cost: 1,
-        flavor: "\"Where'd he go?\"\n-- Zet, to Korg\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Updraft.jpg",
-        key: 1178,
-        name: "Updraft",
-        normalized_name: "Updraft",
-        rarity: "C",
-        regions: [
+        "artist": "Christopher, Holmberg",
+        "cost": 1,
+        "flavor": "\"Where'd he go?\"\n-- Zet, to Korg\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Updraft.jpg",
+        "imageUrl": "../images/cards/BS/Updraft.jpg",
+        "key": 1178,
+        "name": "Updraft",
+        "normalized_name": "Updraft",
+        "rarity": "C",
+        "regions": [
             "Arderial"
         ],
-        set: "BS",
-        text: "Choose any one of your Creatures in play. Return the chosen Creature to your hand. Place its energy on your Magi.\n",
-        type: "Spell"
+        "set": "BS",
+        "text": "Choose any one of your Creatures in play. Return the chosen Creature to your hand. Place its energy on your Magi.\n",
+        "type": "Spell"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 3,
-        flavor: "Putting up the shield will hurt your Vaal a little. Attacking without the shield could hurt your Vaal a lot.\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Vaal.jpg",
-        key: 1194,
-        name: "Vaal",
-        normalized_name: "Vaal",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 3,
+        "flavor": "Putting up the shield will hurt your Vaal a little. Attacking without the shield could hurt your Vaal a lot.\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Vaal.jpg",
+        "imageUrl": "../images/cards/BS/Vaal.jpg",
+        "key": 1194,
+        "name": "Vaal",
+        "normalized_name": "Vaal",
+        "powers": [
             {
-                cost: 1,
-                name: "Shield",
-                text: "Vaal is prevented from losing any energy from attacks until the end of your turn.\n"
+                "cost": 1,
+                "name": "Shield",
+                "text": "Vaal is prevented from losing any energy from attacks until the end of your turn.\n"
             }
         ],
-        rarity: "R",
-        regions: [
+        "rarity": "R",
+        "regions": [
             "Cald"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 12,
-        effects: [
+        "artist": "Holmberg, Vega",
+        "cost": 12,
+        "effects": [
             {
-                name: "Pyromancy",
-                text: "Whenever Valkan plays a Spell that discards energy from any number of Creatures, discard two additional energy from each of those Creatures.\n"
+                "name": "Pyromancy",
+                "text": "Whenever Valkan plays a Spell that discards energy from any number of Creatures, discard two additional energy from each of those Creatures.\n"
             }
         ],
-        energize: 4,
-        flavor: "\"Aaagh! Fire!! FIRE!!!!! There's FIRE everywhere! Noo! Oh, the humanity! The sorrow!! It's spreading!! We'll all be burnt to a cinder! Our flesh will be seared to the very bone! HOT HOT HOT!!\"\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Valkan.jpg",
-        key: 1201,
-        name: "Valkan",
-        normalized_name: "Valkan",
-        rarity: "U",
-        regions: [
+        "energize": 4,
+        "flavor": "\"Aaagh! Fire!! FIRE!!!!! There's FIRE everywhere! Noo! Oh, the humanity! The sorrow!! It's spreading!! We'll all be burnt to a cinder! Our flesh will be seared to the very bone! HOT HOT HOT!!\"\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Valkan.jpg",
+        "imageUrl": "../images/cards/BS/Valkan.jpg",
+        "key": 1201,
+        "name": "Valkan",
+        "normalized_name": "Valkan",
+        "rarity": "U",
+        "regions": [
             "Cald"
         ],
-        set: "BS",
-        starting: [
+        "set": "BS",
+        "starting": [
             "Arbolit",
             "Quor",
             "Spirit of the Flame"
         ],
-        type: "Magi"
+        "type": "Magi"
     },
     {
-        artist: "Holmberg, Vega, Shreve",
-        cost: 2,
-        effects: [
+        "artist": "Holmberg, Vega, Shreve",
+        "cost": 2,
+        "effects": [
             {
-                name: "Flock",
-                text: "When you play Vellup, you may search through your deck for another Vellup. Show it to your opponents and put it into your hand. Shuffle your deck.\n"
+                "name": "Flock",
+                "text": "When you play Vellup, you may search through your deck for another Vellup. Show it to your opponents and put it into your hand. Shuffle your deck.\n"
             }
         ],
-        flavor: "They never travel alone.",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Vellup.jpg",
-        key: 1156,
-        name: "Vellup",
-        normalized_name: "Vellup",
-        rarity: "R",
-        regions: [
+        "flavor": "They never travel alone.",
+        "imageUrlHiRes": "../images/hirescards/BS/Vellup.jpg",
+        "imageUrl": "../images/cards/BS/Vellup.jpg",
+        "key": 1156,
+        "name": "Vellup",
+        "normalized_name": "Vellup",
+        "rarity": "R",
+        "regions": [
             "Arderial"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 3,
-        flavor: "The Core Magi's eyes widened in fear as the thing grew from sprout to trellis in seconds.\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Vinoc.jpg",
-        key: 1228,
-        name: "Vinoc",
-        normalized_name: "Vinoc",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 3,
+        "flavor": "The Core Magi's eyes widened in fear as the thing grew from sprout to trellis in seconds.\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Vinoc.jpg",
+        "imageUrl": "../images/cards/BS/Vinoc.jpg",
+        "key": 1228,
+        "name": "Vinoc",
+        "normalized_name": "Vinoc",
+        "powers": [
             {
-                name: "Generate",
-                text: "Discard any number of cards from your hand. For each card discarded, add one energy to Vinoc.\n"
+                "name": "Generate",
+                "text": "Discard any number of cards from your hand. For each card discarded, add one energy to Vinoc.\n"
             }
         ],
-        rarity: "C",
-        regions: [
+        "rarity": "C",
+        "regions": [
             "Naroom"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Christopher",
-        cost: 1,
-        flavor: "In order to tell its stories, the wind uses the leaves as its tongues.\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Vortex_of_Knowledge.jpg",
-        key: 1248,
-        name: "Vortex of Knowledge",
-        normalized_name: "Vortex_of_Knowledge",
-        rarity: "U",
-        regions: [
+        "artist": "Holmberg, Christopher",
+        "cost": 1,
+        "flavor": "In order to tell its stories, the wind uses the leaves as its tongues.\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Vortex_of_Knowledge.jpg",
+        "imageUrl": "../images/cards/BS/Vortex_of_Knowledge.jpg",
+        "key": 1248,
+        "name": "Vortex of Knowledge",
+        "normalized_name": "Vortex_of_Knowledge",
+        "rarity": "U",
+        "regions": [
             "Naroom"
         ],
-        set: "BS",
-        text: "Each player draws two cards.",
-        type: "Spell"
+        "set": "BS",
+        "text": "Each player draws two cards.",
+        "type": "Spell"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 3,
-        flavor: "\"The ground stopped shaking already, but it still feels\nlike my brain's jiggling around in my skull... don't laugh at me!\"\n-- Zet, to Korg\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Vulbor.jpg",
-        key: 1299,
-        name: "Vulbor",
-        normalized_name: "Vulbor",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 3,
+        "flavor": "\"The ground stopped shaking already, but it still feels\nlike my brain's jiggling around in my skull... don't laugh at me!\"\n-- Zet, to Korg\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Vulbor.jpg",
+        "imageUrl": "../images/cards/BS/Vulbor.jpg",
+        "key": 1299,
+        "name": "Vulbor",
+        "normalized_name": "Vulbor",
+        "powers": [
             {
-                cost: 3,
-                name: "Mind Shock",
-                text: "Choose any one player. The chosen player must discard two cards of his or her choice from his or her hand.\n"
+                "cost": 3,
+                "name": "Mind Shock",
+                "text": "Choose any one player. The chosen player must discard two cards of his or her choice from his or her hand.\n"
             }
         ],
-        rarity: "R",
-        regions: [
+        "rarity": "R",
+        "regions": [
             "Underneath"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 0,
-        flavor: "\"You can tell a true fighter by the way he walks.\"\n-- Barak, Cald Warlord\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Warriors_Boots.jpg",
-        key: 1332,
-        name: "Warrior's Boots",
-        normalized_name: "Warriors_Boots",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 0,
+        "flavor": "\"You can tell a true fighter by the way he walks.\"\n-- Barak, Cald Warlord\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Warriors_Boots.jpg",
+        "imageUrl": "../images/cards/BS/Warriors_Boots.jpg",
+        "key": 1332,
+        "name": "Warrior's Boots",
+        "normalized_name": "Warriors_Boots",
+        "powers": [
             {
-                name: "Warpath",
-                text: "Discard Warrior's Boots from play. Immediately play a Creature from your hand. You still must transfer the Creature's starting energy from your Magi to the Creature as normal.\n"
+                "name": "Warpath",
+                "text": "Discard Warrior's Boots from play. Immediately play a Creature from your hand. You still must transfer the Creature's starting energy from your Magi to the Creature as normal.\n"
             }
         ],
-        rarity: "U",
-        regions: [
+        "rarity": "U",
+        "regions": [
             "Universal"
         ],
-        set: "BS",
-        type: "Relic"
+        "set": "BS",
+        "type": "Relic"
     },
     {
-        artist: "Vega, Holmberg",
-        cost: 0,
-        effects: [
+        "artist": "Vega, Holmberg",
+        "cost": 0,
+        "effects": [
             {
-                name: "Invigorate",
-                text: "Your Magi's energize rate is increased by one."
+                "name": "Invigorate",
+                "text": "Your Magi's energize rate is increased by one."
             }
         ],
-        flavor: "\"The power is ancient, but the water doesn't taste that way.\"\n-- Poad, Naroom Innkeeper\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Water_of_Life.jpg",
-        key: 1333,
-        name: "Water of Life",
-        normalized_name: "Water_of_Life",
-        rarity: "U",
-        regions: [
+        "flavor": "\"The power is ancient, but the water doesn't taste that way.\"\n-- Poad, Naroom Innkeeper\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Water_of_Life.jpg",
+        "imageUrl": "../images/cards/BS/Water_of_Life.jpg",
+        "key": 1333,
+        "name": "Water of Life",
+        "normalized_name": "Water_of_Life",
+        "rarity": "U",
+        "regions": [
             "Universal"
         ],
-        set: "BS",
-        type: "Relic"
+        "set": "BS",
+        "type": "Relic"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 2,
-        flavor: "\"Don't eat wild foest mushrooms... unless they're wild\norange forest mushrooms with feet.\"\n-- Wence, Adventurer\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Weebo.jpg",
-        key: 1229,
-        name: "Weebo",
-        normalized_name: "Weebo",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 2,
+        "flavor": "\"Don't eat wild foest mushrooms... unless they're wild\norange forest mushrooms with feet.\"\n-- Wence, Adventurer\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Weebo.jpg",
+        "imageUrl": "../images/cards/BS/Weebo.jpg",
+        "key": 1229,
+        "name": "Weebo",
+        "normalized_name": "Weebo",
+        "powers": [
             {
-                cost: 2,
-                name: "Vitalize",
-                text: "Choose any one Creature in play with less than its starting energy. Restore the chosen Creature to its starting energy.\n"
+                "cost": 2,
+                "name": "Vitalize",
+                "text": "Choose any one Creature in play with less than its starting energy. Restore the chosen Creature to its starting energy.\n"
             }
         ],
-        rarity: "C",
-        regions: [
+        "rarity": "C",
+        "regions": [
             "Naroom"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Vega, Shreve",
-        cost: 3,
-        effects: [
+        "artist": "Holmberg, Vega, Shreve",
+        "cost": 3,
+        "effects": [
             {
-                name: "Dream Barrier",
-                text: "Immediately after a Creature is played, you may discard Wellisk from play. If you do so, also discard the Creature played and all energy used to play the Creature.\n"
+                "name": "Dream Barrier",
+                "text": "Immediately after a Creature is played, you may discard Wellisk from play. If you do so, also discard the Creature played and all energy used to play the Creature.\n"
             }
         ],
-        flavor: "\"A wake-up call for the special kind of sleep that makes dream creatures.\"\n-- O'Qua, Summoner\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Wellisk.jpg",
-        key: 1263,
-        name: "Wellisk",
-        normalized_name: "Wellisk",
-        rarity: "C",
-        regions: [
+        "flavor": "\"A wake-up call for the special kind of sleep that makes dream creatures.\"\n-- O'Qua, Summoner\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Wellisk.jpg",
+        "imageUrl": "../images/cards/BS/Wellisk.jpg",
+        "key": 1263,
+        "name": "Wellisk",
+        "normalized_name": "Wellisk",
+        "rarity": "C",
+        "regions": [
             "Orothe"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Vega, Shreve",
-        cost: 2,
-        effects: [
+        "artist": "Holmberg, Vega, Shreve",
+        "cost": 2,
+        "effects": [
             {
-                name: "Erratic Shield",
-                text: "If Wellisk Pup is attacked, roll one die before energy is removed.\n1, 2, 3, or 4 = Add three energy to Wellisk Pup.\n5 or 6 = Discard Wellisk Pup from play.\n"
+                "name": "Erratic Shield",
+                "text": "If Wellisk Pup is attacked, roll one die before energy is removed.\n1, 2, 3, or 4 = Add three energy to Wellisk Pup.\n5 or 6 = Discard Wellisk Pup from play.\n"
             }
         ],
-        flavor: "\"It can draw energy out of its surroundings to defend itself. But\nsometimes it draws too much and explodes.\"\n-- O'Qua, Summoner\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Wellisk_Pup.jpg",
-        key: 1264,
-        name: "Wellisk Pup",
-        normalized_name: "Wellisk_Pup",
-        rarity: "C",
-        regions: [
+        "flavor": "\"It can draw energy out of its surroundings to defend itself. But\nsometimes it draws too much and explodes.\"\n-- O'Qua, Summoner\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Wellisk_Pup.jpg",
+        "imageUrl": "../images/cards/BS/Wellisk_Pup.jpg",
+        "key": 1264,
+        "name": "Wellisk Pup",
+        "normalized_name": "Wellisk_Pup",
+        "rarity": "C",
+        "regions": [
             "Orothe"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 10,
-        energize: 6,
-        flavor: "\"Kid, I've been from one side of the Moonlands to the other. I've seen a lot of strange stuff...\"\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Wence.jpg",
-        key: 1235,
-        name: "Wence",
-        normalized_name: "Wence",
-        powers: [
+        "artist": "Holmberg, Vega",
+        "cost": 10,
+        "energize": 6,
+        "flavor": "\"Kid, I've been from one side of the Moonlands to the other. I've seen a lot of strange stuff...\"\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Wence.jpg",
+        "imageUrl": "../images/cards/BS/Wence.jpg",
+        "key": 1235,
+        "name": "Wence",
+        "normalized_name": "Wence",
+        "powers": [
             {
-                cost: 2,
-                name: "Wayfarer's Lore",
-                text: "Draw one card. If you draw a Creature card in this way, you may show it to your opponent and draw one additional card during your Draw Step this turn.\n"
+                "cost": 2,
+                "name": "Wayfarer's Lore",
+                "text": "Draw one card. If you draw a Creature card in this way, you may show it to your opponent and draw one additional card during your Draw Step this turn.\n"
             }
         ],
-        rarity: "R",
-        regions: [
+        "rarity": "R",
+        "regions": [
             "Naroom"
         ],
-        set: "BS",
-        starting: [
+        "set": "BS",
+        "starting": [
             "Arboll",
             "Robe of Vines",
             "Grow"
         ],
-        type: "Magi"
+        "type": "Magi"
     },
     {
-        artist: "Holmberg, Sato",
-        cost: 10,
-        energize: 5,
-        flavor: "\"Have you ever had a dream with an ending you never dreamed possible? I can put one in your little head tonight.\"\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Whall.jpg",
-        key: 1271,
-        name: "Whall",
-        normalized_name: "Whall",
-        powers: [
+        "artist": "Holmberg, Sato",
+        "cost": 10,
+        "energize": 5,
+        "flavor": "\"Have you ever had a dream with an ending you never dreamed possible? I can put one in your little head tonight.\"\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Whall.jpg",
+        "imageUrl": "../images/cards/BS/Whall.jpg",
+        "key": 1271,
+        "name": "Whall",
+        "normalized_name": "Whall",
+        "powers": [
             {
-                cost: 5,
-                name: "Dream Twist",
-                text: "Choose any one of your Creatures in play. Discard the chosen Creature. Play a Creature from your hand without paying its energy cost. Put energy onto the played Creature equal to its starting energy. That Creature may not attack this turn.\n"
+                "cost": 5,
+                "name": "Dream Twist",
+                "text": "Choose any one of your Creatures in play. Discard the chosen Creature. Play a Creature from your hand without paying its energy cost. Put energy onto the played Creature equal to its starting energy. That Creature may not attack this turn.\n"
             }
         ],
-        rarity: "U",
-        regions: [
+        "rarity": "U",
+        "regions": [
             "Orothe"
         ],
-        set: "BS",
-        starting: [
+        "set": "BS",
+        "starting": [
             "Deep Hyren",
             "Karak",
             "Submerge"
         ],
-        type: "Magi"
+        "type": "Magi"
     },
     {
-        artist: "Christopher",
-        cost: 6,
-        flavor: "\"Out here you are at the mercy of the tides.\"\n-- Mobis, to Zet\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Will_of_Orothe.jpg",
-        key: 1283,
-        name: "Will of Orothe",
-        normalized_name: "Will_of_Orothe",
-        rarity: "R",
-        regions: [
+        "artist": "Christopher",
+        "cost": 6,
+        "flavor": "\"Out here you are at the mercy of the tides.\"\n-- Mobis, to Zet\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Will_of_Orothe.jpg",
+        "imageUrl": "../images/cards/BS/Will_of_Orothe.jpg",
+        "key": 1283,
+        "name": "Will of Orothe",
+        "normalized_name": "Will_of_Orothe",
+        "rarity": "R",
+        "regions": [
             "Orothe"
         ],
-        set: "BS",
-        text: "Choose any one opponent. During his or her next turn, the chosen opponent's Creatures may not use Powers.\n",
-        type: "Spell"
+        "set": "BS",
+        "text": "Choose any one opponent. During his or her next turn, the chosen opponent's Creatures may not use Powers.\n",
+        "type": "Spell"
     },
     {
-        artist: "Vega",
-        cost: 3,
-        flavor: "\"Four lightning bolts today. The clouds must really be out\nto get me.\"\n-- Wence, Adventurer\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Xyx.jpg",
-        key: 1157,
-        name: "Xyx",
-        normalized_name: "Xyx",
-        powers: [
+        "artist": "Vega",
+        "cost": 3,
+        "flavor": "\"Four lightning bolts today. The clouds must really be out\nto get me.\"\n-- Wence, Adventurer\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Xyx.jpg",
+        "imageUrl": "../images/cards/BS/Xyx.jpg",
+        "key": 1157,
+        "name": "Xyx",
+        "normalized_name": "Xyx",
+        "powers": [
             {
-                cost: 3,
-                name: "Shock",
-                text: "Choose any Magi in play. Discard four energy from the chosen Magi."
+                "cost": 3,
+                "name": "Shock",
+                "text": "Choose any Magi in play. Discard four energy from the chosen Magi."
             }
         ],
-        rarity: "C",
-        regions: [
+        "rarity": "C",
+        "regions": [
             "Arderial"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Vega",
-        cost: 6,
-        flavor: "\"But of course it isn't getting shocked, it's a thundercloud.\"\n-- Zet, to Korg\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Xyx_Elder.jpg",
-        key: 1158,
-        name: "Xyx Elder",
-        normalized_name: "Xyx_Elder",
-        powers: [
+        "artist": "Vega",
+        "cost": 6,
+        "flavor": "\"But of course it isn't getting shocked, it's a thundercloud.\"\n-- Zet, to Korg\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Xyx_Elder.jpg",
+        "imageUrl": "../images/cards/BS/Xyx_Elder.jpg",
+        "key": 1158,
+        "name": "Xyx Elder",
+        "normalized_name": "Xyx_Elder",
+        "powers": [
             {
-                cost: 6,
-                name: "Shockstorm",
-                text: "Roll one die. Discard that much energy from each non-Xyx Creature in play.\n"
+                "cost": 6,
+                "name": "Shockstorm",
+                "text": "Roll one die. Discard that much energy from each non-Xyx Creature in play.\n"
             }
         ],
-        rarity: "U",
-        regions: [
+        "rarity": "U",
+        "regions": [
             "Arderial"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Vega",
-        cost: 2,
-        flavor: "To Arderians, the clouds are the seed bed and the lightning is the\nharvest.\n",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Xyx_Minor.jpg",
-        key: 1159,
-        name: "Xyx Minor",
-        normalized_name: "Xyx_Minor",
-        powers: [
+        "artist": "Vega",
+        "cost": 2,
+        "flavor": "To Arderians, the clouds are the seed bed and the lightning is the\nharvest.\n",
+        "imageUrlHiRes": "../images/hirescards/BS/Xyx_Minor.jpg",
+        "imageUrl": "../images/cards/BS/Xyx_Minor.jpg",
+        "key": 1159,
+        "name": "Xyx Minor",
+        "normalized_name": "Xyx_Minor",
+        "powers": [
             {
-                cost: 2,
-                name: "Gathering Clouds",
-                text: "Choose any one Xyx in play. Add four enery to the chosen Xyx."
+                "cost": 2,
+                "name": "Gathering Clouds",
+                "text": "Choose any one Xyx in play. Add four enery to the chosen Xyx."
             }
         ],
-        rarity: "C",
-        regions: [
+        "rarity": "C",
+        "regions": [
             "Arderial"
         ],
-        set: "BS",
-        type: "Creature"
+        "set": "BS",
+        "type": "Creature"
     },
     {
-        artist: "Holmberg, Vega",
-        cost: 14,
-        effects: [
+        "artist": "Holmberg, Vega",
+        "cost": 14,
+        "effects": [
             {
-                name: "Double Strike",
-                text: "Each of your Creatures may attack twice each turn."
+                "name": "Double Strike",
+                "text": "Each of your Creatures may attack twice each turn."
             }
         ],
-        energize: 5,
-        flavor: "This is my Hyren. He doesn't like you.",
-        imageUrlHiRes: "../images/hirescards/",
-        imageUrl: "../images/cards/BS/Yaki.jpg",
-        key: 1236,
-        name: "Yaki",
-        normalized_name: "Yaki",
-        rarity: "U",
-        regions: [
+        "energize": 5,
+        "flavor": "This is my Hyren. He doesn't like you.",
+        "imageUrlHiRes": "../images/hirescards/BS/Yaki.jpg",
+        "imageUrl": "../images/cards/BS/Yaki.jpg",
+        "key": 1236,
+        "name": "Yaki",
+        "normalized_name": "Yaki",
+        "rarity": "U",
+        "regions": [
             "Naroom"
         ],
-        set: "BS",
-        starting: [
+        "set": "BS",
+        "starting": [
             "Arboll",
             "Weebo",
             "Furok",
             "Grow"
         ],
-        type: "Magi"
+        "type": "Magi"
     }
 ]
 

@@ -43,14 +43,11 @@ function setDisplay(displayOption = document.querySelector(".select-display").va
     };
 };
 
-function buildCardHTML(classesToAdd, imageUrl, hiResImageUrl, cardType) {
+function buildCardHTML(classesToAdd, imageUrl, hiResImageUrl, isHolo) {
     const card = document.createElement("div");
     card.classList.add(...classesToAdd);
-    if (cardType === "packArt")
-        card.style.backgroundImage = "url('" + imageUrl + "')";
-    else
-        card.style.backgroundImage = "url('../images/site/progress-bar.gif')";
-    preloadImage(card, imageUrl, cardType);
+    card.style.backgroundImage = "url('../images/site/5530030.gif')";
+    preloadImage(card, imageUrl, isHolo);
     card.setAttribute("data-card-image", imageUrl);
     card.setAttribute("data-card-image-hi-res", hiResImageUrl);
     return card;
@@ -94,27 +91,23 @@ function buildPackArtHTML(packArtUrls, packId) {
 };
 
 // https://www.sitepoint.com/community/t/onload-for-background-image/6462
-function preloadImage(card, imageUrl, cardType) {
+function preloadImage(card, imageUrl, isHolo) {
     const img = new Image();
-    img.onload = () => onImageLoaded(card, cardType);
+    img.onload = () => onImageLoaded(card, isHolo);
     img.src = imageUrl;
 };
 
 function onImageLoaded(card, isHolo) {
     const loadedImageUrl = card.getAttribute("data-card-image");
-    if (isHolo) {
-        card.style.backgroundImage = "url('" + loadedImageUrl + "')";
-        card.classList.add("crop-reverse-holo-img");
-    }
-    else {
-        card.style.backgroundImage = "url('" + loadedImageUrl + "')";
-    }
+    if (isHolo) card.classList.add("holographic");
+    else card.classList.remove("holographic");
+    card.style.backgroundImage = "url('" + loadedImageUrl + "')";
     card.classList.remove("loading");
 };
 
-function zoomCard(url, isHolo = null) {
+function zoomCard(url, isHolo) {
     const div = document.getElementById("hi-res-card");
-    div.setAttribute("data-card-image", url, isHolo);
+    div.setAttribute("data-card-image", url);
     preloadImage(div, url, isHolo);
     const modal = document.getElementById("card-zoom");
     modal.style.display = "block";
@@ -130,20 +123,19 @@ function singlePackFlip(packArtUrls, pack) {
 
     // Render cards
     const target = document.getElementById("single-pack-flip-area");
-    const packArtFront = buildCardHTML(["card", "pack-art-card", "card--current"], packArtUrls.front, "none", "packArt");
+    const packArtFront = buildCardHTML(["card", "pack-art-card", "card--current"], packArtUrls.front, "none", false);
     target.append(packArtFront);
     for (let i = 0; i < pack.length; i++) {
         let card;
         if (pack[i].rarity.charAt(0) === "H") 
-            card = buildCardHTML(["card", "loading", "holographic"], pack[i].imageUrl, pack[i].imageUrlHiRes);
+            card = buildCardHTML(["card", "loading", "holographic"], pack[i].imageUrl, pack[i].imageUrlHiRes, true);
         else
-            card = buildCardHTML(["card", "loading"], pack[i].imageUrl, pack[i].imageUrlHiRes);
+            card = buildCardHTML(["card", "loading"], pack[i].imageUrl, pack[i].imageUrlHiRes, false);
         
-            
         card.addEventListener("contextmenu", (e) => {
             e.preventDefault();
-            zoomCard(pack[i].imageUrlHiRes);
-
+            if (pack[i].rarity.charAt(0) === "H") zoomCard(pack[i].imageUrlHiRes, true);
+            else zoomCard(pack[i].imageUrlHiRes, false);
         });
         target.appendChild(card);
     }
@@ -167,21 +159,24 @@ function displayRowView(packId, packArtUrls, pack, sortOption) {
     // For some unfathomable reason I can't create img tags, or the flexbox overflow-y breaks. Must use div tags
     for (let i = 0; i < pack.length; i++) {
         let card;
-        if (pack[i].rarity.charAt(0) === "H") 
-            card = buildCardHTML(["pulled-card", "loading", "holographic"], pack[i].imageUrl);
-        else 
+        if (pack[i].rarity.charAt(0) === "H") {
+            card = buildCardHTML(["pulled-card", "loading", "holographic"], pack[i].imageUrl, null, true);
+            card.addEventListener("click", () => zoomCard(pack[i].imageUrlHiRes, true));
+        }
+        else {
             card = buildCardHTML(["pulled-card", "loading"], pack[i].imageUrl);
+            card.addEventListener("click", () => zoomCard(pack[i].imageUrlHiRes, false));
+        } 
         packWrapper.appendChild(card);
-        card.addEventListener("click", () => zoomCard(pack[i].imageUrlHiRes));
 
         // But I can use img tags for the rarity markers
         const raritySymbol = document.createElement("img");
         raritySymbol.classList.add("rarity");
-        if (pack[i].rarity === "C")
+        if (pack[i].rarity.includes("C"))
             raritySymbol.src = "../images/site/rarity_common.png";
-        if (pack[i].rarity === "U")
+        if (pack[i].rarity.includes("U"))
             raritySymbol.src = "../images/site/rarity_uncommon.png";
-        if (pack[i].rarity === "R")
+        if (pack[i].rarity.includes("R"))
             raritySymbol.src = "../images/site/rarity_rare.png";
         card.appendChild(raritySymbol);
     };
@@ -300,13 +295,14 @@ function displayGridView(sortOption) {
     for (let i = 0; i < allCards.length; i++) {
         let card;
         if (allCards[i].rarity.charAt(0) === "H")
-            card = buildCardHTML(["grid-card", "loading", "holographic"], allCards[i].imageUrl);
+            card = buildCardHTML(["grid-card", "loading", "holographic"], allCards[i].imageUrl, null, true);
         else 
-            card = buildCardHTML(["grid-card", "loading"], allCards[i].imageUrl);
+            card = buildCardHTML(["grid-card", "loading"], allCards[i].imageUrl, null, false);
         gridWrapper.appendChild(card);
         card.addEventListener("click", e => {
             e.target.classList.remove("fresh-pull");
-            zoomCard(allCards[i].imageUrlHiRes)
+            if (allCards[i].rarity.charAt(0) === "H") zoomCard(allCards[i].imageUrlHiRes, true)
+            else zoomCard(allCards[i].imageUrlHiRes, false)
         });
 
         // Mark fresh pulls as new
@@ -335,7 +331,7 @@ const modal = document.getElementById("card-zoom");
 modal.onclick = function (e) {
     if (e.target !== document.getElementById("hi-res-card")) {
         modal.style.display = "none";
-        document.getElementById("hi-res-card").style.backgroundImage = "url('../images/site/progress-bar.gif')";
+        document.getElementById("hi-res-card").style.backgroundImage = "url('../images/site/5530030.gif')";
     };
 };
 

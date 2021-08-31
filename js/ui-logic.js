@@ -107,6 +107,7 @@ function onImageLoaded(card, isHolo) {
 
 function zoomCard(url, isHolo) {
     const div = document.getElementById("hi-res-card");
+    div.classList.add("loading");
     div.setAttribute("data-card-image", url);
     preloadImage(div, url, isHolo);
     const modal = document.getElementById("card-zoom");
@@ -127,11 +128,25 @@ function singlePackFlip(packArtUrls, pack) {
     target.append(packArtFront);
     for (let i = 0; i < pack.length; i++) {
         let card;
-        if (pack[i].rarity.charAt(0) === "H") 
-            card = buildCardHTML(["card", "loading", "holographic"], pack[i].imageUrl, pack[i].imageUrlHiRes, true);
-        else
-            card = buildCardHTML(["card", "loading"], pack[i].imageUrl, pack[i].imageUrlHiRes, false);
+        let isHolo = null;
+        const classesToAdd = ["card", "loading"];
         
+        if (pack[i].rarity.charAt(0) === "H") isHolo = true;
+        else isHolo = false;
+
+        if (pack[i].name === "Monarch Hyren") classesToAdd.push("fireworks");
+        else if (pack[i].name === "Rayje's Belt") classesToAdd.push("fireworks");
+        else if (pack[i].name.includes("Hyren") && isHolo) classesToAdd.push("fireworks"); // But this includes Hyren's Call
+        else if (pack[i].name === "Liriel's Cape" && isHolo) classesToAdd.push("fireworks");
+        else if (pack[i].name === "Rayje" && isHolo) classesToAdd.push("fireworks");
+        else if (pack[i].name === "Agram" && isHolo) classesToAdd.push("fireworks");
+        else if (pack[i].name === "Sorreah" && isHolo) classesToAdd.push("fireworks");
+        else if (isHolo) classesToAdd.push("holographic", "confetti");
+
+        if (pack[i].set === "BS") classesToAdd.push("unlimited");
+        
+        card = buildCardHTML(classesToAdd, pack[i].imageUrl, pack[i].imageUrlHiRes, isHolo)
+
         card.addEventListener("contextmenu", (e) => {
             e.preventDefault();
             if (pack[i].rarity.charAt(0) === "H") zoomCard(pack[i].imageUrlHiRes, true);
@@ -159,14 +174,21 @@ function displayRowView(packId, packArtUrls, pack, sortOption) {
     // For some unfathomable reason I can't create img tags, or the flexbox overflow-y breaks. Must use div tags
     for (let i = 0; i < pack.length; i++) {
         let card;
-        if (pack[i].rarity.charAt(0) === "H") {
-            card = buildCardHTML(["pulled-card", "loading", "holographic"], pack[i].imageUrl, null, true);
-            card.addEventListener("click", () => zoomCard(pack[i].imageUrlHiRes, true));
-        }
-        else {
-            card = buildCardHTML(["pulled-card", "loading"], pack[i].imageUrl);
-            card.addEventListener("click", () => zoomCard(pack[i].imageUrlHiRes, false));
-        } 
+        let isHolo = null;
+        const classesToAdd = ["pulled-card", "loading"];
+        
+        if (pack[i].rarity.charAt(0) === "H") isHolo = true;
+        else isHolo = false;
+        
+        if (isHolo) classesToAdd.push("holographic");
+        if (pack[i].set === "BS") classesToAdd.push("unlimited");
+        
+        card = buildCardHTML(classesToAdd, pack[i].imageUrl, null, isHolo);
+        
+        // Event listeners must be added after the cards are created
+        if (isHolo) card.addEventListener("click", () => zoomCard(pack[i].imageUrlHiRes, true));
+        else card.addEventListener("click", () => zoomCard(pack[i].imageUrlHiRes, false));
+
         packWrapper.appendChild(card);
 
         // But I can use img tags for the rarity markers
@@ -294,10 +316,17 @@ function displayGridView(sortOption) {
     // For some unfathomable reason I can't create img tags, or the flexbox overflow-y breaks. Must use div tags
     for (let i = 0; i < allCards.length; i++) {
         let card;
-        if (allCards[i].rarity.charAt(0) === "H")
-            card = buildCardHTML(["grid-card", "loading", "holographic"], allCards[i].imageUrl, null, true);
-        else 
-            card = buildCardHTML(["grid-card", "loading"], allCards[i].imageUrl, null, false);
+        let isHolo = null;
+        const classesToAdd = ["grid-card", "loading"];
+
+        if (allCards[i].rarity.charAt(0) === "H") isHolo = true;
+        else isHolo = false;
+        
+        if (isHolo) classesToAdd.push("holographic");
+        if (allCards[i].set === "BS") classesToAdd.push("unlimited");
+
+        card = buildCardHTML(classesToAdd, allCards[i].imageUrl, null, isHolo);
+
         gridWrapper.appendChild(card);
         card.addEventListener("click", e => {
             e.target.classList.remove("fresh-pull");
@@ -340,7 +369,6 @@ const magnifyingGlass = document.querySelector(".magnifying-glass");
 magnifyingGlass.addEventListener("click", () => {
     const currentCard = document.querySelector(".card--current");
     const hiResUrl = currentCard.getAttribute("data-card-image-hi-res");
-    // if (currentCard.classList.contains("holo-effect")) zoomCard(hiResUrl, "cssEffectReverseHolo")
     if (hiResUrl !== "none") zoomCard(hiResUrl);
     // Pack art is not zoomed, hence it will not be caught here
 });

@@ -38,6 +38,7 @@ a:hover {
 .card.card--current.no-card {
     cursor: initial;
     border-radius: 9px;
+    background-size: 100%;
 }
 
 .centered-text {
@@ -150,11 +151,23 @@ header > p {
     transform-origin: 0 0;
     transition: transform 0.6s cubic-bezier(.8, .2, .1, 0.8) 0.1s;
     cursor: pointer;
+    background-size: 112%;
+    background-position-x: 50%;
+    background-position-y: 50%;
 }
 
+
 div.card {
-    background-size: contain;
+    background-size: 112%;
+    background-position-x: 50%;
+    background-position-y: 50%;
 }
+
+/* Zoom in on cards less for unlimited */
+.card.unlimited, .pulled-card.unlimited {
+    background-size: 98%;
+}
+/* ---------------------------------- */
 
 .card.pack-art-card {
     background-size: 100% 100%;
@@ -318,13 +331,13 @@ div.card {
 }
 
 .pulled-card {
-    background-color: none;
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-size: 112%;
+    background-position-x: 50%;
+    background-position-y: 50%;
     border-radius: 10px;
     display: inline;
-    height: calc(110vw/5.5);
-    flex-basis: calc(110vw/7.71);
+    height: calc(110vw/6);
+    flex-basis: calc(110vw/8.5);
     flex-grow: 0;
     flex-shrink: 0;
     margin: 2rem .5rem 0rem .5rem;
@@ -375,11 +388,13 @@ div.card {
 
 .grid-card {
     background-color: none;
-    background-size: 100% 100%;
     background-repeat: no-repeat;
+    background-size: 112%;
+    background-position-x: 50%;
+    background-position-y: 50%;
     border-radius: 4px;
-    height: calc(86vw/5.8);
-    flex-basis: calc(80vw/8);
+    height: calc(86vw/6);
+    flex-basis: calc(80vw/8.5);
     margin-left: .3rem;
     margin-right: .3rem;
     padding-left: .5rem;
@@ -397,6 +412,10 @@ div.card {
 
 .grid-card:hover {
     transform: translateY(-1.5rem);
+}
+
+.grid-card.unlimited {
+    background-size: 101%;
 }
 
 .set-symbol {
@@ -477,6 +496,10 @@ div.card {
     background-size: 111%;
     background-position-x: 50%;
     background-position-y: 50%;
+}
+
+#hi-res-card.loading {
+    background-size: 225%;
 }
 
 .close {
@@ -567,7 +590,6 @@ h3 {
         margin: 0 auto;
         border-radius: 8px;
         background-image: url('../images/site/5530030.gif');
-        background-size: 240%;
         background-position-x: 50%;
         background-position-y: 50%;
     }
@@ -625,7 +647,6 @@ h3 {
         margin: 0 auto;
         border-radius: 8px;
         background-image: url('../images/site/5530030.gif');
-        background-size: 240%;
         background-position-x: 50%;
         background-position-y: 50%;
     }
@@ -661,7 +682,6 @@ h3 {
         margin: 0 auto;
         border-radius: 8px;
         background-image: url('../images/site/5530030.gif');
-        background-size: 240%;
         background-position-x: 50%;
         background-position-y: 50%;
     }

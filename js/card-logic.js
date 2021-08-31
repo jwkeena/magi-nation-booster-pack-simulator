@@ -15,9 +15,7 @@ function sortSet(setName) {
         uncommons: set.cards.filter(card => card.rarity === "U"),
         commons: set.cards.filter(card => card.rarity === "C"),
     };
-    // TODO: refactor perhaps to iterate over all cards just once, instead of using .filter five times? 
-    // The other advantage would be that I wouldn't miss any cards. Using a default in a switch statement, I'd catch all the cards. 
-    // Currently I should be checking that the total number of cards in the set equals the total of all the sorted arrays built here.
+    // TODO: check that the total number of cards in the set equals the total of all the sorted arrays built here.
     set.cardsAreSorted = true;
     return setName;
 };

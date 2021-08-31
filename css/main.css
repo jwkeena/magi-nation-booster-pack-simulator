@@ -165,13 +165,17 @@ div.card {
 
 /* Zoom in on cards less for unlimited */
 .card.unlimited, .pulled-card.unlimited {
-    background-size: 98%;
+    background-size: 99%;
 }
 /* ---------------------------------- */
 
 .card.pack-art-card {
     background-size: 100% 100%;
-    border-radius: 0px;
+    border-radius: 3px;
+}
+
+.card.pack-art-card.loading {
+    background-size: 220%;
 }
 
 .card:nth-child(-n+3) {
@@ -318,7 +322,6 @@ div.card {
 }
 
 .pulled-card.pack-art {
-    background-size: 100% 100%;
     height: 22vw;
     flex-basis: 16.27vw;
     margin-top: .5rem;
@@ -327,7 +330,7 @@ div.card {
 .pack-art div img {
     height: 22vw;
     width: 16.27vw;
-    border-radius: 0px;
+    border-radius: 3px;
 }
 
 .pulled-card {
@@ -389,7 +392,7 @@ div.card {
 .grid-card {
     background-color: none;
     background-repeat: no-repeat;
-    background-size: 112%;
+    background-size: 108%;
     background-position-x: 50%;
     background-position-y: 50%;
     border-radius: 4px;
@@ -581,6 +584,14 @@ h3 {
         margin-left: auto;
     }
 
+    div.card {
+        background-size: 112%;
+    }
+
+    .card.unlimited {
+        background-size: 99%;
+    }
+
 }
 
 @media only screen and (min-width: 850px) and (max-width: 1050px) and (orientation: landscape) {
@@ -629,7 +640,7 @@ h3 {
     }
 
     .cards {
-        margin-top: 10vh;
+        margin-top: 15vh;
         margin-bottom: 5vh;
         margin-left: auto;
         margin-right: auto;
@@ -641,6 +652,10 @@ h3 {
         width: 33vh;
     }
 
+    div.card {
+        background-size: 109%;
+    }
+
     #hi-res-card {
         height: 112vw;
         width: 80vw;
@@ -649,6 +664,10 @@ h3 {
         background-image: url('../images/site/5530030.gif');
         background-position-x: 50%;
         background-position-y: 50%;
+    }
+
+    .card.unlimited {
+        background-size: 97%;
     }
 
     /* Buttons */
@@ -680,9 +699,13 @@ h3 {
         height: 65vh;
         width: 47vh;
         margin: 0 auto;
-        border-radius: 8px;
+        border-radius: 4px;
         background-image: url('../images/site/5530030.gif');
         background-position-x: 50%;
         background-position-y: 50%;
+    }
+
+    .card {
+        border-radius: 3px;
     }
 }

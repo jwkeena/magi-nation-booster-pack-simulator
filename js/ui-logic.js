@@ -124,7 +124,7 @@ function singlePackFlip(packArtUrls, pack) {
 
     // Render cards
     const target = document.getElementById("single-pack-flip-area");
-    const packArtFront = buildCardHTML(["card", "pack-art-card", "card--current"], packArtUrls.front, "none", false);
+    const packArtFront = buildCardHTML(["card", "pack-art-card", "card--current", "loading"], packArtUrls.front, "none", false);
     target.append(packArtFront);
     for (let i = 0; i < pack.length; i++) {
         let card;
@@ -271,7 +271,16 @@ function sortThis(cards, sortOption) {
                 return (name1 > name2) ? -1 : (name1 < name2) ? 1 : 0;
             });
             break;
-        case "type":
+        case "setOldest":
+            sortBy = ["BS", "AW", "DE", "ND", "VS", "TR"];
+            sortedCards = customSort({ data: cards, sortBy, sortField: 'set' });
+            break;
+
+        case "setNewest":
+            sortBy = ["TR", "VS", "ND", "DE", "AW", "BS"];
+            sortedCards = customSort({ data: cards, sortBy, sortField: 'set' });
+            break;
+        case "region":
             // Get type chosen from ui
             // Filter out non-matching types (using card.types array);
             // Sort by name

@@ -105,12 +105,14 @@
               <option value="cardNameAscending">SORT: CARD NAME (Z-A)</option>
               <option value="rarityDescending">SORT: RARITY (DESC)</option>
               <option value="rarityAscending">SORT: RARITY (ASC)</option>
-              <option value="setOldest">SORT: SET (OLDEST)</option>
-              <option value="setNewest">SORT: SET (NEWEST)</option>
+              <option class="grid-view-only" value="setOldest">SORT: SET (OLDEST)</option>
+              <option class="grid-view-only" value="setNewest">SORT: SET (NEWEST)</option>
               <!-- <option value="type">
               SORT BY: REGION
             </option> -->
             </select>
+
+            <button class="button open-pack-button mobile-only">&nbsp;&nbsp;OPEN</button>
 
             <button class="button clear-cards desktop-only">
               <img class="trash-icon" src="images/site/trash.png" />
@@ -124,7 +126,6 @@
             </div>
             <div id="row-view"></div>
             <div id="grid-view"></div>
-            <button class="button open-pack-button mobile-only">OPEN</button>
             <img
               src="images/site/magnifying-glass.png"
               class="mobile-only magnifying-glass"

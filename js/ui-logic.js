@@ -12,24 +12,22 @@ function setDisplay(displayOption = document.querySelector(".select-display").va
     deleteChildrenFrom(["single-pack-flip-area", "row-view", "grid-view"]);
     switch (displayOption) {
         case "singlePackFlip":
-            showElement(".button.select-row-view-sorting", false);
-            showElement(".button.clear-cards", false);
-            showElement(".magnifying-glass.mobile-only", true);
+            showElements(".button.clear-cards", false);
+            showElements(".magnifying-glass.mobile-only", true);
             // Only want to display the most recently opened pack for now. TODO: allow user to toggle through packs opened via carousel
             singlePackFlip(pulledPacks[pulledPacks.length - 1].packArtUrls, pulledPacks[pulledPacks.length - 1].cards);
             break;
         case "rowView":
-            showElement(".button.select-row-view-sorting", true);
-            showElement(".button.clear-cards", true);
-            showElement(".magnifying-glass.mobile-only", false);
-            showElement(".row-view-only", true);
+            showElements(".button.clear-cards", true);
+            showElements(".magnifying-glass.mobile-only", false);
+            showElements(".row-view-only", true);
             pulledPacks.forEach(pack => { displayRowView(pack.id, pack.packArtUrls, pack.cards, sortOption) })
             break;
         case "gridView":
-            showElement(".button.select-row-view-sorting", true);
-            showElement(".button.clear-cards", true);
-            showElement(".magnifying-glass.mobile-only", false);
-            showElement(".row-view-only", false);
+            showElements(".button.clear-cards", true);
+            showElements(".magnifying-glass.mobile-only", false);
+            showElements(".row-view-only", false);
+            showElements(".grid-view.only", true);
             displayGridView(sortOption);
             break;
         case "noCards":
@@ -292,13 +290,11 @@ function sortThis(cards, sortOption) {
     return sortedCards;
 };
 
-// TODO: Abstract this into a showElement function that takes in an array and spreads it
-function showElement(selector, bool) {
-    el = document.querySelector(selector);
-    if (bool)
-        el.classList.remove("hide");
-    else
-        el.classList.add("hide");
+// TODO: Abstract this into a showElements function that takes in an array of css class selectors and spreads it
+function showElements(selector, bool) {
+    elements = document.querySelectorAll(selector);
+    if (bool) elements.forEach(element => element.classList.remove("hide"));
+    else elements.forEach(element => element.classList.add("hide"));
 };
 
 // -----------------------
@@ -430,7 +426,7 @@ $.fn.commentCards = function () {
                         createFirework(27, 200, 4, 2, null, null, null, null, false, true);
                     }
                     const fireworksTimer = setInterval(fireworks, 300);
-                    setTimeout(() => { clearInterval(fireworksTimer); $current.removeClass("fireworks"); }, 5000)
+                    setTimeout(() => { $current.removeClass("fireworks"); clearInterval(fireworksTimer); }, 5000)
                 }
 
                 if ($current.hasClass("confetti")) {
@@ -455,5 +451,6 @@ $.fn.commentCards = function () {
 // Initialization
 // TODO: retrieve user's choices from localStorage
 chooseSet();
-showElement(".button.select-row-view-sorting", false);
-showElement(".button.clear-cards", false);
+showElements(".button.select-row-view-sorting", true);
+showElements(".button.clear-cards", false);
+showElements(".grid-view-only", false);

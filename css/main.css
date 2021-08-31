@@ -23,7 +23,8 @@ a:hover {
 .button.select-row-view-sorting.hide,
 .magnifying-glass.mobile-only.hide,
 .row-view-only.hide,
-.button.clear-cards.hide {
+.button.clear-cards.hide,
+.grid-view-only.hide {
     display: none;
 }
 
@@ -165,7 +166,7 @@ div.card {
 
 /* Zoom in on cards less for unlimited */
 .card.unlimited, .pulled-card.unlimited {
-    background-size: 99%;
+    background-size: 102%;
 }
 /* ---------------------------------- */
 
@@ -228,14 +229,10 @@ div.card {
 }
 
 .card.loading,
-.pulled-card.loading {
-    background-position-x: center;
-    background-size: cover;
-}
-
-.grid-card.loading {
-    background-size: 160% 100%;
-    background-position-x: 48%;
+.pulled-card.loading, 
+.grid-card.loading,
+.grid-card.loading.unlimited {
+    background-size: 200%;
 }
 
 /* --------------------------------------------- */
@@ -337,7 +334,7 @@ div.card {
     background-size: 112%;
     background-position-x: 50%;
     background-position-y: 50%;
-    border-radius: 10px;
+    border-radius: 5px;
     display: inline;
     height: calc(110vw/6);
     flex-basis: calc(110vw/8.5);
@@ -624,8 +621,9 @@ h3 {
         padding: 10px 5px;
         margin: 0 auto;
         font-size: 1rem;
-        display: inline-block;
-        max-width: 100%;
+        display: block;
+        width: 50vw;
+        max-width: 50vw;
     }
 
     .select-set {
@@ -633,10 +631,12 @@ h3 {
         font-size: 1rem;
     }
 
-    .button.select-display,
-    .button.select-row-view-sorting,
-    .button.mobile-only {
+    .button.select-display {
         display: none;
+    }
+
+    .button.select-row-view-sorting {
+        margin-top: 1rem;
     }
 
     .cards {
@@ -667,15 +667,14 @@ h3 {
     }
 
     .card.unlimited {
-        background-size: 97%;
+        background-size: 98%;
     }
 
     /* Buttons */
     .button.mobile-only {
-        display: inline-block;
-        font-size: 1rem;
-        margin: 0 auto 2rem auto;
-        padding: 10px 5px;
+        margin-top: 1rem;
+        margin-bottom: -2rem;
+        text-align: left;
     }
 
     .button.desktop-only {
@@ -706,6 +705,14 @@ h3 {
     }
 
     .card {
-        border-radius: 3px;
+        border-radius: 5px;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .all-views {
+        margin-top: 6rem;
     }
 }

@@ -329,9 +329,7 @@ function displayGridView(sortOption, noDuplicates) {
 
     // Get all cards. Can't one line this...
     let allCards = [];
-    console.log(noDuplicates)
     pulledPacks.forEach(pack => allCards.push(...pack.cards));
-    console.log(allCards)
     if (noDuplicates) allCards = removeDuplicates(allCards);
 
     // Sort cards in pack before rendering

@@ -14,6 +14,7 @@ function setDisplay(displayOption = document.querySelector(".select-display").va
         case "singlePackFlip":
             showElements(".button.clear-cards", false);
             showElements(".magnifying-glass.mobile-only", true);
+            showElements(".grid-view-only", false);
             // Only want to display the most recently opened pack for now. TODO: allow user to toggle through packs opened via carousel
             singlePackFlip(pulledPacks[pulledPacks.length - 1].packArtUrls, pulledPacks[pulledPacks.length - 1].cards);
             break;
@@ -21,13 +22,14 @@ function setDisplay(displayOption = document.querySelector(".select-display").va
             showElements(".button.clear-cards", true);
             showElements(".magnifying-glass.mobile-only", false);
             showElements(".row-view-only", true);
+            showElements(".grid-view-only", false);
             pulledPacks.forEach(pack => { displayRowView(pack.id, pack.packArtUrls, pack.cards, sortOption) })
             break;
         case "gridView":
             showElements(".button.clear-cards", true);
             showElements(".magnifying-glass.mobile-only", false);
             showElements(".row-view-only", false);
-            showElements(".grid-view.only", true);
+            showElements(".grid-view-only", true);
             displayGridView(sortOption);
             break;
         case "noCards":
@@ -118,6 +120,13 @@ function deleteChildrenFrom(parentNodes) {
 
 // UI - single pack flip
 function singlePackFlip(packArtUrls, pack) {
+
+    // Don't allow pack order sorting in grid view. Default to pack order  
+    if (sortOption === "setOldest" || sortOption === "setNewest" || sortOption === "raresOnly") {
+        document.querySelector(".button.select-row-view-sorting").value="packOrder";
+        sortOption = "cardNameDescending";
+    }
+
     pack = sortThis(pack, sortOption);
 
     // Render cards
@@ -158,6 +167,12 @@ function singlePackFlip(packArtUrls, pack) {
 // -----------------------
 // UI - row view
 function displayRowView(packId, packArtUrls, pack, sortOption) {
+
+    // Don't allow pack order sorting in row view. Default to pack order  
+    if (sortOption === "setOldest" || sortOption === "setNewest" || sortOption === "raresOnly") {
+        document.querySelector(".button.select-row-view-sorting").value="packOrder";
+        sortOption = "cardNameDescending";
+    }
 
     const packWrapper = document.createElement("div");
     packWrapper.classList.add("open-pack");
@@ -273,14 +288,18 @@ function sortThis(cards, sortOption) {
             sortBy = ["BS", "AW", "DE", "ND", "VS", "TR"];
             sortedCards = customSort({ data: cards, sortBy, sortField: 'set' });
             break;
-
         case "setNewest":
             sortBy = ["TR", "VS", "ND", "DE", "AW", "BS"];
             sortedCards = customSort({ data: cards, sortBy, sortField: 'set' });
             break;
+        case "raresOnly":
+            filteredCards = cards.filter(card => card.rarity.includes("H") || card.rarity.includes("R"));
+            console.log(filteredCards);
+            sortBy = ["HR", "HU", "HC", "R"];
+            sortedCards = customSort({data: filteredCards, sortBy, sortField: 'rarity'});
+            break;
         case "region":
-            // Get type chosen from ui
-            // Filter out non-matching types (using card.types array);
+            // Sort by region alphabetically
             // Sort by name
             // Return
             break;

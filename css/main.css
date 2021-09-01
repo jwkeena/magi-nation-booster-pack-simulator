@@ -389,12 +389,14 @@ div.card {
 .grid-card {
     background-color: none;
     background-repeat: no-repeat;
-    background-size: 108%;
+    background-size: 112%;
     background-position-x: 50%;
     background-position-y: 50%;
     border-radius: 4px;
-    height: calc(86vw/6);
-    flex-basis: calc(80vw/8.5);
+    flex-basis: 9rem;
+    height: 14rem;
+    /* height: calc(86vw/5.95); */
+    /* flex-basis: calc(80vw/8.5); */
     margin-left: .3rem;
     margin-right: .3rem;
     padding-left: .5rem;
@@ -415,7 +417,8 @@ div.card {
 }
 
 .grid-card.unlimited {
-    background-size: 101%;
+    background-size: 101.5%;
+    background-repeat: no-repeat;
 }
 
 .set-symbol {

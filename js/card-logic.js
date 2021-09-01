@@ -4,10 +4,6 @@ function chooseSet() {
     openPack(currentSet);
 };
 
-String.prototype.decapitalize = function () {
-    return this.charAt(0).toLowerCase() + this.slice(1);
-};
-
 function sortSet(setName) {
     const set = sets[setName];
     set.sortedCards = {

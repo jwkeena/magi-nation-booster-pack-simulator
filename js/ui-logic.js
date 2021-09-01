@@ -3,6 +3,7 @@ let uiViewType = "singlePackFlip"; // This must remain global so that the card-l
 let pulledPacks = [];
 let currentSet = null;
 let sortOption = "packOrder";
+let noDuplicates = false;
 
 // -----------------------
 // UI
@@ -12,25 +13,22 @@ function setDisplay(displayOption = document.querySelector(".select-display").va
     deleteChildrenFrom(["single-pack-flip-area", "row-view", "grid-view"]);
     switch (displayOption) {
         case "singlePackFlip":
-            showElements(".button.clear-cards", false);
             showElements(".magnifying-glass.mobile-only", true);
             showElements(".grid-view-only", false);
             // Only want to display the most recently opened pack for now. TODO: allow user to toggle through packs opened via carousel
             singlePackFlip(pulledPacks[pulledPacks.length - 1].packArtUrls, pulledPacks[pulledPacks.length - 1].cards);
             break;
         case "rowView":
-            showElements(".button.clear-cards", true);
             showElements(".magnifying-glass.mobile-only", false);
             showElements(".row-view-only", true);
             showElements(".grid-view-only", false);
             pulledPacks.forEach(pack => { displayRowView(pack.id, pack.packArtUrls, pack.cards, sortOption) })
             break;
         case "gridView":
-            showElements(".button.clear-cards", true);
             showElements(".magnifying-glass.mobile-only", false);
             showElements(".row-view-only", false);
             showElements(".grid-view-only", true);
-            displayGridView(sortOption);
+            displayGridView(sortOption, noDuplicates);
             break;
         case "noCards":
             const target = document.getElementById("single-pack-flip-area");
@@ -294,7 +292,6 @@ function sortThis(cards, sortOption) {
             break;
         case "raresOnly":
             filteredCards = cards.filter(card => card.rarity.includes("H") || card.rarity.includes("R"));
-            console.log(filteredCards);
             sortBy = ["HR", "HU", "HC", "R"];
             sortedCards = customSort({data: filteredCards, sortBy, sortField: 'rarity'});
             break;
@@ -318,7 +315,7 @@ function showElements(selector, bool) {
 
 // -----------------------
 // UI - grid view
-function displayGridView(sortOption) {
+function displayGridView(sortOption, noDuplicates) {
     
     // Don't allow pack order sorting in grid view. Default to name a-z    
     if (sortOption === "packOrder") {
@@ -332,7 +329,10 @@ function displayGridView(sortOption) {
 
     // Get all cards. Can't one line this...
     let allCards = [];
+    console.log(noDuplicates)
     pulledPacks.forEach(pack => allCards.push(...pack.cards));
+    console.log(allCards)
+    if (noDuplicates) allCards = removeDuplicates(allCards);
 
     // Sort cards in pack before rendering
     allCards = sortThis(allCards, sortOption);
@@ -376,6 +376,25 @@ function displayGridView(sortOption) {
     }));
 };
 
+function removeDuplicates(allCards) {
+    const nonHolosArr = allCards.filter(card => card.rarity.includes("H"));
+    const holosArr = allCards.filter(card => !card.rarity.includes("H"));   
+
+    function getUniqueCardsFrom(cardArr) {
+        const uniques = [];
+        let uniqueNames = [...new Set(cardArr.map(card => card.name))] // Extract unique names by putting array of all names into a set 
+        uniqueNames.forEach(name => {
+            const firstMatchingCard = cardArr.find(card => card.name === name); // Then use the names array to find a single match for each name
+            uniques.push(firstMatchingCard);
+        });
+        return uniques;
+    }
+
+    const uniqueHolos = getUniqueCardsFrom(holosArr);
+    const uniqueNonHolos = getUniqueCardsFrom(nonHolosArr);
+    const uniqueCards = [...uniqueHolos, ...uniqueNonHolos]
+    return uniqueCards;
+}
 
 // -----------------------
 // UI - Event listeners
@@ -406,7 +425,7 @@ $(window).on('shake', function() {
     }
 });
 
-// Analytics tracking
+// Buttons
 const openPackButtons = document.querySelectorAll(".open-pack-button");
 openPackButtons.forEach(button => button.onclick = () => {
     openPack(currentSet);
@@ -414,12 +433,22 @@ openPackButtons.forEach(button => button.onclick = () => {
 
 const clearPackButton = document.querySelector(".clear-cards");
 clearPackButton.onclick = () => {
-    if (pulledPacks.length === 0) return alert("There are no cards to delete.")
+    if (pulledPacks.length === 0) return alert("There are no cards to delete.");
     if (confirm("Are you sure you want to delete all your cards? This action cannot be undone.")) {
         pulledPacks = [];
         setDisplay();
     };
 };
+
+const noDuplicatesButton = document.querySelector(".no-duplicates");
+noDuplicatesButton.onclick = () => {
+    if (pulledPacks.length === 0) return;
+    noDuplicates = !noDuplicates;
+    if (noDuplicates) document.querySelector(".duplicate-icon").src = "images/site/duplicate-icon.png";
+    else document.querySelector(".duplicate-icon").src = "images/site/duplicate-icon-alt.png";
+    deleteChildrenFrom(["grid-view"]);
+    displayGridView(sortOption, noDuplicates);
+}
 
 // Flip through stack of cards modified from https://codepen.io/shshaw/pen/KzYXvP
 $.fn.commentCards = function () {
@@ -430,7 +459,7 @@ $.fn.commentCards = function () {
             $current = $cards.filter('.card--current'),
             $next;
 
-        // The crucial changes here was in three parts
+        // The crucial changes here were in three parts
         $cards.on('click', function () {
             if ($current.is(this)) { // First, I wanted the condition to only apply to the current card, NOT everything else (so I took the bang out)
 
@@ -449,12 +478,8 @@ $.fn.commentCards = function () {
                 }
 
                 if ($current.hasClass("confetti")) {
-                    setTimeout(() => {
-                        $current.removeClass("confetti");
-                        confetti({ particleCount: 200, gravity: .5, origin: { y: .7 }, spread: 90 });
-                    }, 500);
+                    setTimeout(() => { $current.removeClass("confetti"); confetti({ particleCount: 200, gravity: .5, origin: { y: .7 }, spread: 90 }); }, 500);
                 }
-
             }
         });
 

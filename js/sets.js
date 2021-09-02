@@ -11,8 +11,8 @@ const sets = {
       },
     name: "Base",
     totalCards: 190,
-    symbolUrl: "../images/site/mnd-logo.png",
-    logoUrl: "../images/site/mnd-logo.png",
+    symbolUrl: "../images/site/mnd-logo-by-anebriate.png",
+    logoUrl: "../images/site/mnd-logo-by-anebriate.png",
   },
   AW: {
     cards: awakeningCards,

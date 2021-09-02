@@ -94,7 +94,7 @@ header {
 
 #logo {
     margin: 0 auto;
-    background-image: url('../images/site/mnd-logo.png');
+    background-image: url('../images/site/mnd-logo-by-anebriate.png');
     width: 20rem;
     height: 10rem;
     background-position: center;
@@ -702,6 +702,14 @@ h3 {
 
     div.section-wrapper {
         max-height: 100%;
+    }
+
+    #logo {
+        max-width: 80%;
+    }
+
+    header > p {
+        font-size: .85rem;
     }
 
 }

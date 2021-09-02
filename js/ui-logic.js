@@ -119,10 +119,10 @@ function deleteChildrenFrom(parentNodes) {
 // UI - single pack flip
 function singlePackFlip(packArtUrls, pack) {
 
-    // Don't allow pack order sorting in grid view. Default to pack order  
-    if (sortOption === "setOldest" || sortOption === "setNewest" || sortOption === "raresOnly") {
+    // Don't allow certain sort options in single pack view. Default to packOrder  
+    if (sortOption === "setOldest" || sortOption === "setNewest" || sortOption === "raresOnly" || sortOption === "newestPack") {
         document.querySelector(".button.select-row-view-sorting").value="packOrder";
-        sortOption = "cardNameDescending";
+        sortOption = "packOrder";
     }
 
     pack = sortThis(pack, sortOption);
@@ -166,10 +166,10 @@ function singlePackFlip(packArtUrls, pack) {
 // UI - row view
 function displayRowView(packId, packArtUrls, pack, sortOption) {
 
-    // Don't allow pack order sorting in row view. Default to pack order  
-    if (sortOption === "setOldest" || sortOption === "setNewest" || sortOption === "raresOnly") {
+    // Disallow certain options in row view. Default to packOrder
+    if (sortOption === "setOldest" || sortOption === "setNewest" || sortOption === "raresOnly" || sortOption === "newestPack") {
         document.querySelector(".button.select-row-view-sorting").value="packOrder";
-        sortOption = "cardNameDescending";
+        sortOption = "packOrder";
     }
 
     const packWrapper = document.createElement("div");
@@ -227,8 +227,16 @@ function displayRowView(packId, packArtUrls, pack, sortOption) {
 };
 
 function resortCardsOnDisplay() {
-    const chosenOption = document.querySelector(".select-row-view-sorting").value;
-    sortOption = chosenOption;
+    const chosenOption = document.querySelectorAll(".select-row-view-sorting");
+    // Swap values between top nav and bottom buttons--if window resizes, the values will remain hidden
+    if (window.innerWidth >= 850) {
+        sortOption = chosenOption[0].value;
+        chosenOption[1].value = sortOption;
+    }
+    else {
+        sortOption = chosenOption[1].value;
+        chosenOption[0].value = sortOption;
+    }
     setDisplay(displayOption = document.querySelector(".select-display").value, sortOption);
 };
 
@@ -295,6 +303,8 @@ function sortThis(cards, sortOption) {
             sortBy = ["HR", "HU", "HC", "R"];
             sortedCards = customSort({data: filteredCards, sortBy, sortField: 'rarity'});
             break;
+        case "newestPack":
+            sortedCards = pulledPacks[pulledPacks.length - 1].cards.sort((a, b) => { return parseInt(a.pullOrder) - parseInt(b.pullOrder) })
         case "region":
             // Sort by region alphabetically
             // Sort by name
@@ -317,10 +327,10 @@ function showElements(selector, bool) {
 // UI - grid view
 function displayGridView(sortOption, noDuplicates) {
     
-    // Don't allow pack order sorting in grid view. Default to name a-z    
+    // Don't allow pack order sorting in grid view. Default to first available
     if (sortOption === "packOrder") {
-        document.querySelector(".button.select-row-view-sorting").value="cardNameDescending";
-        sortOption = "cardNameDescending";
+        document.querySelector(".button.select-row-view-sorting").value="newestPack";
+        sortOption = "newestPack";
     }
 
     const gridWrapper = document.createElement("div");
@@ -442,8 +452,16 @@ const noDuplicatesButton = document.querySelector(".no-duplicates");
 noDuplicatesButton.onclick = () => {
     if (pulledPacks.length === 0) return;
     noDuplicates = !noDuplicates;
-    if (noDuplicates) document.querySelector(".duplicate-icon").src = "images/site/duplicate-icon.png";
-    else document.querySelector(".duplicate-icon").src = "images/site/duplicate-icon-alt.png";
+    const icon = document.querySelector(".duplicate-icon");
+    document.querySelector(".duplicate-icon")
+    if (noDuplicates) {
+        icon.src = "images/site/duplicate-icon.png";
+        icon.title = "Show duplicate cards"
+    }
+    else {
+        icon.src = "images/site/duplicate-icon-alt.png";
+        icon.title = "Hide duplicate cards"
+    }
     deleteChildrenFrom(["grid-view"]);
     displayGridView(sortOption, noDuplicates);
 }

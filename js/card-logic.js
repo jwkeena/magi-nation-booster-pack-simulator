@@ -1,6 +1,14 @@
 // Card selection logic
 function chooseSet() {
-    currentSet = document.getElementsByClassName("select-set")[0].value;
+    const selectSetButtons = document.querySelectorAll(".select-set");
+    if (window.innerWidth >= 850) {
+        currentSet = selectSetButtons[0].value;
+        selectSetButtons[1].value = currentSet;
+    }
+    else  {
+        currentSet = selectSetButtons[1].value;
+        selectSetButtons[0].value = currentSet;
+    }
     openPack(currentSet);
 };
 

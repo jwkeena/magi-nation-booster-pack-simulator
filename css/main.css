@@ -678,8 +678,9 @@ h3 {
 
     /* Buttons */
     .button.mobile-only {
+        position: relative;
+        top: 1rem;
         margin-top: 1rem;
-        margin-bottom: -2rem;
         text-align: left;
     }
 
@@ -688,13 +689,19 @@ h3 {
     }
 
     .magnifying-glass.mobile-only {
-        position: absolute;
-        bottom: 1.5rem;
-        width: 6vh;
-        height: 6vh;
-        cursor: pointer;
-        right: 1.5rem;
-        display: inline-block;
+        display: none;
+    }
+
+    main.front-page {
+        top: -4rem;
+    }
+
+    nav, footer {
+        display: none;
+    }
+
+    div.section-wrapper {
+        max-height: 100%;
     }
 
 }

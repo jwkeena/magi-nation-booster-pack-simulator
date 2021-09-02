@@ -12,11 +12,11 @@
       content="Magi Nation,MND,magi,nation,booster,pack,box,simulator,sim,open,opener,opening,tcg,set,card,cards,free,online,pulls,pack,packs,breaks,app,games,game,"
     />
     <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Magi Nation Booster Pack Simulator" />
     <meta
-      name="twitter:title"
-      content="Magi Nation Booster Pack Simulator"
+      name="twitter:description"
+      content="Magi Nation Duel pack opening simulator. Open packs, booster boxes, and collect all the cards online in this free web app."
     />
-    <meta name="twitter:description" content="Magi Nation Duel pack opening simulator. Open packs, booster boxes, and collect all the cards online in this free web app."/>
     <meta
       name="twitter:image"
       content="https://pokemonboosterpack.com/images/site/twitter-card-screenshot.png"
@@ -63,10 +63,8 @@
     <title>Magi Nation Booster Pack Simulator</title>
   </head>
 
-  <body style="background: lightgoldenrodyellow;">
-
+  <body style="background: lightgoldenrodyellow">
     <section>
-
       <div class="section-wrapper">
         <header>
           <div id="logo"></div>
@@ -74,11 +72,13 @@
         </header>
 
         <main class="front-page">
-
-          <nav style="background: lightgoldenrodyellow;">
+          <nav style="background: lightgoldenrodyellow">
             <button class="button open-pack-button desktop-only">OPEN</button>
 
-            <select class="button select-set" onchange="chooseSet()">
+            <select
+              class="button select-set desktop-only"
+              onchange="chooseSet()"
+            >
               <option value="BS">UNLIMITED</option>
               <option value="AW">AWAKENING</option>
               <option value="DE">DREAM'S END</option>
@@ -95,33 +95,44 @@
             </select>
 
             <select
-              class="button select-row-view-sorting"
+              class="button select-row-view-sorting desktop-only"
               onchange="resortCardsOnDisplay()"
             >
               <option class="row-view-only" value="packOrder">
                 SORT: PACK ORDER
               </option>
+              <option class="grid-view-only" value="newestPack">
+                SORT: NEWEST PACK
+              </option>
               <option value="cardNameDescending">SORT: CARD NAME (A-Z)</option>
               <option value="cardNameAscending">SORT: CARD NAME (Z-A)</option>
               <option value="rarityDescending">SORT: RARITY (DESC)</option>
               <option value="rarityAscending">SORT: RARITY (ASC)</option>
-              <option class="grid-view-only" value="raresOnly">SORT: RARES ONLY</option>
-              <option class="grid-view-only" value="setOldest">SORT: SET (OLDEST)</option>
-              <option class="grid-view-only" value="setNewest">SORT: SET (NEWEST)</option>
-              <!-- <option value="type">
-              SORT BY: REGION
-            </option> -->
+              <option class="grid-view-only" value="raresOnly">
+                SORT: RARES ONLY
+              </option>
+              <option class="grid-view-only" value="setOldest">
+                SORT: SET (OLDEST)
+              </option>
+              <option class="grid-view-only" value="setNewest">
+                SORT: SET (NEWEST)
+              </option>
             </select>
 
-            <button class="button open-pack-button mobile-only">&nbsp;&nbsp;OPEN</button>
-
-            <button class="button grid-view-only no-duplicates desktop-only">
-              <img class="duplicate-icon" title="Hide duplicate cards" src="images/site/duplicate-icon-alt.png" />
+            <button class="button grid-view-only no-duplicates">
+              <img
+                class="duplicate-icon"
+                title="Hide duplicate cards"
+                src="images/site/duplicate-icon-alt.png"
+              />
             </button>
-            <button class="button grid-view-only clear-cards desktop-only">
-              <img class="trash-icon" title="Delete all cards" src="images/site/trash.png" />
+            <button class="button grid-view-only clear-cards">
+              <img
+                class="trash-icon"
+                title="Delete all cards"
+                src="images/site/trash.png"
+              />
             </button>
-
           </nav>
 
           <div class="all-views">
@@ -130,6 +141,49 @@
             </div>
             <div id="row-view"></div>
             <div id="grid-view"></div>
+
+            <button class="button open-pack-button mobile-only">
+              &nbsp;&nbsp;OPEN
+            </button>
+
+            <select
+              class="button select-set mobile-only"
+              onchange="chooseSet()"
+            >
+              <option value="BS">UNLIMITED</option>
+              <option value="AW">AWAKENING</option>
+              <option value="DE">DREAM'S END</option>
+              <option value="ND">NIGHTMARE'S DAWN</option>
+              <option value="VS">VOICE OF THE STORMS</option>
+              <option value="TR">TRAITOR'S REACH</option>
+              <option value="random">RANDOM</option>
+            </select>
+
+            <select
+              class="button select-row-view-sorting mobile-only"
+              onchange="resortCardsOnDisplay()"
+            >
+              <option class="row-view-only" value="packOrder">
+                SORT: PACK ORDER
+              </option>
+              <option class="grid-view-only" value="newestPack">
+                SORT: NEWEST PACK
+              </option>
+              <option value="cardNameDescending">SORT: CARD NAME (A-Z)</option>
+              <option value="cardNameAscending">SORT: CARD NAME (Z-A)</option>
+              <option value="rarityDescending">SORT: RARITY (DESC)</option>
+              <option value="rarityAscending">SORT: RARITY (ASC)</option>
+              <option class="grid-view-only" value="raresOnly">
+                SORT: RARES ONLY
+              </option>
+              <option class="grid-view-only" value="setOldest">
+                SORT: SET (OLDEST)
+              </option>
+              <option class="grid-view-only" value="setNewest">
+                SORT: SET (NEWEST)
+              </option>
+            </select>
+
             <img
               src="images/site/magnifying-glass.png"
               class="mobile-only magnifying-glass"
@@ -153,9 +207,7 @@
         </div>
         <div id="fireContainer"></div>
 
-        <footer style="background: transparent;">
-        </footer>
-
+        <footer style="background: transparent"></footer>
       </div>
     </section>
 

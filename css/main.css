@@ -430,6 +430,12 @@ div.card {
     height: 30px;
 }
 
+.grid-card.unlimited > .set-symbol {
+    height: 23px;
+    bottom: -1.75rem;
+    right: 36%;
+}
+
 .fresh-pull::after {
     content: "";
     background-image: url("../images/site/fresh-pull.png");
